@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://n2nib.com/sitemap.xml
