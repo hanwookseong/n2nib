@@ -3848,4 +3848,67 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
 
   /* products.html 필터 영역 */
   .cat-filter-bar { flex-direction: column !important; align-items: stretch !important; gap: 0.5rem !important; }
+
+  /* 한글 단어 잘림 방지 (음절 단위 줄바꿈 방지) */
+  body, h1, h2, h3, h4, h5, h6, p, li, td, th, a, span, div, label, button {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+  }
 }
+
+/* 한글 단어 잘림 방지 — 데스크톱 포함 전역 */
+html, body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-break: strict;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   사용자 요청 — 헤더/푸터/오렌지 강조 부분 크기 조정
+   ──────────────────────────────────────────────────────────────────── */
+
+/* 1. 헤더 로고 — 38px → 57px (150% 확대) */
+.logo-img { height: 57px !important; }
+
+/* 1-2. 헤더 utils 전화/이메일/카톡 — 150% 확대 */
+.top-utils { font-size: 1.05rem !important; }
+.top-utils a { font-size: 1.05rem !important; }
+.top-utils .hot { font-size: 1.05rem !important; font-weight: 600; }
+.top-utils .kakao-link { padding: 6px 14px !important; font-size: 1.0rem !important; }
+
+/* 2. 바디 오렌지 강조 영역 (eyebrow, accent, why 카테고리 라벨) — 150% 확대 */
+.eyebrow,
+.section-eyebrow,
+.why-eyebrow,
+.hero-eyebrow,
+.cat-eyebrow,
+.pd-eyebrow {
+  font-size: 1.15rem !important;
+  letter-spacing: 0.12em !important;
+  font-weight: 600 !important;
+}
+
+/* WHY 영역 헤딩 (예: "보험중개사가 일하는 다섯 가지 영역.") 강조 */
+.why h2, .why-section h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem) !important; }
+
+/* 3. 푸터 로고 — 가로형 박스, 빈공간 최소화 */
+.site-footer .footer-brand {
+  background: var(--ivory);
+  padding: 14px 20px !important;
+  border-radius: 6px;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-bottom: 14px !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+.site-footer .footer-brand .logo-img {
+  height: 64px !important;        /* 헤더처럼 키움 */
+  width: auto !important;
+  margin: 0 !important;
+  display: block !important;
+}
+.site-footer .footer-brand br { display: none !important; }  /* 줄바꿈 제거하여 가로형 유지 */
