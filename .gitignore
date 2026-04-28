@@ -1,0 +1,19 @@
+# 배포용 ZIP 파일 (Cloudflare Workers Static Assets 25MB 제한 초과)
+*.zip
+
+# OS·에디터 임시 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.bak
+
+# 노드/빌드 캐시
+node_modules/
+.wrangler/
+.dev.vars
+
+# 로그
+*.log
+npm-debug.log*

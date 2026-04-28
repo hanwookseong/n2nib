@@ -1,7 +1,7 @@
 # Cloudflare Workers Static Assets configuration
 # n2nib.com — 엔투엔보험중개 87종 기업보험 카탈로그 사이트
 
-name = "n2nib"
+name = "n2nib-git"
 compatibility_date = "2024-12-01"
 
 [assets]
