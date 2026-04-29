@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="N2N Insurance Brokerage Open Graph image">
+  <title>엔투엔보험중개 — 기업보험 전문 브로커리지</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B2818"/>
+      <stop offset="100%" stop-color="#143C25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative dots pattern -->
+  <g opacity="0.08" fill="#F4F0E8">
+    <circle cx="60" cy="60" r="3"/>
+    <circle cx="160" cy="60" r="3"/>
+    <circle cx="260" cy="60" r="3"/>
+    <circle cx="60" cy="160" r="3"/>
+    <circle cx="160" cy="160" r="3"/>
+    <circle cx="60" cy="260" r="3"/>
+  </g>
+
+  <!-- ============================== -->
+  <!-- N2N LOGO BLOCK (mark + wordmark) -->
+  <!-- Aligned with homepage style: cream circles with dark-green N's, -->
+  <!-- orange circle with cream 2, cream stacked INSURANCE BROKERAGE -->
+  <!-- ============================== -->
+  <g transform="translate(80, 90)">
+    <!-- 3 circles: cream / orange / cream -->
+    <circle cx="55" cy="55" r="55" fill="#F4F0E8"/>
+    <circle cx="170" cy="55" r="55" fill="#D97757"/>
+    <circle cx="285" cy="55" r="55" fill="#F4F0E8"/>
+
+    <!-- Letters: N (dark) on cream, 2 (cream) on orange, N (dark) on cream -->
+    <text x="55" y="76" text-anchor="middle"
+          font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="68" font-weight="700" letter-spacing="-2"
+          fill="#0B2818">N</text>
+    <text x="170" y="76" text-anchor="middle"
+          font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="68" font-weight="700"
+          fill="#F4F0E8">2</text>
+    <text x="285" y="76" text-anchor="middle"
+          font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="68" font-weight="700" letter-spacing="-2"
+          fill="#0B2818">N</text>
+
+    <!-- Stacked INSURANCE / BROKERAGE wordmark (cream on dark bg) -->
+    <text x="170" y="168" text-anchor="middle"
+          font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="34" font-weight="700" letter-spacing="4"
+          fill="#F4F0E8">INSURANCE</text>
+    <text x="170" y="206" text-anchor="middle"
+          font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="34" font-weight="700" letter-spacing="4"
+          fill="#F4F0E8">BROKERAGE</text>
+  </g>
+
+  <!-- ============================== -->
+  <!-- KOREAN BRAND BLOCK (right side of logo, vertically centered with mark) -->
+  <!-- ============================== -->
+  <text x="500" y="155" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
+        font-size="76" font-weight="800" fill="#F4F0E8" letter-spacing="-2">엔투엔보험중개</text>
+  <text x="500" y="200" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
+        font-size="22" font-weight="500" fill="#F4F0E8" opacity="0.7" letter-spacing="2">N2N · 기업보험 전문 브로커리지</text>
+
+  <!-- Tagline (large, centered horizontally below logo block) -->
+  <text x="80" y="400" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
+        font-size="46" font-weight="700" fill="#F4F0E8" letter-spacing="-1">재물 · 배상 · 근재 · 해상 · 기타특종</text>
+  <text x="80" y="455" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
+        font-size="46" font-weight="800" fill="#D97757" letter-spacing="-1">87<tspan fill="#F4F0E8">종 기업보험 비교 중개</tspan></text>
+  <text x="80" y="505" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
+        font-size="26" font-weight="400" fill="#F4F0E8" opacity="0.85">Chubb · DB · KB · 메리츠 · 현대해상 · AIG 파트너</text>
+
+  <!-- Bottom band -->
+  <rect x="0" y="560" width="1200" height="70" fill="#0B2818" opacity="0.6"/>
+  <text x="80" y="605" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
+        font-size="22" font-weight="600" fill="#F4F0E8" opacity="0.9">금융감독원 등록 제2026-012201호 · 대표 성한욱 (ACIU 기업보험심사역)</text>
+  <text x="1120" y="605" text-anchor="end"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="22" font-weight="700" fill="#D97757">n2nib.com</text>
+
+  <!-- Right accent bar -->
+  <rect x="1140" y="0" width="60" height="630" fill="#D97757"/>
+</svg>
