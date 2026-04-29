@@ -1,0 +1,29 @@
+# Git internals (LARGE OBJECTS HERE - MUST EXCLUDE)
+.git/
+.gitignore
+.gitattributes
+
+# Wrangler config & cache
+wrangler.toml
+.wrangler/
+node_modules/
+package.json
+package-lock.json
+
+# Documentation & internal scripts (no need to ship)
+README.md
+DEPLOY.md
+KAKAO_SETUP.md
+LICENSING.md
+*.bat
+
+# Old deployment artifacts (defensive — should already be gone)
+*.zip
+n2nib_*.zip
+favicon-*.zip
+products.zip
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
+*.log
