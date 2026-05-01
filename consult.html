@@ -26,6 +26,14 @@
 <meta name="apple-mobile-web-app-title" content="N2N">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0B2818">
+<!-- Google tag (gtag.js) — GA4: n2nib.com -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZQPTXLXY8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4ZQPTXLXY8');
+</script>
 </head>
 <body>
 
@@ -306,10 +314,10 @@
 
     <div>
       <div class="form-note">
-        <strong>폼 연동 안내.</strong>
-        이 폼은 <code>Formspree</code> / <code>Google Form</code> 연동 플레이스홀더입니다.
-        <code>action</code> 속성의 <code>REPLACE_WITH_YOUR_FORMSPREE_ID</code>를 실제 엔드포인트로 교체하면
-        <code>sales@n2nib.com</code>으로 이메일 수신이 시작됩니다. 연동 전까지는 제출 시 연락처 안내 팝업이 표시됩니다.
+        <strong>접수 안내.</strong>
+        제출하신 내용은 즉시 <code>sales@n2nib.com</code>으로 전달되며,
+        담당 ACIU 심사역이 검토 후 <strong>2영업일 이내</strong> 회신드립니다.
+        급하신 경우 화면 우측의 카카오톡 1:1 상담 또는 010-5755-6465로 직접 연락 주세요.
       </div>
 
       <!-- 카카오톡 즉시 상담 (1:1 채팅) -->
@@ -334,7 +342,7 @@
       </div>
 
       <form id="consultForm" class="form-wrap"
-            action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID"
+            action="https://formspree.io/f/xykogadw"
             method="POST">
 
         <input type="hidden" name="_subject" value="[N2N] 웹사이트 상담신청 접수">
@@ -364,6 +372,8 @@
           <div class="form-row">
             <label for="email">이메일 <span class="req">*</span></label>
             <input id="email" name="email" type="email" required placeholder="name@company.com">
+            <!-- Formspree Reply-To 명시(이메일 입력값을 JS로 동기화) -->
+            <input type="hidden" id="replyto" name="_replyto" value="">
           </div>
         </div>
         <div class="form-col-2">
@@ -690,4 +700,45 @@
 
     /* 유입 경로 추적 */
     if (srcPageHidden) srcPageHidden.value = document.referrer || '(direct)';
-  
+    if (srcRefHidden)  srcRefHidden.value  = P.ref || '';
+
+    /* 관심 상품 배지 표시 */
+    if ((P.product || P.insurer) && banner) {
+      banner.hidden = false;
+      if (P.product && bannerTitle) {
+        bannerTitle.textContent = '관심 상품: ' + P.product
+          + (P.insurer ? ' (선호 원수사: ' + P.insurer + ')' : '');
+      } else if (P.insurer && bannerTitle) {
+        bannerTitle.textContent = '선호 원수사: ' + P.insurer;
+      }
+      if (bannerSub) {
+        bannerSub.textContent = '아래 폼에 해당 정보가 자동 입력되었습니다. 필요시 수정해 주세요.';
+      }
+    }
+  });
+})();
+
+/* ============================================================
+   이메일 → _replyto 동기화 (Formspree 답장 자동 채움)
+   ------------------------------------------------------------
+   고객이 입력한 이메일이 hidden _replyto 필드로 복사되어,
+   Gmail에서 답장 시 받는사람에 자동 입력됩니다.
+   ============================================================ */
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    var emailInput = document.getElementById('email');
+    var replyto    = document.getElementById('replyto');
+    if (!emailInput || !replyto) return;
+    var sync = function () { replyto.value = emailInput.value || ''; };
+    emailInput.addEventListener('input', sync);
+    emailInput.addEventListener('change', sync);
+    emailInput.addEventListener('blur', sync);
+    /* 초기값(브라우저 자동완성 대비) */
+    sync();
+  });
+})();
+</script>
+
+</body>
+</html>
