@@ -70,9 +70,9 @@
   <text x="80" y="400" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
         font-size="46" font-weight="700" fill="#F4F0E8" letter-spacing="-1">재물 · 배상 · 근재 · 해상 · 기타특종</text>
   <text x="80" y="455" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
-        font-size="46" font-weight="800" fill="#D97757" letter-spacing="-1">87<tspan fill="#F4F0E8">종 기업보험 비교 중개</tspan></text>
+        font-size="46" font-weight="800" fill="#D97757" letter-spacing="-1">112<tspan fill="#F4F0E8">종 기업보험 비교 중개</tspan></text>
   <text x="80" y="505" font-family="'Pretendard', 'Noto Sans KR', sans-serif"
-        font-size="26" font-weight="400" fill="#F4F0E8" opacity="0.85">Chubb · DB · KB · 메리츠 · 현대해상 · AIG 파트너</text>
+        font-size="26" font-weight="400" fill="#F4F0E8" opacity="0.85">AIG · Chubb · DB · KB · 메리츠 · 현대해상 파트너</text>
 
   <!-- Bottom band -->
   <rect x="0" y="560" width="1200" height="70" fill="#0B2818" opacity="0.6"/>
