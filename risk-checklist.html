@@ -218,7 +218,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="products/specialty-kr.html">납치·협박(K&R)</a></li>
         <li><a href="products/specialty-crime.html">범죄(Crime)</a></li>
         <li><a href="products/specialty-theft.html">도난</a></li>
-        <li><a href="products/specialty-fidelity.html">신원보증</a></li>
         <li><a href="products/specialty-money-securities.html">현금·유가증권</a></li>
         <li><a href="products/specialty-legal-expense.html">법률비용</a></li>
         <li><a href="products/specialty-cyber-sme.html">사이버 SME</a></li>
@@ -470,7 +469,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     'engineering-car':      ['건설공사보험(CAR)', 'CAR'],
     'engineering-ear':      ['조립보험(EAR)', 'EAR'],
     'specialty-crime':      ['범죄보험(Crime)', 'Crime'],
-    'specialty-fidelity':   ['신원보증보험', 'Fidelity'],
     'specialty-money-securities':['현금·유가증권 보험', '현금'],
     'specialty-cyber-sme':  ['사이버 SME 패키지', '사이버 SME'],
     'specialty-legal-expense':['법률비용 보험', '법률비용'],
@@ -554,7 +552,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (state.concern.includes('employee')) { add('wc-domestic', 8, '산재 우려'); add('liability-serious-accident', 5, '중처법'); }
     if (state.concern.includes('cyber')) { add('liability-cyber', 8, '사이버 우려'); add('liability-privacy', 6, '사이버 우려'); }
     if (state.concern.includes('executive')) add('liability-do', 8, '임원 책임 우려');
-    if (state.concern.includes('theft')) { add('specialty-crime', 6, '범죄 우려'); add('specialty-fidelity', 5, '범죄 우려'); }
+    if (state.concern.includes('theft')) { add('specialty-crime', 6, '범죄 우려'); }
     if (state.concern.includes('bi')) add('property-package', 6, 'BI 우려');
 
     // 규모 기반

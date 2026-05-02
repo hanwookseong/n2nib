@@ -1,11 +1,11 @@
 # n2nib.com 배포 가이드 (Cloudflare Pages)
 
-**작성일:** 2026-04-26 (87종 등록 + 카카오 통합 반영)
+**작성일:** 2026-05-02 (110종 사이트 반영 + 카카오 통합)
 **대상:** 엔투엔보험중개 (N2N Insurance Brokerage)
 **도메인:** n2nib.com (Squarespace 등록)
 **배포 플랫폼:** Cloudflare Pages (무료, HTTPS 자동, 한국 CDN)
 **예상 작업시간:** 처음 1회 60~90분, 이후 업데이트 5분
-**현재 사이트 규모:** 95개 HTML (Top 8 + 상품상세 87) + 자산 (CSS·JS·SVG·인덱스)
+**현재 사이트 규모:** 118개 HTML (Top 8 + 상품상세 110) + 자산 (CSS·JS·SVG·인덱스) — 카탈로그 112종 중 110종 노출 (보증 상품 2종 제외)
 
 ---
 
@@ -28,7 +28,7 @@
 홈페이지/                                  ← Cloudflare Pages 루트
 ├── index.html              (홈 + WHY + 빠른 진입 + 사례)
 ├── about.html              (회사소개 · 보험중개사 정의 · 비교표)
-├── products.html           (87종 카탈로그 + 인라인 필터)
+├── products.html           (110종 카탈로그 + 인라인 필터)
 ├── consult.html            (상담폼 + URL 파라미터 자동 채움 + 카카오 카드)
 ├── search.html             (전용 검색 페이지)
 ├── industries.html         (10개 업종 허브)
@@ -39,15 +39,15 @@
 │   ├── styles.css          (3,500줄 — vape24 + 메가메뉴 + 카카오 + 필터)
 │   ├── script.js           (탭·메뉴 토글 등 일반 JS)
 │   ├── search.js           (클라이언트 사이드 검색 엔진)
-│   ├── products-index.json (87종 메타데이터)
+│   ├── products-index.json (110종 메타데이터)
 │   ├── products-index.js   (file:// 호환용 JS 변환본 — 자동 생성)
 │   └── n2n-logo.svg        (3-디스크 N2N 로고)
 │
-├── products/               (87개 상품 상세페이지)
+├── products/               (110개 상품 상세페이지)
 │   ├── marine-cargo.html
 │   ├── liability-pl.html
 │   ├── property-temple.html (사찰종합 · 신규)
-│   └── ... (87종)
+│   └── ... (110종)
 │
 ├── DEPLOY.md               (본 문서)
 ├── KAKAO_SETUP.md          (카카오 채널 개설 가이드)
@@ -104,7 +104,7 @@ Compress-Archive -Path .\* -DestinationPath ..\n2nib_deploy.zip -Force
 
 ### 2-3. 동작 확인 (임시 URL)
 - ✅ 메인 페이지 정상 표시
-- ✅ GNB 메가메뉴 6 카테고리 호버 시 87종 모두 노출
+- ✅ GNB 메가메뉴 6 카테고리 호버 시 110종 모두 노출
 - ✅ products.html 인라인 필터 (검색·카테고리·의무) 동작
 - ✅ search.html 키워드 검색 (예: "사찰", "예술품", "임상시험")
 - ✅ industries.html 10업종 허브 → 상품 페이지 점프
@@ -201,7 +201,7 @@ cd "C:\Users\hanwo\OneDrive\A A_N2NIB_엔투엔보험중개\원수사\N2N보험�
 - [ ] https://n2nib.com 접속 → 메인페이지 정상
 - [ ] https://www.n2nib.com → https://n2nib.com 리다이렉트
 - [ ] SSL 자물쇠 확인 (HTTPS)
-- [ ] 87개 상품 상세페이지 무작위 5개 접근 가능
+- [ ] 110개 상품 상세페이지 무작위 5개 접근 가능
 - [ ] GNB 메가메뉴 (모든 카테고리 호버 → 컬럼 그리드 정상)
 - [ ] 검색 키워드 5개 (사찰·예술품·임상시험·드론·승강기) 결과 정상
 - [ ] 5분 자가진단 → 결과 표시 → 상담신청 자동 채움
@@ -216,4 +216,4 @@ cd "C:\Users\hanwo\OneDrive\A A_N2NIB_엔투엔보험중개\원수사\N2N보험�
 ## 🚀 이후 업데이트 (배포 v2~)
 
 ### 방식 A. 수동 ZIP 재업로드
-1. 로컬 `홈페이지` 폴더 수�
+1. 로컬 `홈페이지` 폴더 수�

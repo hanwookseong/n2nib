@@ -242,7 +242,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="products/specialty-kr.html">납치·협박(K&R)</a></li>
         <li><a href="products/specialty-crime.html">범죄(Crime)</a></li>
         <li><a href="products/specialty-theft.html">도난</a></li>
-        <li><a href="products/specialty-fidelity.html">신원보증</a></li>
         <li><a href="products/specialty-money-securities.html">현금·유가증권</a></li>
         <li><a href="products/specialty-legal-expense.html">법률비용</a></li>
         <li><a href="products/specialty-cyber-sme.html">사이버 SME</a></li>
@@ -409,7 +408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <option>근재 (국내·해외 근로자재해보장)</option>
             <option>화재/재물 (재산종합·패키지·일반화재)</option>
             <option>기술 (건설공사·조립)</option>
-            <option>특종 (납치·행사·범죄·도난·신원보증)</option>
+            <option>특종 (납치·행사·범죄·도난·채권보전)</option>
             <option>복수 상품 동시 견적</option>
             <option>잘 모르겠음 / 컨설팅 희망</option>
           </select>
@@ -622,7 +621,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     'wc':          '근재 (국내·해외 근로자재해보장)',
     'property':    '화재/재물 (재산종합·패키지·일반화재)',
     'engineering': '기술 (건설공사·조립)',
-    'specialty':   '특종 (납치·행사·범죄·도난·신원보증)'
+    'specialty':   '특종 (납치·행사·범죄·도난·채권보전)'
   };
 
   /* 상품명 → 자동 분류 추론 (category 미지정 시) */
@@ -632,7 +631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (/근재|wc|재해보장/.test(s)) return 'wc';
     if (/car|ear|건설공사|조립|기술/.test(s)) return 'engineering';
     if (/화재|재물|패키지|all.?risks|package|property|재산종합|엑설런트/.test(s)) return 'property';
-    if (/k&r|납치|행사|이벤트|홀인원|범죄|crime|도난|신원보증|특종|contingency/.test(s)) return 'specialty';
+    if (/k&r|납치|행사|이벤트|홀인원|범죄|crime|도난|특종|contingency/.test(s)) return 'specialty';
     if (/pl|생산물|d&o|e&o|임원|전문직|의료|의사|병원|개인정보|사이버|환경|중대사고|영업.*(배상|책임)|시설.*(배상|책임)|배상/.test(s)) return 'liability';
     return '';
   }
