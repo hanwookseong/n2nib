@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://n2nib.com/about.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/consult.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/duty.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://n2nib.com/industries.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/risk-checklist.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/search.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -483,6 +483,186 @@
   <url>
     <loc>https://n2nib.com/products/wc-vocational-trainee.html</loc>
     <lastmod>2026-04-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-residential-fire.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-medical-clinic.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-chubb-master.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-hotel-hospitality.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-school.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-golf-course.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-business-interruption.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-earthquake.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-machinery-breakdown.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/property-trade-credit.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-gas-accident.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-multi-use-fire.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-daycare.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-elderly-welfare.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-tenant-fire.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-lawyer-lpl.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-accountant.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-architect.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/liability-pharmacist.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/wc-foreign-worker.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/wc-excess.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/wc-daily-worker.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/marine-aviation.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-food-pl.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-cosmetic-pl.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-performance-bond.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-license-bond.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-lease-bond.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-payment-bond.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/products/specialty-defect-bond.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
