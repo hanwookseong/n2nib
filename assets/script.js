@@ -187,19 +187,35 @@
       '</a>' +
       '<a class="msh-cta" href="' + consultHref + '">상담신청</a>';
     document.body.insertBefore(header, document.body.firstChild);
-    // 햄버거 클릭 → 기존 .menu-toggle 클릭 이벤트 위임
+    // 햄버거 클릭 → GNB 메뉴 직접 토글 (document outside-click 핸들러 우회)
     var newMenuBtn = header.querySelector('.msh-menu');
-    var origToggle = document.querySelector('.menu-toggle');
-    if (newMenuBtn && origToggle) {
+    if (newMenuBtn) {
       newMenuBtn.addEventListener('click', function(e){
         e.preventDefault();
-        origToggle.click();
-        // 모바일 GNB가 화면 위에 보이도록 스크롤 최상단으로
+        e.stopPropagation();  // ← 외부클릭 핸들러 회피 (메뉴가 즉시 닫히던 버그 fix)
+        var gnbList = document.querySelector('.gnb > ul');
+        var origToggle = document.querySelector('.menu-toggle');
+        if (gnbList) gnbList.classList.toggle('open');
+        if (origToggle) origToggle.classList.toggle('is-active');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
   }
   injectMobileStickyHeader();
+
+  // 모바일 GNB 펼침 시 하단에 전화·카톡 버튼 자동 주입 (Policygenius/Squaremouth 패턴)
+  function injectMobileMenuFooterCTAs() {
+    var gnbList = document.querySelector('.gnb > ul');
+    if (!gnbList || gnbList.querySelector('.mmf-cta')) return;
+    var li = document.createElement('li');
+    li.className = 'mmf-cta';
+    li.style.cssText = 'list-style:none;padding:14px 20px 18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(244,240,232,0.18);margin-top:8px';
+    li.innerHTML =
+      '<a href="tel:010-5755-6465" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:transparent;border:1px solid rgba(244,240,232,0.6);border-radius:6px;color:#F4F0E8;text-decoration:none;font-weight:700">☎ 전화상담 010-5755-6465</a>' +
+      '<a href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:#FEE500;color:#3C1E1E;border-radius:6px;text-decoration:none;font-weight:700">💬 카카오톡 1:1 상담</a>';
+    gnbList.appendChild(li);
+  }
+  injectMobileMenuFooterCTAs();
 
   // =====================================================
   // 모바일 하단 sticky CTA 바 자동 주입 (모든 페이지, 모바일 전용)
@@ -220,7 +236,9 @@
     document.body.appendChild(bar);
     document.body.classList.add('has-mobile-cta');
   }
-  injectMobileCTABar();
+  // 하단 CTA 바 비활성화 — 벤치마크(Squaremouth/Policygenius)는 모두 하단 바 없음.
+  // 상단 sticky 헤더의 상담신청 CTA로 충분. 필요 시 한 줄 주석 해제로 복구 가능.
+  // injectMobileCTABar();
 
 })();
 
