@@ -4080,11 +4080,122 @@ html body .right-quick {
   color: var(--ivory, #F4F0E8) !important;
 }
 
+/* 푸터 메타(회사정보) — 가는 서체 → 본문 두께로 통일 (item 2) */
+.site-footer .footer-meta {
+  font-weight: 500 !important;          /* 기본 가는 글자 → 본문급 */
+  color: rgba(244, 240, 232, 0.85) !important;  /* 0.6 → 0.85 가독성 */
+  line-height: 1.7 !important;
+}
+.site-footer .footer-meta a {
+  color: inherit !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* ★ FIX: mmf-cta(전화·카톡 li)는 모바일 햄버거 메뉴에서만 보여야 함.
    데스크톱 데스크톱 sticky 헤더의 .gnb > ul에 주입되면 위젯처럼 보이는 버그 차단 */
 @media (min-width: 781px) {
   .gnb > ul > li.mmf-cta,
   li.mmf-cta { display: none !important; }
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   ★ 모바일 — 중복 헤더 차단 + hero 버튼 밸런스 (item 3, 4)
+   ──────────────────────────────────────────────────────────────────── */
+@media (max-width: 780px) {
+  /* 1) 모바일 sticky 헤더 외 다른 헤더성 요소 강제 제거 */
+  html body .top_wrap,
+  html body .top_wrap_cont,
+  html body div.top_wrap {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  /* 2) 데스크톱 전용 gnb-logo는 모바일에서 숨김 (JS 주입되더라도) */
+  .gnb-logo { display: none !important; }
+  /* 3) 원본 .navi_wrap을 보이지 않게 — 메뉴(.gnb > ul.open)는 fixed 위치로 노출 */
+  .navi_wrap {
+    height: 0 !important;
+    min-height: 0 !important;
+    overflow: visible !important;  /* ul.open이 외부로 표시될 수 있게 */
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+  }
+  .gnb {
+    height: 0 !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+  /* 4) 원본 .menu-toggle (hamburger) 제거 — 모바일 sticky 헤더의 msh-menu가 대체 */
+  .navi_wrap .menu-toggle,
+  .gnb .menu-toggle,
+  .menu-toggle:not(.msh-menu) {
+    display: none !important;
+  }
+  /* 5) .gnb > ul.open : 모바일에서 sticky 헤더 아래로 슬라이드 다운 */
+  .gnb > ul {
+    position: fixed !important;
+    top: 60px !important;  /* 모바일 sticky 헤더 높이만큼 아래 */
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-height: calc(100vh - 60px) !important;
+    overflow-y: auto !important;
+    background: var(--ink, #0B2818) !important;
+    flex-direction: column !important;
+    padding: 12px 0 !important;
+    margin: 0 !important;
+    z-index: 9000 !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    /* 닫힌 상태: 보이지 않게 */
+    display: none !important;
+  }
+  .gnb > ul.open {
+    display: flex !important;
+  }
+  .gnb > ul > li {
+    width: 100% !important;
+    border-bottom: 1px solid rgba(244,240,232,0.08);
+  }
+  .gnb > ul > li > a {
+    display: block !important;
+    padding: 14px 24px !important;
+    font-size: 1rem !important;
+    color: var(--ivory, #F4F0E8) !important;
+    font-weight: 600 !important;
+  }
+
+  /* 6) hero-actions 버튼 — 가로 그리드 (item 4) */
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    margin-top: 1.25rem !important;
+  }
+  .hero-actions .btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 12px 8px !important;
+    font-size: 0.82rem !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.25 !important;
+    word-break: keep-all !important;
+  }
+  /* 너무 좁은 화면에서는 2-1 grid (첫번째 강조 + 나머지 2개) */
+  @media (max-width: 380px) {
+    .hero-actions {
+      grid-template-columns: 1fr 1fr !important;
+    }
+    .hero-actions .btn:first-child {
+      grid-column: 1 / -1 !important;  /* 첫 버튼은 풀-너비 */
+    }
+  }
 }
 
 /* ════════════════════════════════════════════════════════════════════

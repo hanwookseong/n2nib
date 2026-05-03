@@ -163,7 +163,8 @@
       '<a href="tel:010-5755-6465" style="display:inline-block;margin-left:8px;padding:10px 24px;background:transparent;color:#F4F0E8;text-decoration:none;border-radius:6px;font-weight:700;border:1px solid rgba(244,240,232,.4)">☎ 010-5755-6465</a>';
     existing.parentNode.insertBefore(final, existing.nextSibling);
   }
-  injectProductCTA();
+  // ★ 비활성화 — 사용자 요청: CTA 3중 중복 제거 (HTML pd-cta-bar + 푸터 클러스터로 충분)
+  // injectProductCTA();
 
   // =====================================================
   // 모바일 상단 sticky 헤더 자동 주입 (모든 페이지, 모바일 전용)
