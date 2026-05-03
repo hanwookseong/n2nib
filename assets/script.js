@@ -175,14 +175,14 @@
     var isInProducts = path.indexOf('/products/') !== -1;
     var homeHref = isInProducts ? '../index.html' : 'index.html';
     var consultHref = isInProducts ? '../consult.html' : 'consult.html';
-    var logoSrc = isInProducts ? '../assets/n2n-logo.svg' : 'assets/n2n-logo.svg';
+    var logoSrc = isInProducts ? '../assets/n2n-mark.svg' : 'assets/n2n-mark.svg';
     var header = document.createElement('header');
     header.className = 'mobile-sticky-header';
     header.setAttribute('role', 'banner');
     header.innerHTML =
       '<button type="button" class="msh-menu" aria-label="메뉴 열기"><span></span></button>' +
       '<a class="msh-logo" href="' + homeHref + '" aria-label="홈으로">' +
-        '<img src="' + logoSrc + '" alt="N2N">' +
+        '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
         '<strong>엔투엔보험중개</strong>' +
       '</a>' +
       '<a class="msh-cta" href="' + consultHref + '">상담신청</a>';
@@ -216,6 +216,60 @@
     gnbList.appendChild(li);
   }
   injectMobileMenuFooterCTAs();
+
+  // =====================================================
+  // 데스크톱 sticky 헤더 — 로고 영역을 .gnb 좌측에 주입
+  // (≥781px 전용; CSS @media에서 스타일 제어)
+  // =====================================================
+  function injectDesktopHeaderLogo() {
+    var gnb = document.querySelector('.gnb');
+    if (!gnb) return;
+    if (gnb.querySelector('.gnb-logo')) return;
+    var path = location.pathname.toLowerCase();
+    var isInProducts = path.indexOf('/products/') !== -1;
+    var homeHref = isInProducts ? '../index.html' : 'index.html';
+    var logoSrc = isInProducts ? '../assets/n2n-mark.svg' : 'assets/n2n-mark.svg';
+    var logoAnchor = document.createElement('a');
+    logoAnchor.className = 'gnb-logo';
+    logoAnchor.href = homeHref;
+    logoAnchor.setAttribute('aria-label', '엔투엔보험중개 홈');
+    logoAnchor.innerHTML =
+      '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
+      '<span class="gnb-logo-text">' +
+        '<strong>엔투엔보험중개</strong>' +
+        '<small>금융감독원 등록 제2026-012201호</small>' +
+      '</span>';
+    gnb.insertBefore(logoAnchor, gnb.firstChild);
+  }
+  injectDesktopHeaderLogo();
+
+  // =====================================================
+  // 푸터 CTA 클러스터 자동 주입 — 상담신청 + 전화 + 카톡
+  // (모든 페이지 공통, 기존 .site-footer 직전에 삽입)
+  // =====================================================
+  function injectFooterCTACluster() {
+    var footer = document.querySelector('footer.site-footer');
+    if (!footer) return;
+    if (document.querySelector('.footer-cta-cluster')) return;
+    var path = location.pathname.toLowerCase();
+    var isInProducts = path.indexOf('/products/') !== -1;
+    var consultHref = isInProducts ? '../consult.html' : 'consult.html';
+    var section = document.createElement('section');
+    section.className = 'footer-cta-cluster';
+    section.setAttribute('aria-label', '빠른 상담 안내');
+    section.innerHTML =
+      '<div class="fcc-inner">' +
+        '<h3>전문 보험중개사가 직접 상담합니다</h3>' +
+        '<p class="fcc-sub">ACIU 자격 보유 · 6개 원수사 비교견적 · 평균 1영업일 회신</p>' +
+        '<div class="fcc-buttons">' +
+          '<a class="fcc-primary" href="' + consultHref + '">✎ 상담신청</a>' +
+          '<a class="fcc-phone" href="tel:010-5755-6465">☎ 010-5755-6465</a>' +
+          '<a class="fcc-kakao" href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener">💬 카톡상담</a>' +
+        '</div>' +
+      '</div>';
+    footer.parentNode.insertBefore(section, footer);
+  }
+  injectFooterCTACluster();
 
   // =====================================================
   // 모바일 하단 sticky CTA 바 자동 주입 (모든 페이지, 모바일 전용)
