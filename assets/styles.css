@@ -4073,6 +4073,19 @@ html body .right-quick {
   font-size: 0.85rem !important;       /* 통일 */
   letter-spacing: 0 !important;
 }
+/* cargoinsu.com 만 110% 강조 (사용자 요청) */
+.site-footer .footer-list a[href*="cargoinsu"] {
+  font-size: 0.94rem !important;       /* 0.85 × 1.10 ≈ 0.94 */
+  font-weight: 700 !important;
+  color: var(--ivory, #F4F0E8) !important;
+}
+
+/* ★ FIX: mmf-cta(전화·카톡 li)는 모바일 햄버거 메뉴에서만 보여야 함.
+   데스크톱 데스크톱 sticky 헤더의 .gnb > ul에 주입되면 위젯처럼 보이는 버그 차단 */
+@media (min-width: 781px) {
+  .gnb > ul > li.mmf-cta,
+  li.mmf-cta { display: none !important; }
+}
 
 /* ════════════════════════════════════════════════════════════════════
    데스크톱 sticky 헤더 — Policygenius 패턴 (정밀 측정 토큰 적용)

@@ -203,8 +203,10 @@
   }
   injectMobileStickyHeader();
 
-  // 모바일 GNB 펼침 시 하단에 전화·카톡 버튼 자동 주입 (Policygenius/Squaremouth 패턴)
+  // 모바일 GNB 펼침 시 하단에 전화·카톡 버튼 자동 주입 (모바일 전용)
+  // ★ FIX: 데스크톱(≥781px)에서는 절대 주입하지 않음 — 메인 메뉴에 위젯처럼 보이는 버그 차단
   function injectMobileMenuFooterCTAs() {
+    if (window.matchMedia && window.matchMedia('(min-width: 781px)').matches) return;
     var gnbList = document.querySelector('.gnb > ul');
     if (!gnbList || gnbList.querySelector('.mmf-cta')) return;
     var li = document.createElement('li');
@@ -290,8 +292,58 @@
     document.body.classList.add('has-mobile-cta');
   }
   // 하단 CTA 바 비활성화 — 벤치마크(Squaremouth/Policygenius)는 모두 하단 바 없음.
-  // 상단 sticky 헤더의 상담신청 CTA로 충분. 필요 시 한 줄 주석 해제로 복구 가능.
   // injectMobileCTABar();
+
+  // =====================================================
+  // products.html 검색 + 카테고리 필터 (입력란/칩이 있을 때만 동작)
+  // =====================================================
+  function initProductsPageFilter() {
+    var input = document.getElementById('prodFilterInput');
+    var chips = document.querySelectorAll('.prod-chip[data-filter-cat]');
+    var cards = document.querySelectorAll('.prod-card[data-cat]');
+    var countEl = document.getElementById('prodFilterCount');
+    var blocks = document.querySelectorAll('.cat-block');
+    if (!input || cards.length === 0) return;
+
+    var activeCat = 'all';
+    var query = '';
+
+    function applyFilter() {
+      var visible = 0;
+      cards.forEach(function(card){
+        var cat = card.getAttribute('data-cat') || '';
+        var text = (card.textContent || '').toLowerCase();
+        var matchCat = activeCat === 'all' || cat === activeCat;
+        var matchQuery = !query || text.indexOf(query) !== -1;
+        var show = matchCat && matchQuery;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      // 카테고리 블록 자체도 필터에 따라 숨김 (해당 카테고리에 보이는 카드 없으면 헤더도 숨김)
+      blocks.forEach(function(block){
+        var anyVisible = block.querySelectorAll('.prod-card:not([style*="display: none"])').length > 0;
+        block.style.display = anyVisible ? '' : 'none';
+      });
+      if (countEl) countEl.textContent = visible + '종 표시 중';
+    }
+
+    input.addEventListener('input', function(e){
+      query = (e.target.value || '').toLowerCase().trim();
+      applyFilter();
+    });
+
+    chips.forEach(function(chip){
+      chip.addEventListener('click', function(){
+        activeCat = chip.getAttribute('data-filter-cat');
+        chips.forEach(function(c){ c.classList.remove('active'); });
+        chip.classList.add('active');
+        applyFilter();
+      });
+    });
+
+    applyFilter();
+  }
+  initProductsPageFilter();
 
 })();
 
