@@ -165,6 +165,63 @@
   }
   injectProductCTA();
 
+  // =====================================================
+  // 모바일 상단 sticky 헤더 자동 주입 (모든 페이지, 모바일 전용)
+  // 햄버거(기존 GNB 토글로 위임) + 로고 + 상담신청 CTA
+  // =====================================================
+  function injectMobileStickyHeader() {
+    if (document.querySelector('.mobile-sticky-header')) return;
+    var path = location.pathname.toLowerCase();
+    var isInProducts = path.indexOf('/products/') !== -1;
+    var homeHref = isInProducts ? '../index.html' : 'index.html';
+    var consultHref = isInProducts ? '../consult.html' : 'consult.html';
+    var logoSrc = isInProducts ? '../assets/n2n-logo.svg' : 'assets/n2n-logo.svg';
+    var header = document.createElement('header');
+    header.className = 'mobile-sticky-header';
+    header.setAttribute('role', 'banner');
+    header.innerHTML =
+      '<button type="button" class="msh-menu" aria-label="메뉴 열기"><span></span></button>' +
+      '<a class="msh-logo" href="' + homeHref + '" aria-label="홈으로">' +
+        '<img src="' + logoSrc + '" alt="N2N">' +
+        '<strong>엔투엔보험중개</strong>' +
+      '</a>' +
+      '<a class="msh-cta" href="' + consultHref + '">상담신청</a>';
+    document.body.insertBefore(header, document.body.firstChild);
+    // 햄버거 클릭 → 기존 .menu-toggle 클릭 이벤트 위임
+    var newMenuBtn = header.querySelector('.msh-menu');
+    var origToggle = document.querySelector('.menu-toggle');
+    if (newMenuBtn && origToggle) {
+      newMenuBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        origToggle.click();
+        // 모바일 GNB가 화면 위에 보이도록 스크롤 최상단으로
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  }
+  injectMobileStickyHeader();
+
+  // =====================================================
+  // 모바일 하단 sticky CTA 바 자동 주입 (모든 페이지, 모바일 전용)
+  // =====================================================
+  function injectMobileCTABar() {
+    if (document.querySelector('.mobile-cta-bar')) return; // 이미 주입됨
+    var path = location.pathname.toLowerCase();
+    // 상담페이지 본인에서는 "상담신청" 버튼 강조 색을 바꿈 (이미 폼에 있음)
+    var isConsult = path.endsWith('consult.html') || path.endsWith('/consult');
+    var consultHref = isConsult ? '#consultForm' : (path.includes('/products/') ? '../consult.html' : 'consult.html');
+    var bar = document.createElement('nav');
+    bar.className = 'mobile-cta-bar';
+    bar.setAttribute('aria-label', '빠른 연락');
+    bar.innerHTML =
+      '<a href="tel:010-5755-6465" aria-label="전화상담"><span class="ico">☎</span><span>전화</span></a>' +
+      '<a class="cta-kakao" href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener" aria-label="카카오톡 상담"><span class="ico">💬</span><span>카톡</span></a>' +
+      '<a class="cta-primary" href="' + consultHref + '" aria-label="상담신청"><span class="ico">✎</span><span>상담신청</span></a>';
+    document.body.appendChild(bar);
+    document.body.classList.add('has-mobile-cta');
+  }
+  injectMobileCTABar();
+
 })();
 
 // =====================================================
