@@ -237,7 +237,6 @@
       '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
       '<span class="gnb-logo-text">' +
         '<strong>엔투엔보험중개</strong>' +
-        '<small>금융감독원 등록 제2026-012201호</small>' +
       '</span>';
     gnb.insertBefore(logoAnchor, gnb.firstChild);
   }
