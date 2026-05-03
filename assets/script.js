@@ -176,15 +176,16 @@
     var isInProducts = path.indexOf('/products/') !== -1;
     var homeHref = isInProducts ? '../index.html' : 'index.html';
     var consultHref = isInProducts ? '../consult.html' : 'consult.html';
-    var logoSrc = isInProducts ? '../assets/n2n-mark.svg' : 'assets/n2n-mark.svg';
+    /* ★ 새 로고 적용: logo-horizontal.svg (라이트배경용, 텍스트 다크그린)
+       — 모바일 sticky 헤더는 흰색 배경이므로 라이트 변형 사용 */
+    var logoSrc = isInProducts ? '../assets/logo-horizontal.svg' : 'assets/logo-horizontal.svg';
     var header = document.createElement('header');
     header.className = 'mobile-sticky-header';
     header.setAttribute('role', 'banner');
     header.innerHTML =
       '<button type="button" class="msh-menu" aria-label="메뉴 열기"><span></span></button>' +
-      '<a class="msh-logo" href="' + homeHref + '" aria-label="홈으로">' +
+      '<a class="msh-logo" href="' + homeHref + '" aria-label="엔투엔보험중개 홈">' +
         '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
-        '<strong>엔투엔보험중개</strong>' +
       '</a>' +
       '<a class="msh-cta" href="' + consultHref + '">상담신청</a>';
     document.body.insertBefore(header, document.body.firstChild);
@@ -236,16 +237,14 @@
     var path = location.pathname.toLowerCase();
     var isInProducts = path.indexOf('/products/') !== -1;
     var homeHref = isInProducts ? '../index.html' : 'index.html';
-    var logoSrc = isInProducts ? '../assets/n2n-mark.svg' : 'assets/n2n-mark.svg';
+    /* ★ 새 로고 — 데스크톱 헤더는 다크그린 배경이므로 dark 변형 사용 */
+    var logoSrc = isInProducts ? '../assets/logo-horizontal-dark.svg' : 'assets/logo-horizontal-dark.svg';
     var logoAnchor = document.createElement('a');
     logoAnchor.className = 'gnb-logo';
     logoAnchor.href = homeHref;
     logoAnchor.setAttribute('aria-label', '엔투엔보험중개 홈');
     logoAnchor.innerHTML =
-      '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
-      '<span class="gnb-logo-text">' +
-        '<strong>엔투엔보험중개</strong>' +
-      '</span>';
+      '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">';
     gnb.insertBefore(logoAnchor, gnb.firstChild);
   }
   injectDesktopHeaderLogo();
