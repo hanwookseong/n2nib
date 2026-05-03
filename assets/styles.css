@@ -3937,12 +3937,21 @@ html, body {
 /* 푸터 로고: 새 가로 로고(다크 배경용 — 텍스트 ivory) */
 .site-footer .footer-brand .logo-img {
   content: url('logo-horizontal-dark.svg');
-  height: 64px !important;        /* 4:1 비율, 너비 약 250px */
+  height: 44px !important;        /* 64 → 44px 축소 (사용자 요청) */
   width: auto !important;
   margin: 0 0 8px !important;
   display: block !important;
   filter: none !important;
 }
+/* 푸터 .footer-brand에 들어있는 "엔투엔보험중개" 한글 텍스트 — 새 로고에 이미 포함되어 중복 */
+.site-footer .footer-brand {
+  font-size: 0 !important;        /* 한글 텍스트 숨김 */
+  letter-spacing: -1em !important;/* 안전망 */
+}
+.site-footer .footer-brand .logo-img {
+  font-size: 0 !important;        /* 이미지 자체는 영향 없음 */
+}
+.site-footer .footer-brand br { display: none !important; }
 .site-footer .footer-brand br { display: none !important; }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -4033,11 +4042,15 @@ html, body {
     padding-left: 4px;
   }
   .msh-logo img {
-    height: 38px !important;       /* 새 로고(4:1) — 너비 약 148px */
+    height: 48px !important;       /* 38 → 48px (사용자 요청 키움) — 너비 약 187px */
     width: auto !important;
     flex: 0 0 auto;
     filter: none !important;
   }
+  /* sticky 헤더 자체도 살짝 높여서 로고가 답답하지 않도록 */
+  .mobile-sticky-header { height: 64px !important; }
+  body { padding-top: 64px !important; }
+  .gnb > ul { top: 64px !important; }
   /* 새 로고에 "엔투엔보험중개 INSURANCE BROKERAGE & SERVICES"가 포함되어 있어 별도 텍스트 불필요 */
   .msh-logo strong { display: none !important; }
   .msh-cta {
@@ -4259,32 +4272,35 @@ html body .right-quick {
     line-height: 1 !important;
     position: static !important;
   }
-  /* ★ 우측 chevron — CSS border 트라이앵글 (유니코드 문자 미렌더 이슈 우회) */
+  /* ★ 우측 chevron — LI에 직접 ::after 부착 (라인 3695의 a::after display:none 룰 우회) */
   .gnb > ul > li > a {
     width: 100% !important;
     box-sizing: border-box !important;
+    padding-right: 36px !important;     /* chevron 공간 확보 */
   }
-  .gnb > ul > li > a::after {
+  .gnb > ul > li {
+    position: relative !important;
+  }
+  .gnb > ul > li::after {
     content: '' !important;
-    position: static !important;
-    display: block !important;
-    width: 9px !important;
-    height: 9px !important;
+    position: absolute !important;
+    right: 18px !important;
+    top: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
     border: 0 !important;
     border-right: 2.5px solid var(--accent, #C56A2C) !important;
     border-top: 2.5px solid var(--accent, #C56A2C) !important;
-    transform: rotate(45deg) !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    margin-top: -1px !important;        /* rotate로 인한 시각 보정 */
     background: transparent !important;
-    margin-left: auto !important;
-    margin-right: 6px !important;
-    flex: 0 0 auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    top: auto !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
+    pointer-events: none !important;
+    z-index: 2 !important;
+    display: block !important;
   }
+  /* 검색 li, mmf-cta li는 chevron 제외 */
+  .gnb > ul > li.gnb-search-li::after,
+  .gnb > ul > li.mmf-cta::after { display: none !important; }
   /* 카테고리별 아이콘 매핑 (메뉴 순서 기준) */
   .gnb > ul > li:nth-child(1) > a::before { content: '🚢'; }  /* 해상 */
   .gnb > ul > li:nth-child(2) > a::before { content: '⚖️'; }  /* 배상 */
