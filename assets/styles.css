@@ -4022,77 +4022,143 @@ html, body {
 .mobile-cta-bar { display: none !important; }
 
 /* ════════════════════════════════════════════════════════════════════
-   데스크톱 sticky 헤더 — Policygenius 패턴
-   ≥781px: top_wrap 숨김, navi_wrap에 로고 주입 + sticky
-   상단 CTA는 "상담신청" 하나만 (전화/이메일/카톡 중복 제거)
+   데스크톱 sticky 헤더 — Policygenius 패턴 (정밀 측정 토큰 적용)
+   벤치마크: Policygenius 72-80px / 로고 28-32px / 메뉴 16px·600
    ──────────────────────────────────────────────────────────────────── */
 @media (min-width: 781px) {
-  /* 1) 기존 top_wrap (전화/이메일/카톡/cargoinsu link) 데스크톱에서 숨김
-     — 정보는 푸터 클러스터로 이동, 헤더는 단일 sticky 바로 단순화 */
-  .top_wrap { display: none !important; }
+  /* (1) 상단 유틸리티바 완전 숨김 */
+  .top_wrap,
+  .top_wrap_cont,
+  div.top_wrap { display: none !important; }
 
-  /* 2) navi_wrap을 sticky로 — 스크롤해도 항상 상단 노출 */
+  /* (2) navi_wrap sticky — 강제 슬림 72px */
   .navi_wrap {
-    position: sticky;
-    top: 0;
-    z-index: 9000;
-    background: var(--ink, #0B2818);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9000 !important;
+    background: var(--ink, #0B2818) !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12) !important;
+    height: 72px !important;
+    overflow: visible !important;
+    padding: 0 !important;
   }
 
-  /* 3) navi_wrap 안 .gnb 좌측에 로고 영역 확보 (JS로 주입) */
+  /* (3) .gnb 단일 행 강제 — 슬림 72px */
   .gnb {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    min-height: 64px;
+    display: flex !important;
+    align-items: center !important;
+    height: 72px !important;
+    min-height: 72px !important;
+    max-height: 72px !important;
+    padding: 0 24px !important;
+    overflow: visible !important;
+    gap: 0 !important;
   }
+  .gnb > ul {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    align-items: center !important;
+    height: 72px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 28px !important;
+    flex-wrap: nowrap !important;
+  }
+  .gnb > ul > li {
+    height: 72px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+  }
+  .gnb > ul > li > a {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+    color: var(--ivory, #F4F0E8) !important;
+    line-height: 1 !important;
+    background: transparent !important;
+    border: 0 !important;
+    height: auto !important;
+  }
+
+  /* (4) 좌측 로고 (JS 주입) — 32px 슬림 */
   .gnb-logo {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 8px 24px 8px 0;
-    margin-right: 16px;
-    border-right: 1px solid rgba(244, 240, 232, 0.15);
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 0 20px 0 0 !important;
+    margin-right: 8px !important;
+    border-right: 1px solid rgba(244, 240, 232, 0.18) !important;
     text-decoration: none !important;
+    height: 72px !important;
   }
   .gnb-logo img {
-    height: 44px;
-    width: auto;
-    flex: 0 0 auto;
+    height: 32px !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
   }
   .gnb-logo .gnb-logo-text {
-    display: inline-flex;
-    flex-direction: column;
-    line-height: 1.15;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    line-height: 1.1 !important;
   }
   .gnb-logo .gnb-logo-text strong {
-    font-size: 1.0rem;
-    color: var(--ivory, #F4F0E8);
-    font-weight: 700;
-    letter-spacing: -0.01em;
+    font-size: 0.9rem !important;
+    color: var(--ivory, #F4F0E8) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
   }
   .gnb-logo .gnb-logo-text small {
-    font-size: 0.7rem;
-    color: rgba(244, 240, 232, 0.65);
-    letter-spacing: 0.02em;
-    margin-top: 2px;
+    font-size: 0.65rem !important;
+    color: rgba(244, 240, 232, 0.55) !important;
+    letter-spacing: 0.01em !important;
+    margin-top: 1px !important;
   }
 
-  /* 4) 우측 플로팅 단순화 — TOP 버튼만 표시 */
-  .right-quick a:not(.rq-totop):not([class*="rq-"]),
-  .right-quick a.rq-kakao,
-  .right-quick a[href^="tel:"],
-  .right-quick a[href*="cargoinsu"],
-  .right-quick a[href*="consult"] {
+  /* (5) 상담신청 버튼 (gnb 안 li) — 슬림 CTA */
+  .gnb .consult-btn,
+  .gnb > ul > li > a.consult-btn {
+    background: var(--accent, #C56A2C) !important;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+    border: 0 !important;
+  }
+
+  /* (6) 검색 박스 슬림화 */
+  .gnb-search {
+    height: 36px !important;
+  }
+  .gnb-search input {
+    height: 36px !important;
+    font-size: 13px !important;
+  }
+
+  /* (7) depth2 메가메뉴: sticky 헤더 아래로 정확히 위치 */
+  .gnb .depth2 {
+    top: 72px !important;
+  }
+
+  /* (8) 우측 플로팅 — TOP 버튼만 남기고 모두 강제 제거 */
+  aside.right-quick > a,
+  aside.right-quick > .rq-kakao,
+  .right-quick > a {
     display: none !important;
+  }
+  aside.right-quick > button.rq-totop,
+  .right-quick > .rq-totop {
+    display: flex !important;
   }
   .right-quick {
     background: transparent !important;
     box-shadow: none !important;
     border: none !important;
     padding: 0 !important;
+    gap: 0 !important;
   }
   .right-quick .rq-totop {
     background: var(--ink, #0B2818) !important;
@@ -4105,6 +4171,7 @@ html, body {
     align-items: center !important;
     justify-content: center !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+    border: 0 !important;
   }
 }
 
