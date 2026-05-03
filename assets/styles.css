@@ -448,6 +448,35 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
 .prod-card p { font-size: .88rem; margin: 0 0 14px; flex: 1; }
 .prod-card .prod-link { font-size: .82rem; color: var(--brand); font-weight: 600; }
 
+/* ★ 상품카드 우측 쉐브론 (Policygenius 패턴) — "자세히 보기 →" 텍스트 대신 카드 우측 끝에 › */
+.prod-card { position: relative; padding-right: 40px; }
+.prod-card::after {
+  content: '›';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--accent, #C56A2C);
+  font-weight: 300;
+  line-height: 1;
+  pointer-events: none;
+  transition: transform 0.18s ease, color 0.18s ease;
+}
+.prod-card:hover::after {
+  transform: translateY(-50%) translateX(3px);
+  color: var(--brand, #0B2818);
+}
+/* 기존 "자세히 보기 →" 링크 텍스트 — 시각적으로 보조 역할 (pointer-events 유지하여 키보드/접근성 보장) */
+.prod-card .prod-link {
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: .82rem;
+  color: var(--accent, #C56A2C);
+  text-decoration: none;
+}
+.prod-card .prod-link:hover { text-decoration: underline; }
+
 /* =========================================================
    Forms
    ========================================================= */
@@ -3970,6 +3999,27 @@ html, body {
   }
   .msh-menu span::before { top: -7px; }
   .msh-menu span::after { top: 7px; }
+  .msh-menu span,
+  .msh-menu span::before,
+  .msh-menu span::after {
+    transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+  }
+  /* ★ 메뉴 열림 상태 — 햄버거 → X 변환 (Policygenius 닫기 버튼 패턴) */
+  .msh-menu.is-open span {
+    background: transparent;
+  }
+  .msh-menu.is-open span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .msh-menu.is-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  /* 메뉴 열림 시 body 스크롤 락 (overlay 메뉴와 본문 동시 스크롤 방지) */
+  body.mobile-menu-open {
+    overflow: hidden !important;
+  }
   .msh-logo {
     flex: 1 1 auto;
     display: flex;
@@ -4145,15 +4195,16 @@ html body .right-quick {
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
-    max-height: calc(100vh - 60px) !important;
+    max-height: calc(100dvh - 60px) !important;     /* dvh = dynamic viewport (iOS Safari URL bar 대응) */
     overflow-y: auto !important;
-    background: var(--ink, #0B2818) !important;
+    -webkit-overflow-scrolling: touch !important;   /* iOS 부드러운 스크롤 */
+    overscroll-behavior: contain !important;        /* body 스크롤 차단 */
+    background: var(--ivory, #F4F0E8) !important;   /* 흰색 → 아이보리 (Policygenius 패턴: 카드 배경 대비) */
     flex-direction: column !important;
-    padding: 12px 0 !important;
+    padding: 16px 12px 80px !important;             /* 하단 80px 패딩으로 마지막 카드까지 스크롤 가능 */
     margin: 0 !important;
     z-index: 9000 !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-    /* 닫힌 상태: 보이지 않게 */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
     display: none !important;
   }
   .gnb > ul.open {
@@ -4167,15 +4218,14 @@ html body .right-quick {
 
   /* ★ Policygenius 패턴 카드형 메뉴 — 아이콘 + 카테고리명 + 화살표 */
   .gnb > ul {
-    background: #ffffff !important;       /* 다크 → 화이트 카드 컨테이너 */
-    padding: 16px 12px !important;
-    gap: 8px !important;
+    gap: 10px !important;
   }
   .gnb > ul > li {
     width: 100% !important;
-    background: #ffffff !important;
-    border: 1px solid #e8e4dc !important;
-    border-radius: 10px !important;
+    background: #ffffff !important;        /* 흰 카드 (아이보리 컨테이너 위에 대비) */
+    border: 1px solid rgba(11, 40, 24, 0.08) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 2px rgba(11, 40, 24, 0.04) !important;
     overflow: hidden !important;
     transition: transform 0.12s, box-shadow 0.12s !important;
     margin: 0 !important;
@@ -4202,33 +4252,38 @@ html body .right-quick {
     border-radius: 0 !important;
     text-align: left !important;
   }
-  /* 데스크톱 호버 underline 애니메이션 (::after) — 모바일 카드형에서는 제거 */
-  .gnb > ul > li > a::after {
-    background: transparent !important;
-    transform: none !important;
-  }
-  /* 좌측 카테고리 아이콘 (이모지 활용) */
+  /* 좌측 카테고리 아이콘 (이모지) */
   .gnb > ul > li > a::before {
-    flex: 0 0 40px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(217, 119, 87, 0.10);   /* 액센트 컬러 10% — 따뜻한 톤 */
-    border-radius: 8px;
-    font-size: 1.4rem;
-    line-height: 1;
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgba(217, 119, 87, 0.10) !important;
+    border-radius: 8px !important;
+    font-size: 1.4rem !important;
+    line-height: 1 !important;
+    position: static !important;
   }
-  /* 우측 화살표 */
+  /* ★ 우측 chevron — 데스크톱 ::after(position:absolute, height:1px) 완전 오버라이드 */
   .gnb > ul > li > a::after {
     content: '›' !important;
+    position: static !important;            /* desktop: position:absolute; left/right/bottom 강제 해제 */
+    width: auto !important;
+    height: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    background: transparent !important;
+    transform: none !important;
     margin-left: auto !important;
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     color: var(--accent, #C56A2C) !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     line-height: 1 !important;
     flex: 0 0 auto !important;
+    padding-right: 4px !important;
   }
   /* 카테고리별 아이콘 매핑 (메뉴 순서 기준) */
   .gnb > ul > li:nth-child(1) > a::before { content: '🚢'; }  /* 해상 */

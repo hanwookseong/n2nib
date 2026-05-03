@@ -193,12 +193,17 @@
     if (newMenuBtn) {
       newMenuBtn.addEventListener('click', function(e){
         e.preventDefault();
-        e.stopPropagation();  // ← 외부클릭 핸들러 회피 (메뉴가 즉시 닫히던 버그 fix)
+        e.stopPropagation();
         var gnbList = document.querySelector('.gnb > ul');
         var origToggle = document.querySelector('.menu-toggle');
+        var isOpen = gnbList && gnbList.classList.contains('open');
         if (gnbList) gnbList.classList.toggle('open');
         if (origToggle) origToggle.classList.toggle('is-active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // 햄버거 ↔ X 토글 + 본문 스크롤 락 (오픈 시 body 고정)
+        document.body.classList.toggle('mobile-menu-open', !isOpen);
+        newMenuBtn.classList.toggle('is-open', !isOpen);
+        newMenuBtn.setAttribute('aria-label', !isOpen ? '메뉴 닫기' : '메뉴 열기');
+        if (!isOpen) window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
   }
