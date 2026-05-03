@@ -3943,15 +3943,19 @@ html, body {
   display: block !important;
   filter: none !important;
 }
-/* 푸터 .footer-brand에 들어있는 "엔투엔보험중개" 한글 텍스트 — 새 로고에 이미 포함되어 중복 */
-.site-footer .footer-brand {
-  font-size: 0 !important;        /* 한글 텍스트 숨김 */
-  letter-spacing: -1em !important;/* 안전망 */
-}
-.site-footer .footer-brand .logo-img {
-  font-size: 0 !important;        /* 이미지 자체는 영향 없음 */
-}
+/* 푸터 .footer-brand — HTML에서 한글 텍스트 제거됨, 로고 이미지만 표시 */
 .site-footer .footer-brand br { display: none !important; }
+
+/* 푸터 회사정보 — 전화번호, 이메일 등이 분리되어 줄바꿈되는 문제 방지 */
+.site-footer .footer-meta .meta-item {
+  white-space: nowrap;             /* 항목 단위 줄바꿈 금지 */
+  display: inline-block;
+}
+/* footer-meta는 max-width 제한 풀어 한 줄로 충분히 표현 가능하게 */
+.site-footer .footer-meta {
+  max-width: 100% !important;      /* 38ch 제약 해제 */
+  word-break: keep-all !important;
+}
 .site-footer .footer-brand br { display: none !important; }
 
 /* ════════════════════════════════════════════════════════════════════
