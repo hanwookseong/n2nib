@@ -4373,6 +4373,8 @@ html body .right-quick {
   color: rgba(244, 240, 232, 0.92) !important;  /* ivory 강제 — 다크 배경에서 가독성 보장 */
   margin: 0 0 24px;
   font-weight: 500;
+  line-height: 1.65;        /* <br> 줄바꿈 시 자연스러운 간격 */
+  text-align: center;       /* 부모 inherit 명시 */
 }
 .footer-cta-cluster h3,
 .footer-cta-cluster p,
