@@ -4370,8 +4370,14 @@ html body .right-quick {
 }
 .footer-cta-cluster .fcc-sub {
   font-size: 0.92rem;
-  opacity: 0.8;
+  color: rgba(244, 240, 232, 0.92) !important;  /* ivory 강제 — 다크 배경에서 가독성 보장 */
   margin: 0 0 24px;
+  font-weight: 500;
+}
+.footer-cta-cluster h3,
+.footer-cta-cluster p,
+.footer-cta-cluster .fcc-sub {
+  color: var(--ivory, #F4F0E8);  /* 모든 텍스트 ivory 강제 (페이지 기본 p 색상 덮어씀) */
 }
 .footer-cta-cluster .fcc-buttons {
   display: flex;
