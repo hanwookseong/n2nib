@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="N2N">
-  <title>N2N</title>
-  <circle cx="16" cy="16" r="15.5" fill="#0B2818"/>
-  <text x="16" y="22" text-anchor="middle"
-        font-family="'Fraunces','Noto Serif KR',Georgia,serif"
-        font-size="20" font-weight="700" letter-spacing="-0.5"
-        fill="#F4F0E8">N</text>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 40 40" role="img" aria-label="N2N">
+<title>N2N Insurance Brokerage</title>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,0,40)" d="M0 40H40V0H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(1,0,0,-1,34.9512,20.4404)" d="M0 0C0-8.836-7.164-16-16-16-24.837-16-32-8.836-32 0-32 8.837-24.837 16-16 16-7.164 16 0 8.837 0 0" fill="#0b2818"/>
+<path transform="matrix(1,0,0,-1,9.8516,10.554701)" d="M0 0H3.733L13.729-12.034V.246H18.199V-19.771H14.466L4.47-7.736V-20.017H0Z" fill="#f4f0e8"/>
+</g>
 </svg>
