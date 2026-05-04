@@ -344,13 +344,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <form id="consultForm" class="form-wrap"
-            action="https://formspree.io/f/xykogadw"
+            action="https://api.web3forms.com/submit"
             method="POST">
 
-        <input type="hidden" name="_subject" value="[N2N] 웹사이트 상담신청 접수">
-        <input type="hidden" name="_language" value="ko">
-        <input type="hidden" name="_next" value="https://n2nib.com/consult.html?sent=1">
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <!-- Web3Forms 필수 필드 -->
+        <input type="hidden" name="access_key" value="79321b58-e134-45d4-9eb4-38ca226e58ce">
+        <input type="hidden" name="subject" value="[N2N] 웹사이트 상담신청 접수">
+        <input type="hidden" name="from_name" value="n2nib.com 상담신청">
+        <input type="hidden" name="redirect" value="https://n2nib.com/consult.html?sent=1">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <!-- 유입 추적(숨김) — URL 파라미터로 자동 설정됨 -->
         <input type="hidden" id="insurerHidden" name="insurer" value="">
         <input type="hidden" id="sourcePageHidden" name="source_page" value="">
@@ -376,7 +378,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <label for="email">이메일 <span class="req">*</span></label>
             <input id="email" name="email" type="email" required placeholder="예: contact@company.co.kr">
             <!-- Formspree Reply-To 명시(이메일 입력값을 JS로 동기화) -->
-            <input type="hidden" id="replyto" name="_replyto" value="">
+            <!-- Web3Forms Reply-To (name="email" 자동인식 + 명시적 hidden) -->
+            <input type="hidden" id="replyto" name="replyto" value="">
           </div>
         </div>
         <div class="form-col-2">
@@ -756,9 +759,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 
 /* ============================================================
-   이메일 → _replyto 동기화 (Formspree 답장 자동 채움)
+   이메일 → replyto 동기화 (Web3Forms Reply-To 명시)
    ------------------------------------------------------------
-   고객이 입력한 이메일이 hidden _replyto 필드로 복사되어,
+   Web3Forms는 name="email" 필드를 자동으로 reply-to로 사용하지만,
+   명시적 replyto 필드도 함께 채워 일관성 보장.
    Gmail에서 답장 시 받는사람에 자동 입력됩니다.
    ============================================================ */
 (function () {
