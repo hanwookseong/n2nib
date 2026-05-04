@@ -349,6 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <input type="hidden" name="_subject" value="[N2N] 웹사이트 상담신청 접수">
         <input type="hidden" name="_language" value="ko">
+        <input type="hidden" name="_next" value="https://n2nib.com/consult.html?sent=1">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <!-- 유입 추적(숨김) — URL 파라미터로 자동 설정됨 -->
         <input type="hidden" id="insurerHidden" name="insurer" value="">
@@ -587,6 +588,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="assets/products-index.js"></script>
 <script src="assets/search.js"></script>
 <script>
+/* ============================================================
+   상담 제출 완료 안내 (?sent=1 진입 시)
+   ------------------------------------------------------------
+   Formspree _next 리다이렉트로 돌아온 직후:
+   1) 큰 성공 배너 표시 + 폼 숨김 + 페이지 최상단 스크롤
+   2) GTM dataLayer에 form_submit 이벤트 push (네비게이션 종료 후 안전)
+   ============================================================ */
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    var params = new URLSearchParams(location.search);
+    if (params.get('sent') !== '1') return;
+
+    var b = document.getElementById('consultBanner');
+    var t = document.getElementById('consultBannerTitle');
+    var s = document.getElementById('consultBannerSub');
+    if (b) {
+      b.hidden = false;
+      b.classList.add('consult-banner--success');
+    }
+    if (t) t.textContent = '✅ 상담 신청이 정상 접수되었습니다';
+    if (s) s.innerHTML = '담당 ACIU 심사역이 <strong>1–2영업일 이내</strong> 회신드립니다.<br>급하신 경우 ☎ <a href="tel:010-5755-6465" style="color:inherit;text-decoration:underline">010-5755-6465</a> 또는 카카오톡으로 연락 주세요.';
+
+    var formEl = document.getElementById('consultForm');
+    if (formEl) formEl.style.display = 'none';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    /* GTM form_submit 보조 트래킹 — 네비게이션 후 안정 시점에서 push */
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'form_submit', form_id:'n2nib_consult_success'});
+  });
+})();
+
 /* ============================================================
    상담신청 폼 자동 채움 (URL 쿼리파라미터 → 폼 값)
    상세페이지 CTA 예: consult.html?product=패키지보험&insurer=DB&category=property
