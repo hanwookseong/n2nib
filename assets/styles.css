@@ -198,12 +198,14 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
 /* =========================================================
    Hero slider
    ========================================================= */
+/* n2nib hero — Squaremouth/Policygenius 스타일 (center align + 여백 확대) */
 .hero {
   position: relative;
   background: linear-gradient(135deg, var(--forest) 0%, var(--forest-2) 50%, var(--ink) 100%);
   color: var(--ivory);
-  padding: 70px 0;
+  padding: 96px 0 80px;             /* 70 → 96/80 상하 여백 확대 */
   overflow: hidden;
+  text-align: center;                /* 가운데 정렬 */
 }
 .hero::before {
   content: ""; position: absolute; inset: 0;
@@ -214,17 +216,41 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
 }
 .hero .container { position: relative; z-index: 2; }
 .hero-eyebrow {
-  display: inline-block; padding: 5px 12px; border-radius: 999px;
+  display: inline-block;
+  padding: 6px 16px;                 /* 5/12 → 6/16 */
+  border-radius: 999px;
   background: rgba(255,255,255,0.15); color: #fff;
-  font-size: .78rem; font-weight: 600; letter-spacing: .05em;
-  margin-bottom: 18px;
+  font-size: .78rem; font-weight: 600;
+  letter-spacing: .14em;             /* 0.05 → 0.14 자간 확대 */
+  margin-bottom: 28px;               /* 18 → 28 */
+  text-transform: uppercase;
 }
 .hero h1 {
-  color: #fff; font-size: clamp(1.9rem, 3.4vw, 2.8rem);
-  max-width: 760px; margin-bottom: 16px;
+  color: #fff;
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  max-width: 880px;                  /* 760 → 880 */
+  margin: 0 auto 24px;               /* 가운데 정렬 + 하단 여백 24 */
+  line-height: 1.45;                 /* 행간 확대 (한글 가독성) */
+  letter-spacing: -0.01em;
 }
-.hero .lede { color: rgba(255,255,255,0.88); max-width: 640px; font-size: 1.05rem; }
-.hero-actions { display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
+.hero .lede {
+  color: rgba(255,255,255,0.85);
+  max-width: 680px;
+  margin: 0 auto;                    /* 가운데 정렬 */
+  font-size: 1.08rem;
+  line-height: 1.85;                 /* 행간 확대 */
+}
+.hero-actions {
+  display: flex; gap: 12px;
+  margin-top: 36px;                  /* 28 → 36 */
+  flex-wrap: wrap;
+  justify-content: center;           /* 가운데 정렬 */
+}
+@media (max-width: 780px) {
+  .hero { padding: 56px 0 48px; }
+  .hero h1 { line-height: 1.5; }
+  .hero .lede { line-height: 1.75; }
+}
 
 /* Buttons */
 .btn {
