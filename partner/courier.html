@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>물류 파트너를 위한 적하·기업보험 비교중개 — N2N Insurance Brokerage</title>
+<meta name="description" content="FedEx·UPS·DHL·EMS 등 물류 파트너와 함께 일하는 화주를 위한 적하보험 5분 비교(cargoinsu.com) + 기업종합보험 112상품 비교중개(n2nib.com). 6개 보험사 동시 비교, ACIU 심사역 직접 상담, 사고 시 손해사정까지 N2N이 직접 처리.">
+<meta property="og:title" content="물류 파트너를 위한 적하·기업보험 — N2N">
+<meta property="og:description" content="6개 보험사 5분 비교, ACIU 심사역 직접 상담, 사고 처리까지 한 곳에서.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://n2nib.com/partner/courier.html">
+<style>
+  :root {
+    --brand: #0B2818;
+    --brand-2: #1a4a35;
+    --accent: #C56A2C;
+    --accent-light: #FFB890;
+    --ivory: #F4F0E8;
+    --ivory-deep: #FBF7EE;
+    --ink: #0B2818;
+    --ink-2: #1f3b2b;
+    --ink-3: #527a60;
+    --border: #e5e0d5;
+    --rule: #d4d8d3;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+    color: var(--ink);
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    overflow-x: clip;
+    max-width: 100vw;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+  /* HEADER */
+  .header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+  }
+  .header__brand {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__brand .logo-text {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--brand);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .header__brand .logo-text .accent { color: var(--accent); }
+  .header__brand .logo-sub {
+    font-size: 0.7rem;
+    color: var(--ink-3);
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+  .header__cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background 0.2s;
+  }
+  .header__cta:hover { background: #a55620; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+    color: var(--ivory);
+    padding: 80px 0 70px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 60%;
+    height: 160%;
+    background: radial-gradient(circle, rgba(197, 106, 44, 0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero__inner {
+    position: relative;
+    z-index: 2;
+  }
+  .hero__eyebrow {
+    display: inline-block;
+    background: rgba(197, 106, 44, 0.25);
+    color: var(--accent-light);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 18px;
+  }
+  .hero__title {
+    font-size: clamp(1.6rem, 5vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+  }
+  .hero__title .highlight { color: var(--accent-light); }
+  .hero__lead {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    line-height: 1.65;
+    opacity: 0.92;
+    max-width: 720px;
+    margin-bottom: 32px;
+  }
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 26px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 0;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: #a55620;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(197, 106, 44, 0.3);
+  }
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+
+  /* SECTION */
+  section { padding: 60px 0; }
+  .section__eyebrow {
+    display: inline-block;
+    background: var(--ivory-deep);
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+  .section__title {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+  }
+  .section__lead {
+    font-size: 1.02rem;
+    color: var(--ink-2);
+    line-height: 1.65;
+    margin-bottom: 40px;
+    max-width: 760px;
+  }
+
+  /* TWO PLATFORMS */
+  .platforms-section {
+    background: var(--ivory-deep);
+  }
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    gap: 24px;
+  }
+  .platform-card {
+    background: #fff;
+    border: 2px solid var(--brand);
+    border-radius: 12px;
+    padding: 32px 28px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .platform-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(11, 40, 24, 0.12);
+  }
+  .platform-card__url {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .platform-card__role {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--brand);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .platform-card__desc {
+    font-size: 1rem;
+    color: var(--ink-2);
+    line-height: 1.65;
+    margin-bottom: 22px;
+  }
+  .platform-card__features {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+  .platform-card__features li {
+    padding: 6px 0 6px 24px;
+    position: relative;
+    font-size: 0.94rem;
+    color: var(--ink-2);
+  }
+  .platform-card__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 800;
+  }
+  .platform-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  /* USP GRID */
+  .usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 16px;
+  }
+  .usp-card {
+    background: var(--ivory-deep);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 22px 22px;
+  }
+  .usp-card__num {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  .usp-card__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--brand);
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
+  .usp-card__desc {
+    font-size: 0.92rem;
+    color: var(--ink-2);
+    line-height: 1.6;
+  }
+
+  /* COMPARE */
+  .compare-section {
+    background: var(--ivory-deep);
+  }
+  .compare-table {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(11, 40, 24, 0.06);
+  }
+  .compare-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .compare-table th {
+    background: var(--brand);
+    color: var(--ivory);
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.98rem;
+  }
+  .compare-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    font-size: 0.94rem;
+  }
+  .compare-table td:last-child { border-right: 0; }
+  .compare-table tr:last-child td { border-bottom: 0; }
+  .compare-table .before {
+    background: var(--ivory-deep);
+    color: #7a6450;
+  }
+  .compare-table .after {
+    background: #fff;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* PARTNERS */
+  .partners-section {
+    background: var(--brand);
+    color: var(--ivory);
+    padding: 40px 0;
+    text-align: center;
+  }
+  .partners-section h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .partners-list {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+  }
+  .partners-list span {
+    margin: 0 8px;
+    opacity: 0.4;
+  }
+
+  /* FAQ */
+  .faq-grid {
+    display: grid;
+    gap: 12px;
+    max-width: 800px;
+  }
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .faq-item summary {
+    padding: 18px 22px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--brand);
+    list-style: none;
+    position: relative;
+    padding-right: 50px;
+    line-height: 1.45;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--accent);
+    transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .faq-item[open] { box-shadow: 0 2px 8px rgba(11, 40, 24, 0.08); }
+  .faq-item__answer {
+    padding: 0 22px 18px;
+    font-size: 0.95rem;
+    color: var(--ink-2);
+    line-height: 1.7;
+  }
+
+  /* CTA SECTION */
+  .cta-section {
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+    color: var(--ivory);
+    text-align: center;
+    padding: 70px 0;
+  }
+  .cta-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+  .cta-section p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-section__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #061a10;
+    color: var(--ivory);
+    padding: 40px 0 24px;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 28px;
+    margin-bottom: 24px;
+  }
+  footer h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  footer .compliance {
+    background: rgba(197, 106, 44, 0.15);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-size: 0.86rem;
+    opacity: 0.92;
+  }
+  footer .footer-bottom {
+    border-top: 1px solid rgba(244, 240, 232, 0.12);
+    padding-top: 18px;
+    font-size: 0.78rem;
+    opacity: 0.6;
+    text-align: center;
+  }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .header__inner { padding: 12px 0; }
+    .header__cta { padding: 8px 12px; font-size: 0.82rem; }
+    .header__brand .logo-text { font-size: 1.1rem; }
+    .header__brand .logo-sub { display: none; }
+    .hero { padding: 56px 0 50px; }
+    section { padding: 48px 0; }
+    .compare-table th, .compare-table td { padding: 12px 14px; font-size: 0.88rem; }
+    .platform-card { padding: 24px 20px; }
+    .hero__actions { flex-direction: column; align-items: stretch; }
+    .hero__actions .btn { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="https://n2nib.com" class="header__brand">
+      <div class="logo-text">N<span class="accent">2</span>N Insurance Brokerage</div>
+      <div class="logo-sub">엔투엔보험중개 · 금감원 등록 제2026-012201호</div>
+    </a>
+    <a href="#cta" class="header__cta">상담 신청</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__eyebrow">📦 물류 파트너 화주 전용 안내</div>
+    <h1 class="hero__title">
+      수출입 화물 보내실 때<br>
+      <span class="highlight">적하보험은 별도로</span> 알아보고 계신가요?
+    </h1>
+    <p class="hero__lead">
+      cargoinsu.com에서 5분이면 <strong>6개 보험사 비교견적 + 즉시 가입 + PDF 증권 발급</strong>까지 됩니다.
+      복잡한 기업보험은 n2nib.com에서 112상품을 비교 검토할 수 있습니다.
+    </p>
+    <div class="hero__actions">
+      <a href="https://cargoinsu.com" class="btn btn-primary">🚢 적하보험 5분 비교 →</a>
+      <a href="https://n2nib.com" class="btn btn-secondary">🏢 기업보험 112상품 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- TWO PLATFORMS -->
+<section class="platforms-section">
+  <div class="container">
+    <div class="section__eyebrow">⚓ TWO PLATFORMS</div>
+    <h2 class="section__title">두 개의 전문 플랫폼, 하나의 보험중개사</h2>
+    <p class="section__lead">
+      엔투엔보험중개는 적하보험 즉시견적 플랫폼(cargoinsu.com)과 기업종합보험 비교중개 플랫폼(n2nib.com)을 함께 운영합니다.
+      한 곳에서 운송 보험과 기업 보험을 모두 검토하실 수 있습니다.
+    </p>
+    <div class="platforms-grid">
+      <a href="https://cargoinsu.com" class="platform-card">
+        <div class="platform-card__url">cargoinsu.com</div>
+        <div class="platform-card__role">적하보험 온라인 즉시견적</div>
+        <p class="platform-card__desc">
+          수출입·내륙운송 화물의 적하보험을 5분 안에 비교·가입할 수 있는 온라인 플랫폼입니다.
+        </p>
+        <ul class="platform-card__features">
+          <li>HS코드·인코텀즈 자동입력</li>
+          <li>6개 보험사 동시 비교견적</li>
+          <li>5분 즉시 발급 (PDF 증권)</li>
+          <li>신약관 ICC(A/B/C) + 구약관 지원</li>
+          <li>사고 시 손해사정·청구 N2N 직접 처리</li>
+        </ul>
+        <span class="platform-card__cta">cargoinsu.com 방문 →</span>
+      </a>
+      <a href="https://n2nib.com" class="platform-card">
+        <div class="platform-card__url">n2nib.com</div>
+        <div class="platform-card__role">기업종합보험 112상품 비교중개</div>
+        <p class="platform-card__desc">
+          화재·배상·근재·기술·해상·특종 전 분야 112상품을 ACIU 심사역이 직접 비교 안내합니다.
+        </p>
+        <ul class="platform-card__features">
+          <li>재물 (화재·풍수해·기업종합 등 30종)</li>
+          <li>배상 (PL·시설·전문직 등 25종)</li>
+          <li>근재·기술·해상 (35종)</li>
+          <li>특종 (사이버·도난·이벤트 등 37종)</li>
+          <li>현장 사례 + FAQ + 가입 시 주의 항목 안내</li>
+        </ul>
+        <span class="platform-card__cta">n2nib.com 방문 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- USP -->
+<section>
+  <div class="container">
+    <div class="section__eyebrow">🎯 WHY N2N</div>
+    <h2 class="section__title">화주가 받는 4가지 가치</h2>
+    <p class="section__lead">
+      단순 가격 비교가 아닌, 약관 비교·사고 처리·갱신 관리까지 한 곳에서 받으실 수 있습니다.
+    </p>
+    <div class="usp-grid">
+      <div class="usp-card">
+        <div class="usp-card__num">USP 01</div>
+        <div class="usp-card__title">HS코드·인코텀즈 자동입력</div>
+        <p class="usp-card__desc">무역서류 그대로 활용. 보험 전문지식 없이도 정확한 견적 산출이 가능합니다.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card__num">USP 02</div>
+        <div class="usp-card__title">6개 원수사 동시 비교견적</div>
+        <p class="usp-card__desc">Chubb · DB · KB · 메리츠 · 현대 · AIG. KIDI 인가요율 기준으로 비교합니다.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card__num">USP 03</div>
+        <div class="usp-card__title">5분 즉시 발급</div>
+        <p class="usp-card__desc">증권 PDF 당일 송부. 신약관 ICC(A/B/C)와 구약관 모두 지원합니다.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card__num">USP 04</div>
+        <div class="usp-card__title">ACIU 심사역 직접 상담</div>
+        <p class="usp-card__desc">복잡한 화물도 1영업일 이내 회신. 사고 시 손해사정부터 보험사 청구까지 N2N이 처리합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare-section">
+  <div class="container">
+    <div class="section__eyebrow">⚖ BEFORE / AFTER</div>
+    <h2 class="section__title">보험사 직접 견적 vs cargoinsu.com</h2>
+    <p class="section__lead">기존 방식과 cargoinsu의 차이를 한눈에 비교하실 수 있습니다.</p>
+    <div class="compare-table">
+      <table>
+        <tr>
+          <th style="width:50%;">Before — 보험사 직접 견적</th>
+          <th style="width:50%;">After — cargoinsu.com</th>
+        </tr>
+        <tr>
+          <td class="before">보험사 1곳씩 견적 요청, 응답 1~3일</td>
+          <td class="after">6개사 동시 비교, 5분 내 발급</td>
+        </tr>
+        <tr>
+          <td class="before">신·구약관 차이 비교 어려움</td>
+          <td class="after">신약관 ICC(A/B/C) + 구약관 자동 표시</td>
+        </tr>
+        <tr>
+          <td class="before">가입 후 별도 상담 채널 없음</td>
+          <td class="after">ACIU 심사역 직접 회신, 갱신·클레임 동일 담당</td>
+        </tr>
+        <tr>
+          <td class="before">사고 시 직접 청구 부담</td>
+          <td class="after">N2N이 손해사정·보험사 청구 직접 처리</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-section">
+  <div class="container">
+    <h3>파트너 원수사 6곳 (가나다·알파벳 순)</h3>
+    <div class="partners-list">
+      AIG <span>·</span> Chubb <span>·</span> DB손해보험 <span>·</span> KB손해보험 <span>·</span> 메리츠화재 <span>·</span> 현대해상
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section__eyebrow">❓ FAQ</div>
+    <h2 class="section__title">자주 묻는 질문</h2>
+    <p class="section__lead">화주분들이 가장 자주 물어보시는 질문 5가지입니다.</p>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>cargoinsu.com 이용에 별도 수수료가 있나요?</summary>
+        <div class="faq-item__answer">
+          없습니다. 보험중개사 수수료는 인수사(보험회사)가 부담하며, 화주분께는 별도 비용이 청구되지 않습니다 (보험업법 제98조 — 특별이익 제공 금지).
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>FedEx·UPS·DHL·EMS 등 어떤 운송사 화물이든 가입 가능한가요?</summary>
+        <div class="faq-item__answer">
+          네, 운송사와 무관하게 적하보험은 화주가 직접 가입하는 약관입니다. 운송 영수증·B/L·인보이스만 있으면 cargoinsu.com에서 5분에 가입하실 수 있습니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>사고가 발생하면 어떻게 처리되나요?</summary>
+        <div class="faq-item__answer">
+          화주분이 N2N에 사고 신고만 하시면, 손해사정인 선임부터 보험사 청구·합의까지 N2N이 직접 처리합니다. 화주는 사고 후 보험사와 직접 협의할 필요 없이 N2N과 단일 채널로 소통하시면 됩니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>약관(신약관 ICC/구약관)은 어떻게 선택하나요?</summary>
+        <div class="faq-item__answer">
+          cargoinsu.com에서 6개사의 신약관 ICC(A/B/C)와 구약관을 자동 비교 표시합니다. 화물 종류와 운송 조건에 따라 적합한 약관이 다르므로, 복잡한 건은 ACIU 심사역이 1영업일 이내 직접 회신해 안내드립니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>기업보험(화재·배상·근재 등)은 어디서 비교할 수 있나요?</summary>
+        <div class="faq-item__answer">
+          n2nib.com에서 화재·배상·근재·기술·해상·특종 6개 카테고리, 총 112상품을 비교하실 수 있습니다. 각 상품 페이지에 현장 사고 사례·자주 묻는 질문·가입 시 주의 항목까지 정리되어 있어 자율 검토가 가능하며, 복잡한 건은 ACIU 심사역이 직접 상담해드립니다.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <h2>지금 cargoinsu.com에서<br>적하보험 5분 비교를 받아보세요</h2>
+    <p>또는 N2N 보험중개사에게 직접 문의해주시면 1영업일 이내 회신드립니다.</p>
+    <div class="cta-section__actions">
+      <a href="https://cargoinsu.com" class="btn btn-primary">🚢 cargoinsu.com 견적받기 →</a>
+      <a href="tel:01057556465" class="btn btn-secondary">📞 010-5755-6465</a>
+      <a href="mailto:sales@n2nib.com" class="btn btn-secondary">✉ sales@n2nib.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="compliance">
+      ⚖ <strong>보험중개사는 보험사가 아닌 고객(보험계약자) 편입니다</strong> — 보험업법 제89조에 따라 등록된 보험중개사로, 특정 보험회사를 대리하지 않고 화주분 편에서 비교·중개·자문합니다.
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>📍 엔투엔보험중개</h4>
+        대표 성한욱 (ACIU 기업보험심사역)<br>
+        금융감독원 등록 보험중개사<br>
+        제2026-012201호<br>
+        사업자등록번호 611-23-02374
+      </div>
+      <div>
+        <h4>📞 연락처</h4>
+        010-5755-6465<br>
+        sales@n2nib.com<br>
+        카카오톡 1:1 상담<br>
+        평일 09:00~18:00
+      </div>
+      <div>
+        <h4>🌐 사이트</h4>
+        <a href="https://cargoinsu.com" style="color: var(--accent-light);">cargoinsu.com</a> · 적하보험<br>
+        <a href="https://n2nib.com" style="color: var(--accent-light);">n2nib.com</a> · 기업보험 112상품<br>
+        서울특별시 서초구 방배로30길 41, 602호
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 N2N Insurance Brokerage · All rights reserved · 보험업법 제98조에 따라 당사 수수료는 인수사가 부담하며 계약자에게 별도 비용이 청구되지 않습니다.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
