@@ -5167,3 +5167,110 @@ html body .right-quick {
 /* === END EDITORIAL MODULES v1.0 ============ */
 /* ============================================ */
 
+
+/* ?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•
+   FIX (2026-05-12): iOS Safari product ?˜ì´ì§€ ê°€ë¡?overflow + ëª¨ë°”??ë©”ë‰´ ?Œê?
+   ?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€?€
+   ?Œê? ?ì¸: Editorial ëª¨ë“ˆ ?µí•© ??ì¶”ê????ìŠ¤??            (?? "AIGÂ·ChubbÂ·DB?í•´ë³´í—˜Â·KB?í•´ë³´í—˜Â·ë©”ë¦¬ì¸ í™”??·í˜„?€?´ìƒ")
+            iOS Safariê°€ ê°€?´ëŽƒ??Â·) + ?ë¬¸ ?°ì†??ë¶„í•  ????            ??grid ?ì‹ ?ˆë¹„ ?˜ë¦¼ ??page ê°€ë¡?overflow
+            ??fixed mobile menuê°€ viewport ?€??page width ?°ë¼ê°?   ê¸°ì¡´ fix(line 3916-3919) overflow-x: hidden??iOS?ì„œ fixed ?ì‹??   ?ìš© ???˜ëŠ” ì¼€?´ìŠ¤ ë³´ê°•
+   ?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â• */
+
+/* (1) overflow-x: clip ??iOS Safari 16+ ?¸í™˜ (hiddenë³´ë‹¤ ?ˆì •, sticky ë³´ì¡´) */
+@supports (overflow-x: clip) {
+  html, body {
+    overflow-x: clip !important;
+  }
+}
+
+/* (2) .pd-content / .pd-layout grid ?ì‹ min-width ê°•ì œ ??ì½˜í…ì¸??ˆë¹„ ?˜ë¦¼ ì°¨ë‹¨ */
+.pd-layout > .pd-content,
+.pd-content > *,
+.pd-content > .pd-tabs-content > * {
+  min-width: 0 !important;
+}
+
+/* (3) product ?˜ì´ì§€ grid??1fr ??minmax(0, 1fr) ?ˆì „??*/
+.pd-tabs {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+.pd-cta-bar {
+  grid-template-columns: minmax(0, 1fr) auto auto !important;
+}
+.pd-feature-list > li {
+  grid-template-columns: 44px minmax(0, 1fr) !important;
+}
+@media (max-width: 780px) {
+  .pd-tabs {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .pd-cta-bar {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .pd-feature-list > li {
+    grid-template-columns: 36px minmax(0, 1fr) !important;
+  }
+}
+
+/* (4) Editorial ëª¨ë“ˆ ?ìŠ¤????ê°€?´ëŽƒ???°ì† ?ë¬¸ ë¶„í•  ?ˆì „ë§?   "AIGÂ·ChubbÂ·DB?í•´ë³´í—˜Â·KB?í•´ë³´í—˜Â·ë©”ë¦¬ì¸ í™”??·í˜„?€?´ìƒ" ??   word-break: keep-all = ?œê? ?¨ì–´ ?¨ìœ„ ? ì?
+   overflow-wrap: anywhere = ?ë¬¸ ?°ì†??ì»¨í…Œ?´ë„ˆ ?˜ìœ¼ë©?ê°•ì œ ë¶„í•  */
+.ed-author__operation,
+.ed-author__operation p,
+.ed-author__byline p,
+.ed-case__quote,
+.ed-case__attribution,
+.ed-pitfall__content__desc,
+.ed-faq__answer,
+.ed-signal__item__desc,
+.ed-related__card__desc {
+  word-break: keep-all !important;
+  overflow-wrap: anywhere !important;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* (5) Editorial ëª¨ë“ˆ grid/flex ?ì‹ min-width ?ˆì „ë§?*/
+.ed-signal__item,
+.ed-related__card,
+.ed-faq__item,
+.ed-pitfall__item,
+.ed-author,
+.ed-author__top,
+.ed-author__byline,
+.ed-author__photo {
+  min-width: 0 !important;
+}
+
+/* (6) ëª¨ë°”??ë©”ë‰´ viewport ?•í™• ë§¤ì¹­ ??page width ?í–¥ ì°¨ë‹¨
+   iOS Safari??fixed + page overflow ë²„ê·¸ ?°íšŒ */
+@media (max-width: 780px) {
+  .gnb > ul {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box !important;
+    /* iOS Safari fixed positioning ?ˆì •??*/
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  /* ëª¨ë°”??ë©”ë‰´ li??min-width 0 ë³´ìž¥ */
+  .gnb > ul > li {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* (7) sticky header??viewport ?•í™• ë§¤ì¹­ (?ˆì „ë§? */
+@media (max-width: 780px) {
+  .mobile-sticky-header {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* === END iOS Safari Fix === */
+
