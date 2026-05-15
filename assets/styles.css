@@ -240,6 +240,16 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
   font-size: 1.08rem;
   line-height: 1.85;                 /* 행간 확대 */
 }
+.hero-usp {
+  color: rgba(255,255,255,0.9);      /* 어두운 배경 가독성 확보 */
+  font-size: 0.95rem;
+  font-weight: 500;                  /* ACIU·6사·1영업일 신뢰지표 강조 */
+  letter-spacing: 0.02em;
+  margin-top: 28px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-actions {
   display: flex; gap: 12px;
   margin-top: 36px;                  /* 28 → 36 */
