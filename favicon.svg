@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 40 40" role="img" aria-label="N2N">
-<title>N2N Insurance Brokerage</title>
-<defs>
-<clipPath id="clip_1">
-<path transform="matrix(1,0,0,-1,0,40)" d="M0 40H40V0H0Z"/>
-</clipPath>
-</defs>
-<g clip-path="url(#clip_1)">
-<path transform="matrix(1,0,0,-1,34.9512,20.4404)" d="M0 0C0-8.836-7.164-16-16-16-24.837-16-32-8.836-32 0-32 8.837-24.837 16-16 16-7.164 16 0 8.837 0 0" fill="#0b2818"/>
-<path transform="matrix(1,0,0,-1,9.8516,10.554701)" d="M0 0H3.733L13.729-12.034V.246H18.199V-19.771H14.466L4.47-7.736V-20.017H0Z" fill="#f4f0e8"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="N2N 엔투엔보험중개">
+  <!-- Forest green 원형 디스크 배경 -->
+  <circle cx="50" cy="50" r="50" fill="#0B2818"/>
+  
+  <!-- 큰 N letter (path로 그려 폰트 의존성 제거, 모든 크기에서 동일하게 표시) -->
+  <path d="M 28 72 L 28 28 L 72 72 L 72 28" 
+        stroke="#F4F0E8" 
+        stroke-width="11" 
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
 </svg>
