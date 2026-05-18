@@ -1,0 +1,113 @@
+=== n2nib/products: 총 111개 ===
+
+engineering-car                                    | 건설공사보험(CAR) | 기술보험
+engineering-ear                                    | 조립보험(EAR) | 기술보험
+liability-academy                                  | 학원 배상책임보험
+liability-accountant                               | 회계사·세무사 직업배상책임보험
+liability-architect                                | 건축사 직업배상책임보험
+liability-cargo                                    | 적재물 배상책임보험
+liability-cgl                                      | 영업(시설) 배상책임 | 배상보험
+liability-clinical-trials                          | 임상시험 배상책임보험 (Clinical Trials Liability)
+liability-coating-guarantee                        | 도장보증배상책임보험 (Coating Guarantee Legal Liability)
+liability-construction-equipment                   | 중장비 안전보험
+liability-contractual                              | 계약이행책임보험 (Contractual Liability)
+liability-cyber                                    | 사이버배상책임 | 배상보험
+liability-daycare                                  | 어린이집 배상책임보험 (의무)
+liability-distributed-energy                       | 분산에너지사업자 배상책임보험
+liability-do                                       | 임원배상책임(D&O) | 배상보험
+liability-driving-academy                          | 운전학원종합보험
+liability-drone                                    | 드론배상책임보험 (법인·개인 통합)
+liability-elderly-welfare                          | 노인복지시설 배상책임보험
+liability-electrical-inspector                     | 전기용품 안전성검사기관 전문인 배상책임보험
+liability-elevator                                 | 승강기사고 배상책임보험
+liability-environmental                            | 환경오염 배상책임 | 배상보험
+liability-eo                                       | 전문직업인배상(E&O) | 배상보험
+liability-ev-charger                               | 전기자동차 충전시설 배상책임보험
+liability-freight-forwarders                       | 화물배상책임보험 (Freight Forwarders Liability)
+liability-fusion-pl                                | 산업융합 신제품 생산물종합배상책임보험
+liability-gas-accident                             | 가스사고 배상책임보험 (의무)
+liability-lawyer-lpl                               | 변호사 직업배상책임보험 (LPL)
+liability-life-sciences                            | 생명과학 배상책임보험 (Life Sciences Liability)
+liability-medical                                  | 의사/병원 배상책임 | 배상보험
+liability-medical-device                           | 의료기기 배상책임보험
+liability-multi-use-fire                           | 다중이용업소 화재배상책임보험 (의무)
+liability-no-fault                                 | 무과실보상보험 (No-Fault Compensation)
+liability-outdoor-ad                               | 옥외광고물 손해배상책임보험
+liability-outdoor-robot                            | 실외이동로봇 배상책임보험
+liability-pharmacist                               | 약사·약국 배상책임보험
+liability-pl                                       | 생산물배상책임(PL) | 배상보험
+liability-playground                               | 어린이놀이시설 배상책임보험
+liability-pleasure-boat                            | 유도선사업자배상책임보험
+liability-privacy                                  | 개인정보유출 배상책임 | 배상보험
+liability-product-guarantee                        | 제품보증배상책임보험 (Product Guarantee Legal Liability)
+liability-products-completed-ops                   | 완성공사·제품가동배상책임 (Products Completed Operations)
+liability-recall                                   | 리콜보험 (Product Recall)
+liability-sandbox                                  | 규제샌드박스 배상책임보험
+liability-serious-accident                         | 기업중대사고 배상책임 | 배상보험
+liability-sports-facility                          | 체육시설업자 배상책임보험
+liability-technology                               | 첨단기술 배상책임보험 (Technology Liability · PremierTech)
+liability-tenant-fire                              | 임차인 화재배상책임보험
+liability-vasp                                     | 가상자산사업자 배상책임보험 (VASP)
+liability-welfare-facility                         | 사회복지시설 배상책임보험
+liability-wildlife                                 | 야생동물 피해보상보험
+marine-aviation                                    | 항공보험 (Aviation)
+marine-cargo                                       | 적하보험(수출입) | 해상보험
+marine-export-credit                               | 수출신용보험 (Trade Credit)
+marine-hull                                        | 선박보험 (Hull & Machinery)
+marine-logistics                                   | 물류종합보험 (Logistics Comprehensive)
+marine-pi                                          | 선주배상책임보험 (P&I — Protection & Indemnity)
+marine-ransom                                      | Marine Ransom & Extortion Insurance (해적 납치·협박)
+marine-transit                                     | 운송보험(국내) | 해상보험
+property-all-risks                                 | 재산종합보험(All Risks) | 화재·재물
+property-aquaculture                               | 양어보험 (Aquaculture Insurance)
+property-business-interruption                     | 기업휴지보험 (BI)
+property-chattel-title                             | 동산권리보험 (Chattel Title Insurance)
+property-chubb-master                              | Chubb Master Package™ (제조업 특화)
+property-corporate                                 | 기업재산종합보험 | 화재·재물
+property-earthquake                                | 지진보험
+property-excellent                                 | 엑설런트종합보험 (DB Excellent Comprehensive)
+property-fire                                      | 일반화재보험 | 화재·재물
+property-glass                                     | 유리보험 (Glass Insurance)
+property-golf-course                               | 골프장 종합보험
+property-hi-corp                                   | 하이기업종합플러스보험
+property-hotel-hospitality                         | 호텔·숙박업 종합보험
+property-livestock                                 | 가축재해보험 (Livestock + Equine)
+property-machinery-breakdown                       | 기계고장보험 (MB)
+property-machinery-comprehensive                   | 기관기계 종합보험
+property-medical-clinic                            | 병의원종합보험
+property-onekb                                     | ONE KB기업종합보험
+property-package                                   | 패키지보험 | 화재·재물
+property-residential-fire                          | 주택화재보험
+property-residual-value                            | 잔존가액 보상보험 (Residual Value Insurance)
+property-school                                    | 학교종합보험
+property-storm-flood                               | 주택·온실 풍수해·지진재해보험 (정책성)
+property-storm-flood-sme                           | 소상공인 풍수해·지진재해보험 (실손보상)
+property-temple                                    | 사찰종합보험 (DB Temple Comprehensive)
+property-title                                     | 부동산권리보험 (Title Insurance)
+property-trade-credit                              | 신용보험 (Trade Credit)
+specialty-art                                      | 예술품 종합보험 (Fine Art Insurance)
+specialty-contingency                              | 상금/이벤트 보험 | 특종보험
+specialty-cosmetic-pl                              | 화장품 제조물책임보험 (Cosmetic PL)
+specialty-crime                                    | 범죄보험(Crime) | 특종보험
+specialty-cyber-sme                                | 중소기업 사이버보험 (New Cyber Security)
+specialty-event                                    | 행사보험 | 특종보험
+specialty-food-pl                                  | 식품 제조물책임보험 (Food PL)
+specialty-holeinone                                | 홀인원보험 | 특종보험
+specialty-jewellers-block                          | 보석·고급재화 보험 (Jewellers Block & Fine Goods)
+specialty-kr                                       | 납치·협박보험(K&amp;R) | 특종보험
+specialty-legal-expense                            | 법률비용보상보험 (Legal Expense Insurance)
+specialty-money-securities                         | 현금·유가증권 보험 (Money & Securities)
+specialty-over-redemption                          | Over Redemption Insurance (경품·쿠폰 초과 지급 보험)
+specialty-pet                                      | 하이펫 애견보험 (Pet Insurance)
+specialty-sports-prize                             | Sports Prize Indemnity (스포츠 상금 배상)
+specialty-theft                                    | 도난보험 | 특종보험
+specialty-water-leisure                            | 수상레저보험 (Water Leisure Insurance)
+specialty-weather                                  | 신종 날씨보험 (Parametric Weather)
+specialty-wni                                      | W&I 보험 (Warranty & Indemnity · M&A)
+wc-daily-worker                                    | 일용근로자 재해보장책임보험
+wc-domestic                                        | 국내근로자 재해보장 | 근재보험
+wc-excess                                          | 산재초과보상보험
+wc-foreign-worker                                  | 외국인근로자 재해보장책임보험 (의무)
+wc-overseas                                        | 해외근로자 재해보장 | 근재보험
+wc-seafarer                                        | 근로자재해보장 책임보험 (선원 특화)
+wc-vocational-trainee                              | 직업훈련생 재해보상보험

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editorial 모듈 디자인 데모 — n2nib</title>
+
+<!-- JSON-LD: FAQPage Schema (Module 5 자동 SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "수출 제품의 미국 소송 시 한국 PL 약관이 적용되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "한국 PL 약관은 통상 한국 영토 내 청구만 보장합니다. 미국 소송 대응을 위해서는 글로벌 PL 또는 미국 영토 확장 특약이 별도로 필요합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "리콜 비용은 PL 보험에서 보장되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "기본 PL 약관은 통상 리콜 비용을 제외합니다. 별도의 Product Recall 보험에서 회수·통지·폐기·PR 비용 등을 보장합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "완성공사·제품가동 배상은 일반 PL과 어떻게 다른가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "완성공사·제품가동 배상(Products Completed Operations)은 제품 인도·공사 완료 후 발생한 사고를 보장하며, 일반 PL의 보장 종료 시점 이후의 위험을 커버하는 보완 약관입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "산업융합신제품 PL 의무가입 대상은 누구인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "산업융합촉진법상 신제품 적합성 인증을 받은 사업자가 의무 가입 대상입니다. IoT·AI·로봇 등 융복합 신제품이 주 대상입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PL 보험 가입 시 인수심사에서 가장 중요한 항목은?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "수출 비중·영토 확장 범위·과거 클레임 이력·QC 시스템·HACCP·CE·FDA 등 인증 보유 여부가 인수심사의 핵심 항목입니다."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============================================ */
+/* n2nib Editorial Modules v1.0 — 2026-05-10    */
+/* 6개 모듈: Signal, Case, Pitfall, Related,    */
+/*           FAQ, Author Box                     */
+/* ============================================ */
+
+:root {
+  --n2n-green: #0B2818;
+  --n2n-green-light: #1A3F2E;
+  --n2n-cream: #F5F1E8;
+  --n2n-cream-deep: #FBF7EE;
+  --n2n-orange: #C56A2C;
+  --n2n-orange-light: #E08850;
+  --n2n-orange-bg: #FDF4EC;
+  --n2n-ink: #1A1A1A;
+  --n2n-ink-60: #555;
+  --n2n-ink-40: #888;
+  --n2n-border: #E5E0D5;
+  --n2n-border-light: #EFEAE0;
+  --n2n-warn-bg: #FFF8EB;
+  --n2n-warn-border: #E8C887;
+  --n2n-info-bg: #EFF5F0;
+  --n2n-info-border: #B5D4BC;
+}
+
+/* === Demo Wrapper (실제 통합 시 제거) === */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Pretendard", "Noto Sans KR", sans-serif;
+  background: var(--n2n-cream);
+  color: var(--n2n-ink);
+  line-height: 1.65;
+}
+.demo-banner {
+  background: var(--n2n-green);
+  color: #fff;
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-bottom: 3px solid var(--n2n-orange);
+}
+.demo-banner strong { color: var(--n2n-orange-light); }
+
+.mock-product-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+.mock-product-header {
+  padding: 32px 0 24px;
+  border-bottom: 2px solid var(--n2n-border);
+  margin-bottom: 32px;
+}
+.mock-product-header .breadcrumb { font-size: 0.85rem; color: var(--n2n-ink-40); margin-bottom: 12px; }
+.mock-product-header .breadcrumb a { color: var(--n2n-ink-60); text-decoration: none; }
+.mock-product-header h1 { font-size: 2rem; color: var(--n2n-green); margin: 0 0 10px; }
+.mock-product-header .subtitle { color: var(--n2n-ink-60); font-size: 1.05rem; }
+.mock-existing-content {
+  padding: 24px;
+  background: #fff;
+  border: 1px dashed var(--n2n-border);
+  border-radius: 8px;
+  margin: 32px 0;
+  color: var(--n2n-ink-60);
+  font-size: 0.93rem;
+  text-align: center;
+}
+
+.module-divider {
+  border-top: 1px solid var(--n2n-border);
+  margin: 48px 0 32px;
+  position: relative;
+}
+.module-label {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background: var(--n2n-orange);
+  color: #fff;
+  padding: 3px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+}
+.module-note {
+  font-size: 0.82rem;
+  color: var(--n2n-ink-40);
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  background: var(--n2n-cream-deep);
+  border-left: 3px solid var(--n2n-border);
+  border-radius: 0 4px 4px 0;
+}
+
+/* ============================================ */
+/* Module 1: Signal Box (시그널 박스)            */
+/* "이런 상황에 필요합니다" — 3-4 mini cards    */
+/* ============================================ */
+.ed-signal {
+  margin: 32px 0;
+  padding: 32px 28px;
+  background: linear-gradient(135deg, var(--n2n-cream-deep) 0%, var(--n2n-cream) 100%);
+  border-radius: 12px;
+  border: 1px solid var(--n2n-border);
+}
+.ed-signal__title {
+  font-size: 1.25rem;
+  color: var(--n2n-green);
+  margin: 0 0 6px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ed-signal__title::before {
+  content: "📋";
+  font-size: 1.3rem;
+}
+.ed-signal__sub {
+  color: var(--n2n-ink-60);
+  font-size: 0.93rem;
+  margin: 0 0 20px;
+}
+.ed-signal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.ed-signal__item {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--n2n-border-light);
+  transition: border-color .2s, box-shadow .2s;
+}
+.ed-signal__item:hover {
+  border-color: var(--n2n-orange);
+  box-shadow: 0 4px 12px rgba(11,40,24,0.06);
+}
+.ed-signal__item__icon {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.ed-signal__item__title {
+  font-size: 0.97rem;
+  color: var(--n2n-green);
+  font-weight: 700;
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+.ed-signal__item__desc {
+  font-size: 0.85rem;
+  color: var(--n2n-ink-60);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ============================================ */
+/* Module 2: Case Snippet (현장에서 본 케이스)   */
+/* Pulled from insight blog                      */
+/* ============================================ */
+.ed-case {
+  margin: 32px 0;
+  padding: 24px 28px;
+  background: #fff;
+  border-left: 4px solid var(--n2n-green);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+.ed-case__label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--n2n-green);
+  background: var(--n2n-info-bg);
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+.ed-case__quote {
+  font-size: 1.02rem;
+  color: var(--n2n-ink);
+  line-height: 1.75;
+  margin: 0 0 14px;
+  font-style: italic;
+}
+.ed-case__quote::before { content: "「"; color: var(--n2n-orange); font-style: normal; }
+.ed-case__quote::after { content: "」"; color: var(--n2n-orange); font-style: normal; }
+.ed-case__attribution {
+  font-size: 0.85rem;
+  color: var(--n2n-ink-40);
+  margin: 0 0 14px;
+}
+.ed-case__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--n2n-orange);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+.ed-case__link:hover { text-decoration: underline; }
+
+/* ============================================ */
+/* Module 3: Pitfall Warning (약관 놓치는 3가지) */
+/* ============================================ */
+.ed-pitfall {
+  margin: 32px 0;
+  padding: 24px 28px;
+  background: var(--n2n-warn-bg);
+  border: 1px solid var(--n2n-warn-border);
+  border-radius: 8px;
+}
+.ed-pitfall__title {
+  font-size: 1.1rem;
+  color: var(--n2n-green);
+  margin: 0 0 6px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ed-pitfall__title::before { content: "⚠️"; }
+.ed-pitfall__sub {
+  color: var(--n2n-ink-60);
+  font-size: 0.9rem;
+  margin: 0 0 18px;
+}
+.ed-pitfall__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.ed-pitfall__item {
+  display: flex;
+  gap: 14px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid var(--n2n-warn-border);
+}
+.ed-pitfall__num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--n2n-orange);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.ed-pitfall__content { flex: 1; }
+.ed-pitfall__content__title {
+  font-size: 0.97rem;
+  color: var(--n2n-green);
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.ed-pitfall__content__desc {
+  font-size: 0.88rem;
+  color: var(--n2n-ink-60);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ============================================ */
+/* Module 4: Related Guides (관련 가이드)        */
+/* ============================================ */
+.ed-related {
+  margin: 32px 0;
+  padding: 32px 0;
+  border-top: 1px solid var(--n2n-border);
+  border-bottom: 1px solid var(--n2n-border);
+}
+.ed-related__title {
+  font-size: 1.2rem;
+  color: var(--n2n-green);
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+.ed-related__sub {
+  color: var(--n2n-ink-60);
+  font-size: 0.92rem;
+  margin: 0 0 22px;
+}
+.ed-related__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.ed-related__card {
+  display: block;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid var(--n2n-border);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.ed-related__card:hover {
+  transform: translateY(-2px);
+  border-color: var(--n2n-orange);
+  box-shadow: 0 6px 16px rgba(11,40,24,0.08);
+}
+.ed-related__card__num {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--n2n-orange);
+  background: var(--n2n-orange-bg);
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.ed-related__card__title {
+  font-size: 1rem;
+  color: var(--n2n-green);
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.45;
+}
+.ed-related__card__desc {
+  font-size: 0.85rem;
+  color: var(--n2n-ink-60);
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+.ed-related__card__cta {
+  font-size: 0.83rem;
+  color: var(--n2n-orange);
+  font-weight: 600;
+}
+
+/* ============================================ */
+/* Module 5: FAQ (자주 묻는 질문)                */
+/* Accordion + FAQPage Schema                    */
+/* ============================================ */
+.ed-faq {
+  margin: 32px 0;
+}
+.ed-faq__title {
+  font-size: 1.2rem;
+  color: var(--n2n-green);
+  margin: 0 0 6px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ed-faq__title::before { content: "💬"; }
+.ed-faq__sub {
+  color: var(--n2n-ink-60);
+  font-size: 0.92rem;
+  margin: 0 0 20px;
+}
+.ed-faq__item {
+  background: #fff;
+  border: 1px solid var(--n2n-border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.ed-faq__item[open] { border-color: var(--n2n-orange); }
+.ed-faq__item summary {
+  padding: 16px 20px;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--n2n-green);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  transition: background .2s;
+}
+.ed-faq__item summary::-webkit-details-marker { display: none; }
+.ed-faq__item summary:hover { background: var(--n2n-cream-deep); }
+.ed-faq__item summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  color: var(--n2n-orange);
+  font-weight: 400;
+  transition: transform .2s;
+  flex-shrink: 0;
+}
+.ed-faq__item[open] summary::after {
+  content: "−";
+  transform: rotate(0deg);
+}
+.ed-faq__answer {
+  padding: 0 20px 18px;
+  color: var(--n2n-ink-60);
+  font-size: 0.93rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ============================================ */
+/* Module 6: Author Box (작성자)                 */
+/* cargoinsu의 author-box 패턴과 통합           */
+/* ============================================ */
+.ed-author {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px;
+  background: var(--n2n-cream-deep);
+  border-radius: 10px;
+  border: 1px solid var(--n2n-border);
+  margin: 32px 0;
+}
+.ed-author__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--n2n-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.ed-author__content { flex: 1; }
+.ed-author__name {
+  font-size: 1.02rem;
+  color: var(--n2n-green);
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.ed-author__credential {
+  font-size: 0.85rem;
+  color: var(--n2n-ink-60);
+  margin: 0 0 10px;
+}
+.ed-author__bio {
+  font-size: 0.88rem;
+  color: var(--n2n-ink-60);
+  margin: 0 0 10px;
+  line-height: 1.65;
+}
+.ed-author__meta {
+  font-size: 0.8rem;
+  color: var(--n2n-ink-40);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ============================================ */
+/* CTA Section (모듈 통합 버전)                  */
+/* ============================================ */
+.ed-cta {
+  margin: 32px 0;
+  padding: 36px 28px;
+  background: var(--n2n-green);
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+}
+.ed-cta__title {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  color: #fff;
+}
+.ed-cta__sub {
+  color: rgba(245,241,232,0.85);
+  margin: 0 0 22px;
+  font-size: 0.95rem;
+}
+.ed-cta__btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--n2n-orange);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background .2s;
+}
+.ed-cta__btn:hover { background: #B05E26; }
+
+/* ============================================ */
+/* Responsive                                    */
+/* ============================================ */
+@media (max-width: 768px) {
+  .mock-product-page { padding: 20px 16px; }
+  .mock-product-header h1 { font-size: 1.5rem; }
+  .ed-signal, .ed-pitfall, .ed-related, .ed-cta { padding: 20px 18px; }
+  .ed-case { padding: 20px 18px; }
+  .ed-author { flex-direction: column; align-items: stretch; }
+  .ed-author__avatar { margin: 0 auto; }
+  .ed-related__grid { grid-template-columns: 1fr; }
+  .ed-signal__grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">
+  📐 <strong>Editorial 모듈 디자인 데모</strong> — 시설·다중이용업 + PL 클러스터 샘플 콘텐츠로 구성됨
+</div>
+
+<div class="mock-product-page">
+
+  <!-- 가상의 상품 페이지 헤더 (실제 사이트 패턴) -->
+  <div class="mock-product-header">
+    <div class="breadcrumb">
+      <a href="#">홈</a> / <a href="#">배상보험</a> / <a href="#">PL·제조물책임</a> / <strong>생산물배상책임보험 (PL)</strong>
+    </div>
+    <h1>생산물배상책임보험 (PL)</h1>
+    <p class="subtitle">제조·수입·판매 제품의 결함으로 발생한 제3자 신체·재산 손해를 보장합니다.</p>
+  </div>
+
+  <div class="mock-existing-content">
+    📄 (기존 상품 페이지 콘텐츠 영역 — 보장 범위, 가입 절차, 인수사 등)
+  </div>
+
+  <!-- ============================================ -->
+  <!-- MODULE 1: Signal Box (시그널 박스)            -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">MODULE 1 — SIGNAL BOX</span>
+  </div>
+  <p class="module-note">📌 위치: 상품 정보 섹션 바로 아래. 방문자가 "내 상황이 여기 해당하나?" 즉시 자가진단 가능.</p>
+
+  <section class="ed-signal" aria-label="이 보험이 필요한 상황">
+    <h2 class="ed-signal__title">이런 상황에 PL 보험이 필요합니다</h2>
+    <p class="ed-signal__sub">실제 분쟁 패턴 기반 시나리오 4가지</p>
+    <div class="ed-signal__grid">
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🌎</div>
+        <h3 class="ed-signal__item__title">수출 후 미국·EU 소송 가능성</h3>
+        <p class="ed-signal__item__desc">현지 PL 요구가 까다로워 한국 약관만으로는 부족. 영토 확장 특약 필수.</p>
+      </div>
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🔄</div>
+        <h3 class="ed-signal__item__title">결함 발견 후 리콜 가능성</h3>
+        <p class="ed-signal__item__desc">기본 PL은 리콜 비용 제외. 별도 Product Recall 보험 검토 필요.</p>
+      </div>
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">⚙️</div>
+        <h3 class="ed-signal__item__title">B2B 부품·소재 공급</h3>
+        <p class="ed-signal__item__desc">고객사 완제품 결함 시 청구 가능성. 계약상 책임 한도 검토 필수.</p>
+      </div>
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🆕</div>
+        <h3 class="ed-signal__item__title">신제품 출시·신기술 적용</h3>
+        <p class="ed-signal__item__desc">융복합·IoT 제품은 산업융합신제품 PL 의무가입 대상 가능.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MODULE 2: Case Snippet                       -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">MODULE 2 — CASE SNIPPET</span>
+  </div>
+  <p class="module-note">📌 위치: 본문 중간. 추상적 정보 → 구체 시나리오로 신뢰 ↑. 인사이트 글로 트래픽 유도.</p>
+
+  <section class="ed-case" aria-label="현장에서 본 분쟁 패턴">
+    <span class="ed-case__label">현장에서 본 분쟁 패턴</span>
+    <p class="ed-case__quote">국내 한 부품 제조업체가 미국 바이어에 수출한 제품에서 결함이 발견되어 미국 법원에서 집단소송이 제기됐습니다. 회사는 한국 PL 약관에 가입되어 있었으나, 약관상 보장 영토가 한국으로 제한되어 있어 미국 소송 비용·배상금에 대한 보장 검토가 어려웠습니다.</p>
+    <p class="ed-case__attribution">출처: <em>(업계 일반 사례)</em> · 현장에서 본 기업보험 #003</p>
+    <a href="/insights/case-003-pl-global.html" class="ed-case__link">전체 분석 보기 — 한국 PL vs 글로벌 PL 약관 차이 →</a>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MODULE 3: Pitfall Warning                    -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">MODULE 3 — PITFALL WARNING</span>
+  </div>
+  <p class="module-note">📌 위치: 본문 중간 또는 사이드바. 의사결정자가 "이거 우리 빠진 거 아닌가?" 자가진단.</p>
+
+  <section class="ed-pitfall" aria-label="약관에서 놓치기 쉬운 항목">
+    <h2 class="ed-pitfall__title">약관에서 놓치기 쉬운 3가지</h2>
+    <p class="ed-pitfall__sub">PL 가입 시 의사결정자가 자주 모르고 지나가는 항목</p>
+    <ul class="ed-pitfall__list">
+      <li class="ed-pitfall__item">
+        <div class="ed-pitfall__num">1</div>
+        <div class="ed-pitfall__content">
+          <h3 class="ed-pitfall__content__title">영토(Territory) 제한 조항</h3>
+          <p class="ed-pitfall__content__desc">기본 PL은 통상 한국 영토만. 수출 비중 높으면 미국·EU·동남아 영토 확장 특약 필요.</p>
+        </div>
+      </li>
+      <li class="ed-pitfall__item">
+        <div class="ed-pitfall__num">2</div>
+        <div class="ed-pitfall__content">
+          <h3 class="ed-pitfall__content__title">리콜 비용 제외</h3>
+          <p class="ed-pitfall__content__desc">PL은 제3자 손해배상 위주. 회수·통지·폐기·PR 비용은 별도 Product Recall 보험.</p>
+        </div>
+      </li>
+      <li class="ed-pitfall__item">
+        <div class="ed-pitfall__num">3</div>
+        <div class="ed-pitfall__content">
+          <h3 class="ed-pitfall__content__title">계약상 가중 책임 면책</h3>
+          <p class="ed-pitfall__content__desc">B2B 공급 계약의 indemnity·SLA 위반은 통상 PL 면책. 계약이행책임 별도 검토.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MODULE 4: Related Guides                     -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">MODULE 4 — RELATED GUIDES</span>
+  </div>
+  <p class="module-note">📌 위치: 본문 하단. 인사이트 시리즈로 cross-link → topical authority 강화.</p>
+
+  <section class="ed-related" aria-label="관련 인사이트 가이드">
+    <h2 class="ed-related__title">현장에서 본 기업보험 — 관련 가이드</h2>
+    <p class="ed-related__sub">PL 클러스터 심화 분석</p>
+    <div class="ed-related__grid">
+      <a href="/insights/case-003-pl-global.html" class="ed-related__card">
+        <span class="ed-related__card__num">#003</span>
+        <h3 class="ed-related__card__title">수출제품 미국 소송: 글로벌 PL vs 한국 PL 약관 차이</h3>
+        <p class="ed-related__card__desc">한국 영토 제한 조항과 미국 소송 대응 영토 확장 특약을 약관 한 줄씩 분석.</p>
+        <span class="ed-related__card__cta">자세히 보기 →</span>
+      </a>
+      <a href="/insights/case-recall.html" class="ed-related__card">
+        <span class="ed-related__card__num">#예정</span>
+        <h3 class="ed-related__card__title">리콜 비용은 어디까지 PL이 보장하나</h3>
+        <p class="ed-related__card__desc">기본 PL과 Product Recall 보험의 보장 범위 매트릭스.</p>
+        <span class="ed-related__card__cta">작성 중 →</span>
+      </a>
+      <a href="/insights/case-haccp-food-pl.html" class="ed-related__card">
+        <span class="ed-related__card__num">#예정</span>
+        <h3 class="ed-related__card__title">식품 HACCP 위반과 PL 면책</h3>
+        <p class="ed-related__card__desc">식품 PL의 면책 조항과 HACCP 인증의 인수심사 의미.</p>
+        <span class="ed-related__card__cta">작성 중 →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MODULE 5: FAQ (with Schema)                  -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">MODULE 5 — FAQ (Schema markup)</span>
+  </div>
+  <p class="module-note">📌 위치: 본문 하단. JSON-LD FAQPage Schema 자동 적용 → 검색결과 rich snippet 확보.</p>
+
+  <section class="ed-faq" aria-label="자주 묻는 질문">
+    <h2 class="ed-faq__title">자주 묻는 질문</h2>
+    <p class="ed-faq__sub">PL 가입 검토 시 의사결정자가 가장 많이 묻는 질문</p>
+
+    <details class="ed-faq__item">
+      <summary>수출 제품의 미국 소송 시 한국 PL 약관이 적용되나요?</summary>
+      <p class="ed-faq__answer">한국 PL 약관은 통상 한국 영토 내 청구만 보장합니다. 미국 소송 대응을 위해서는 글로벌 PL 또는 미국 영토 확장 특약이 별도로 필요하며, 인수사별 영토 확장 가능 범위와 추가 보험료가 다릅니다.</p>
+    </details>
+
+    <details class="ed-faq__item">
+      <summary>리콜 비용은 PL 보험에서 보장되나요?</summary>
+      <p class="ed-faq__answer">기본 PL 약관은 통상 리콜 비용을 제외합니다. 제품 회수, 고객 통지, 폐기·재처리, PR 위기 대응 등의 비용은 별도의 Product Recall 보험에서 보장됩니다. PL과 Product Recall은 상호 보완 관계입니다.</p>
+    </details>
+
+    <details class="ed-faq__item">
+      <summary>완성공사·제품가동 배상은 일반 PL과 어떻게 다른가요?</summary>
+      <p class="ed-faq__answer">완성공사·제품가동 배상(Products Completed Operations)은 제품 인도 또는 공사 완료 후 발생한 사고를 보장합니다. 일반 PL의 보장 종료 시점 이후의 위험을 커버하는 보완 약관으로, EPC·플랜트·수출 제조업에 특히 중요합니다.</p>
+    </details>
+
+    <details class="ed-faq__item">
+      <summary>산업융합신제품 PL 의무가입 대상은 누구인가요?</summary>
+      <p class="ed-faq__answer">산업융합촉진법상 신제품 적합성 인증을 받은 사업자가 의무 가입 대상입니다. IoT, AI, 로봇 등 융복합 신제품이 주 대상이며, 미가입 시 인증 효력에 영향을 줄 수 있어 사전 확인이 필요합니다.</p>
+    </details>
+
+    <details class="ed-faq__item">
+      <summary>PL 보험 가입 시 인수심사에서 가장 중요한 항목은?</summary>
+      <p class="ed-faq__answer">수출 비중과 영토 확장 범위, 과거 클레임 이력, QC 시스템 구축 여부, HACCP·CE·FDA 등 인증 보유 여부가 인수심사의 핵심 항목입니다. 인수심사 결과에 따라 보험료와 면책 조항이 결정됩니다.</p>
+    </details>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MODULE 6: Author Box                         -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">MODULE 6 — AUTHOR BOX</span>
+  </div>
+  <p class="module-note">📌 위치: 본문 최하단. 콘텐츠가 익명 corporate 출처가 아닌 전문가 명의임을 명시 → E-E-A-T 강화.</p>
+
+  <section class="ed-author" aria-label="작성자 정보">
+    <div class="ed-author__avatar">한욱</div>
+    <div class="ed-author__content">
+      <h3 class="ed-author__name">성한욱 — 기업보험심사역(ACIU)</h3>
+      <p class="ed-author__credential">금융감독원 등록 보험중개사 제2026-012201호</p>
+      <p class="ed-author__bio">국내·해외 기업보험 약관 분석 전문. 수출 제조업·시설 운영자·전문직 종사자 대상 보험 중개 및 인사이트 발행.</p>
+      <div class="ed-author__meta">
+        <span>📋 본 페이지: 인수사 약관 자료 기반 작성</span>
+        <span>🗓 최종수정: 2026-05-10</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CTA (모듈 통합 마무리)                       -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">CTA — 통합 마무리</span>
+  </div>
+
+  <section class="ed-cta">
+    <h2 class="ed-cta__title">귀사에 맞는 PL 보험 약관 검토가 필요하신가요?</h2>
+    <p class="ed-cta__sub">6개 인수사(AIG · Chubb · DB · KB · 메리츠 · 현대해상) 비교 견적을 무료로 시작하실 수 있습니다.<br>※ 당사 수수료는 인수사가 부담합니다 (보험업법 제98조)</p>
+    <a href="/consult.html" class="ed-cta__btn">상담 신청 →</a>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 보너스: 시설·다중이용업 클러스터 샘플 (Module 1) -->
+  <!-- ============================================ -->
+  <div class="module-divider">
+    <span class="module-label">보너스 — 시설·다중이용업 클러스터 샘플</span>
+  </div>
+  <p class="module-note">💡 다른 클러스터에서 같은 모듈이 어떻게 활용되는지: 다중이용업 화재배상 페이지 예시</p>
+
+  <section class="ed-signal" aria-label="다중이용업 시그널 박스 샘플">
+    <h2 class="ed-signal__title">다중이용업 화재배상 의무가입 — 이런 사업장이 대상입니다</h2>
+    <p class="ed-signal__sub">다중이용업소 안전관리법 의무가입 5가지 카테고리</p>
+    <div class="ed-signal__grid">
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🍽️</div>
+        <h3 class="ed-signal__item__title">음식점·주점</h3>
+        <p class="ed-signal__item__desc">바닥면적 100㎡ 이상 음식점, 단란주점·유흥주점 모두 의무.</p>
+      </div>
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🎤</div>
+        <h3 class="ed-signal__item__title">노래연습장·PC방</h3>
+        <p class="ed-signal__item__desc">노래연습장, 인터넷컴퓨터게임시설 의무가입 대상.</p>
+      </div>
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🛁</div>
+        <h3 class="ed-signal__item__title">찜질방·목욕장</h3>
+        <p class="ed-signal__item__desc">찜질방, 목욕장, 사우나 등 다중이용업 분류 대상.</p>
+      </div>
+      <div class="ed-signal__item">
+        <div class="ed-signal__item__icon">🎬</div>
+        <h3 class="ed-signal__item__title">영화관·공연장</h3>
+        <p class="ed-signal__item__desc">영화상영관, 공연장 등 일정 규모 이상 의무 적용.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

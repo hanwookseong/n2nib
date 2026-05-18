@@ -17,3 +17,6 @@ node_modules/
 # 로그
 *.log
 npm-debug.log*
+
+# Backup files
+*.bak-pre-*
