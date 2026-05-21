@@ -1,0 +1,835 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PM56Z7ZG');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상담신청 | 엔투엔보험중개</title>
+<meta name="description" content="엔투엔보험중개 무료 기업보험 상담신청. 담당 ACIU 심사역이 2영업일 이내 회신드립니다.">
+<link rel="canonical" href="https://n2nib.com/consult">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="엔투엔보험중개">
+<meta property="og:title" content="상담신청 | 엔투엔보험중개">
+<meta property="og:description" content="무료 기업보험 상담신청. 담당 ACIU 심사역이 2영업일 이내 회신드립니다.">
+<meta property="og:url" content="https://n2nib.com/consult">
+<meta property="og:image" content="https://n2nib.com/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://n2nib.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="N2N">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0B2818">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM56Z7ZG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- TOP -->
+<div class="top_wrap">
+  <div class="top_wrap_cont">
+    <a class="logo" href="index.html">
+      <img class="logo-img" src="assets/n2n-logo.svg" alt="N2N Insurance Brokerage" width="200" height="64">
+      <span class="logo-mark">N2N</span>
+      <span class="logo-txt">
+        <strong>엔투엔보험중개</strong>
+        <span>금융감독원 등록 제2026-012201호</span>
+      </span>
+    </a>
+    <div class="top-utils">
+      <a class="hot" href="tel:010-5755-6465">☎ 010-5755-6465</a>
+      <span class="sep">|</span>
+      <a href="mailto:sales@n2nib.com">sales@n2nib.com</a>
+      <span class="sep">|</span>
+      <a class="kakao-link" href="http://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener" title="카카오 1:1 채팅 상담">카톡상담</a>
+      <span class="sep">|</span>
+      <a href="https://cargoinsu.com" target="_blank" rel="noopener">cargoinsu.com ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- GNB -->
+<nav class="navi_wrap" aria-label="주메뉴"><div class="gnb"><ul>
+    <li>
+      <a href="products.html#marine">해상보험</a>
+      <div class="depth2 depth2--mega depth2--cols-3">
+    <div class="mega-col">
+      <h4 class="mega-h">기본 화물·운송</h4>
+      <ul class="mega-list">
+        <li><a href="products/marine-cargo.html">적하보험(수출입)</a></li>
+        <li><a href="products/marine-transit.html">운송보험(국내)</a></li>
+        <li><a href="products/marine-logistics.html">물류종합보험</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">선박·해사</h4>
+      <ul class="mega-list">
+        <li><a href="products/marine-hull.html">선박보험(Hull)</a></li>
+        <li><a href="products/marine-pi.html">선주배상 P&I</a></li>
+        <li><a href="products/marine-ransom.html">Marine Ransom(해적)</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">수출입 신용</h4>
+      <ul class="mega-list">
+        <li><a href="products/marine-export-credit.html">수출신용보험(Trade Credit)</a></li>
+      </ul>
+      <ul class="mega-list mega-list--ext">
+        <li><a href="https://cargoinsu.com" target="_blank" rel="noopener">cargoinsu.com 온라인가입 ↗</a></li>
+      </ul>
+    </div>
+        <a class="mega-footer-link" href="products.html#marine">해상 7종 전체 보기 →</a>
+      </div>
+    </li>
+    <li>
+      <a href="products.html#liability">배상보험</a>
+      <div class="depth2 depth2--mega depth2--cols-4">
+    <div class="mega-col">
+      <h4 class="mega-h">기업 운영·제품</h4>
+      <ul class="mega-list">
+        <li><a href="products/liability-pl.html">생산물(PL)</a></li>
+        <li><a href="products/liability-cgl.html">영업·시설(CGL)</a></li>
+        <li><a href="products/liability-products-completed-ops.html">완성공사·제품가동</a></li>
+        <li><a href="products/liability-product-guarantee.html">제품보증</a></li>
+        <li><a href="products/liability-coating-guarantee.html">도장보증</a></li>
+        <li><a href="products/liability-recall.html">리콜(Product Recall)</a></li>
+        <li><a href="products/liability-fusion-pl.html">산업융합신제품 PL</a></li>
+        <li><a href="products/liability-contractual.html">계약이행책임</a></li>
+        <li><a href="products/liability-no-fault.html">무과실보상</a></li>
+        <li><a href="products/liability-cargo.html">적재물 배상책임 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-construction-equipment.html">중장비 안전보험</a></li>
+        <li><a href="products/liability-freight-forwarders.html">화물배상책임(FFL)</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">전문직업·의료·생명과학</h4>
+      <ul class="mega-list">
+        <li><a href="products/liability-do.html">임원(D&O)</a></li>
+        <li><a href="products/liability-eo.html">전문직(E&O)</a></li>
+        <li><a href="products/liability-medical.html">의사·병원 배상</a></li>
+        <li><a href="products/liability-medical-device.html">의료기기 배상</a></li>
+        <li><a href="products/liability-life-sciences.html">생명과학 배상</a></li>
+        <li><a href="products/liability-clinical-trials.html">임상시험 배상</a></li>
+        <li><a href="products/liability-electrical-inspector.html">전기용품검사 전문인</a></li>
+      </ul>
+      <h4 class="mega-h">사이버·정보·기술</h4>
+      <ul class="mega-list">
+        <li><a href="products/liability-cyber.html">사이버배상책임</a></li>
+        <li><a href="products/liability-privacy.html">개인정보유출 배상</a></li>
+        <li><a href="products/liability-vasp.html">가상자산사업자(VASP) <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-technology.html">첨단기술(PremierTech)</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">시설·업종 배상</h4>
+      <ul class="mega-list">
+        <li><a href="products/liability-welfare-facility.html">사회복지시설</a></li>
+        <li><a href="products/liability-elevator.html">승강기사고 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-playground.html">어린이놀이시설 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-sports-facility.html">체육시설업자</a></li>
+        <li><a href="products/liability-academy.html">학원</a></li>
+        <li><a href="products/liability-driving-academy.html">운전학원 종합</a></li>
+        <li><a href="products/liability-pleasure-boat.html">유도선사업자 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-wildlife.html">야생동물 피해보상</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">신산업·환경·안전</h4>
+      <ul class="mega-list">
+        <li><a href="products/liability-drone.html">드론(무인항공기) <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-outdoor-robot.html">실외이동로봇 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-distributed-energy.html">분산에너지사업자 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-sandbox.html">규제샌드박스</a></li>
+        <li><a href="products/liability-ev-charger.html">전기차충전시설 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-outdoor-ad.html">옥외광고물 <span class="d2-duty">의무</span></a></li>
+        <li><a href="products/liability-environmental.html">환경오염</a></li>
+        <li><a href="products/liability-serious-accident.html">기업중대사고</a></li>
+      </ul>
+    </div>
+        <a class="mega-footer-link" href="products.html#liability">배상 39종 전체 보기 →</a>
+      </div>
+    </li>
+    <li>
+      <a href="products.html#wc">근재보험</a>
+      <div class="depth2 depth2--mega depth2--cols-1">
+    <div class="mega-col">
+      <h4 class="mega-h">근재(EL)</h4>
+      <ul class="mega-list">
+        <li><a href="products/wc-domestic.html">국내근로자 재해보장</a></li>
+        <li><a href="products/wc-overseas.html">해외근로자 재해보장</a></li>
+        <li><a href="products/wc-vocational-trainee.html">직업훈련생 재해보상</a></li>
+        <li><a href="products/wc-seafarer.html">선원 근재(선원법)</a></li>
+      </ul>
+    </div>
+        <a class="mega-footer-link" href="products.html#wc">근재 4종 전체 보기 →</a>
+      </div>
+    </li>
+    <li>
+      <a href="products.html#property">화재/재물</a>
+      <div class="depth2 depth2--mega depth2--cols-3">
+    <div class="mega-col">
+      <h4 class="mega-h">기업 종합·패키지</h4>
+      <ul class="mega-list">
+        <li><a href="products/property-all-risks.html">재산종합(All Risks)</a></li>
+        <li><a href="products/property-package.html">패키지보험</a></li>
+        <li><a href="products/property-corporate.html">기업재산종합</a></li>
+        <li><a href="products/property-hi-corp.html">하이기업종합플러스</a></li>
+        <li><a href="products/property-fire.html">일반화재보험</a></li>
+        <li><a href="products/property-excellent.html">엑설런트종합 (DB)</a></li>
+        <li><a href="products/property-onekb.html">ONE KB기업종합</a></li>
+        <li><a href="products/property-temple.html">사찰종합보험 (DB)</a></li>
+        <li><a href="products/property-machinery-comprehensive.html">기관기계 종합</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">권리·보증</h4>
+      <ul class="mega-list">
+        <li><a href="products/property-title.html">부동산권리(Title)</a></li>
+        <li><a href="products/property-chattel-title.html">동산권리(Chattel Title)</a></li>
+        <li><a href="products/property-residual-value.html">잔존가액보상</a></li>
+      </ul>
+      <h4 class="mega-h">자연재해·정책성</h4>
+      <ul class="mega-list">
+        <li><a href="products/property-storm-flood.html">주택·온실 풍수해·지진</a></li>
+        <li><a href="products/property-storm-flood-sme.html">소상공인 풍수해·지진(실손)</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">특수자산</h4>
+      <ul class="mega-list">
+        <li><a href="products/property-glass.html">유리보험</a></li>
+        <li><a href="products/property-aquaculture.html">양어보험(수산)</a></li>
+        <li><a href="products/property-livestock.html">가축·말보험</a></li>
+      </ul>
+    </div>
+        <a class="mega-footer-link" href="products.html#property">재물 17종 전체 보기 →</a>
+      </div>
+    </li>
+    <li>
+      <a href="products.html#engineering">기술보험</a>
+      <div class="depth2 depth2--mega depth2--cols-1">
+    <div class="mega-col">
+      <h4 class="mega-h">건설·조립</h4>
+      <ul class="mega-list">
+        <li><a href="products/engineering-car.html">건설공사보험(CAR)</a></li>
+        <li><a href="products/engineering-ear.html">조립보험(EAR)</a></li>
+      </ul>
+    </div>
+        <a class="mega-footer-link" href="products.html#engineering">기술 2종 전체 보기 →</a>
+      </div>
+    </li>
+    <li>
+      <a href="products.html#specialty">특종보험</a>
+      <div class="depth2 depth2--mega depth2--cols-3">
+    <div class="mega-col">
+      <h4 class="mega-h">범죄·신원·금융</h4>
+      <ul class="mega-list">
+        <li><a href="products/specialty-kr.html">납치·협박(K&R)</a></li>
+        <li><a href="products/specialty-crime.html">범죄(Crime)</a></li>
+        <li><a href="products/specialty-theft.html">도난</a></li>
+        <li><a href="products/specialty-money-securities.html">현금·유가증권</a></li>
+        <li><a href="products/specialty-legal-expense.html">법률비용</a></li>
+        <li><a href="products/specialty-cyber-sme.html">사이버 SME</a></li>
+        <li><a href="products/specialty-over-redemption.html">과상환보험</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">행사·이벤트</h4>
+      <ul class="mega-list">
+        <li><a href="products/specialty-event.html">행사보험</a></li>
+        <li><a href="products/specialty-contingency.html">상금·이벤트</a></li>
+        <li><a href="products/specialty-holeinone.html">홀인원</a></li>
+        <li><a href="products/specialty-sports-prize.html">스포츠 상금</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <h4 class="mega-h">예술·고급재화</h4>
+      <ul class="mega-list">
+        <li><a href="products/specialty-art.html">예술품 종합 (Fine Art)</a></li>
+        <li><a href="products/specialty-jewellers-block.html">보석·고급재화 (Jewellers Block)</a></li>
+      </ul>
+      <h4 class="mega-h">자연·라이프</h4>
+      <ul class="mega-list">
+        <li><a href="products/specialty-weather.html">날씨보험</a></li>
+        <li><a href="products/specialty-water-leisure.html">수상레저</a></li>
+        <li><a href="products/specialty-wni.html">W&I(M&A)</a></li>
+        <li><a href="products/specialty-pet.html">반려동물(펫)</a></li>
+      </ul>
+    </div>
+        <a class="mega-footer-link" href="products.html#specialty">특종 18종 전체 보기 →</a>
+      </div>
+    </li>
+    <li>
+      <a href="about.html">고객센터</a>
+      <ul class="depth2">
+        <li><a href="about.html">회사소개</a></li>
+        <li><a href="consult.html">온라인 상담신청</a></li>
+        <li><a href="search.html">전체 상품 검색</a></li>
+        <li><a href="industries.html">업종별 보기</a></li>
+        <li><a href="duty.html">법정 의무보험</a></li>
+        <li><a href="risk-checklist.html">5분 위험 자가진단</a></li>
+        <li><a href="mailto:sales@n2nib.com">이메일 문의</a></li>
+      </ul>
+    </li>
+    <li class="gnb-search-li">
+      <div class="gnb-search">
+        <input id="gnbSearchInput" type="search" placeholder="상품·키워드 검색…" autocomplete="off">
+        <div id="gnbSearchDropdown" class="gnb-search-dropdown"></div>
+      </div>
+    </li>
+    <li style="flex:0 0 auto;"><a class="consult-btn" href="consult.html">상담신청 →</a></li>
+  </ul><button class="menu-toggle" aria-label="메뉴"><span></span><span></span><span></span></button></div></nav>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="container">
+    <h1>온라인 상담신청</h1>
+    <p>담당 ACIU 심사역이 검토 후 2영업일 이내 회신드립니다. 상담·견적 비용은 없습니다.</p>
+  </div>
+</section>
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">홈</a><span class="sep">›</span>
+    <a href="about.html">고객센터</a><span class="sep">›</span>
+    <span class="current">온라인 상담신청</span>
+  </div>
+</div>
+
+<!-- ====== 가입 절차 5단계 흐름 ====== -->
+<section class="section" style="padding:44px 0 4px;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:28px;">
+      <span style="display:inline-block;color:var(--accent,#C56A2C);font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;">PROCESS · 상담부터 가입까지</span>
+      <h2 style="margin:0;font-size:1.5rem;color:var(--brand,#0B2818);">5단계로 진행되는 <em style="color:var(--accent,#C56A2C);font-weight:600;font-style:normal;">투명한 상담 절차</em></h2>
+      <p style="margin:.5rem 0 0;font-size:.88rem;color:var(--muted,#73726c);">상담·견적은 전 과정 무료이며, 당사 수수료는 보험회사가 지급합니다 (보험업법 제98조).</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:14px;">
+
+      <!-- Step 1 -->
+      <div style="background:#fff;border:1px solid rgba(11,40,24,.1);border-radius:10px;padding:24px 16px;text-align:center;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--accent,#C56A2C);color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">1</div>
+        <h3 style="font-size:.98rem;margin:0 0 6px;color:var(--brand,#0B2818);">상담 신청</h3>
+        <p style="font-size:.8rem;color:var(--muted,#73726c);margin:0;line-height:1.55;">온라인 폼 · 카카오톡 · 전화<br>당일 접수 확인</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div style="background:#fff;border:1px solid rgba(11,40,24,.1);border-radius:10px;padding:24px 16px;text-align:center;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--accent,#C56A2C);color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">2</div>
+        <h3 style="font-size:.98rem;margin:0 0 6px;color:var(--brand,#0B2818);">위험 분석</h3>
+        <p style="font-size:.8rem;color:var(--muted,#73726c);margin:0;line-height:1.55;">ACIU 심사역 초도 상담<br>1–2영업일</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div style="background:#fff;border:1px solid rgba(11,40,24,.1);border-radius:10px;padding:24px 16px;text-align:center;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--accent,#C56A2C);color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">3</div>
+        <h3 style="font-size:.98rem;margin:0 0 6px;color:var(--brand,#0B2818);">약관 비교</h3>
+        <p style="font-size:.8rem;color:var(--muted,#73726c);margin:0;line-height:1.55;">6개 보험회사 견적·약관 검토<br>2–5영업일</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div style="background:#fff;border:1px solid rgba(11,40,24,.1);border-radius:10px;padding:24px 16px;text-align:center;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--accent,#C56A2C);color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">4</div>
+        <h3 style="font-size:.98rem;margin:0 0 6px;color:var(--brand,#0B2818);">추천안 제공</h3>
+        <p style="font-size:.8rem;color:var(--muted,#73726c);margin:0;line-height:1.55;">비교표 + 위험 맞춤 추천안<br>설명·문의 응대</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div style="background:#fff;border:1px solid rgba(11,40,24,.1);border-radius:10px;padding:24px 16px;text-align:center;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--accent,#C56A2C);color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">5</div>
+        <h3 style="font-size:.98rem;margin:0 0 6px;color:var(--brand,#0B2818);">청약 · 가입</h3>
+        <p style="font-size:.8rem;color:var(--muted,#73726c);margin:0;line-height:1.55;">청약 · 보험회사 승인<br>증권 발급 지원</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section">
+  <div class="container" style="display:grid;grid-template-columns:1.7fr 1fr;gap:32px;align-items:start;">
+
+    <div>
+      <div class="form-note">
+        <strong>접수 안내.</strong>
+        제출하신 내용은 즉시 <code>sales@n2nib.com</code>으로 전달되며,
+        담당 ACIU 심사역이 검토 후 <strong>2영업일 이내</strong> 회신드립니다.
+        급하신 경우 화면 우측의 카카오톡 1:1 상담 또는 010-5755-6465로 직접 연락 주세요.
+      </div>
+
+      <!-- 카카오톡 즉시 상담 (1:1 채팅) -->
+      <div class="kakao-consult-card">
+        <div class="kc-text">
+          <strong>카카오톡으로 빠르게 문의하시겠어요?</strong>
+          <span>친구추가 후 1:1 채팅으로 24시간 문의 가능. 영업시간 내 평균 10분 회신.</span>
+        </div>
+        <a class="btn-kakao" href="http://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener">
+          💬 카카오톡 1:1 상담
+        </a>
+      </div>
+
+      <!-- 관심 상품 자동 배지 (URL 파라미터 전달 시 표시) -->
+      <div id="consultBanner" class="consult-banner" hidden>
+        <span class="consult-banner-ic">✓</span>
+        <div class="consult-banner-txt">
+          <strong id="consultBannerTitle">관심 상품이 전달되었습니다</strong>
+          <span id="consultBannerSub">아래 폼에 해당 상품이 자동 선택되었습니다. 필요시 수정해 주세요.</span>
+        </div>
+        <button type="button" class="consult-banner-close" aria-label="닫기" onclick="this.parentElement.hidden=true">×</button>
+      </div>
+
+      <form id="consultForm" class="form-wrap"
+            action="https://api.web3forms.com/submit"
+            method="POST">
+
+        <!-- Web3Forms 필수 필드 -->
+        <input type="hidden" name="access_key" value="79321b58-e134-45d4-9eb4-38ca226e58ce">
+        <input type="hidden" name="subject" value="[N2N] 웹사이트 상담신청 접수">
+        <input type="hidden" name="from_name" value="n2nib.com 상담신청">
+        <input type="hidden" name="redirect" value="https://n2nib.com/consult.html?sent=1">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <!-- 유입 추적(숨김) — URL 파라미터로 자동 설정됨 -->
+        <input type="hidden" id="insurerHidden" name="insurer" value="">
+        <input type="hidden" id="sourcePageHidden" name="source_page" value="">
+        <input type="hidden" id="sourceRefHidden" name="source_ref" value="">
+
+        <h3 style="color:var(--brand);margin-top:0;">① 신청인 정보</h3>
+        <div class="form-col-2">
+          <div class="form-row">
+            <label for="company">회사명(상호) <span class="req">*</span></label>
+            <input id="company" name="company" type="text" required placeholder="예: ㈜엔투엔물류">
+          </div>
+          <div class="form-row">
+            <label for="name">담당자 성명 <span class="req">*</span></label>
+            <input id="name" name="name" type="text" required placeholder="예: 홍길동 (직책: 안전관리팀장)">
+          </div>
+        </div>
+        <div class="form-col-2">
+          <div class="form-row">
+            <label for="phone">연락처 <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" required placeholder="예: 010-1234-5678">
+          </div>
+          <div class="form-row">
+            <label for="email">이메일 <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="예: contact@company.co.kr">
+            <!-- Formspree Reply-To 명시(이메일 입력값을 JS로 동기화) -->
+            <!-- Web3Forms Reply-To (name="email" 자동인식 + 명시적 hidden) -->
+            <input type="hidden" id="replyto" name="replyto" value="">
+          </div>
+        </div>
+        <div class="form-col-2">
+          <div class="form-row">
+            <label for="industry">업종</label>
+            <input id="industry" name="industry" type="text" placeholder="예) 무역·제조·건설·IT">
+          </div>
+          <div class="form-row">
+            <label for="employees">임직원 수</label>
+            <select id="employees" name="employees">
+              <option value="">선택</option>
+              <option>1–9명</option>
+              <option>10–49명</option>
+              <option>50–99명</option>
+              <option>100–299명</option>
+              <option>300명 이상</option>
+            </select>
+          </div>
+        </div>
+
+        <hr style="margin:22px 0;border-top:1px dashed var(--border);">
+
+        <h3 style="color:var(--brand);">② 상담 희망 상품</h3>
+        <div class="form-row">
+          <label for="category">보험 분류 <span class="req">*</span></label>
+          <select id="category" name="category" required>
+            <option value="">선택</option>
+            <option>해상 (적하·운송)</option>
+            <option>배상 (생산물·D&amp;O·전문직·의료·사이버·환경 등)</option>
+            <option>근재 (국내·해외 근로자재해보장)</option>
+            <option>화재/재물 (재산종합·패키지·일반화재)</option>
+            <option>기술 (건설공사·조립)</option>
+            <option>특종 (납치·행사·범죄·도난·채권보전)</option>
+            <option>복수 상품 동시 견적</option>
+            <option>잘 모르겠음 / 컨설팅 희망</option>
+          </select>
+          <div class="hint">※ 상해보험(단체상해·여행자보험)은 취급하지 않습니다.</div>
+        </div>
+        <div class="form-row">
+          <label for="product">희망 상품명 (알고 계시면 기재)</label>
+          <input id="product" name="product" type="text"
+                 placeholder="예: PL 보험 + 근재 + D&O">
+          <div class="hint">상품 목록은 <a href="products.html" target="_blank">취급상품</a> 페이지 참고.</div>
+        </div>
+        <div class="form-col-2">
+          <div class="form-row">
+            <label for="purpose">가입 목적</label>
+            <select id="purpose" name="purpose">
+              <option value="">선택</option>
+              <option>신규 가입</option>
+              <option>기존 계약 갱신·리뉴얼</option>
+              <option>기존 계약 검토·비교</option>
+              <option>입찰·계약체결 요건</option>
+              <option>법정 의무보험</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="scale">가입 예상규모</label>
+            <select id="scale" name="scale">
+              <option value="">선택</option>
+              <option>연간 보험료 100만원 미만</option>
+              <option>100–500만원</option>
+              <option>500–2,000만원</option>
+              <option>2,000만원–1억원</option>
+              <option>1억원 이상</option>
+              <option>잘 모르겠음</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="details">추가 전달사항</label>
+          <textarea id="details" name="details"
+                    placeholder="현재 가입 중인 보험·매출규모·우려 위험 등을 적어주시면 더 정확한 제안이 가능합니다"></textarea>
+        </div>
+        <div class="form-col-2">
+          <div class="form-row">
+            <label for="contact_time">희망 연락 시간대</label>
+            <select id="contact_time" name="contact_time">
+              <option value="">관계없음</option>
+              <option>오전 (09:00–12:00)</option>
+              <option>점심 (12:00–14:00)</option>
+              <option>오후 (14:00–18:00)</option>
+              <option>이메일만</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="how_heard">경로</label>
+            <select id="how_heard" name="how_heard">
+              <option value="">선택</option>
+              <option>cargoinsu.com</option>
+              <option>검색 (구글·네이버)</option>
+              <option>지인 소개</option>
+              <option>기존 계약</option>
+              <option>기타</option>
+            </select>
+          </div>
+        </div>
+
+        <hr style="margin:22px 0;border-top:1px dashed var(--border);">
+
+        <h3 style="color:var(--brand);">③ 개인정보 처리 동의</h3>
+        <div class="form-row">
+          <label class="check-row">
+            <input type="checkbox" name="agree_privacy" required>
+            <span>[필수] 개인정보 수집·이용에 동의합니다.<br>
+              <small style="color:var(--muted);">수집항목: 회사명·담당자명·연락처·이메일·상담내용 /
+                이용목적: 보험 상담·견적 회신 / 보유기간: 상담 종료 후 3년 /
+                거부 시 상담 접수 제한 가능.</small></span>
+          </label>
+        </div>
+        <div class="form-row">
+          <label class="check-row">
+            <input type="checkbox" name="agree_marketing">
+            <span>[선택] 보험상품·이벤트 정보 수신에 동의합니다. (이메일·문자)</span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-dark">상담신청 제출</button>
+          <a class="btn btn-ghost" href="tel:010-5755-6465">📞 바로 통화</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Side contact panel -->
+    <aside>
+      <div class="contact-side">
+        <h3>빠른 문의</h3>
+        <p style="font-size:.86rem;color:var(--muted);margin-bottom:14px;">
+          폼 대신 바로 연락 주셔도 좋습니다. 모든 채널을 대표가 직접 확인합니다.
+        </p>
+        <dl>
+          <dt>📧 이메일</dt><dd><a href="mailto:sales@n2nib.com">sales@n2nib.com</a></dd>
+          <dt>📞 전화</dt><dd><a href="tel:010-5755-6465">010-5755-6465</a></dd>
+          <dt>🕘 운영시간</dt><dd>평일 09:00 – 18:00</dd>
+          <dt>⚓ 적하 온라인</dt><dd><a href="https://cargoinsu.com" target="_blank" rel="noopener">cargoinsu.com</a></dd>
+          <dt>🏢 등록번호</dt><dd>금융감독원 제2026-012201호</dd>
+        </dl>
+      </div>
+
+      <div class="contact-side mt-16">
+        <h3>처리 프로세스</h3>
+        <ol class="step-list" style="margin:0;">
+          <li>접수 확인 (당일)</li>
+          <li>초도 상담 (1–2영업일)</li>
+          <li>복수 보험회사 견적 (2–5영업일)</li>
+          <li>비교표·추천안 제공</li>
+          <li>청약·가입 지원</li>
+        </ol>
+      </div>
+
+      <div class="callout mt-16" style="background:#fff1f2;border-left-color:#dc2626;font-size:.86rem;">
+        <strong style="color:#dc2626;">※ 취급 제외.</strong>
+        상해보험(단체상해·여행자보험)은 취급하지 않습니다.
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- RIGHT FLOATING QUICK -->
+<div class="right-quick" aria-hidden="true">
+  <a class="rq-item tel" href="tel:010-5755-6465"><span class="rq-icon">📞</span>전화상담<span class="rq-num">010-5755-6465</span></a>
+  <a class="rq-item" href="consult.html"><span class="rq-icon">✉️</span>온라인<br>문의</a>
+  <a class="rq-item" href="https://cargoinsu.com" target="_blank" rel="noopener"><span class="rq-icon">⚓</span>적하보험<br>바로가입</a>
+  <button class="rq-totop" type="button" aria-label="맨위로">↑</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <h4>엔투엔보험중개</h4>
+        <div class="footer-info">
+          <strong>N2N Insurance Brokerage</strong><br>
+          대표 성한욱 (ACIU 기업보험심사역)<br>
+          금융감독원 등록 보험중개사 제2026-012201호<br>
+          이메일 sales@n2nib.com<br>
+          전화 <a href="tel:010-5755-6465">010-5755-6465</a>
+        </div>
+      </div>
+      <div>
+        <h4>취급분야</h4>
+        <a href="products.html#marine">해상보험</a>
+        <a href="products.html#liability">배상보험</a>
+        <a href="products.html#wc">근재보험</a>
+        <a href="products.html#property">화재/재물</a>
+        <a href="products.html#engineering">기술보험</a>
+        <a href="products.html#specialty">특종보험</a>
+      </div>
+      <div>
+        <h4>바로가기</h4>
+        <a href="about.html">회사소개</a>
+        <a href="products.html">취급상품</a>
+        <a href="consult.html">상담신청</a>
+        <a href="https://cargoinsu.com" target="_blank" rel="noopener">cargoinsu.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 N2N Insurance Brokerage. All rights reserved.</span>
+      <span>* 본 웹사이트는 상품 안내이며, 계약내용은 약관·보험증권이 우선합니다. ※ 상해보험(단체상해·여행자보험)은 취급하지 않습니다.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script src="assets/products-index.js"></script>
+<script src="assets/search.js"></script>
+<script>
+/* ============================================================
+   상담 제출 완료 안내 (?sent=1 진입 시)
+   ------------------------------------------------------------
+   Formspree _next 리다이렉트로 돌아온 직후:
+   1) 큰 성공 배너 표시 + 폼 숨김 + 페이지 최상단 스크롤
+   2) GTM dataLayer에 form_submit 이벤트 push (네비게이션 종료 후 안전)
+   ============================================================ */
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    var params = new URLSearchParams(location.search);
+    if (params.get('sent') !== '1') return;
+
+    var b = document.getElementById('consultBanner');
+    var t = document.getElementById('consultBannerTitle');
+    var s = document.getElementById('consultBannerSub');
+    if (b) {
+      b.hidden = false;
+      b.classList.add('consult-banner--success');
+    }
+    if (t) t.textContent = '✅ 상담 신청이 정상 접수되었습니다';
+    if (s) s.innerHTML = '담당 ACIU 심사역이 <strong>1–2영업일 이내</strong> 회신드립니다.<br>급하신 경우 ☎ <a href="tel:010-5755-6465" style="color:inherit;text-decoration:underline">010-5755-6465</a> 또는 카카오톡으로 연락 주세요.';
+
+    var formEl = document.getElementById('consultForm');
+    if (formEl) formEl.style.display = 'none';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    /* GTM form_submit 보조 트래킹 — 네비게이션 후 안정 시점에서 push */
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'form_submit', form_id:'n2nib_consult_success'});
+  });
+})();
+
+/* ============================================================
+   상담신청 폼 자동 채움 (URL 쿼리파라미터 → 폼 값)
+   상세페이지 CTA 예: consult.html?product=패키지보험&insurer=DB&category=property
+   ------------------------------------------------------------
+   지원 파라미터:
+     product  : 희망 상품명(텍스트 박스에 주입, 배지 표시)
+     insurer  : 선호 보험회사 (DB / CHUBB / KB / 메리츠 / 현대 / AIG)
+     category : 보험 분류 키(marine/liability/wc/property/engineering/specialty)
+     channel  : B2B / B2C (임직원수·details 프리셋에 활용)
+     purpose  : 신규 / 갱신 / 검토 / 입찰 / 의무 등
+     ref      : 진입 경로 태그 (google, naver, cargoinsu, partner 등)
+   ============================================================ */
+(function () {
+  'use strict';
+  var params = new URLSearchParams(location.search);
+  if (!location.search) return;
+
+  var P = {
+    product:  (params.get('product')  || '').trim(),
+    insurer:  (params.get('insurer')  || '').trim(),
+    category: (params.get('category') || '').trim(),
+    channel:  (params.get('channel')  || '').trim(),
+    purpose:  (params.get('purpose')  || '').trim(),
+    ref:      (params.get('ref')      || '').trim(),
+    memo:     (params.get('memo')     || '').trim()
+  };
+
+  /* 카테고리 키 → select 옵션 라벨 매핑 */
+  var CAT_MAP = {
+    'marine':      '해상 (적하·운송)',
+    'liability':   '배상 (생산물·D&O·전문직·의료·사이버·환경 등)',
+    'wc':          '근재 (국내·해외 근로자재해보장)',
+    'property':    '화재/재물 (재산종합·패키지·일반화재)',
+    'engineering': '기술 (건설공사·조립)',
+    'specialty':   '특종 (납치·행사·범죄·도난·채권보전)'
+  };
+
+  /* 상품명 → 자동 분류 추론 (category 미지정 시) */
+  function guessCategory(productName) {
+    var s = (productName || '').toLowerCase();
+    if (/적하|cargo|해상|운송|marine|transit/.test(s)) return 'marine';
+    if (/근재|wc|재해보장/.test(s)) return 'wc';
+    if (/car|ear|건설공사|조립|기술/.test(s)) return 'engineering';
+    if (/화재|재물|패키지|all.?risks|package|property|재산종합|엑설런트/.test(s)) return 'property';
+    if (/k&r|납치|행사|이벤트|홀인원|범죄|crime|도난|특종|contingency/.test(s)) return 'specialty';
+    if (/pl|생산물|d&o|e&o|임원|전문직|의료|의사|병원|개인정보|사이버|환경|중대사고|영업.*(배상|책임)|시설.*(배상|책임)|배상/.test(s)) return 'liability';
+    return '';
+  }
+
+  /* purpose 키 → select 라벨 매핑 */
+  var PURPOSE_MAP = {
+    'new':     '신규 가입',
+    'renew':   '기존 계약 갱신·리뉴얼',
+    'review':  '기존 계약 검토·비교',
+    'bid':     '입찰·계약체결 요건',
+    'legal':   '법정 의무보험'
+  };
+
+  function setSelectByLabel(sel, label) {
+    if (!sel || !label) return false;
+    for (var i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].text === label || sel.options[i].value === label) {
+        sel.selectedIndex = i;
+        sel.dispatchEvent(new Event('change', { bubbles: true }));
+        return true;
+      }
+    }
+    return false;
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var productInput  = document.getElementById('product');
+    var categorySel   = document.getElementById('category');
+    var purposeSel    = document.getElementById('purpose');
+    var detailsArea   = document.getElementById('details');
+    var insurerHidden = document.getElementById('insurerHidden');
+    var srcPageHidden = document.getElementById('sourcePageHidden');
+    var srcRefHidden  = document.getElementById('sourceRefHidden');
+    var banner        = document.getElementById('consultBanner');
+    var bannerTitle   = document.getElementById('consultBannerTitle');
+    var bannerSub     = document.getElementById('consultBannerSub');
+
+    /* 상품명 주입 */
+    if (P.product && productInput && !productInput.value) {
+      productInput.value = P.product;
+    }
+
+    /* 카테고리 자동 선택 */
+    var catKey = P.category || guessCategory(P.product);
+    if (catKey && CAT_MAP[catKey] && categorySel) {
+      setSelectByLabel(categorySel, CAT_MAP[catKey]);
+    }
+
+    /* 가입 목적 */
+    if (P.purpose && purposeSel) {
+      var purposeLabel = PURPOSE_MAP[P.purpose.toLowerCase()] || P.purpose;
+      setSelectByLabel(purposeSel, purposeLabel);
+    }
+
+    /* 선호 보험회사 — hidden + details 프리셋 */
+    if (P.insurer) {
+      if (insurerHidden) insurerHidden.value = P.insurer;
+      if (detailsArea && !detailsArea.value) {
+        detailsArea.value = '선호 보험회사: ' + P.insurer + '\n';
+      }
+    }
+
+    /* 자가진단·추가 메모 — details에 prepend */
+    if (P.memo && detailsArea) {
+      var prefix = '[자가진단/메모] ' + P.memo + '\n\n';
+      detailsArea.value = prefix + (detailsArea.value || '');
+    }
+
+    /* 유입 경로 추적 */
+    if (srcPageHidden) srcPageHidden.value = document.referrer || '(direct)';
+    if (srcRefHidden)  srcRefHidden.value  = P.ref || '';
+
+    /* 관심 상품 배지 표시 */
+    if ((P.product || P.insurer) && banner) {
+      banner.hidden = false;
+      if (P.product && bannerTitle) {
+        bannerTitle.textContent = '관심 상품: ' + P.product
+          + (P.insurer ? ' (선호 보험회사: ' + P.insurer + ')' : '');
+      } else if (P.insurer && bannerTitle) {
+        bannerTitle.textContent = '선호 보험회사: ' + P.insurer;
+      }
+      if (bannerSub) {
+        bannerSub.textContent = '아래 폼에 해당 정보가 자동 입력되었습니다. 필요시 수정해 주세요.';
+      }
+    }
+  });
+})();
+
+/* ============================================================
+   이메일 → replyto 동기화 (Web3Forms Reply-To 명시)
+   ------------------------------------------------------------
+   Web3Forms는 name="email" 필드를 자동으로 reply-to로 사용하지만,
+   명시적 replyto 필드도 함께 채워 일관성 보장.
+   Gmail에서 답장 시 받는사람에 자동 입력됩니다.
+   ============================================================ */
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    var emailInput = document.getElementById('email');
+    var replyto    = document.getElementById('replyto');
+    if (!emailInput || !replyto) return;
+    var sync = function () { replyto.value = emailInput.value || ''; };
+    emailInput.addEventListener('input', sync);
+    emailInput.addEventListener('change', sync);
+    emailInput.addEventListener('blur', sync);
+    /* 초기값(브라우저 자동완성 대비) */
+    sync();
+  });
+})();
+</script>
+
+</body>
+</html>

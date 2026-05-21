@@ -5504,3 +5504,22 @@ html body .right-quick {
 
 /* === END ed-didyouknow === */
 
+
+
+/* ===== Phase 1 - Trust Bar ===== */
+.trust-bar{
+  background:var(--brand);
+  color:rgba(244,240,232,.82);
+  font-size:.8rem;
+  line-height:1.5;
+  text-align:center;
+  padding:7px 16px;
+  letter-spacing:.01em;
+  border-bottom:1px solid rgba(244,240,232,.10);
+}
+.trust-bar .tb-item strong{ color:var(--accent); font-weight:700; }
+.trust-bar .tb-sep{ margin:0 .5em; color:rgba(244,240,232,.4); }
+@media (max-width:560px){
+  .trust-bar{ font-size:.72rem; padding:6px 12px; }
+  .trust-bar .tb-sep{ margin:0 .35em; }
+}
