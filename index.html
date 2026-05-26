@@ -66,6 +66,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 <link rel="stylesheet" href="assets/styles.css">
+<!-- === HERO 통계 박스 모바일 정렬 (2026-05-26) === -->
+<style>
+.trust-stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:1fr;
+  gap:16px;
+}
+.trust-stats-grid > div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+@media (max-width:720px){
+  .trust-stats-grid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="shortcut icon" href="/favicon.ico">
@@ -357,7 +374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="consult.html">무료 위험분석 신청</a>
-      <a class="btn btn-outline" href="#why">WHY 보험중개사</a>
+      <a class="btn btn-primary" href="#why">WHY 보험중개사</a>
     </div>
   </div>
 </section>
@@ -365,7 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ====== TRUST STATS — 강화 버전 (am-best 패턴 적용) ====== -->
 <section class="trust-stats" style="padding:40px 0;border-top:1px solid rgba(11,40,24,.08);border-bottom:1px solid rgba(11,40,24,.08);background:rgba(244,240,232,.55)">
   <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+    <div class="trust-stats-grid">
       <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
         <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">6</div>
         <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;letter-spacing:0.02em;line-height:1.55;">파트너 보험회사<br>(AM Best A급 이상)</div>
