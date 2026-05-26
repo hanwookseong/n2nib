@@ -66,8 +66,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 <link rel="stylesheet" href="assets/styles.css">
-<!-- === HERO 통계 박스 정렬 v2 (2026-05-26) — 4박스 높이 강제 균일 === -->
+<!-- === HERO 정렬 v3 (2026-05-26) — 버튼 폭 통일 + 통계 4박스 높이 균일 === -->
 <style>
+/* HERO 버튼 2개 — 모바일에서 동일 폭(전체 폭)으로 통일 */
+@media (max-width:720px){
+  .hero-actions{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:12px;
+  }
+  .hero-actions .btn{
+    width:100% !important;
+    box-sizing:border-box !important;
+    text-align:center !important;
+  }
+}
+/* HERO 아래 통계 4박스 — 높이 강제 균일 */
 .trust-stats-grid{
   display:grid !important;
   grid-template-columns:repeat(4,1fr) !important;
