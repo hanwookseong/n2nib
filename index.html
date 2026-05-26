@@ -66,21 +66,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 <link rel="stylesheet" href="assets/styles.css">
-<!-- === HERO 통계 박스 모바일 정렬 (2026-05-26) === -->
+<!-- === HERO 통계 박스 정렬 v2 (2026-05-26) — 4박스 높이 강제 균일 === -->
 <style>
 .trust-stats-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  grid-auto-rows:1fr;
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
   gap:16px;
+  align-items:stretch;
 }
 .trust-stats-grid > div{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:160px !important;
+  box-sizing:border-box !important;
+  margin:0 !important;
 }
 @media (max-width:720px){
-  .trust-stats-grid{grid-template-columns:repeat(2,1fr);}
+  .trust-stats-grid{grid-template-columns:repeat(2,1fr) !important;}
+  .trust-stats-grid > div{
+    min-height:176px !important;
+    padding:22px 14px !important;
+  }
 }
 </style>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
