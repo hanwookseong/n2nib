@@ -425,6 +425,9 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-art</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-art"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-art.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-art"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -435,11 +438,17 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-crime</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-crime"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-crime.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-crime"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-cyber-sme</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-cyber-sme"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-cyber-sme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-cyber-sme"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -455,6 +464,9 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-jewellers-block</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-jewellers-block"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-jewellers-block.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-jewellers-block"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -470,6 +482,9 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-money-securities</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-money-securities"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-money-securities.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-money-securities"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -490,6 +505,9 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-theft</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-theft"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-theft.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-theft"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -844,5 +862,53 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/wc-foreign-worker"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-foreign-worker.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-foreign-worker"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-art.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-art"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-art.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-art"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-crime.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-crime"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-crime.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-crime"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-cyber-sme.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-cyber-sme"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-cyber-sme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-cyber-sme"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-jewellers-block.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-jewellers-block"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-jewellers-block.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-jewellers-block"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-money-securities.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-money-securities"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-money-securities.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-money-securities"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-theft.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-theft"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-theft.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-theft"/>
   </url>
 </urlset>
