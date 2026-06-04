@@ -288,16 +288,25 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/marine-hull</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-hull"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-hull.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-hull"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products/marine-logistics</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-logistics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-logistics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-logistics"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products/marine-pi</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-pi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-pi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-pi"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -308,6 +317,9 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/marine-transit</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-transit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-transit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-transit"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -712,5 +724,37 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-cgl"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-cgl.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-cgl"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-transit.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-transit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-transit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-transit"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-logistics.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-logistics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-logistics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-logistics"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-hull.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-hull"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-hull.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-hull"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-pi.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-pi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-pi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-pi"/>
   </url>
 </urlset>
