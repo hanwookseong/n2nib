@@ -24,7 +24,7 @@
   <url>
     <loc>https://n2nib.com/</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/"/>
     <lastmod>2026-05-02</lastmod>
     <priority>1.0</priority>
@@ -712,11 +712,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/en/index.html</loc>
+    <loc>https://n2nib.com/en/</loc>
     <lastmod>2026-06-04</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/"/>
   </url>
   <url>
