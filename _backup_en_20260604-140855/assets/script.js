@@ -1,10 +1,5 @@
 /* N2N Insurance Brokerage — JTOK-style B2B site JS */
 (function () {
-  // ───── i18n (경로 기반) — 국문 동작 보존 ─────
-  var LANG = location.pathname.indexOf('/en/') === 0 ? 'en' : 'ko';
-  function L(ko, en) { return LANG === 'en' ? en : ko; }
-  var BASE = LANG === 'en' ? '/en/' : '/';
-
   // ---- Mobile GNB toggle ----
   const toggle = document.querySelector('.menu-toggle');
   const gnbList = document.querySelector('.gnb > ul');
@@ -121,9 +116,7 @@
     const trust = document.createElement('div');
     trust.className = 'footer-trust';
     trust.style.cssText = 'border-top:1px solid rgba(244,240,232,.15);margin-top:1.5rem;padding-top:1rem;font-size:.78rem;line-height:1.6;color:rgba(244,240,232,.7)';
-    trust.innerHTML = LANG === 'en'
-      ? '\n  <div class="container">\n    <strong style="color:rgba(244,240,232,.85)">Depositor protection</strong> — non-life insurance products on this site are protected up to <strong>KRW 100 million</strong> per person under the Depositor Protection Act.<br>\n    <strong style="color:rgba(244,240,232,.85)">Insurance fraud</strong> Financial Supervisory Service \u260e1332 \u00b7 Fraud Prevention Center <a href="https://www.fss.or.kr/insec" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">www.fss.or.kr/insec</a><br>\n    <strong style="color:rgba(244,240,232,.85)">Disputes</strong> Financial Dispute Settlement Committee \u260e1332 \u00b7 Korea Consumer Agency \u260e1372<br>\n    <span style="opacity:.75">This is insurance promotional material; the policy wording and certificate prevail. Published under voluntary-compliance principles. Full statutory disclosures: <a href="/" style="color:inherit;text-decoration:underline">Korean page</a>.</span>\n  </div>\n'
-      : '\n  <div class="container">\n    <strong style="color:rgba(244,240,232,.85)">예금자보호</strong> 본 사이트의 모든 손해보험 상품은 예금자보호법에 따라 1인당 최고 <strong>1억원</strong>까지 보호됩니다.<br>\n    <strong style="color:rgba(244,240,232,.85)">보험사기 신고</strong> 금융감독원 ☎1332 · 보험사기방지센터 <a href="https://www.fss.or.kr/insec" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">www.fss.or.kr/insec</a><br>\n    <strong style="color:rgba(244,240,232,.85)">분쟁조정</strong> 금융분쟁조정위원회 ☎1332 · 한국소비자원 ☎1372<br>\n    <span style="opacity:.75">본 광고는 보험상품 안내자료이며, 계약내용은 약관·증권이 우선합니다. 광고는 자율준수 원칙에 따라 게재되었습니다.</span>\n  </div>\n';
+    trust.innerHTML = '\n  <div class="container">\n    <strong style="color:rgba(244,240,232,.85)">예금자보호</strong> 본 사이트의 모든 손해보험 상품은 예금자보호법에 따라 1인당 최고 <strong>1억원</strong>까지 보호됩니다.<br>\n    <strong style="color:rgba(244,240,232,.85)">보험사기 신고</strong> 금융감독원 ☎1332 · 보험사기방지센터 <a href="https://www.fss.or.kr/insec" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">www.fss.or.kr/insec</a><br>\n    <strong style="color:rgba(244,240,232,.85)">분쟁조정</strong> 금융분쟁조정위원회 ☎1332 · 한국소비자원 ☎1372<br>\n    <span style="opacity:.75">본 광고는 보험상품 안내자료이며, 계약내용은 약관·증권이 우선합니다. 광고는 자율준수 원칙에 따라 게재되었습니다.</span>\n  </div>\n';
     if (bottom && bottom.parentNode === footer) {
       footer.insertBefore(trust, bottom);
     } else if (bottom) {
@@ -179,18 +172,22 @@
   // =====================================================
   function injectMobileStickyHeader() {
     if (document.querySelector('.mobile-sticky-header')) return;
-    var homeHref = BASE + 'index.html';
-    var consultHref = BASE + 'consult.html';
-    var logoSrc = '/assets/logo-horizontal.svg';
+    var path = location.pathname.toLowerCase();
+    var isInProducts = path.indexOf('/products/') !== -1;
+    var homeHref = isInProducts ? '../index.html' : 'index.html';
+    var consultHref = isInProducts ? '../consult.html' : 'consult.html';
+    /* ★ 새 로고 적용: logo-horizontal.svg (라이트배경용, 텍스트 다크그린)
+       — 모바일 sticky 헤더는 흰색 배경이므로 라이트 변형 사용 */
+    var logoSrc = isInProducts ? '../assets/logo-horizontal.svg' : 'assets/logo-horizontal.svg';
     var header = document.createElement('header');
     header.className = 'mobile-sticky-header';
     header.setAttribute('role', 'banner');
     header.innerHTML =
-      '<button type="button" class="msh-menu" aria-label="' + L('메뉴 열기','Open menu') + '"><span></span></button>' +
-      '<a class="msh-logo" href="' + homeHref + '" aria-label="N2N Insurance Brokerage home">' +
+      '<button type="button" class="msh-menu" aria-label="메뉴 열기"><span></span></button>' +
+      '<a class="msh-logo" href="' + homeHref + '" aria-label="엔투엔보험중개 홈">' +
         '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
       '</a>' +
-      '<a class="msh-cta" href="' + consultHref + '">' + L('상담신청','Consult') + '</a>';
+      '<a class="msh-cta" href="' + consultHref + '">상담신청</a>';
     document.body.insertBefore(header, document.body.firstChild);
     // 햄버거 클릭 → GNB 메뉴 직접 토글 (document outside-click 핸들러 우회)
     var newMenuBtn = header.querySelector('.msh-menu');
@@ -223,8 +220,8 @@
     li.className = 'mmf-cta';
     li.style.cssText = 'list-style:none;padding:14px 20px 18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(244,240,232,0.18);margin-top:8px';
     li.innerHTML =
-      '<a href="tel:+82-10-5755-6465" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:transparent;border:1px solid rgba(244,240,232,0.6);border-radius:6px;color:#F4F0E8;text-decoration:none;font-weight:700">☎ ' + L('전화상담','Call') + ' +82-10-5755-6465</a>' +
-      '<a href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:#FEE500;color:#3C1E1E;border-radius:6px;text-decoration:none;font-weight:700">💬 ' + L('카카오톡 1:1 상담','KakaoTalk 1:1') + '</a>';
+      '<a href="tel:010-5755-6465" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:transparent;border:1px solid rgba(244,240,232,0.6);border-radius:6px;color:#F4F0E8;text-decoration:none;font-weight:700">☎ 전화상담 010-5755-6465</a>' +
+      '<a href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:#FEE500;color:#3C1E1E;border-radius:6px;text-decoration:none;font-weight:700">💬 카카오톡 1:1 상담</a>';
     gnbList.appendChild(li);
   }
   injectMobileMenuFooterCTAs();
@@ -237,27 +234,18 @@
     var gnb = document.querySelector('.gnb');
     if (!gnb) return;
     if (gnb.querySelector('.gnb-logo')) return;
-    var homeHref = BASE + 'index.html';
-    var logoSrc = '/assets/logo-horizontal-dark.svg';
+    var path = location.pathname.toLowerCase();
+    var isInProducts = path.indexOf('/products/') !== -1;
+    var homeHref = isInProducts ? '../index.html' : 'index.html';
+    /* ★ 새 로고 — 데스크톱 헤더는 다크그린 배경이므로 dark 변형 사용 */
+    var logoSrc = isInProducts ? '../assets/logo-horizontal-dark.svg' : 'assets/logo-horizontal-dark.svg';
     var logoAnchor = document.createElement('a');
     logoAnchor.className = 'gnb-logo';
     logoAnchor.href = homeHref;
-    logoAnchor.setAttribute('aria-label', 'N2N Insurance Brokerage home');
+    logoAnchor.setAttribute('aria-label', '엔투엔보험중개 홈');
     logoAnchor.innerHTML =
       '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">';
     gnb.insertBefore(logoAnchor, gnb.firstChild);
-    // 언어 전환 토글 — GNB 우측에 주입 (데스크톱·모바일 공통 가시)
-    if (!gnb.querySelector('.gnb-lang-switch')) {
-      var langSw = document.createElement('a');
-      langSw.className = 'gnb-lang-switch';
-      langSw.href = LANG === 'en' ? '/index.html' : '/en/index.html';
-      langSw.setAttribute('hreflang', LANG === 'en' ? 'ko' : 'en');
-      langSw.setAttribute('lang', LANG === 'en' ? 'ko' : 'en');
-      langSw.setAttribute('aria-label', LANG === 'en' ? 'View in Korean' : 'View in English');
-      langSw.textContent = LANG === 'en' ? 'KO' : 'EN';
-      langSw.style.cssText = 'margin-left:14px;align-self:center;display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:28px;padding:0 10px;border:1px solid currentColor;border-radius:7px;font-size:12px;font-weight:800;letter-spacing:.05em;text-decoration:none;line-height:1;opacity:.95;flex:0 0 auto;';
-      gnb.appendChild(langSw);
-    }
   }
   injectDesktopHeaderLogo();
 
@@ -269,18 +257,20 @@
     var footer = document.querySelector('footer.site-footer');
     if (!footer) return;
     if (document.querySelector('.footer-cta-cluster')) return;
-    var consultHref = BASE + 'consult.html';
+    var path = location.pathname.toLowerCase();
+    var isInProducts = path.indexOf('/products/') !== -1;
+    var consultHref = isInProducts ? '../consult.html' : 'consult.html';
     var section = document.createElement('section');
     section.className = 'footer-cta-cluster';
-    section.setAttribute('aria-label', L('빠른 상담 안내','Quick consultation'));
+    section.setAttribute('aria-label', '빠른 상담 안내');
     section.innerHTML =
       '<div class="fcc-inner">' +
-        '<h3>' + L('전문 보험중개사가 직접 상담합니다','A licensed insurance broker advises you directly') + '</h3>' +
-        '<p class="fcc-sub">' + L('ACIU 기업보험심사역 · AM Best A++~A 등급 6개 보험회사 약관 비교<br>평균 1영업일 회신','ACIU underwriter · compares the terms of 6 AM Best A++–A rated insurers<br>avg. 1 business-day reply') + '</p>' +
+        '<h3>전문 보험중개사가 직접 상담합니다</h3>' +
+        '<p class="fcc-sub">ACIU 기업보험심사역 · AM Best A++~A 등급 6개 보험회사 약관 비교<br>평균 1영업일 회신</p>' +
         '<div class="fcc-buttons">' +
-          '<a class="fcc-primary" href="' + consultHref + '">' + L('✎ 상담신청','✎ Request consultation') + '</a>' +
-          '<a class="fcc-phone" href="tel:+82-10-5755-6465">☎ +82-10-5755-6465</a>' +
-          '<a class="fcc-kakao" href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener">💬 ' + L('카톡상담','KakaoTalk') + '</a>' +
+          '<a class="fcc-primary" href="' + consultHref + '">✎ 상담신청</a>' +
+          '<a class="fcc-phone" href="tel:010-5755-6465">☎ 010-5755-6465</a>' +
+          '<a class="fcc-kakao" href="https://pf.kakao.com/_xlxkxdTX/chat" target="_blank" rel="noopener">💬 카톡상담</a>' +
         '</div>' +
       '</div>';
     footer.parentNode.insertBefore(section, footer);

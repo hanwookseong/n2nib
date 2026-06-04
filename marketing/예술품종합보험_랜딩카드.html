@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>예술품종합보험 — 랜딩 카드</title>
+<style>
+  /* ───── 미리보기 배경 (카드에는 포함하지 않음 — 복사 대상 아님) ───── */
+  body{
+    margin:0; min-height:100vh; padding:48px 24px;
+    display:flex; align-items:center; justify-content:center;
+    background:#F4F0E8;
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;
+  }
+
+  /* ════════ 여기서부터 카드 — 이 <style> 규칙 + 아래 <a> 블록을 복사 ════════ */
+  .fa-card{
+    --green:#0B2818; --orange:#C56A2C; --bronze:#8b5a2b;
+    --ink:#1f2b25; --muted:#6b746e; --line:#E6E2D8;
+    display:block; box-sizing:border-box;
+    width:100%; max-width:380px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:30px 28px 26px;
+    text-decoration:none; color:var(--ink);
+    position:relative; overflow:hidden;
+    box-shadow:0 1px 3px rgba(11,40,24,.05);
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    animation:fa-rise .5s ease both;
+  }
+  @keyframes fa-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  .fa-card::before{   /* 상단 브론즈→오렌지 헤어라인 */
+    content:""; position:absolute; top:0; left:0; right:0; height:4px;
+    background:linear-gradient(90deg,var(--bronze),var(--orange));
+  }
+  .fa-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 32px rgba(11,40,24,.14);
+    border-color:#d8d2c4;
+  }
+  .fa-eyebrow{
+    font-size:.68rem; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--bronze); margin:0 0 10px;
+  }
+  .fa-title{
+    font-size:1.5rem; font-weight:700; color:var(--green);
+    margin:0; line-height:1.25; letter-spacing:-.01em;
+  }
+  .fa-title small{
+    display:block; font-size:.78rem; font-weight:600;
+    color:var(--bronze); letter-spacing:.04em; margin-top:5px;
+  }
+  .fa-rule{ width:38px; height:2px; background:var(--bronze); margin:14px 0 13px; }
+  .fa-lede{
+    font-size:.9rem; line-height:1.6; color:var(--muted); margin:0 0 18px;
+  }
+  .fa-features{ list-style:none; margin:0 0 22px; padding:0; }
+  .fa-features li{
+    position:relative; padding:0 0 0 20px; margin:0 0 10px;
+    font-size:.875rem; line-height:1.5; color:var(--ink);
+  }
+  .fa-features li:last-child{ margin-bottom:0; }
+  .fa-features li::before{
+    content:"◆"; position:absolute; left:0; top:1px;
+    font-size:.6rem; color:var(--orange);
+  }
+  .fa-features b{ color:var(--green); font-weight:700; }
+  .fa-cta{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--orange); color:#fff;
+    font-size:.92rem; font-weight:700;
+    padding:13px 18px; border-radius:9px;
+    transition:background .2s ease;
+  }
+  .fa-card:hover .fa-cta{ background:#b25c22; }
+  .fa-cta .arrow{ transition:transform .25s ease; }
+  .fa-card:hover .fa-cta .arrow{ transform:translateX(4px); }
+  .fa-note{
+    margin:14px 0 0; font-size:.7rem; line-height:1.55;
+    color:var(--muted); text-align:center;
+  }
+  /* ════════ 카드 끝 ════════ */
+</style>
+</head>
+<body>
+
+<!-- ════════ 여기서부터 복사 — 이 <a> 블록 (위 .fa-* 스타일과 함께) ════════ -->
+<a class="fa-card" href="https://cargoinsu.com/products/specialty-art.html">
+  <p class="fa-eyebrow">Fine Art Insurance</p>
+  <h3 class="fa-title">
+    예술품종합보험
+    <small>갤러리 · 아트딜러 · 컬렉션</small>
+  </h3>
+  <div class="fa-rule"></div>
+  <p class="fa-lede">
+    작가 작업실에서 컬렉터 도착지까지 — 작품의 이동·전시·보관 전 구간을
+    단일 약관으로 통합 보장하는 예술품 전용 보험입니다.
+  </p>
+  <ul class="fa-features">
+    <li><b>7개 구간 통합 보장</b> — 운송·전시·보관·이동·포장·설치·개봉 (Wall to Wall)</li>
+    <li><b>약정가액(Agreed Value)</b> — 사고 시 작품 가치 산정 분쟁 부담을 줄임</li>
+    <li><b>단기 전시 보험</b> — 아트페어·기획전 기간만 별도 가입 가능</li>
+    <li><b>Pair &amp; Set 담보</b> — 세트 작품 일부 손상 시 잔존 가치하락분도 검토</li>
+  </ul>
+  <span class="fa-cta">상품 안내 보기 <span class="arrow">→</span></span>
+  <p class="fa-note">
+    Chubb Fine Art 전담팀 포함 6개 보험회사 약관 비교 · 보장·한도는 각
+    보험회사 약관 우선 · 당사 수수료는 보험회사 부담 (보험업법 제98조)
+  </p>
+</a>
+<!-- ════════ 카드 끝 ════════ -->
+
+</body>
+</html>

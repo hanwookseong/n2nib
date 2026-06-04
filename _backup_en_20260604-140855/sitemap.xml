@@ -1,18 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://n2nib.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/about"/>
     <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://n2nib.com/consult</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/consult"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/consult.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/consult"/>
     <lastmod>2026-05-02</lastmod>
     <priority>0.9</priority>
   </url>
@@ -23,9 +17,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/"/>
     <lastmod>2026-05-02</lastmod>
     <priority>1.0</priority>
   </url>
@@ -81,9 +72,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-cgl</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-cgl"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-cgl.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-cgl"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -119,9 +107,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-do</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-do"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-do.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-do"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -152,9 +137,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-eo</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-eo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-eo.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-eo"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -205,9 +187,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-pl</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-pl"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-pl.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-pl"/>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -656,61 +635,5 @@
     <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/index.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/about.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/about"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/consult.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/consult"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/consult.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/consult"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-do.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-do"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-do.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-do"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-pl.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-pl"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-pl.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-pl"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-eo.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-eo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-eo.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-eo"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-cgl.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-cgl"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-cgl.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-cgl"/>
   </url>
 </urlset>
