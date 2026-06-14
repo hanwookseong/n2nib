@@ -69,6 +69,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <!-- === HERO 정렬 v3 (2026-05-26) — 버튼 폭 통일 + 통계 4박스 높이 균일 === -->
 <style>
 /* HERO 버튼 2개 — 모바일에서 동일 폭(전체 폭)으로 통일 */
@@ -106,6 +108,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     min-height:176px !important;
     padding:22px 14px !important;
   }
+}
+/* ====== HERO 옵션 A · Pretendard · 좌측정렬 에디토리얼 (2026-06-14) ====== */
+.hero-a{ text-align:left; font-family:'Pretendard',var(--f-body); }
+.hero-a .hero-grid{ display:grid; grid-template-columns:1fr 260px; gap:48px; align-items:center; }
+.hero-a .hero-eyebrow{ margin-bottom:22px; }
+.hero-a h1{
+  font-family:'Pretendard',var(--f-display);
+  text-align:left; margin:0 0 18px; max-width:none;
+  font-weight:800; letter-spacing:-0.02em; line-height:1.4;
+}
+.hero-a .lede{ font-family:'Pretendard',var(--f-body); text-align:left; margin:0; max-width:54ch; }
+.hero-a .hero-usp{ text-align:left; margin-left:0; margin-right:0; max-width:60ch; }
+.hero-a .hero-actions{ justify-content:flex-start; }
+.hero-rail{ border-left:1px solid rgba(244,240,232,.18); padding-left:26px; display:flex; flex-direction:column; gap:20px; }
+.hero-rail .hr-item{ display:flex; flex-direction:column; gap:4px; }
+.hero-rail .hr-n{ font-family:'Pretendard',var(--f-display); font-size:2rem; font-weight:800; color:#fff; line-height:1; letter-spacing:-0.02em; }
+.hero-rail .hr-n i{ font-size:1rem; font-weight:700; font-style:normal; margin-left:2px; }
+.hero-rail .hr-l{ font-size:.74rem; color:rgba(244,240,232,.62); line-height:1.5; }
+@media (max-width:880px){
+  .hero-a .hero-grid{ grid-template-columns:1fr; gap:30px; }
+  .hero-rail{ border-left:0; border-top:1px solid rgba(244,240,232,.18); padding-left:0; padding-top:22px; flex-direction:row; flex-wrap:wrap; gap:22px 28px; }
+  .hero-rail .hr-item{ flex:1 1 40%; }
+}
+@media (max-width:520px){
+  .hero-a h1{ font-size:1.7rem; }
+  .hero-rail .hr-n{ font-size:1.6rem; }
 }
 </style>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -383,50 +411,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li style="flex:0 0 auto;"><a class="consult-btn" href="consult.html">상담신청 →</a></li>
   </ul><button class="menu-toggle" aria-label="메뉴"><span></span><span></span><span></span></button></div></nav>
 
-<!-- ====== HERO ====== -->
-<section class="hero">
+<!-- ====== HERO (옵션 A · Pretendard · 좌측정렬 에디토리얼) ====== -->
+<section class="hero hero-a">
   <div class="container">
-    <span class="hero-eyebrow">손해보험중개사 · 금감원 등록 제2026-012201호</span>
-    <h1>보험중개사가 독립적으로<br><em style="color:var(--accent);font-weight:600;">AM Best A++~A 등급</em> 6개 보험회사 약관을 비교해 설계합니다</h1>
-    <p class="lede">
-      AIG · Chubb(A++) · DB손해보험(A+) · KB손해보험 · 메리츠화재 · 현대해상(A)
-      — 6개 보험회사 약관을 보험중개사가 <strong style="color:#fff;">독립적으로</strong> 비교 분석해, 상품에 적합한 <strong style="color:#fff;">최적 보장</strong>을 설계하는 <strong style="color:#fff;">ONE STOP 서비스</strong>.
-      기업보험 <strong style="color:#fff;">111종</strong>을 한 자리에서 다룹니다.
-      적하보험은 <strong style="color:#fff;">cargoinsu.com</strong>에서 24시간 온라인 가입.
-    </p>
-    <p class="hero-usp">
-      ACIU 기업보험심사역 · AM Best A++~A 6개사 약관 비교 · 평균 1영업일 회신
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="consult.html">무료 위험분석 신청</a>
-      <a class="btn btn-primary" href="#why">WHY 보험중개사</a>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <span class="hero-eyebrow">손해보험중개사 · 금감원 등록 제2026-012201호</span>
+        <h1>보험중개사가 독립적으로<br><em style="color:var(--accent);font-weight:800;">AM Best A++~A 등급</em> 6개 보험회사<br>약관을 비교해 설계합니다</h1>
+        <p class="lede">
+          AIG · Chubb(A++) · DB손해보험(A+) · KB손해보험 · 메리츠화재 · 현대해상(A)
+          — 6개 보험회사 약관을 보험중개사가 <strong style="color:#fff;">독립적으로</strong> 비교 분석해, 상품에 적합한 <strong style="color:#fff;">최적 보장</strong>을 설계하는 <strong style="color:#fff;">ONE STOP 서비스</strong>.
+          기업보험 <strong style="color:#fff;">111종</strong>을 한 자리에서. 적하보험은 <strong style="color:#fff;">cargoinsu.com</strong>에서 24시간 온라인 가입.
+        </p>
+        <p class="hero-usp">
+          ACIU 기업보험심사역 · AM Best A++~A 6개사 약관 비교 · 평균 1영업일 회신
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="consult.html">무료 위험분석 신청</a>
+          <a class="btn btn-primary" href="#why">WHY 보험중개사</a>
+        </div>
+      </div>
+      <aside class="hero-rail" aria-label="핵심 지표">
+        <div class="hr-item"><span class="hr-n">6</span><span class="hr-l">파트너 보험회사<br>(AM Best A급 이상)</span></div>
+        <div class="hr-item"><span class="hr-n">110<i>+종</i></span><span class="hr-l">기업보험 전문 중개<br>(6대 분야)</span></div>
+        <div class="hr-item"><span class="hr-n">24<i>시간</i></span><span class="hr-l">적하보험 자동견적<br>(cargoinsu.com)</span></div>
+        <div class="hr-item"><span class="hr-n">1<i>영업일</i></span><span class="hr-l">평균 회신 시간<br>(ACIU 심사역)</span></div>
+      </aside>
     </div>
   </div>
 </section>
 
-<!-- ====== TRUST STATS — 강화 버전 (am-best 패턴 적용) ====== -->
-<section class="trust-stats" style="padding:40px 0;border-top:1px solid rgba(11,40,24,.08);border-bottom:1px solid rgba(11,40,24,.08);background:rgba(244,240,232,.55)">
-  <div class="container">
-    <div class="trust-stats-grid">
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">6</div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;letter-spacing:0.02em;line-height:1.55;">파트너 보험회사<br>(AM Best A급 이상)</div>
-      </div>
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">110<span style="font-size:1.4rem;font-weight:700;">+</span><span style="font-size:1.1rem;font-weight:600;margin-left:2px;">종</span></div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;letter-spacing:0.02em;line-height:1.55;">기업보험 전문 중개<br>(6 대 분야 · 해상·배상·근재 외)</div>
-      </div>
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">24<span style="font-size:1.1rem;font-weight:600;margin-left:2px;">시간</span></div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;letter-spacing:0.02em;line-height:1.55;">적하보험 자동견적<br>(자매 플랫폼 cargoinsu.com)</div>
-      </div>
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">1<span style="font-size:1.1rem;font-weight:600;margin-left:2px;">영업일</span></div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;letter-spacing:0.02em;line-height:1.55;">평균 회신 시간<br>(ACIU 기업보험심사역)</div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- (trust-stats 밴드는 옵션 A 히어로 레일로 통합되어 제거됨 · 2026-06-14) -->
+
 
 <!-- ====== QUICK ENTRY — 6 진입 동선 ====== -->
 <section class="section">
