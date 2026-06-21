@@ -5563,3 +5563,6 @@ html body .right-quick {
   .ed-case{ padding:20px 18px 18px 18px; }
   .ed-case::before{ position:static; margin-bottom:12px; }
 }
+
+/* n2nib-qa-mobile-metaitem-wrap */
+@media (max-width:600px){.site-footer .footer-meta .meta-item{white-space:normal;}}
