@@ -1111,4 +1111,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-vocational-trainee.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-vocational-trainee"/>
   </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-products-completed-ops.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-products-completed-ops"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-products-completed-ops.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-products-completed-ops"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-recall.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-recall"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-recall.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-recall"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-privacy.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-privacy"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-technology.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-technology"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-technology.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-technology"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-medical-device.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-medical-device"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-medical-device.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-medical-device"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-serious-accident.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-serious-accident"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-serious-accident.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-serious-accident"/>
+  </url>
 </urlset>
