@@ -1007,4 +1007,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-trade-credit.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-trade-credit"/>
   </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-cosmetic-pl.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-cosmetic-pl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-cosmetic-pl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-cosmetic-pl"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-food-pl.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-food-pl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-food-pl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-food-pl"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-contingency.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-contingency"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-contingency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-contingency"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-event.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-event"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-event.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-event"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-legal-expense.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-legal-expense"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-legal-expense.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-legal-expense"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/specialty-weather.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-weather"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-weather.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-weather"/>
+  </url>
 </urlset>
