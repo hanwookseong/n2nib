@@ -5636,3 +5636,13 @@ html[lang="en"] .hero .btn-primary{ background:#C56A2C !important; color:#fff !i
   }
 }
 /* ==== END N2N-GLOBAL-CARGOINSU-ALIGN ==== */
+/* ==== N2N-EN-CONSULT-CONTAINER-FIX (2026-06-22) - remove to revert ==== */
+.consult-page{ padding:48px 0 80px; background:var(--ivory); }
+.consult-head{ max-width:var(--maxw); margin:0 auto; padding:32px 20px 8px; }
+.consult-head h1{ font-size:clamp(1.6rem,3vw,2.2rem); color:var(--forest); margin:0 0 6px; }
+.consult-head p{ color:var(--ink-2); font-size:1rem; margin:0 0 8px; }
+.consult-head .crumb{ color:var(--muted); font-size:.84rem; margin-bottom:6px; }
+.consult-head .crumb a{ color:var(--ink-2); }
+.consult-grid{ display:grid; grid-template-columns:1.7fr 1fr; gap:32px; align-items:start; max-width:var(--maxw); margin:0 auto; padding:0 20px; }
+@media (max-width:880px){ .consult-grid{ grid-template-columns:1fr; gap:20px; padding:0 16px; } }
+/* ==== END N2N-EN-CONSULT-CONTAINER-FIX ==== */
