@@ -911,4 +911,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-theft.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-theft"/>
   </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-cyber.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-cyber"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-cyber.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-cyber"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-environmental.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-environmental"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-environmental.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-environmental"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-medical.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-medical"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-medical.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-medical"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-architect.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-architect"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-architect.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-architect"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-lawyer-lpl.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-lawyer-lpl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-lawyer-lpl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-lawyer-lpl"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/liability-life-sciences.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-life-sciences"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-life-sciences.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-life-sciences"/>
+  </url>
 </urlset>
