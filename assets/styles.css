@@ -5566,3 +5566,6 @@ html body .right-quick {
 
 /* n2nib-qa-mobile-metaitem-wrap */
 @media (max-width:600px){.site-footer .footer-meta .meta-item{white-space:normal;}}
+
+/* n2nib-en-footer-logo : EN ??? footer ?? ??? (content:url ?????) */
+html[lang="en"] .site-footer .footer-brand .logo-img{content:url('logo-horizontal-dark-en.svg');}
