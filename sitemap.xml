@@ -1055,4 +1055,60 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-weather.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-weather"/>
   </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-aviation.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-aviation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-aviation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-aviation"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-export-credit.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-export-credit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-export-credit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-export-credit"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/marine-ransom.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-ransom"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-ransom.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-ransom"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/wc-daily-worker.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/wc-daily-worker"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-daily-worker.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-daily-worker"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/wc-excess.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/wc-excess"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-excess.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-excess"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/wc-seafarer.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/wc-seafarer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-seafarer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-seafarer"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/wc-vocational-trainee.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/wc-vocational-trainee"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-vocational-trainee.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-vocational-trainee"/>
+  </url>
 </urlset>
