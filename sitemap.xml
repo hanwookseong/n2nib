@@ -959,4 +959,52 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-life-sciences.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-life-sciences"/>
   </url>
+  <url>
+    <loc>https://n2nib.com/en/products/property-business-interruption.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-business-interruption"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-business-interruption.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-business-interruption"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/property-machinery-breakdown.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-machinery-breakdown"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-machinery-breakdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-machinery-breakdown"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/property-machinery-comprehensive.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-machinery-comprehensive"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-machinery-comprehensive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-machinery-comprehensive"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/property-earthquake.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-earthquake"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-earthquake.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-earthquake"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/property-corporate.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-corporate"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-corporate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-corporate"/>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/products/property-trade-credit.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-trade-credit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-trade-credit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-trade-credit"/>
+  </url>
 </urlset>
