@@ -5569,3 +5569,40 @@ html body .right-quick {
 
 /* n2nib-en-footer-logo : EN ??? footer ?? ??? (content:url ?????) */
 html[lang="en"] .site-footer .footer-brand .logo-img{content:url('logo-horizontal-dark-en.svg');}
+
+
+/* ============================================================
+   N2NIB-LANGFIX-V1  -  KO/EN language toggle visibility fix
+   The desktop nav row (logo + 7 links + consult CTA + search) is full, so the
+   toggle was pushed off-screen / overlapping the search box and was invisible
+   (deep-green on the dark bar). It is relocated up into the trust-bar's empty
+   right area, with cream contrast. Mobile (<=780px) is untouched.
+   ============================================================ */
+@media (min-width: 781px){
+  .gnb-lang-switch{
+    position: absolute !important;
+    top: -30px !important;
+    right: max(1.5rem, calc((100% - 1280px)/2 + 1.5rem)) !important;
+    z-index: 60 !important;
+    margin: 0 !important;
+    height: 24px !important;
+    padding: 0 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    border-radius: 5px !important;
+    color: var(--ivory, #F4F0E8) !important;
+    border: 1px solid rgba(244,240,232,.4) !important;
+    background: rgba(244,240,232,.10) !important;
+    opacity: 1 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: .05em !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+  }
+  .gnb-lang-switch:hover{
+    background: var(--accent, #C56A2C) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+  }
+}
