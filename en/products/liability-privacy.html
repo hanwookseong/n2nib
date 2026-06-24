@@ -138,7 +138,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul></li>
   <li><a href="/products.html">All Products (KR)</a></li>
   <li><a href="/en/consult.html">Consultation</a></li>
-  <li class="gnb-search-li" style="margin-left:auto;"></li>
+  <li class="gnb-search-li" style="margin-left:auto;">
+      <div class="gnb-search">
+        <input id="gnbSearchInput" type="search" placeholder="Search products &amp; keywords…" autocomplete="off">
+        <div id="gnbSearchDropdown" class="gnb-search-dropdown"></div>
+      </div>
+    </li>
   <li style="flex:0 0 auto;"><a class="consult-btn" href="/en/consult.html">Free risk analysis →</a></li>
 </ul><button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button></div></nav>
 
@@ -306,6 +311,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="https://cargoinsu.com/en/" target="_blank" rel="noopener"><strong>🚢</strong><span>cargo<br>insu</span></a>
   <button class="rq-totop" aria-label="Back to top"><strong>↑</strong><span>TOP</span></button>
 </aside>
+<script src="/assets/products-index-en.js"></script>
+<script src="/assets/search-en.js"></script>
 <script src="/assets/script.js"></script>
 </body>
 </html>

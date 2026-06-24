@@ -118,7 +118,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </li>
   <li><a href="/products.html">All Products (KR)</a></li>
   <li><a href="/en/consult.html">Consultation</a></li>
-  <li class="gnb-search-li" style="margin-left:auto;"></li>
+  <li class="gnb-search-li" style="margin-left:auto;">
+      <div class="gnb-search">
+        <input id="gnbSearchInput" type="search" placeholder="Search products &amp; keywords…" autocomplete="off">
+        <div id="gnbSearchDropdown" class="gnb-search-dropdown"></div>
+      </div>
+    </li>
   <li style="flex:0 0 auto;"><a class="consult-btn" href="/en/consult.html">Free risk analysis →</a></li>
 </ul><button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button></div></nav>
 
@@ -384,6 +389,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="footer-bottom">© 2026 N2N Insurance Brokerage. All rights reserved. · <a href="/privacy.html" style="color:inherit;text-decoration:underline">Privacy Policy</a> · <a href="/terms.html" style="color:inherit;text-decoration:underline">Terms of Use</a></div>
 </footer>
 
+<script src="/assets/products-index-en.js"></script>
+<script src="/assets/search-en.js"></script>
 <script src="/assets/script.js"></script>
 <script>
 (function () {
