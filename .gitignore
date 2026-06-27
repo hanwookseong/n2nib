@@ -5,3 +5,8 @@ _backup_*/
 *._bak_*
 n2n_backups/
 
+
+# backup artifacts (never deploy)
+_bak_*/
+_backup*/
+*.bak_*
