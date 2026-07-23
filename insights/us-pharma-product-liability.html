@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B2818">
+<title>[케이스] 미국 수출 의약품 생산물배상책임보험(PL) — 갱신 때 반드시 확인할 10가지 담보 조건 | n2nib.com</title>
+<meta name="description" content="미국에 완제의약품·바이오의약품을 수출하는 제조사의 생산물배상책임보험(Product Liability). 배상청구기준(claims-made)의 3중 시간요건, 소급담보일자(retroactive date) 설정과 승계, 보고연장기간(ERP)·런오프, 완성작업·리콜 면책, 방어비용, 담보지역·재판관할을 ACIU 보험중개사 관점에서 익명 검토사례로 정리합니다.">
+<link rel="canonical" href="https://n2nib.com/insights/us-pharma-product-liability.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="미국 수출 의약품 생산물배상책임보험(PL) — 갱신 때 반드시 확인할 10가지 담보 조건">
+<meta property="og:description" content="배상청구기준 소급담보일자, 완성작업·리콜 면책, 방어비용 한도 내 포함 여부, 담보지역·재판관할. 미국 수출 제약·바이오 기업의 PL 갱신 실무 체크포인트.">
+<meta property="og:url" content="https://n2nib.com/insights/us-pharma-product-liability.html">
+<meta property="og:site_name" content="엔투엔보험중개 n2nib.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+<style>
+  :root{
+    --forest:#0B2818; --forest-soft:#143A2B;
+    --orange:#C56A2C; --orange-hover:#A9541E; --orange-ink:#A9541E;
+    --ivory:#FAF8F3; --ivory-panel:#FDFCF8; --cream-text:#F4F0E8;
+    --ink:#1A2B22; --ink-soft:#3B4A41; --ink-mute:#6B7A70;
+    --line:rgba(11,40,24,.12);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:"Pretendard",system-ui,sans-serif; background:var(--ivory); color:var(--ink); -webkit-font-smoothing:antialiased; line-height:1.7; }
+
+  /* ===== NAV ===== */
+  .nav{ background:var(--forest); display:flex; align-items:center; gap:34px; padding:14px 40px; }
+  .nav__logo{ display:flex; align-items:center; flex-shrink:0; color:var(--cream-text); text-decoration:none; font-weight:700; font-size:17px; letter-spacing:-.01em; }
+  .nav__logo img{ height:38px; width:auto; display:block; }
+  .nav__menu{ display:flex; align-items:center; gap:26px; flex:1; flex-wrap:wrap; }
+  .nav__menu a{ color:var(--cream-text); text-decoration:none; font-size:15px; font-weight:500; opacity:.92; }
+  .nav__menu a:hover{ opacity:1; }
+  .nav__right{ display:flex; align-items:center; gap:20px; flex-shrink:0; }
+  .nav__cta{ background:var(--orange); color:#fff; text-decoration:none; font-weight:700; font-size:15px; padding:11px 22px; border-radius:8px; white-space:nowrap; transition:background .15s,transform .15s; }
+  .nav__cta:hover{ background:var(--orange-hover); transform:translateY(-1px); }
+  .trustbar{ background:var(--forest-soft); color:var(--cream-text); text-align:center; font-size:13.5px; padding:11px 20px; }
+  .trustbar b{ color:var(--orange); font-weight:700; }
+  .trustbar .dot{ opacity:.45; margin:0 10px; }
+
+  /* ===== ARTICLE ===== */
+  .wrap{ max-width:780px; margin:0 auto; padding:0 24px; }
+  .article-head{ padding:64px 0 40px; border-bottom:1px solid var(--line); }
+  .crumb{ font-family:"Questrial",sans-serif; font-size:12.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--orange-ink); margin-bottom:22px; }
+  h1{ font-family:"Nanum Myeongjo",serif; font-weight:800; color:var(--forest); font-size:clamp(28px,4.2vw,42px); line-height:1.42; letter-spacing:-.01em; word-break:keep-all; margin-bottom:24px; }
+  .dek{ font-size:18px; color:var(--ink-soft); line-height:1.75; word-break:keep-all; }
+  .byline{ display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; margin-top:28px; font-size:13.5px; color:var(--ink-mute); }
+  .byline .who{ color:var(--forest); font-weight:700; }
+
+  .article-body{ padding:44px 0 24px; }
+  .article-body h2{ font-family:"Nanum Myeongjo",serif; font-weight:700; color:var(--forest); font-size:clamp(21px,2.6vw,27px); line-height:1.45; margin:48px 0 18px; word-break:keep-all; }
+  .article-body h3{ font-weight:700; color:var(--forest); font-size:17.5px; margin:30px 0 10px; }
+  .article-body p{ font-size:16.5px; color:var(--ink); margin-bottom:18px; word-break:keep-all; }
+  .article-body p b{ color:var(--forest); }
+  .article-body a{ color:var(--orange-ink); text-decoration:underline; text-underline-offset:3px; }
+  .lead-para{ font-size:18px; color:var(--ink-soft); }
+
+  .case-box{ background:var(--forest); color:var(--cream-text); border-radius:16px; padding:28px 30px; margin:30px 0; }
+  .case-box .tag{ font-family:"Questrial",sans-serif; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--orange); margin-bottom:14px; }
+  .case-box dl{ display:grid; grid-template-columns:auto 1fr; gap:10px 20px; font-size:15px; }
+  .case-box dt{ color:var(--orange); font-weight:700; white-space:nowrap; }
+  .case-box dd{ color:var(--cream-text); word-break:keep-all; }
+
+  .pull{ font-family:"Nanum Myeongjo",serif; font-weight:700; font-size:clamp(20px,2.6vw,26px); line-height:1.55; color:var(--forest); border-left:3px solid var(--orange); padding:6px 0 6px 24px; margin:34px 0; word-break:keep-all; }
+
+  table.cmp{ width:100%; border-collapse:collapse; margin:26px 0; font-size:14.5px; }
+  table.cmp th, table.cmp td{ text-align:left; padding:13px 14px; border-bottom:1px solid var(--line); vertical-align:top; word-break:keep-all; }
+  table.cmp thead th{ background:var(--ivory-panel); color:var(--forest); font-weight:700; border-bottom:2px solid var(--orange); }
+  table.cmp td:first-child{ font-weight:700; color:var(--forest); }
+  table.cmp .miss{ color:#A6482C; }
+
+  ul.check{ list-style:none; margin:22px 0; padding:0; }
+  ul.check li{ position:relative; padding:11px 0 11px 34px; border-bottom:1px solid var(--line); font-size:15.5px; color:var(--ink); word-break:keep-all; }
+  ul.check li::before{ content:"✓"; position:absolute; left:6px; top:11px; color:var(--orange); font-weight:800; }
+  ul.check li b{ color:var(--forest); }
+
+  .faq{ margin:26px 0; }
+  .faq details{ border:1px solid var(--line); border-radius:12px; padding:4px 20px; margin-bottom:12px; background:var(--ivory-panel); }
+  .faq summary{ cursor:pointer; font-weight:700; color:var(--forest); font-size:16px; padding:16px 0; list-style:none; }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{ content:"+"; float:right; color:var(--orange); font-weight:800; font-size:20px; line-height:1; }
+  .faq details[open] summary::after{ content:"–"; }
+  .faq details p{ font-size:15.5px; color:var(--ink-soft); padding-bottom:18px; margin:0; }
+
+  .disc{ font-size:13px; color:var(--ink-mute); background:var(--ivory-panel); border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin:30px 0; line-height:1.7; word-break:keep-all; }
+  .author-box{ font-size:13.5px; color:var(--ink-soft); background:var(--ivory-panel); border:1px solid var(--line); border-left:3px solid var(--orange); border-radius:8px; padding:16px 20px; margin:34px 0 10px; line-height:1.8; }
+  .author-box b{ color:var(--forest); }
+
+  /* CTA */
+  .cta{ background:var(--forest); border-radius:20px; padding:44px 40px; text-align:center; margin:44px 0 20px; }
+  .cta h2{ font-family:"Nanum Myeongjo",serif; color:var(--cream-text); font-size:clamp(22px,3vw,30px); margin-bottom:14px; word-break:keep-all; }
+  .cta p{ color:rgba(244,240,232,.82); font-size:15.5px; margin-bottom:26px; word-break:keep-all; }
+  .cta .btn{ display:inline-block; background:var(--orange); color:#fff; font-weight:700; font-size:16px; padding:15px 32px; border-radius:10px; text-decoration:none; transition:background .15s,transform .15s; }
+  .cta .btn:hover{ background:var(--orange-hover); transform:translateY(-2px); }
+  .cta .sub{ display:block; margin-top:16px; font-size:13.5px; color:rgba(244,240,232,.6); }
+
+  footer{ background:var(--forest); color:rgba(244,240,232,.72); font-size:13px; text-align:center; padding:28px 20px; line-height:1.9; }
+  footer b{ color:var(--cream-text); }
+
+  a:focus-visible, summary:focus-visible, .btn:focus-visible{ outline:2.5px solid var(--orange); outline-offset:3px; }
+  @media (max-width:820px){
+    .nav{ flex-wrap:wrap; gap:14px; padding:12px 20px; }
+    .nav__menu{ order:3; width:100%; gap:16px; }
+    .case-box dl{ grid-template-columns:1fr; gap:4px 0; }
+    .case-box dt{ margin-top:10px; }
+    .cta{ padding:34px 22px; }
+  }
+  @media (prefers-reduced-motion:reduce){ *{ transition:none!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <a href="/" class="nav__logo" aria-label="엔투엔보험중개 홈">
+      <img src="/assets/logo-horizontal.svg" alt="엔투엔보험중개">
+    </a>
+    <div class="nav__menu">
+      <a href="/products/">보험상품</a>
+      <a href="/insights/">인사이트</a>
+      <a href="/about.html">회사소개</a>
+    </div>
+    <div class="nav__right">
+      <a class="nav__cta" href="/consult.html">보장 상담</a>
+    </div>
+  </nav>
+  <div class="trustbar">
+    금융감독원 등록 보험중개사 <b>제2026-012201호</b><span class="dot">·</span>ACIU 기업보험심사역<span class="dot">·</span>AM Best A급 이상 보험회사 6사 취급
+  </div>
+
+  <article>
+    <div class="wrap">
+
+      <header class="article-head">
+        <div class="crumb">CASE · PRODUCT LIABILITY · USA</div>
+        <h1>미국에 의약품을 수출할 때, 생산물배상책임보험(PL)에서 갱신 때 반드시 확인할 10가지</h1>
+        <p class="dek">완제의약품·바이오의약품을 미국에 공급하는 제조사의 PL은 국내 PL과 구조가 다릅니다.
+          배상청구기준(claims-made)의 <b>소급담보일자</b>, 완성작업·리콜 면책, 방어비용이 한도 안에 포함되는지,
+          담보지역과 재판관할이 어디까지인지 — 사고가 났을 때 결과를 가르는 조건은 대부분 보험료가 아니라 이 조항들에 있습니다.</p>
+        <div class="byline">
+          <span class="who">성한욱 (ACIU · 보험중개사 등록 제2026-012201호)</span>
+          <span>·</span><span>엔투엔보험중개</span>
+          <span>·</span><span>최종수정 2026-07-23</span>
+        </div>
+      </header>
+
+      <div class="article-body">
+
+        <p class="lead-para">미국 수출 의약품의 생산물배상책임보험은 국문 약관이 아니라 <b>영문 약관(Product/Completed Operations Liability)</b>으로 인수되는 경우가 대부분입니다.
+          영문 슬립에는 20~30개의 면책 특별약관(Exclusion Clause)이 한꺼번에 붙어 나가는데, 이 목록을 한 줄씩 읽어 본 계약자는 많지 않습니다.
+          갱신 때 보험료만 비교하고 조항 변화를 놓치면, 정작 청구가 들어왔을 때 담보가 비어 있는 상태를 마주하게 됩니다.</p>
+
+        <div class="case-box">
+          <div class="tag">익명 검토사례</div>
+          <dl>
+            <dt>계약자</dt><dd>국내 제약·바이오 제조사 (미국 수출 완제의약품)</dd>
+            <dt>담보</dt><dd>Product Liability — 영문 약관, 배상청구기준(Claims Made Basis)</dd>
+            <dt>담보지역·관할</dt><dd>북미(USA) 한정</dd>
+            <dt>구조</dt><dd>1청구당 한도 / 총보상한도 / 청구당 자기부담금, 판매인(Vendors) 추가피보험자 특약 포함</dd>
+            <dt>검토 배경</dt><dd>연간 갱신 시점, 기존 조건의 담보 공백 점검 및 조건 개선 협상</dd>
+          </dl>
+        </div>
+        <p style="font-size:13.5px;color:var(--ink-mute);margin-top:-10px;">
+          ※ 계약자·보험료·매출·보험회사명은 모두 제거하고 구조만 일반화한 익명 사례입니다. <em>(업계 일반 사례)</em>
+        </p>
+
+        <h2>갱신 때 확인할 10가지</h2>
+
+        <table class="cmp">
+          <thead>
+            <tr><th style="width:26%">조항</th><th style="width:37%">실무상 쟁점</th><th>갱신 시 확인 포인트</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>① 소급담보일자<br>(Retroactive Date)</td>
+              <td>배상청구기준은 <b>보험기간 중 제기된 청구</b>만 담보합니다. 소급담보일자 이전에 판매·제조된 제품에서 나온 청구는 담보 밖입니다.</td>
+              <td class="miss">보험회사를 바꿀 때 소급담보일자가 신규 개시일로 리셋되면 과거 출하분 전체가 공백이 됩니다. <b>기존 소급담보일자의 승계 여부를 최우선 협상 항목</b>으로 다뤄야 합니다.</td>
+            </tr>
+            <tr>
+              <td>② 완성작업 담보<br>(Completed Operations)</td>
+              <td>상품명에 "Completed Operations"가 들어 있어도, 실제로는 <b>완성작업위험 보장제외</b> 특약이 함께 붙어 담보가 빠져 있는 경우가 있습니다.</td>
+              <td>증권 명칭이 아니라 <b>면책 특약 목록</b>을 기준으로 확인. 설비 설치·시운전 등 부수 작업이 있다면 별도 협의 필요.</td>
+            </tr>
+            <tr>
+              <td>③ 방어비용<br>(Costs &amp; Expenses)</td>
+              <td>미국 소송은 배상금보다 <b>변호사비·전문가 증인 비용</b>이 먼저 쌓입니다. 이 비용이 보상한도 안에 포함되면(costs inclusive) 실질 한도가 줄어듭니다.</td>
+              <td>한도 내 포함인지 한도 외 추가인지 문언 확인. 방어권을 보험회사가 갖는지, 변호인 선임에 계약자 의견이 반영되는지도 함께.</td>
+            </tr>
+            <tr>
+              <td>④ 한도 구조</td>
+              <td>미국 제조물책임은 집단소송·징벌적 배상 환경 때문에 단일 청구가 커지기 쉽고, 총보상한도가 <b>1년치 총액</b>이라는 점이 종종 간과됩니다.</td>
+              <td>1청구당 한도와 총보상한도의 관계, 초과층(Excess) 별도 설계 가능성 검토. <b>적정 한도는 매출·유통구조·소송 노출로 산정</b>하며 보험회사 인수심사로 확정됩니다.</td>
+            </tr>
+            <tr>
+              <td>⑤ 리콜·회수 면책<br>(Product Recall Exclusion)</td>
+              <td>제품 회수 자체의 비용(통지·회수·폐기·물류)은 대부분 PL에서 면책입니다. 실제 사고에서 가장 먼저 발생하는 비용인데도 담보가 없습니다.</td>
+              <td>필요 시 <b>Product Recall / Contaminated Products 보험을 별도 라인</b>으로 검토.</td>
+            </tr>
+            <tr>
+              <td>⑥ 효능불발휘·보증<br>(Inefficacy / Guarantee)</td>
+              <td>"효과가 없었다"는 유형의 청구와 제품 보증 위반은 면책되는 것이 일반적입니다. 의약품은 이 경계가 특히 민감합니다.</td>
+              <td>신체장해(Bodily Injury)를 수반하지 않는 순수 경제적 손실이 어디까지 배제되는지 문언 확인.</td>
+            </tr>
+            <tr>
+              <td>⑦ 전염병 면책<br>(LMA5399 등)</td>
+              <td>혈액·혈장 유래 제제 등 <b>생물학적제제</b>는 감염원 전파 가능성이 제품 고유 위험입니다. 전염병 면책이 이 위험까지 삼키면 핵심 담보가 비게 됩니다.</td>
+              <td class="miss">면책 문언의 적용 범위를 확인하고, 필요하면 <b>제품 고유 위험에 대한 예외(carve-back)</b>를 협상 대상으로 올립니다.</td>
+            </tr>
+            <tr>
+              <td>⑧ 징벌적 손해배상<br>(Punitive Damages)</td>
+              <td>미국 배심 평결에서 실제 문제가 되는 항목이지만 통상 면책입니다. 주(州)별로 부보 가능 여부도 갈립니다.</td>
+              <td>면책 유지 시 그 사실을 경영진이 인지하고 있는지, 대체 설계가 가능한 시장이 있는지 확인.</td>
+            </tr>
+            <tr>
+              <td>⑨ 담보지역·재판관할</td>
+              <td>담보지역이 USA로만 되어 있으면 <b>캐나다·EU·기타 수출국</b>에서 제기된 청구는 담보 밖입니다.</td>
+              <td>실제 출하국 리스트와 증권상 담보지역·관할을 대조. 수출국이 늘었다면 갱신 때 확장.</td>
+            </tr>
+            <tr>
+              <td>⑩ 추가피보험자·클레임 조항</td>
+              <td>미국 유통계약은 판매인 추가피보험자(AI) 외에 <b>우선·비분담(P&amp;NC)·대위권포기(WOS)·30일 해지통지·COI</b>를 요구하는 경우가 많습니다. 클레임 협조조항은 계약자의 임의 합의를 제한합니다.</td>
+              <td>유통·GPO 계약서의 보험 요구조항과 증권 문언을 <b>한 줄씩 대조</b>. 미국 현지 클레임 대응 체계도 함께 확인.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="pull">보험료는 1년에 한 번 협상하지만,<br>소급담보일자는 한 번 끊기면 되돌릴 수 없습니다.</p>
+
+        <h2>배상청구기준(Claims Made Basis)이 실제로 요구하는 세 가지</h2>
+        <p>손해사고기준(occurrence)은 <b>사고가 보험기간 중에 발생</b>했는지만 보면 됩니다.
+          배상청구기준은 다릅니다. 아래 세 요건이 <b>모두</b> 충족되어야 담보가 작동하며, 하나라도 어긋나면 보험료를 정상 납입했더라도 담보는 없습니다.</p>
+
+        <table class="cmp">
+          <thead>
+            <tr><th style="width:24%">요건</th><th style="width:36%">내용</th><th>어긋나는 전형적 상황</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>① 행위 시점</td>
+              <td>손해의 원인이 된 제조·판매·자문 행위가 <b>소급담보일자 이후</b>에 있어야 합니다.</td>
+              <td class="miss">소급담보일자가 미국 판매 개시일보다 늦게 설정되어, 초기 출하 로트에서 나온 청구가 전부 담보 밖.</td>
+            </tr>
+            <tr>
+              <td>② 청구 시점</td>
+              <td>피해자의 청구가 <b>보험기간 중에 최초로 제기</b>되어야 합니다.</td>
+              <td class="miss">만기 직후 소장이 접수됐는데 ERP를 사서 두지 않아 어느 증권으로도 담보되지 않음.</td>
+            </tr>
+            <tr>
+              <td>③ 통보 시점</td>
+              <td>보험기간(또는 약관이 정한 통보기간) 안에 <b>보험자에게 통보</b>해야 합니다.</td>
+              <td class="miss">현지 법인이 소장을 받아 자체 대응하다가 수개월 뒤 본사에 보고 — 통보 지연으로 다툼.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="disc">
+          <b>실무 팁 — 상황 통보(Notification of Circumstances)</b><br>
+          아직 청구는 없지만 청구로 이어질 수 있는 사정(부작용 신고 급증, 규제기관 조회, 로트 이상, 변호사 사전 통지문 등)을 인지했다면,
+          그 사정을 <b>현재 보험기간 중에 서면으로 통보</b>해 두는 방법이 있습니다. 대부분의 배상청구기준 약관은 이렇게 통보된 사정에서
+          나중에 실제 청구가 제기되면 <b>통보 시점의 증권으로 소급해 처리</b>합니다. 갱신 직전·보험회사 교체 직전에 이 절차를 놓치면
+          "알고 있었던 사정(prior knowledge)"으로 신규 증권에서도 배제될 수 있습니다.
+        </div>
+
+        <h2>소급담보일자(Retroactive Date) — 설정과 승계</h2>
+        <p>의약품은 투여와 손해 발현 사이에 시차가 있는 <b>롱테일(long-tail) 위험</b>입니다.
+          그래서 소급담보일자를 언제로 잡느냐가 담보 범위 자체를 결정합니다. 실무에서 나타나는 유형은 네 가지입니다.</p>
+        <ul class="check">
+          <li><b>소급담보 없음</b> (retro date = 개시일) — 신규 증권 개시 이후 행위만 담보. 기존 유통 물량이 있는 회사에는 사실상 반쪽 담보입니다.</li>
+          <li><b>특정일 지정</b> — 최초 PL 가입일, 또는 <b>해당 시장 최초 판매개시일</b>을 기준으로 설정. 미국 수출 제품은 후자가 기준선이 되어야 논리적으로 공백이 없습니다.</li>
+          <li><b>기존 일자 승계</b> — 갱신·보험회사 교체 시 직전 증권의 소급담보일자를 그대로 이어받는 형태. <b>교체 협상의 최우선 조건</b>입니다.</li>
+          <li><b>무제한 소급</b> (full prior acts) — 시장 상황과 사고이력에 따라 가능 여부가 갈립니다.</li>
+        </ul>
+        <p>여기에 두 가지 함정이 있습니다. 첫째, <b>품목별로 소급담보일자가 다르게 붙는 경우</b>입니다.
+          신제품·신규 적응증을 추가하면서 그 품목만 별도 소급일이 설정되면, 회사는 하나의 증권을 갖고 있다고 생각하지만 실제로는 담보 시작선이 여러 개입니다.
+          둘째, <b>보험회사를 옮기면서 소급일이 개시일로 리셋되는 경우</b>입니다. 이때 기존 출하분에서 나온 청구는 구증권(이미 만기)으로도, 신증권(소급 전 행위)으로도 담보되지 않습니다.
+          갱신 견적을 받을 때 보험료 옆에 <b>소급담보일자를 반드시 병기</b>해 비교해야 하는 이유입니다.</p>
+
+        <h2>보고연장기간(ERP) — 가장 자주 오해되는 담보</h2>
+        <p>ERP(Extended Reporting Period, 보고연장담보 · 흔히 tail cover)는 배상청구기준의 구조적 공백을 메우는 장치입니다.
+          다만 <b>ERP는 새로운 사고를 담보하지 않습니다.</b> 만기 전 행위에서 비롯된 청구를 <b>만기 후에 보고할 수 있는 기간만 연장</b>하는 것입니다. 이 구분을 놓치면 설계가 어긋납니다.</p>
+        <table class="cmp">
+          <thead>
+            <tr><th style="width:26%">항목</th><th>확인해야 할 내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>자동 ERP</td><td>추가보험료 없이 만기 후 일정 기간(통상 단기)만 자동 부여되는 미니테일. 있는지, 며칠인지 확인.</td></tr>
+            <tr><td>선택 ERP</td><td>추가보험료를 내고 12·24·36·60개월 또는 무제한으로 연장. <b>요율(직전 보험료 대비 %)이 약관에 미리 규정되어 있는지</b>가 핵심 — 사후 협상이면 만기 때 협상력이 없습니다.</td></tr>
+            <tr><td>행사 요건</td><td>만기 후 일정 기간 내 <b>서면 청구 + 보험료 완납</b>이 일반적이며, 기한을 넘기면 권리가 소멸합니다. 통상 <b>취소·환급 불가</b>.</td></tr>
+            <tr><td>발동 사유</td><td>보험회사의 해지·갱신거절 시에만 부여되는지, 계약자의 자발적 비갱신에도 부여되는지 약관마다 다릅니다.</td></tr>
+            <tr><td>한도 구조</td><td class="miss">ERP 기간에 <b>새 한도가 부여되지 않고</b> 직전 보험연도의 잔여 총보상한도를 그대로 쓰는 형태가 일반적입니다. 별도 한도 부여(reinstated limit) 여부를 확인해야 합니다.</td></tr>
+            <tr><td>소급담보일자</td><td>ERP는 기존 소급담보일자를 그대로 유지합니다. ERP가 소급 공백을 메워주지는 않습니다.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>ERP를 반드시 검토해야 하는 시점</h3>
+        <ul class="check">
+          <li><b>미국 시장 철수·품목 단종</b> — 유통 물량이 남아 있는 한 청구 가능성은 계속됩니다 (런오프)</li>
+          <li><b>M&amp;A·사업부 양도</b> — 양도 후 책임 귀속과 ERP 매입 주체를 계약서에 명시해야 합니다</li>
+          <li><b>보험회사 교체 시 소급담보일자 승계가 거부된 경우</b> — 구증권 ERP 매입이 유일한 대안이 됩니다</li>
+          <li><b>법인 청산·해산</b> — 청산 후에는 ERP를 살 주체가 없어집니다. 청산 절차 전에 결정해야 합니다</li>
+        </ul>
+
+        <h2>전문직업배상책임(임상시험·의료·PI/E&amp;O)에서도 같은 구조</h2>
+        <p>배상청구기준은 의약품 PL만의 문제가 아닙니다. 임상시험배상책임, 의사·의료기관배상책임, 전문직업배상책임(PI/E&amp;O), 임원배상책임(D&amp;O), 개인정보 배상책임 모두 배상청구기준으로 인수되는 것이 일반적이며, 동일한 논점이 반복됩니다.</p>
+        <ul class="check">
+          <li><b>임상시험배상책임</b> — 시험 종료 후에도 이상반응이 뒤늦게 보고될 수 있어, 시험 종료 시점이 아니라 <b>추적관찰 종료 이후까지</b>를 기준으로 ERP·연장 담보를 설계합니다. 시험 실시국별 요구 한도와 IRB·규제기관 요건도 함께 봅니다.</li>
+          <li><b>의료·의사배상</b> — 개원의·병원은 <b>은퇴·폐업·양도</b> 시점이 ERP 의사결정 시점입니다. 은퇴 후 청구를 방치하면 개인 재산으로 대응하게 됩니다.</li>
+          <li><b>PI/E&amp;O</b> — 해외 발주처가 요구하는 소급담보일자가 <b>계약 체결일 이전</b>인 경우가 많아, 계약서 문언과 증권 소급일을 대조해야 합니다.</li>
+          <li><b>공통</b> — 청약서의 <b>계약 전 알릴 의무(고지)</b>에서 "청구로 이어질 수 있는 사정을 알고 있는지" 항목은 형식적 질문이 아닙니다. 이 답변이 이후 prior knowledge 면책의 기준선이 됩니다.</li>
+        </ul>
+
+        <h2>왜 갱신에 보험중개사가 필요한가</h2>
+        <p>보험대리점은 보험회사 측을 대리하고, <b>보험중개사는 보험업법 제89조에 따라 계약자 측을 대리</b>합니다.
+          미국 수출 의약품 PL처럼 국내 인수 여력이 제한되고 재보험 시장의 인수 의향에 따라 조건이 갈리는 라인에서는, 이 차이가 실무 결과로 나타납니다.</p>
+        <ul class="check">
+          <li><b>동시 마케팅</b> — 한 곳의 조건만 받는 대신, 취급 보험회사(AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상, 가나다순)에 동일 조건으로 동시에 인수 의향을 타진합니다.</li>
+          <li><b>조항 단위 비교표</b> — 보험료 한 줄이 아니라 면책 특약·소급담보일자·방어비용·담보지역을 항목별로 대조한 표로 의사결정을 지원합니다.</li>
+          <li><b>담보 공백 사전 식별</b> — 리콜·전염병·완성작업처럼 갱신 후에야 드러나는 공백을 청약 전에 표시합니다.</li>
+          <li><b>계약 요구조건 매칭</b> — 미국 유통·공급계약이 요구하는 보험 조건과 증권 문언을 대조하고 COI 제출까지 정리합니다.</li>
+          <li><b>수수료 구조</b> — 당사 수수료는 보험회사가 부담하며, 계약자가 납입하는 보험료에 추가되지 않습니다 (보험업법 제98조).</li>
+        </ul>
+
+        <h3>재보험 시장까지 보는 이유</h3>
+        <p>미국 수출 의약품 PL은 국내 원수보험회사가 자기 계정으로 전부 보유하는 종목이 아닙니다.
+          실질적인 인수 여력과 조건은 그 뒤에 있는 <b>재보험 시장의 캐파(capacity)와 인수 방침</b>에서 나옵니다.
+          같은 국내 보험회사라도 어느 재보험 시장을 통해 지원받는지에 따라 제시 가능한 한도·면책 구성·소급담보일자 승계 여부가 달라집니다.</p>
+        <ul class="check">
+          <li><b>취급 보험회사의 재무건전성</b> — AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상(가나다순) 모두 AM Best 재무건전성등급(FSR) <b>A(Excellent) 이상</b>이며, Chubb A++(Superior), DB손해보험 A+(Superior)로 공시되어 있습니다. <em>(AM Best 공시 등급 인용 · 우열 비교 목적 아님)</em></li>
+          <li><b>라이프사이언스 전담 인수 역량</b> — 의약품·바이오·임상시험 라인을 전담 언더라이터가 상시 인수하는 시장인지, 아니면 예외적으로만 받는지에 따라 조건과 갱신 안정성이 달라집니다.</li>
+          <li><b>재보험자 신용도(Security) 확인</b> — 출재 대상 재보험자의 AM Best 등급, 등급 하락 시 처리 조항, 제재(Sanction) 조항, 필요 시 컷스루(cut-through) 가능성까지 조건 검토 항목에 포함합니다.</li>
+          <li><b>롱테일 라인의 연속성</b> — 배상청구기준은 10년 뒤에 청구가 들어와도 <b>그때 지급 능력이 있어야</b> 의미가 있습니다. 단년도 요율보다 인수 주체의 지속성과 등급이 중요한 이유입니다.</li>
+        </ul>
+        <p style="font-size:13.5px;color:var(--ink-mute);">
+          ※ 등급은 AM Best가 공시한 재무건전성등급으로, 보험회사 간 우열을 표시하기 위한 것이 아니며 등급은 변동될 수 있습니다.
+          재보험 출재 구조는 보험회사의 인수 방침에 따르며, 계약자와의 보험계약은 원수보험회사와 체결됩니다.
+        </p>
+
+        <h2>갱신 90일 전 체크리스트</h2>
+        <ul class="check">
+          <li>현재 증권·슬립 원문(<b>영문 면책 특약 목록 포함</b>) 확보</li>
+          <li><b>소급담보일자</b>와 최초 가입 이후의 연속성 이력 정리 — 품목별로 다르게 설정된 것이 없는지 포함</li>
+          <li>최근 3~5년 <b>사고·통보(claim &amp; circumstance) 이력</b> 정리 — 미통보 상황이 있는지 포함</li>
+          <li>현 증권의 <b>ERP 조항</b> 확인 — 자동 부여 기간, 선택 ERP 요율, 행사 기한, 한도 공유 여부</li>
+          <li>청구로 이어질 수 있는 <b>사정(circumstance)</b>이 있다면 갱신 전에 서면 통보 완료</li>
+          <li>수출국·유통채널 변동, 신제품·적응증 추가 여부</li>
+          <li>미국 유통계약·공급계약의 <b>보험 요구조항</b> 발췌</li>
+          <li>리콜·회수 관련 내부 절차와 과거 이력</li>
+          <li>FDA 등 규제 대응 이력 중 고지 대상 여부 검토</li>
+        </ul>
+
+        <div class="disc">
+          본 글은 미국 수출 제약·바이오 기업의 생산물배상책임보험 갱신 실무에서 반복적으로 확인되는 조항을 일반화한 정보입니다.
+          특정 계약자·보험회사·요율을 지칭하지 않으며, 실제 담보 범위와 인수 여부·조건은 <b>개별 약관과 보험회사의 인수심사</b>에 따라 결정됩니다.
+          면책 특약의 해석은 보험회사·약관 버전별로 다를 수 있으므로, 실제 증권 문언을 기준으로 검토해야 합니다.
+        </div>
+
+        <div class="author-box">
+          <b>작성</b> 성한욱 — ACIU(기업보험심사역), 금융감독원 등록 보험중개사 제2026-012201호<br>
+          <b>검토 기준</b> 보험회사 발행 영문 약관 및 안내자료, 국가법령정보센터 현행 조문<br>
+          <b>최종수정</b> 2026-07-23 · 다음 정기 검토 2026-10-23
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq">
+        <details>
+          <summary>배상청구기준(claims-made)에서 보험회사를 바꾸면 과거 판매분은 어떻게 되나요?</summary>
+          <p>신규 증권의 소급담보일자를 기존 일자로 승계받는 것이 원칙입니다. 승계 없이 개시일로 리셋되면, 그 이전에 출하된 제품에서 나온 청구는 신규 증권으로도 기존 증권으로도 담보되지 않는 공백이 생깁니다. 갱신 협상에서 보험료보다 먼저 확인해야 할 항목입니다.</p>
+        </details>
+        <details>
+          <summary>제품 회수(리콜) 비용도 생산물배상책임보험으로 처리되나요?</summary>
+          <p>일반적으로 리콜 비용은 PL의 면책 대상입니다. PL은 제3자의 신체장해·재물손해에 대한 법률상 배상책임을 담보하는 것이고, 회수·통지·폐기 비용은 별도의 Product Recall 계열 보험에서 다룹니다. 두 라인을 함께 설계할지 여부를 갱신 시 검토하는 것이 실무적입니다.</p>
+        </details>
+        <details>
+          <summary>방어비용이 한도 안에 포함되는지가 왜 중요한가요?</summary>
+          <p>미국 소송은 최종 판결까지 가지 않아도 방어비용만 상당한 규모로 발생합니다. 이 비용이 보상한도에 포함되는 구조라면 배상금에 쓸 수 있는 실질 한도가 그만큼 줄어듭니다. 한도 외 추가 담보인지, 포함이라면 그 전제로 한도를 어떻게 설계할지가 갱신 검토의 핵심입니다.</p>
+        </details>
+        <details>
+          <summary>ERP(보고연장담보)를 사면 그 기간에 생긴 사고도 보상되나요?</summary>
+          <p>아닙니다. 가장 흔한 오해입니다. ERP는 <b>만기 전 행위에서 비롯된 청구를 만기 후에 보고할 수 있는 기간</b>만 연장합니다. ERP 기간 중에 새로 발생한 제조·판매 행위는 담보 대상이 아니며, 한도도 새로 부여되지 않고 직전 보험연도의 잔여 총보상한도를 쓰는 형태가 일반적입니다. 행사 기한을 넘기면 권리가 소멸하고 통상 취소·환급도 되지 않으므로, 만기 전에 결정해야 합니다.</p>
+        </details>
+        <details>
+          <summary>국내 보험회사에 가입해도 해외 재보험 시장의 인수 역량이 반영되나요?</summary>
+          <p>보험계약 자체는 국내 원수보험회사와 체결되지만, 미국 수출 의약품 PL처럼 대형·롱테일 라인은 보험회사의 재보험 프로그램을 통해 인수 여력이 확보됩니다. 따라서 같은 조건을 요청해도 어느 시장의 지원을 받는 보험회사인지에 따라 제시 가능한 한도와 면책 구성이 달라집니다. 당사는 취급 보험회사(AM Best 재무건전성등급 A급 이상)에 동일 조건으로 마케팅하면서, 출재 대상 재보험자의 등급과 제재·컷스루 조항까지 조건 검토 항목에 포함합니다.</p>
+        </details>
+        <details>
+          <summary>보험료는 얼마나 나오나요?</summary>
+          <p>보험료는 사전에 단정할 수 없습니다. 제품군·매출·수출국·유통구조·사고이력·한도·자기부담금·면책 특약 구성에 따라 달라지며, <b>보험회사의 인수심사를 거쳐 확정</b>됩니다. 당사는 동일 조건으로 복수 보험회사에 마케팅한 뒤 조건 대비 요율을 항목별로 비교해 드립니다.</p>
+        </details>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <h2>수출 의약품 PL, 갱신 전에 조항부터 점검하세요</h2>
+        <p>현재 증권 사본만 주시면 면책 특약·소급담보일자·방어비용·담보지역을 항목별로 대조한 검토표를 정리해 드립니다.</p>
+        <a class="btn" href="/consult.html">생산물배상책임(PL) 상담 →</a>
+        <span class="sub">독립 보험중개사 · 계약자 측 대리 · 수수료는 보험회사 부담 (보험업법 제98조)</span>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <b>엔투엔보험중개</b> · 금융감독원 등록 보험중개사 제2026-012201호 · 사업자등록번호 611-23-02374<br>
+    서울특별시 서초구 방배로30길 41 · T. 010-5755-6465 · sales@n2nib.com<br>
+    본 글은 보험회사 약관·안내자료를 기준으로 작성된 정보이며, 실제 인수·보상 결과는 개별 계약 조건과 보험회사의 인수심사에 따릅니다.
+  </footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"홈","item":"https://n2nib.com/"},
+        {"@type":"ListItem","position":2,"name":"인사이트","item":"https://n2nib.com/insights/"},
+        {"@type":"ListItem","position":3,"name":"미국 수출 의약품 생산물배상책임보험(PL) 갱신 체크포인트","item":"https://n2nib.com/insights/us-pharma-product-liability.html"}
+      ]
+    },
+    {
+      "@type":"Article",
+      "headline":"미국에 의약품을 수출할 때, 생산물배상책임보험(PL)에서 갱신 때 반드시 확인할 10가지",
+      "description":"미국 수출 완제의약품·바이오의약품의 생산물배상책임보험 갱신 실무 체크포인트. 소급담보일자, 완성작업·리콜 면책, 방어비용, 담보지역·재판관할.",
+      "inLanguage":"ko",
+      "datePublished":"2026-07-23",
+      "dateModified":"2026-07-23",
+      "author":{"@type":"Person","name":"성한욱","jobTitle":"보험중개사 (ACIU)"},
+      "publisher":{"@type":"Organization","name":"엔투엔보험중개","url":"https://n2nib.com/"},
+      "mainEntityOfPage":{"@type":"WebPage","@id":"https://n2nib.com/insights/us-pharma-product-liability.html"}
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"배상청구기준(claims-made)에서 보험회사를 바꾸면 과거 판매분은 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"신규 증권의 소급담보일자를 기존 일자로 승계받는 것이 원칙입니다. 승계 없이 개시일로 리셋되면 그 이전 출하분에서 나온 청구는 담보 공백이 발생합니다."}},
+        {"@type":"Question","name":"제품 회수(리콜) 비용도 생산물배상책임보험으로 처리되나요?","acceptedAnswer":{"@type":"Answer","text":"일반적으로 리콜 비용은 PL의 면책 대상이며, 회수·통지·폐기 비용은 별도의 Product Recall 계열 보험에서 다룹니다."}},
+        {"@type":"Question","name":"방어비용이 한도 안에 포함되는지가 왜 중요한가요?","acceptedAnswer":{"@type":"Answer","text":"방어비용이 보상한도에 포함되는 구조라면 배상금에 사용할 수 있는 실질 한도가 줄어듭니다. 한도 내 포함 여부에 따라 한도 설계가 달라집니다."}},
+        {"@type":"Question","name":"ERP(보고연장담보)를 사면 그 기간에 생긴 사고도 보상되나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. ERP는 만기 전 행위에서 비롯된 청구를 만기 후에 보고할 수 있는 기간만 연장하는 담보입니다. ERP 기간 중 새로 발생한 행위는 담보 대상이 아니며, 한도도 통상 직전 보험연도의 잔여 총보상한도를 공유합니다."}},
+        {"@type":"Question","name":"국내 보험회사에 가입해도 해외 재보험 시장의 인수 역량이 반영되나요?","acceptedAnswer":{"@type":"Answer","text":"보험계약은 국내 원수보험회사와 체결되지만, 대형·롱테일 라인은 보험회사의 재보험 프로그램을 통해 인수 여력이 확보됩니다. 어느 시장의 지원을 받는지에 따라 제시 가능한 한도와 면책 구성이 달라집니다."}},
+        {"@type":"Question","name":"보험료는 얼마나 나오나요?","acceptedAnswer":{"@type":"Answer","text":"보험료는 사전에 단정할 수 없으며 제품군·매출·수출국·유통구조·사고이력·한도·면책 구성에 따라 보험회사의 인수심사를 거쳐 확정됩니다."}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
