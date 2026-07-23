@@ -10,3 +10,7 @@ n2n_backups/
 _bak_*/
 _backup*/
 *.bak_*
+
+_bak_*
+_backup_*
+*_bak_*.xml
