@@ -1,0 +1,14 @@
+# ============================================================
+#  n2nib.com  ·  Cloudflare Pages 캐시 정책
+#  목적: HTML 은 항상 최신본 검증, 정적 자산은 적당히 캐시
+# ============================================================
+
+# HTML 문서 - 매 요청마다 최신본 검증 (수정 즉시 반영)
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# 정적 자산 - 1일 캐시 (로고 교체 시 하루 내 반영)
+/assets/*
+  Cache-Control: public, max-age=86400
