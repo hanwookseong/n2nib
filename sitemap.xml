@@ -1670,4 +1670,9 @@
     <loc>https://n2nib.com/products/pet-facility-large-dog</loc>
     <lastmod>2026-07-16</lastmod>
     <priority>0.8</priority>
-  </url></urlset>
+  </url>  <url>
+    <loc>https://n2nib.com/guide-pharma-pl-us</loc>
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>
