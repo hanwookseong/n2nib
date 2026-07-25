@@ -480,7 +480,12 @@
     .hero__actions { flex-direction: column; align-items: stretch; }
     .hero__actions .btn { justify-content: center; }
   }
-</style>
+
+  /* N2N-LOGO-SIZE-v1.1 - match main header logo height (.logo-img 57px) */
+  .header__logo { height: 57px !important; width: auto !important; display: block !important; }
+  @media (max-width: 600px) {
+    .header__logo { height: 40px !important; }
+  }</style>
 </head>
 <body>
 
