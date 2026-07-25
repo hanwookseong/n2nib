@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# 로고 SVG 개행 고정 — MD5 검증 오탐 방지
+*.svg text eol=lf
+*.css text eol=lf
