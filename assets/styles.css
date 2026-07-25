@@ -5650,7 +5650,7 @@ html[lang="en"] .hero .btn-primary{ background:#C56A2C !important; color:#fff !i
 /* ============================================================
    N2N-MSH-LOGO-FIX-20260724 - 모바일 sticky 헤더 로고 가시성 수정
    ------------------------------------------------------------
-   [원인] assets/logo-horizontal.svg 는 다크 배경 전용 공식 에셋.
+   [해소됨 v1.1] 배경별 -light / -dark 파일 분리로 대체.
           외곽 디스크 2개 / INSURANCE / BROKERAGE / 엔투엔보험중개
           가 모두 크림(#F4F0E8) 이라, 배경이 #ffffff 인
           .mobile-sticky-header 위에서는 전부 소실된다.
