@@ -306,44 +306,7 @@
         "엔투엔보험중개"
       ]
     },
-    {
-      "slug": "liability-driving-academy",
-      "url": "products/liability-driving-academy.html",
-      "title": "운전학원종합보험",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "DRIVING SCHOOL PACKAGE",
-      "insurer": "KB손해보험",
-      "lead": "도로교통법상 자동차운전전문학원·일반학원이 학원생 교육 중 발생한 사고에 대비하는 종합 패키지 보험. 강사 책임·학원생 상해·교습차량·시설 화재까지 단일 증권으로 통합 담보.",
-      "meta_desc": "도로교통법상 자동차운전학원의 학원생·강사·차량·시설 종합 담보 패키지.",
-      "keywords": [
-        "DRIVING SCHOOL PACKAGE",
-        "academy",
-        "driving",
-        "liability",
-        "가입조건 및 절차",
-        "가입한도",
-        "근거법령 · 업계표준",
-        "담보하는 손해",
-        "도로교통법",
-        "도로주행 단독",
-        "배상보험",
-        "보상하지 않는 손해 (주요 면책)",
-        "보험기간",
-        "보험료 안내",
-        "상품 개요",
-        "야간교습 특약",
-        "엔투엔보험중개",
-        "운전면허시험 위탁기관",
-        "유의사항",
-        "이륜차 교습소",
-        "이륜차 확장",
-        "인수사",
-        "일반운전학원",
-        "자동차운전전문학원",
-        "종합 패키지 보험"
-      ]
-    },
+    
     {
       "slug": "liability-drone",
       "url": "products/liability-drone.html",
@@ -800,44 +763,7 @@
         "제조·판매·공급·수리한 제품"
       ]
     },
-    {
-      "slug": "liability-pleasure-boat",
-      "url": "products/liability-pleasure-boat.html",
-      "title": "유도선사업자배상책임보험",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "PLEASURE BOAT LL",
-      "insurer": "KB손해보험",
-      "lead": "유선 및 도선 사업법에 따른 유선(낚시어선·유람선)·도선(나룻배·셔틀선) 사업자의 승객 사고 배상책임 의무보험. 강·호수·연안 운영 사업자 필수.",
-      "meta_desc": "유선·도선사업법 의무. 유선·도선업자의 승객 사고 배상책임 담보.",
-      "keywords": [
-        "PLEASURE BOAT LL",
-        "boat",
-        "liability",
-        "pleasure",
-        "가입조건 및 절차",
-        "가입한도",
-        "관광유람 다중탑승",
-        "근거법령 · 업계표준",
-        "낚시어선 사업자",
-        "낚시어선 특별담보",
-        "담보하는 손해",
-        "도선·나룻배 사업자",
-        "배상보험",
-        "보상하지 않는 손해 (주요 면책)",
-        "보험기간",
-        "보험료 안내",
-        "상품 개요",
-        "수상 카페·식당선",
-        "승객 사고 배상책임 의무보험",
-        "엔투엔보험중개",
-        "유람선·관광선",
-        "유선 및 도선 사업법",
-        "유의사항",
-        "인수사",
-        "주요 가입대상"
-      ]
-    },
+    
     {
       "slug": "liability-privacy",
       "url": "products/liability-privacy.html",
@@ -2358,44 +2284,7 @@
         "주요 가입대상"
       ]
     },
-    {
-      "slug": "specialty-water-leisure",
-      "url": "products/specialty-water-leisure.html",
-      "title": "수상레저보험 (Water Leisure Insurance)",
-      "category": "specialty",
-      "category_label": "특종보험",
-      "en_code": "WATER LEISURE",
-      "insurer": "KB손해보험",
-      "lead": "수상레저안전법에 따른 동력수상레저기구(제트스키·모터보트·요트 등) 운영자 및 수상레저사업장의 이용자 사고 배상책임 의무보험. 수상스포츠·해양레저 산업 종사자 필수.",
-      "meta_desc": "수상레저안전법 의무. 동력수상레저기구·레저시설업자의 이용자 사고 배상 담보.",
-      "keywords": [
-        "WATER LEISURE",
-        "Water Leisure Insurance",
-        "leisure",
-        "specialty",
-        "water",
-        "가입조건 및 절차",
-        "가입한도",
-        "교습 중 사고",
-        "근거법령 · 업계표준",
-        "단체 이용",
-        "담보하는 손해",
-        "보상하지 않는 손해 (주요 면책)",
-        "보험기간",
-        "보험료 안내",
-        "상품 개요",
-        "수상기구 임대",
-        "수상레저 사업자",
-        "수상레저안전법",
-        "수상스포츠 학원",
-        "엔투엔보험중개",
-        "요트·모터보트 운항",
-        "유의사항",
-        "이용자 사고 배상책임 의무보험",
-        "인수사",
-        "주요 가입대상"
-      ]
-    },
+    
     {
       "slug": "specialty-weather",
       "url": "products/specialty-weather.html",
@@ -2655,64 +2544,8 @@
         "배상보험"
       ]
     },
-    {
-      "slug": "liability-elevator",
-      "url": "products/liability-elevator.html",
-      "title": "승강기사고 배상책임보험",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "ELEVATOR LIABILITY",
-      "insurer": "DB손해보험",
-      "lead": "「승강기 안전관리법」에 따라 승강기 관리주체가 의무가입해야 하는 보험. 엘리베이터·에스컬레이터 사고로 발생한 이용자 사망·부상·재물 손해를 담보합니다.",
-      "meta_desc": "승강기 안전관리법 의무가입. 엘리베이터·에스컬레이터·기계식 주차 사고에 따른 신체·재물 배상책임.",
-      "keywords": [
-        "승강기",
-        "승강기사고 배상책임",
-        "엘리베이터",
-        "에스컬레이터",
-        "기계식 주차",
-        "휠체어리프트",
-        "관리주체",
-        "승강기 안전관리법",
-        "초과손해액 보장",
-        "법정 의무가입",
-        "아파트 관리사무소",
-        "오피스 빌딩",
-        "DB손해보험",
-        "엔투엔보험중개",
-        "배상보험",
-        "의무"
-      ]
-    },
-    {
-      "slug": "liability-playground",
-      "url": "products/liability-playground.html",
-      "title": "어린이놀이시설 배상책임보험",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "CHILDREN PLAYGROUND LIABILITY",
-      "insurer": "DB손해보험",
-      "lead": "「어린이놀이시설 안전관리법」에 따라 놀이시설 관리주체가 의무가입해야 하는 보험. 키즈카페·아파트 놀이터·학교 운동장 등에서 어린이 사고로 발생한 신체·재물 손해 배상.",
-      "meta_desc": "어린이놀이시설 안전관리법 의무가입. 키즈카페·아파트 놀이터·학교 등 어린이 사고 배상책임 담보.",
-      "keywords": [
-        "어린이놀이시설",
-        "놀이시설 배상책임",
-        "키즈카페",
-        "아파트 놀이터",
-        "그네",
-        "미끄럼틀",
-        "볼풀",
-        "트램펄린",
-        "어린이놀이시설 안전관리법",
-        "관리주체",
-        "구내치료비",
-        "초과보상",
-        "DB손해보험",
-        "엔투엔보험중개",
-        "배상보험",
-        "의무"
-      ]
-    },
+    
+    
     {
       "slug": "liability-cargo",
       "url": "products/liability-cargo.html",
@@ -2772,66 +2605,8 @@
         "배상보험"
       ]
     },
-    {
-      "slug": "liability-sports-facility",
-      "url": "products/liability-sports-facility.html",
-      "title": "체육시설업자 배상책임보험",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "SPORTS FACILITY LIABILITY",
-      "insurer": "DB손해보험",
-      "lead": "「체육시설의 설치·이용에 관한 법률」에 따라 체육시설업자가 의무가입해야 하는 보험. 헬스장·축구장·골프장·수영장 등 이용자 사고 배상.",
-      "meta_desc": "체육시설법 의무가입. 헬스장·골프장·축구장·수영장 등 체육시설 이용자 사고 배상.",
-      "keywords": [
-        "체육시설업자 배상책임",
-        "체육시설",
-        "헬스장",
-        "골프장",
-        "골프연습장",
-        "수영장",
-        "축구장",
-        "테니스장",
-        "필라테스",
-        "요가",
-        "체육시설법",
-        "구내치료비",
-        "트레이너 책임",
-        "인조잔디",
-        "DB손해보험",
-        "엔투엔보험중개",
-        "배상보험"
-      ]
-    },
-    {
-      "slug": "liability-academy",
-      "url": "products/liability-academy.html",
-      "title": "학원 배상책임보험",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "ACADEMY LIABILITY",
-      "insurer": "DB손해보험",
-      "lead": "「학원의 설립·운영 및 과외교습에 관한 법률」에 따라 학원 운영자가 가입하는 보험. 학원시설 및 그 시설의 용도에 따른 업무 수행 중 사고 담보.",
-      "meta_desc": "학원법 의무·권장 가입. 교습소·학원·독서실에서 수강생 사고에 대한 시설 측 배상책임 담보.",
-      "keywords": [
-        "학원 배상책임",
-        "학원",
-        "보습학원",
-        "입시학원",
-        "미술학원",
-        "음악학원",
-        "태권도",
-        "발레",
-        "독서실",
-        "스터디카페",
-        "교습소",
-        "학원법",
-        "글루건",
-        "구내치료비",
-        "DB손해보험",
-        "엔투엔보험중개",
-        "배상보험"
-      ]
-    },
+    
+    
     {
       "slug": "property-machinery-comprehensive",
       "url": "products/property-machinery-comprehensive.html",
@@ -3413,35 +3188,7 @@
         "엔투엔보험중개"
       ]
     },
-    {
-      "slug": "liability-gas-accident",
-      "url": "products/liability-gas-accident.html",
-      "title": "가스사고 배상책임",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "GAS ACCIDENT LIABILITY",
-      "insurer": "DB손해보험",
-      "lead": "LPG·도시가스 누출·폭발·화재로 인한 제3자 인적·물적 손해 담보. LPG법·도시가스법 법정 의무보험. 미가입시 영업정지·과태료 1,000만원.",
-      "meta_desc": "LPG·도시가스 누출·폭발·화재로 인한 제3자 인적·물적 손해 담보. LPG법·도시가스법 법정 의무보험.",
-      "keywords": [
-        "가스사고 배상책임",
-        "가스사고",
-        "LPG",
-        "도시가스",
-        "LPG법",
-        "도시가스법",
-        "법정 의무보험",
-        "의무보험",
-        "누출",
-        "폭발",
-        "화재",
-        "제3자 배상",
-        "영업정지",
-        "과태료",
-        "배상보험",
-        "엔투엔보험중개"
-      ]
-    },
+    
     {
       "slug": "liability-multi-use-fire",
       "url": "products/liability-multi-use-fire.html",
