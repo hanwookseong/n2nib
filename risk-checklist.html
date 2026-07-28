@@ -434,50 +434,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const state = { industry:null, ops:[], duty:[], size:null, concern:[] };
 
   // 추천 매핑 (slug, 이름, 우선순위, 추천 사유)
-  const PRODUCTS = {
-    'liability-pl':         ['생산물(PL) 배상책임', 'PL'],
-    'liability-cgl':        ['영업·시설(CGL) 배상책임', 'CGL'],
-    'liability-do':         ['임원(D&O) 배상책임', 'D&O'],
-    'liability-eo':         ['전문직(E&O) 배상책임', 'E&O'],
-    'liability-cyber':      ['사이버배상책임', 'Cyber'],
-    'liability-privacy':    ['개인정보유출 배상', '개인정보'],
-    'liability-environmental':['환경오염 배상책임', '환경'],
-    'liability-serious-accident':['기업중대사고 배상책임', '중처법'],
-    'liability-products-completed-ops':['완성공사·제품가동 배상', '완성공사'],
-    'liability-recall':     ['리콜 보험', 'Recall'],
-    'liability-medical':    ['의사·병원 배상책임', '의료'],
-    'liability-medical-device':['의료기기 배상책임', '의료기기'],
-    'liability-vasp':       ['VASP(가상자산) 배상', 'VASP'],
-    'liability-cargo':      ['적재물 배상책임', '적재물'],
-    'liability-elevator':   ['승강기사고 배상책임', '승강기'],
-    'liability-playground': ['어린이놀이시설 배상', '놀이시설'],
-    'liability-drone':      ['드론 배상책임', '드론'],
-    'liability-ev-charger': ['전기차충전시설 배상', '충전소'],
-    'liability-outdoor-ad': ['옥외광고물 배상', '간판'],
-    'liability-outdoor-robot':['실외이동로봇 배상', '로봇'],
-    'liability-distributed-energy':['분산에너지사업자 배상', '분산에너지'],
-    'liability-pleasure-boat':['유도선사업자 배상', '유도선'],
-    'liability-welfare-facility':['사회복지시설 배상', '복지시설'],
-    'liability-sports-facility':['체육시설업자 배상', '체육시설'],
-    'liability-academy':    ['학원 배상책임', '학원'],
-    'liability-construction-equipment':['중장비 안전보험', '중장비'],
-    'wc-domestic':          ['국내근로자 재해보장(근재)', '근재'],
-    'wc-overseas':          ['해외근로자 재해보장', '해외근재'],
-    'property-fire':        ['일반화재보험', '화재'],
-    'property-package':     ['패키지보험(재물+BI+책임)', '패키지'],
-    'property-all-risks':   ['재산종합(All Risks)', 'All Risks'],
-    'property-corporate':   ['기업재산종합', '기업재산'],
-    'property-machinery-comprehensive':['기관기계 종합', '기관기계'],
-    'property-storm-flood-sme':['소상공인 풍수해·지진', '풍수해'],
-    'property-glass':       ['유리보험', '유리'],
-    'engineering-car':      ['건설공사보험(CAR)', 'CAR'],
-    'engineering-ear':      ['조립보험(EAR)', 'EAR'],
-    'specialty-crime':      ['범죄보험(Crime)', 'Crime'],
-    'specialty-money-securities':['현금·유가증권 보험', '현금'],
-    'specialty-cyber-sme':  ['사이버 SME 패키지', '사이버 SME'],
-    'specialty-legal-expense':['법률비용 보험', '법률비용'],
-    'marine-cargo':         ['적하보험(수출입)', '적하'],
-  };
+  const PRODUCTS = ;
 
   function compute(){
     const score = {};
@@ -507,10 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       add('liability-welfare-facility', 10, '요양시설'); add('liability-cgl', 8, '요양시설');
       add('wc-domestic', 7, '요양시설'); add('property-fire', 7, '요양시설');
     }
-    if (ind === 'sports-edu') {
-      add('liability-sports-facility', 10, '체육·학원'); add('liability-academy', 9, '체육·학원');
-      add('liability-cgl', 7, '체육·학원'); add('property-fire', 7, '체육·학원');
-    }
+    if (ind === 'sports-edu') 
     if (ind === 'it') {
       add('liability-cyber', 10, 'IT'); add('liability-privacy', 10, 'IT');
       add('liability-do', 8, 'IT'); add('liability-eo', 8, 'IT');
@@ -533,13 +487,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     state.duty.forEach(d => {
       if (d === 'none') return;
       const slug = 'liability-' + (d === 'cargo' ? 'cargo' : d === 'pleasure-boat' ? 'pleasure-boat' : d);
-      const map = {
-        'elevator':'liability-elevator', 'playground':'liability-playground',
-        'cargo':'liability-cargo', 'vasp':'liability-vasp',
-        'drone':'liability-drone', 'ev-charger':'liability-ev-charger',
-        'outdoor-ad':'liability-outdoor-ad', 'pleasure-boat':'liability-pleasure-boat',
-        'distributed-energy':'liability-distributed-energy', 'outdoor-robot':'liability-outdoor-robot'
-      };
+      const map = ;
       if (map[d]) add(map[d], 20, '⚖ 법정 의무');
     });
 

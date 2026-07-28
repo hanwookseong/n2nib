@@ -2476,44 +2476,7 @@ window.PRODUCTS_INDEX = {
         "필요서류"
       ]
     },
-    {
-      "slug": "wc-vocational-trainee",
-      "url": "products/wc-vocational-trainee.html",
-      "title": "직업훈련생 재해보상보험",
-      "category": "wc",
-      "category_label": "근재보험",
-      "en_code": "VOCATIONAL TRAINEE",
-      "insurer": "현대해상",
-      "lead": "근로자직업능력개발법에 따른 직업훈련기관·기업이 훈련생의 훈련 중 재해에 대비해 가입하는 의무성 보험. 일반 근재보험(wc-domestic)의 직업훈련 특화 버전.",
-      "meta_desc": "근로자직업능력개발법 의무. 직업훈련생 훈련 중 재해 보상.",
-      "keywords": [
-        "VOCATIONAL TRAINEE",
-        "trainee",
-        "vocational",
-        "가입조건 및 절차",
-        "가입한도",
-        "교외실습",
-        "국내이동",
-        "근로자직업능력개발법",
-        "근재보험",
-        "기업체 Intern Program",
-        "담보하는 손해",
-        "보상하지 않는 손해 (주요 면책)",
-        "보험기간",
-        "보험료 안내",
-        "상품 개요",
-        "엔투엔보험중개",
-        "유의사항",
-        "인수사",
-        "주요 가입대상",
-        "주요 특약",
-        "직업능력개발훈련기관",
-        "처리소요",
-        "특성화고·전문대",
-        "필요서류",
-        "훈련생의 훈련 중 재해"
-      ]
-    },
+    
     {
       "slug": "liability-welfare-facility",
       "url": "products/liability-welfare-facility.html",
@@ -3190,32 +3153,7 @@ window.PRODUCTS_INDEX = {
       ]
     },
     
-    {
-      "slug": "liability-multi-use-fire",
-      "url": "products/liability-multi-use-fire.html",
-      "title": "다중이용업소 화재배상책임",
-      "category": "liability",
-      "category_label": "배상보험",
-      "en_code": "MULTI-USE FIRE LIABILITY",
-      "insurer": "DB손해보험",
-      "lead": "다중이용업소 안전관리에 관한 특별법 의무가입. 음식점·노래방·PC방·찜질방 등 화재로 인한 손님 인적·물적 피해 배상.",
-      "meta_desc": "다중이용업소 안전관리에 관한 특별법 의무가입. 음식점·노래방·PC방·찜질방 등 화재로 인한 손님 인적·물적 피해 배상.",
-      "keywords": [
-        "다중이용업소 화재배상",
-        "다중이용업소",
-        "다중이용업소 안전관리법",
-        "화재배상책임",
-        "음식점",
-        "노래방",
-        "PC방",
-        "찜질방",
-        "법정 의무보험",
-        "의무보험",
-        "손님 사고",
-        "배상보험",
-        "엔투엔보험중개"
-      ]
-    },
+    
     {
       "slug": "liability-daycare",
       "url": "products/liability-daycare.html",
