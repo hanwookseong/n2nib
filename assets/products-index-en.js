@@ -1580,32 +1580,6 @@ window.PRODUCTS_INDEX_EN = {
         "Workers' Comp",
         "Workers’ Comp"
       ]
-    },
-    {
-      "slug": "wc-vocational-trainee",
-      "url": "products/wc-vocational-trainee.html",
-      "title": "Vocational Trainee Accident Insurance",
-      "category": "wc",
-      "category_label": "Workers' Comp",
-      "en_code": "WORKERS’ COMP · VOCATIONAL TRAINEE",
-      "insurer": "",
-      "lead": "Mandatory cover for training institutions and companies for injuries to trainees during vocational training under the Workers’ Vocational Skills Development Act.",
-      "meta_desc": "Vocational trainee accident insurance — compulsory cover under the Workers’ Vocational Skills Development Act for training institutions and companies, for trainee injuries during vocational training. ",
-      "keywords": [
-        "Conditions &amp; process",
-        "Key features",
-        "Main endorsements",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "VOCATIONAL TRAINEE",
-        "Vocational Trainee Accident Insurance",
-        "WORKERS’ COMP",
-        "What we need to quote",
-        "Who needs it",
-        "Workers' Comp",
-        "Workers’ Comp"
-      ]
     }
   ]
 };
