@@ -76,11 +76,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-academy</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-cargo</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
@@ -154,11 +149,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-driving-academy</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-drone</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
@@ -176,11 +166,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-electrical-inspector</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-elevator</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -262,16 +247,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-playground</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-pleasure-boat</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-privacy</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
@@ -309,11 +284,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-serious-accident</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-sports-facility</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -589,11 +559,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/specialty-water-leisure</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/specialty-weather</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
@@ -621,11 +586,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/wc-seafarer</loc>
-    <lastmod>2026-04-26</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/wc-vocational-trainee</loc>
     <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
   </url>
@@ -696,18 +656,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/property-trade-credit</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-gas-accident</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-multi-use-fire</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
