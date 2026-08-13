@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B2818">
+<title>[케이스] 미국 발주처 계약의 요구보험 — 국내 증권으로 충족되지 않는 것들 | n2nib.com</title>
+<meta name="description" content="미국 발주처와의 공급·설치 계약이 요구하는 CGL·근재(WC/EL)·자동차·우산·설계책임·설치공사 보험. admitted 요건, 추가피보험자 배서의 두 종류, 산재이력 고지의무를 ACIU 보험중개사 관점에서 익명 검토사례로 정리합니다.">
+<link rel="canonical" href="https://n2nib.com/insights/us-msa-required-insurance">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+<style>
+  :root{
+    --forest:#0B2818; --forest-soft:#143A2B;
+    --orange:#C56A2C; --orange-hover:#A9561F; --orange-ink:#A9561F;
+    --red:#B23A2E;
+    --ivory:#FAF8F3; --ivory-panel:#FDFCF8; --cream-text:#F4F0E8;
+    --ink:#1A2B22; --ink-soft:#3B4A41; --ink-mute:#6B7A70;
+    --line:rgba(11,40,24,.12);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:"Pretendard",system-ui,sans-serif; background:var(--ivory); color:var(--ink); -webkit-font-smoothing:antialiased; line-height:1.7; }
+
+  .nav{ background:var(--forest); display:flex; align-items:center; gap:34px; padding:14px 40px; }
+  .nav__logo{ display:flex; align-items:center; flex-shrink:0; }
+  .nav__logo img{ height:40px; width:auto; display:block; }
+  .nav__menu{ display:flex; align-items:center; gap:26px; flex:1; flex-wrap:wrap; }
+  .nav__menu a{ color:var(--cream-text); text-decoration:none; font-size:15px; font-weight:500; opacity:.92; }
+  .nav__menu a:hover{ opacity:1; }
+  .nav__cta{ background:var(--orange); color:#fff; text-decoration:none; font-weight:700; font-size:15px; padding:11px 22px; border-radius:8px; white-space:nowrap; }
+  .nav__cta:hover{ background:var(--orange-hover); }
+  .trustbar{ background:var(--forest-soft); color:var(--cream-text); text-align:center; font-size:13.5px; padding:11px 20px; }
+  .trustbar b{ color:var(--orange); font-weight:700; }
+  .trustbar .dot{ opacity:.45; margin:0 10px; }
+
+  .wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+  .article-head{ padding:64px 0 40px; border-bottom:1px solid var(--line); }
+  .crumb{ font-family:"Questrial",sans-serif; font-size:12.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--orange-ink); margin-bottom:22px; }
+  .crumb a{ color:inherit; text-decoration:none; }
+  h1{ font-family:"Nanum Myeongjo",serif; font-weight:800; color:var(--forest); font-size:clamp(28px,4.2vw,42px); line-height:1.42; letter-spacing:-.01em; word-break:keep-all; margin-bottom:24px; }
+  .dek{ font-size:18px; color:var(--ink-soft); line-height:1.75; word-break:keep-all; }
+  .byline{ display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; margin-top:28px; font-size:13.5px; color:var(--ink-mute); }
+  .byline .who{ color:var(--forest); font-weight:700; }
+
+  .article-body{ padding:44px 0 24px; }
+  .article-body h2{ font-family:"Nanum Myeongjo",serif; font-weight:700; color:var(--forest); font-size:clamp(21px,2.6vw,27px); line-height:1.45; margin:48px 0 18px; word-break:keep-all; }
+  .article-body h3{ font-weight:700; color:var(--forest); font-size:18px; margin:32px 0 10px; word-break:keep-all; }
+  .article-body p{ font-size:16.5px; color:var(--ink); margin-bottom:18px; word-break:keep-all; }
+  .article-body p b{ color:var(--forest); }
+  .article-body a{ color:var(--orange-ink); text-decoration:underline; text-underline-offset:3px; }
+  .lead-para{ font-size:18px; color:var(--ink-soft); }
+
+  .case-box{ background:var(--forest); color:var(--cream-text); border-radius:16px; padding:28px 30px; margin:30px 0; }
+  .case-box .tag{ font-family:"Questrial",sans-serif; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--orange); margin-bottom:14px; }
+  .case-box dl{ display:grid; grid-template-columns:auto 1fr; gap:10px 20px; font-size:15px; }
+  .case-box dt{ color:var(--orange); font-weight:700; white-space:nowrap; }
+  .case-box dd{ color:var(--cream-text); }
+
+  .pull{ font-family:"Nanum Myeongjo",serif; font-weight:700; font-size:clamp(20px,2.6vw,26px); line-height:1.55; color:var(--forest); border-left:3px solid var(--orange); padding:6px 0 6px 24px; margin:34px 0; word-break:keep-all; }
+
+  table.cmp{ width:100%; border-collapse:collapse; margin:26px 0; font-size:14.5px; }
+  table.cmp th, table.cmp td{ text-align:left; padding:13px 14px; border-bottom:1px solid var(--line); vertical-align:top; word-break:keep-all; }
+  table.cmp thead th{ background:var(--ivory-panel); color:var(--forest); font-weight:700; border-bottom:2px solid var(--orange); }
+  table.cmp td:first-child{ font-weight:700; color:var(--forest); }
+  table.cmp .miss{ color:#A6482C; }
+  table.cmp .need{ color:var(--forest); }
+  table.cmp code{ font-size:13px; background:rgba(11,40,24,.05); padding:1px 5px; border-radius:4px; }
+
+  ul.check{ list-style:none; margin:22px 0; padding:0; }
+  ul.check li{ position:relative; padding:11px 0 11px 34px; border-bottom:1px solid var(--line); font-size:15.5px; color:var(--ink); word-break:keep-all; }
+  ul.check li::before{ content:"✓"; position:absolute; left:6px; top:11px; color:var(--orange); font-weight:800; }
+  ul.check li b{ color:var(--forest); }
+
+  .opt{ border:1px solid var(--line); border-left:4px solid var(--orange); border-radius:12px; background:var(--ivory-panel); padding:20px 24px; margin:0 0 14px; }
+  .opt h3{ margin:0 0 8px; font-size:17.5px; }
+  .opt p{ font-size:15.5px; color:var(--ink-soft); margin:0 0 8px; word-break:keep-all; }
+  .opt p:last-child{ margin-bottom:0; }
+  .opt .lbl{ font-family:"Questrial",sans-serif; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--orange-ink); display:block; margin-bottom:6px; }
+  .opt.warn{ border-left-color:var(--red); }
+  .opt.warn .lbl{ color:var(--red); }
+
+  .quotebox{ background:#fff; border:1px dashed rgba(11,40,24,.28); border-radius:12px; padding:18px 22px; margin:20px 0; font-size:15px; color:var(--ink-soft); line-height:1.75; word-break:keep-all; }
+  .quotebox b{ color:var(--forest); }
+  .quotebox .en{ font-family:"Questrial",sans-serif; color:var(--forest); font-size:14.5px; display:block; margin-top:8px; }
+
+  .faq{ margin:26px 0; }
+  .faq details{ border:1px solid var(--line); border-radius:12px; padding:4px 20px; margin-bottom:12px; background:var(--ivory-panel); }
+  .faq summary{ cursor:pointer; font-weight:700; color:var(--forest); font-size:16px; padding:16px 0; list-style:none; }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{ content:"+"; float:right; color:var(--orange); font-weight:800; font-size:20px; line-height:1; }
+  .faq details[open] summary::after{ content:"–"; }
+  .faq details p{ font-size:15.5px; color:var(--ink-soft); padding-bottom:18px; margin:0; word-break:keep-all; }
+
+  .disc{ font-size:13px; color:var(--ink-mute); background:var(--ivory-panel); border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin:30px 0; line-height:1.7; word-break:keep-all; }
+
+  .related{ border-top:1px solid var(--line); margin-top:40px; padding-top:26px; }
+  .related h2{ font-size:19px !important; margin:0 0 14px !important; }
+  .related ul{ list-style:none; padding:0; margin:0; }
+  .related li{ padding:10px 0; border-bottom:1px solid var(--line); font-size:15.5px; }
+  .related li a{ color:var(--forest); font-weight:600; text-decoration:none; }
+  .related li a:hover{ color:var(--orange-ink); text-decoration:underline; }
+  .related li span{ color:var(--ink-mute); font-size:14px; display:block; margin-top:2px; }
+
+  .cta{ background:var(--forest); border-radius:20px; padding:44px 40px; text-align:center; margin:44px 0 20px; }
+  .cta h2{ font-family:"Nanum Myeongjo",serif; color:var(--cream-text); font-size:clamp(22px,3vw,30px); margin-bottom:14px; word-break:keep-all; }
+  .cta p{ color:rgba(244,240,232,.82); font-size:15.5px; margin-bottom:26px; word-break:keep-all; }
+  .cta .btn{ display:inline-block; background:var(--orange); color:#fff; font-weight:700; font-size:16px; padding:15px 32px; border-radius:10px; text-decoration:none; }
+  .cta .btn:hover{ background:var(--orange-hover); }
+  .cta .sub{ display:block; margin-top:16px; font-size:13.5px; color:rgba(244,240,232,.6); }
+
+  footer{ background:var(--forest); color:rgba(244,240,232,.72); font-size:13px; text-align:center; padding:28px 20px; line-height:1.9; }
+  footer b{ color:var(--cream-text); }
+  footer a{ color:rgba(244,240,232,.72); }
+
+  a:focus-visible, summary:focus-visible, .btn:focus-visible{ outline:2.5px solid var(--orange); outline-offset:3px; }
+  @media (max-width:820px){
+    .nav{ flex-wrap:wrap; gap:14px; padding:12px 20px; }
+    .nav__menu{ order:3; width:100%; gap:16px; }
+    .case-box dl{ grid-template-columns:1fr; gap:4px 0; }
+    .case-box dt{ margin-top:10px; }
+    .cta{ padding:34px 22px; }
+  }
+  @media (prefers-reduced-motion:reduce){ *{ transition:none!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav__logo" href="/"><img src="/assets/logo-horizontal-dark.svg" alt="엔투엔보험중개"></a>
+    <div class="nav__menu">
+      <a href="/products/">상품</a>
+      <a href="/insights/">인사이트</a>
+      <a href="/about.html">회사소개</a>
+    </div>
+    <div><a class="nav__cta" href="/consult.html">상담 신청</a></div>
+  </nav>
+
+  <div class="trustbar">
+    금융감독원 등록 보험중개사 <b>제2026-012201호</b><span class="dot">·</span>AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상 <b>6개 보험회사</b> 검토<span class="dot">·</span>기업보험심사역(ACIU)
+  </div>
+
+  <article>
+    <div class="wrap">
+      <header class="article-head">
+        <div class="crumb"><a href="/insights/">Insights</a> · 해외 계약 요구보험</div>
+        <h1>미국 발주처 계약의 요구보험,<br>국내 증권으로 충족되지 않는 것들</h1>
+        <p class="dek">미국 발주처와의 공급·설치 계약서에는 보험 종목이 대여섯 개씩 나열됩니다.
+          종목을 맞추는 일보다 어려운 것은 <b>각 종목에 붙은 조건</b>입니다.
+          그중에는 국내 보험회사가 발행한 증권으로는 원리적으로 충족할 수 없는 항목도 있습니다.
+          현장 착수 전에 반드시 갈라 두어야 할 지점을 익명 검토사례로 정리합니다.</p>
+        <div class="byline">
+          <span>✍️ 작성 <span class="who">성한욱</span> — 기업보험심사역(ACIU) · 보험중개사 등록 제2026-012201호</span>
+          <span>· 📋 보험회사 약관·안내자료 기반</span>
+          <span>· 최종수정 2026-08-13</span>
+        </div>
+      </header>
+
+      <div class="article-body">
+        <p class="lead-para">미국 계약의 보험 조항은 대개 표 형태입니다.
+          종목과 최소 한도가 나란히 적혀 있어 얼핏 단순해 보입니다.
+          그런데 그 표 아래 이어지는 <b>일반 조건 문단</b>에 실제 난이도가 숨어 있습니다.
+          국내에서 견적을 받아 한도를 맞춰 놓고도 발주처 제출 단계에서 반려되는 일이
+          반복되는 이유입니다.</p>
+
+        <div class="case-box">
+          <p class="tag">검토 사례 (익명)</p>
+          <dl>
+            <dt>계약자</dt><dd>국내 기계 제조·설치 기업</dd>
+            <dt>발주처</dt><dd>미국 동부 소재 식품가공 기업</dd>
+            <dt>업무</dt><dd>설비 제작·수출 및 현지 설치 — 설계책임 포함(design-build)</dd>
+            <dt>기간</dt><dd>약 30주 · 국내 제작 후 현지 시공</dd>
+            <dt>요구</dt><dd>영업배상책임 · 근재/사용자배상 · 자동차 · 우산 · 설계책임 · 설치공사 보험</dd>
+            <dt>쟁점</dt><dd>미국 내 인가 요건 / 추가피보험자 배서 종류 / 과거 산재이력 고지 / 적하 담보 중복</dd>
+          </dl>
+        </div>
+
+        <h2>먼저 가르는 기준 — 어디서 발행된 증권인가</h2>
+        <p>미국 보험은 <b>주(州) 단위로 규제</b>됩니다. 그리고 계약서의 일반 조건 문단에는
+          거의 예외 없이 보험회사에 관한 요건이 붙습니다. 신용등급 요건과 함께
+          <b>해당 주에서 인가받은 보험회사일 것</b>을 요구하는 문언이 들어가는 경우가 많습니다.</p>
+        <p>이 문언이 있으면 국내 보험회사가 발행한 증권은 종목과 한도가 아무리 맞아도
+          그 항목을 충족하지 못합니다. 국내 증권은 미국 기준으로 인가받지 않은 보험회사의 증권이기 때문입니다.</p>
+
+        <div class="quotebox">
+          계약서에서 찾아야 할 문언 —
+          <b>보험회사의 신용등급 요건과 해당 주 인가 여부</b>
+          <span class="en">Insurers shall be rated not less than A- VII by A.M. Best and licensed to do business in the State of …</span>
+          앞부분(등급)만 보고 뒷부분(인가)을 넘기는 일이 자주 있습니다.
+        </div>
+
+        <h3>특히 근재는 대체가 되지 않습니다</h3>
+        <p>미국의 근로자재해보상(Workers' Compensation)은 주법상 강제이며,
+          <b>거의 모든 주에서 해당 주 인가 보험회사의 증권</b>을 요구합니다.
+          국내 산재보험이나 해외근로자 재해보장책임보험은 한국 제도의 담보이지,
+          미국 주법상의 근재 의무를 이행하는 수단이 아닙니다.</p>
+        <p>국내 근로자를 파견하는 구조라면 <b>두 갈래를 동시에 봐야 합니다.</b>
+          국내 제도상의 보장과, 미국 현지에서 요구되는 근재 의무는 서로를 대체하지 않습니다.
+          어느 한쪽만 준비한 채 현장을 시작하면 계약 위반과 현지 규제 위반이 함께 발생할 수 있습니다.</p>
+
+        <div class="opt warn">
+          <span class="lbl">가장 흔한 오해</span>
+          <h3>"한국에서 근재 들었으니 됐다"</h3>
+          <p>증명서를 제출하는 단계에서야 반려되고, 그 시점에는 이미 인력 파견 일정이 확정돼 있습니다.
+            현지 조달에는 사업자 등록 상태·인원·직무 분류 등 사전 확인이 필요해
+            <b>시간이 가장 오래 걸리는 항목</b>이기도 합니다. 계약 검토 단계에서 가장 먼저 확인해야 합니다.</p>
+        </div>
+
+        <h2>종목이 여러 개인 이유 — 각자 다른 구멍을 막습니다</h2>
+        <p>요구 종목이 많다고 해서 과잉이 아닙니다. 각 종목은 서로 다른 국면을 담보하며,
+          하나가 빠지면 그 국면이 그대로 노출됩니다.</p>
+
+        <table class="cmp">
+          <thead>
+            <tr><th>요구 종목</th><th>담보하는 국면</th><th>빠지면</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>영업배상책임<br>(CGL)</td><td>현장 작업 중 제3자 신체상해·재물손해, 인도 후 완성작업 위험</td><td class="miss">현장 사고와 준공 후 하자로 인한 제3자 손해</td></tr>
+            <tr><td>근재 / 사용자배상<br>(WC / EL)</td><td>근로자 재해 보상 및 사용자 배상책임</td><td class="miss">주법 위반 소지 · 현장 출입 자체가 거부될 수 있음</td></tr>
+            <tr><td>자동차<br>(Auto)</td><td>현지 차량 운행 중 사고</td><td class="miss">임차·소유 불문 현지 운행 위험</td></tr>
+            <tr><td>우산 / 초과<br>(Umbrella)</td><td>기초 증권 한도를 넘는 부분</td><td class="miss">요구 한도 미달 — 기초만으로 못 맞추는 경우 다수</td></tr>
+            <tr><td>설계책임<br>(E&amp;O)</td><td>설계·엔지니어링 오류로 인한 순수 재산손해</td><td class="miss">CGL의 전문직업배상 면책으로 통째 노출</td></tr>
+            <tr><td>설치공사<br>(Builder's Risk / 설치)</td><td>설치 중 목적물 자체의 손해</td><td class="miss">배상책임이 아닌 <b>물건 자체</b>의 손해 — CGL로 담보되지 않음</td></tr>
+          </tbody>
+        </table>
+
+        <p class="pull">설계책임과 설치공사 보험은 성격이 전혀 다릅니다.
+          하나는 <b>남에게 입힌 손해</b>를, 다른 하나는 <b>내 물건이 입은 손해</b>를 담보합니다.
+          둘 다 CGL 밖입니다.</p>
+
+        <h3>design-build이면 설계책임이 반드시 따라옵니다</h3>
+        <p>단순 납품이 아니라 <b>설계까지 수급인이 책임지는 구조</b>라면
+          설계 오류로 인한 손해가 계약자에게 귀속됩니다.
+          그런데 이 손해는 대개 사람이 다치거나 물건이 부서지지 않은 채 발생하는 순수 재산손해이고,
+          CGL 증권의 전문직업배상 면책으로 빠집니다.</p>
+        <p>계약서에 <code>design-build</code>, <code>engineering</code>, <code>shop drawing</code> 같은
+          표현이 있다면 설계책임 담보가 요구 목록에 없더라도 별도로 검토하는 편이 안전합니다.</p>
+
+        <h2>추가피보험자 배서는 한 종류가 아닙니다</h2>
+        <p>미국 계약에서 가장 자주 누락되는 지점입니다.
+          발주처를 추가피보험자로 지정할 때, <b>진행 중 작업(ongoing operations)에 대한 배서</b>와
+          <b>완성 작업(completed operations)에 대한 배서</b>는 서로 다릅니다.</p>
+        <p>전자만 받아 두면 공사가 진행되는 동안은 발주처가 담보되지만,
+          <b>준공 이후 하자로 제3자 손해가 발생해 발주처가 함께 피소되는 국면</b>에서는 담보가 빠집니다.
+          그런데 설비 설치 계약에서 분쟁이 실제로 터지는 시점은 대개 준공 이후입니다.</p>
+        <p>계약서가 두 가지를 모두 요구하는지, 증명서에 두 배서가 모두 기재되었는지를
+          <b>제출 전에 대조</b>해야 합니다. 증명서에 배서 번호가 병기되는 형식이 일반적입니다.</p>
+
+        <h3>함께 확인할 일반 조건</h3>
+        <table class="cmp">
+          <thead>
+            <tr><th>조건</th><th>의미</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>우선비분담</td><td>발주처 자체 보험보다 계약자 증권이 먼저 대응. 분담 다툼을 막는 조항</td></tr>
+            <tr><td>대위권 포기</td><td>보험금 지급 후 발주처에 구상하지 않음</td></tr>
+            <tr><td>해지·변경 통지</td><td>일정 기간 전 서면통지 의무. 증명서 문구와 실제 증권 조건이 일치해야 함</td></tr>
+            <tr><td>한도의 성격</td><td><code>Limits shall not be deemed to limit liability</code> — 보험 한도가 계약상 책임의 상한이 아니라는 선언. 한도를 넘는 부분은 자기 부담으로 남습니다</td></tr>
+            <tr><td>하도급자 담보</td><td>하도급을 주는 경우 동등한 보험을 요구하고 증명서를 징구할 의무</td></tr>
+          </tbody>
+        </table>
+
+        <h2>고지의무 — 과거 산재이력은 반드시 알립니다</h2>
+        <p>근재·사용자배상 인수심사에서 과거 재해 이력은 중요한 고지 대상입니다.
+          치료가 진행 중인 건, 산재로 승인되지 않은 신청 건까지 포함해
+          <b>사실대로 기재</b>해야 합니다.</p>
+        <p>요율이 올라갈까 우려해 누락하면, 정작 사고가 났을 때
+          보험금 지급이 거절되거나 계약이 해지될 수 있습니다.
+          이력이 있다고 해서 인수가 거절되는 것은 아니며,
+          재발 방지 조치를 함께 설명하면 조건부로 인수되는 경우가 일반적입니다.</p>
+
+        <h2>적하 담보 중복 — 무역조건을 먼저 봅니다</h2>
+        <p>설비를 국내에서 제작해 수출하는 구조라면 운송 구간의 담보가 필요합니다.
+          그런데 <b>무역조건(인코텀즈) 자체가 매도인에게 부보 의무를 지우는 조건</b>이 있습니다.
+          이 경우 계약자가 이미 적하보험을 수배하고 있는데
+          발주처가 별도로 화물 담보를 요구하면 중복이 발생합니다.</p>
+        <p>반대로 매수인 부보 조건인데 계약서에는 아무 언급이 없어
+          <b>운송 구간이 통째로 비는 경우</b>도 있습니다.
+          무역조건과 계약서 보험 조항을 나란히 놓고 대조하는 절차가 필요합니다.
+          담보 범위 수준(전위험 담보인지 열거위험인지)까지 함께 확인해야 실질적인 대조가 됩니다.</p>
+
+        <h2>일정 — 증명서 발급이 가장 마지막입니다</h2>
+        <p>영문 보험가입증명서는 <b>증권 발행과 보험료 납입이 완료된 뒤</b> 발급되는 것이 일반적입니다.
+          그리고 발주처는 대개 <b>현장 착수 전 제출</b>을 요구합니다.</p>
+        <p>여기에 종목이 여러 개이고 일부는 현지 조달이 필요하다면,
+          각각의 인수심사·발행·납입·발급 리드타임이 직렬로 쌓입니다.
+          착수일에서 거꾸로 계산해 일정을 잡지 않으면 현장이 멈춥니다.</p>
+        <p>공사 기간이 1년보다 짧더라도 증권 기간은 통상 1년입니다.
+          준공 이후 완성작업 위험이 남는다는 점을 감안하면,
+          <b>준공과 동시에 종료할 것인지 유지할 것인지</b>를 미리 정해 두는 편이 좋습니다.</p>
+
+        <div class="disc">
+          본 글은 익명 검토사례를 바탕으로 계약 조항 해석과 보험 설계 구조를 일반화해 정리한 것입니다.
+          미국의 보험 규제는 주별로 다르고 개정될 수 있으며, 담보 범위·면책 조항·배서 명칭은
+          보험회사와 약관에 따라 다릅니다. 보험료·보상한도·자기부담금·특약 적용 여부 등 모든 인수조건은
+          <b>보험회사의 인수심사 후 확정</b>됩니다. 특정한 인수 결과나 보상을 보장하지 않습니다.
+          현지 법령 해석과 계약서 문언의 법적 효력에 관한 판단은 법률자문의 영역이며 본 글은 이를 제공하지 않습니다.
+        </div>
+
+        <h2>수주 검토 단계 체크리스트</h2>
+        <ul class="check">
+          <li>보험 조항 표 <b>아래 일반 조건 문단</b>까지 원문으로 확보했는가</li>
+          <li>보험회사 요건에 <b>해당 주 인가</b> 문언이 있는가 — 국내 증권으로 충족 불가</li>
+          <li>근재를 <b>현지에서 조달</b>해야 하는 구조인가 (국내 제도와 대체 관계 아님)</li>
+          <li>계약 구조가 <b>design-build</b>인가 — 설계책임 담보 필요</li>
+          <li>설치 중 <b>목적물 자체의 손해</b>를 담보할 종목이 포함돼 있는가</li>
+          <li>추가피보험자 배서가 <b>진행 중 작업과 완성 작업 두 가지</b> 모두인가</li>
+          <li>우선비분담 · 대위권 포기 · 해지 사전통지 요구 여부</li>
+          <li>요구 한도를 기초 증권만으로 맞출 수 있는가, <b>우산</b>이 필요한가</li>
+          <li>과거 <b>재해 이력</b>을 빠짐없이 정리했는가 (치료 중·불승인 건 포함)</li>
+          <li><b>무역조건</b>과 계약서 화물 담보 요구가 중복 또는 공백인가</li>
+          <li>착수일 역산 — 인수심사부터 <b>영문 증명서 발급</b>까지의 리드타임</li>
+          <li>준공 이후 <b>완성작업 위험</b>을 어떻게 처리할 것인가</li>
+        </ul>
+
+        <h2>정리</h2>
+        <p>미국 발주처 계약의 요구보험은 <b>목록을 채우는 문제가 아니라 조건을 맞추는 문제</b>입니다.
+          같은 종목·같은 한도라도 어디서 발행된 증권인지, 어떤 배서가 붙어 있는지에 따라
+          이행 여부가 갈립니다.</p>
+        <p>그리고 이 판단은 견적 이전에 이루어져야 합니다.
+          현지 조달이 필요한 항목이 있다면 준비 기간이 가장 긴 항목이 되고,
+          착수 일정 전체를 좌우하기 때문입니다.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>국내에서 가입한 보험으로 미국 계약을 충족할 수 있나요?</summary>
+          <p>종목에 따라 다릅니다. 계약서가 해당 주 인가 보험회사를 요구하는 항목, 특히 근재는 국내 증권으로 충족되지 않습니다. 요건 문언을 먼저 확인한 뒤 국내 조달 가능 범위와 현지 조달 필요 범위를 나누는 것이 첫 단계입니다.</p>
+        </details>
+        <details>
+          <summary>한국 산재보험과 해외근재가 있으면 미국 근재는 필요 없나요?</summary>
+          <p>서로 대체하지 않습니다. 한국 제도상의 보장과 미국 주법상의 근재 의무는 별개이며, 어느 한쪽만으로는 계약 요구와 현지 규제를 동시에 충족하기 어렵습니다.</p>
+        </details>
+        <details>
+          <summary>추가피보험자 배서를 하나만 받으면 안 되나요?</summary>
+          <p>진행 중 작업과 완성 작업은 배서가 다릅니다. 전자만 있으면 준공 이후 하자로 발주처가 함께 피소되는 국면에서 담보가 빠집니다. 설비 계약은 준공 이후에 분쟁이 나는 경우가 많아 두 배서를 모두 확인해야 합니다.</p>
+        </details>
+        <details>
+          <summary>설계책임 보험이 요구 목록에 없으면 안 넣어도 되나요?</summary>
+          <p>계약 구조가 설계까지 수급인 책임이라면, 목록에 없더라도 노출은 존재합니다. 설계 오류로 인한 손해는 CGL의 전문직업배상 면책으로 빠지므로 별도 검토를 권합니다.</p>
+        </details>
+        <details>
+          <summary>과거 산재 이력이 있으면 인수가 거절되나요?</summary>
+          <p>이력 자체로 거절되는 경우는 많지 않습니다. 다만 고지 대상이므로 치료 중인 건과 불승인 건까지 사실대로 기재해야 합니다. 누락하면 사고 시 지급 거절이나 계약 해지 사유가 됩니다.</p>
+        </details>
+        <details>
+          <summary>증명서는 얼마나 걸리나요?</summary>
+          <p>증권 발행과 보험료 납입 이후 발급되는 것이 일반적입니다. 종목이 여러 개이고 일부가 현지 조달이면 리드타임이 직렬로 쌓이므로, 현장 착수일에서 역산해 일정을 잡아야 합니다.</p>
+        </details>
+      </div>
+
+      <div class="related">
+        <h2>관련 상품 · 케이스</h2>
+        <ul>
+          <li><a href="/products/liability-cgl.html">영업배상책임보험 (CGL)</a><span>시설·업무 수행 과정의 제3자 신체상해·재물손해 및 완성작업 위험</span></li>
+          <li><a href="/insights/overseas-contract-pi-eo">해외 용역계약이 요구하는 PI·E&amp;O — '6년 유지' 조항과 ERP</a><span>계약 종료 후 유지 의무 문언 해석과 대응 사다리</span></li>
+          <li><a href="/insights/media-production-liability">해외 발주처의 광고 제작 계약, 영업배상책임 하나로는 왜 부족한가</a><span>현장·제작물·데이터 위험을 나누는 3층 담보 구조</span></li>
+        </ul>
+      </div>
+
+      <div class="cta">
+        <h2>미국 계약 요구보험, 착수 전에 갈라 두십시오</h2>
+        <p>요구 종목 분해 · 국내와 현지 조달 구분 · 배서 확인 · 영문 증명서 일정 관리까지 한 흐름으로 진행합니다.</p>
+        <a class="btn" href="/consult.html">해외 계약 요구보험 상담 →</a>
+        <span class="sub">독립 보험중개사 · 계약자 측 대리 (보험업법 제89조) · AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상 검토</span>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <b>엔투엔보험중개(N2N Insurance Brokerage)</b> · 대표 성한욱 (기업보험심사역 ACIU)<br>
+    금융감독원 등록 보험중개사 제2026-012201호 · 사업자등록번호 611-23-02374<br>
+    서울특별시 서초구 방배로30길 41 · T. 010-5755-6465 · <a href="mailto:sales@n2nib.com">sales@n2nib.com</a><br>
+    본 글은 보험회사 약관·안내자료를 기준으로 작성된 정보이며, 실제 인수·보상 결과는 개별 계약 조건에 따릅니다.
+  </footer>
+
+</body>
+</html>
