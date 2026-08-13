@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B2818">
+<title>[케이스] 해외 발주처의 광고 제작 계약, 영업배상책임 하나로는 왜 부족한가 — 영상 프로덕션의 3층 담보 구조 | n2nib.com</title>
+<meta name="description" content="해외 발주처가 요구하는 광고·영상 제작 계약의 보험 조항은 CGL 한 장으로 충족되지 않습니다. 현장 위험(CGL)·제작물 위험(미디어 전문직업배상)·데이터 위험(사이버)의 3층 구조와 추가피보험자·대위권 포기 등 부대조건을 ACIU 보험중개사 관점에서 익명 검토사례로 정리합니다.">
+<link rel="canonical" href="https://n2nib.com/insights/media-production-liability">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+<style>
+  :root{
+    --forest:#0B2818; --forest-soft:#143A2B;
+    --orange:#C56A2C; --orange-hover:#A9561F; --orange-ink:#A9561F;
+    --ivory:#FAF8F3; --ivory-panel:#FDFCF8; --cream-text:#F4F0E8;
+    --ink:#1A2B22; --ink-soft:#3B4A41; --ink-mute:#6B7A70;
+    --line:rgba(11,40,24,.12);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:"Pretendard",system-ui,sans-serif; background:var(--ivory); color:var(--ink); -webkit-font-smoothing:antialiased; line-height:1.7; }
+
+  /* ===== NAV ===== */
+  .nav{ background:var(--forest); display:flex; align-items:center; gap:34px; padding:14px 40px; }
+  .nav__logo{ display:flex; align-items:center; flex-shrink:0; }
+  .nav__logo img{ height:40px; width:auto; display:block; }
+  .nav__menu{ display:flex; align-items:center; gap:26px; flex:1; flex-wrap:wrap; }
+  .nav__menu a{ color:var(--cream-text); text-decoration:none; font-size:15px; font-weight:500; opacity:.92; }
+  .nav__menu a:hover{ opacity:1; }
+  .nav__right{ display:flex; align-items:center; gap:20px; flex-shrink:0; }
+  .nav__cta{ background:var(--orange); color:#fff; text-decoration:none; font-weight:700; font-size:15px; padding:11px 22px; border-radius:8px; white-space:nowrap; transition:background .15s,transform .15s; }
+  .nav__cta:hover{ background:var(--orange-hover); transform:translateY(-1px); }
+  .trustbar{ background:var(--forest-soft); color:var(--cream-text); text-align:center; font-size:13.5px; padding:11px 20px; }
+  .trustbar b{ color:var(--orange); font-weight:700; }
+  .trustbar .dot{ opacity:.45; margin:0 10px; }
+
+  /* ===== ARTICLE ===== */
+  .wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+  .article-head{ padding:64px 0 40px; border-bottom:1px solid var(--line); }
+  .crumb{ font-family:"Questrial",sans-serif; font-size:12.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--orange-ink); margin-bottom:22px; }
+  .crumb a{ color:inherit; text-decoration:none; }
+  h1{ font-family:"Nanum Myeongjo",serif; font-weight:800; color:var(--forest); font-size:clamp(28px,4.2vw,42px); line-height:1.42; letter-spacing:-.01em; word-break:keep-all; margin-bottom:24px; }
+  .dek{ font-size:18px; color:var(--ink-soft); line-height:1.75; word-break:keep-all; }
+  .byline{ display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; margin-top:28px; font-size:13.5px; color:var(--ink-mute); }
+  .byline .who{ color:var(--forest); font-weight:700; }
+
+  .article-body{ padding:44px 0 24px; }
+  .article-body h2{ font-family:"Nanum Myeongjo",serif; font-weight:700; color:var(--forest); font-size:clamp(21px,2.6vw,27px); line-height:1.45; margin:48px 0 18px; word-break:keep-all; }
+  .article-body h3{ font-weight:700; color:var(--forest); font-size:18px; margin:30px 0 10px; }
+  .article-body p{ font-size:16.5px; color:var(--ink); margin-bottom:18px; word-break:keep-all; }
+  .article-body p b{ color:var(--forest); }
+  .article-body a{ color:var(--orange-ink); text-decoration:underline; text-underline-offset:3px; }
+  .lead-para{ font-size:18px; color:var(--ink-soft); }
+
+  .case-box{ background:var(--forest); color:var(--cream-text); border-radius:16px; padding:28px 30px; margin:30px 0; }
+  .case-box .tag{ font-family:"Questrial",sans-serif; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--orange); margin-bottom:14px; }
+  .case-box dl{ display:grid; grid-template-columns:auto 1fr; gap:10px 20px; font-size:15px; }
+  .case-box dt{ color:var(--orange); font-weight:700; white-space:nowrap; }
+  .case-box dd{ color:var(--cream-text); }
+
+  .pull{ font-family:"Nanum Myeongjo",serif; font-weight:700; font-size:clamp(20px,2.6vw,26px); line-height:1.55; color:var(--forest); border-left:3px solid var(--orange); padding:6px 0 6px 24px; margin:34px 0; word-break:keep-all; }
+
+  table.cmp{ width:100%; border-collapse:collapse; margin:26px 0; font-size:14.5px; }
+  table.cmp th, table.cmp td{ text-align:left; padding:13px 14px; border-bottom:1px solid var(--line); vertical-align:top; word-break:keep-all; }
+  table.cmp thead th{ background:var(--ivory-panel); color:var(--forest); font-weight:700; border-bottom:2px solid var(--orange); }
+  table.cmp td:first-child{ font-weight:700; color:var(--forest); }
+  table.cmp .miss{ color:#A6482C; }
+  table.cmp .need{ color:var(--forest); }
+
+  ul.check{ list-style:none; margin:22px 0; padding:0; }
+  ul.check li{ position:relative; padding:11px 0 11px 34px; border-bottom:1px solid var(--line); font-size:15.5px; color:var(--ink); word-break:keep-all; }
+  ul.check li::before{ content:"✓"; position:absolute; left:6px; top:11px; color:var(--orange); font-weight:800; }
+  ul.check li b{ color:var(--forest); }
+
+  .layers{ margin:26px 0; }
+  .layer{ border:1px solid var(--line); border-left:4px solid var(--orange); border-radius:12px; background:var(--ivory-panel); padding:20px 24px; margin-bottom:14px; }
+  .layer h3{ margin:0 0 8px; font-size:17.5px; }
+  .layer p{ font-size:15.5px; color:var(--ink-soft); margin:0; word-break:keep-all; }
+  .layer .lbl{ font-family:"Questrial",sans-serif; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--orange-ink); display:block; margin-bottom:6px; }
+
+  .faq{ margin:26px 0; }
+  .faq details{ border:1px solid var(--line); border-radius:12px; padding:4px 20px; margin-bottom:12px; background:var(--ivory-panel); }
+  .faq summary{ cursor:pointer; font-weight:700; color:var(--forest); font-size:16px; padding:16px 0; list-style:none; }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{ content:"+"; float:right; color:var(--orange); font-weight:800; font-size:20px; line-height:1; }
+  .faq details[open] summary::after{ content:"–"; }
+  .faq details p{ font-size:15.5px; color:var(--ink-soft); padding-bottom:18px; margin:0; word-break:keep-all; }
+
+  .disc{ font-size:13px; color:var(--ink-mute); background:var(--ivory-panel); border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin:30px 0; line-height:1.7; word-break:keep-all; }
+
+  .related{ border-top:1px solid var(--line); margin-top:40px; padding-top:26px; }
+  .related h2{ font-size:19px !important; margin:0 0 14px !important; }
+  .related ul{ list-style:none; padding:0; margin:0; }
+  .related li{ padding:10px 0; border-bottom:1px solid var(--line); font-size:15.5px; }
+  .related li a{ color:var(--forest); font-weight:600; text-decoration:none; }
+  .related li a:hover{ color:var(--orange-ink); text-decoration:underline; }
+  .related li span{ color:var(--ink-mute); font-size:14px; display:block; margin-top:2px; }
+
+  .cta{ background:var(--forest); border-radius:20px; padding:44px 40px; text-align:center; margin:44px 0 20px; }
+  .cta h2{ font-family:"Nanum Myeongjo",serif; color:var(--cream-text); font-size:clamp(22px,3vw,30px); margin-bottom:14px; word-break:keep-all; }
+  .cta p{ color:rgba(244,240,232,.82); font-size:15.5px; margin-bottom:26px; word-break:keep-all; }
+  .cta .btn{ display:inline-block; background:var(--orange); color:#fff; font-weight:700; font-size:16px; padding:15px 32px; border-radius:10px; text-decoration:none; transition:background .15s,transform .15s; }
+  .cta .btn:hover{ background:var(--orange-hover); transform:translateY(-2px); }
+  .cta .sub{ display:block; margin-top:16px; font-size:13.5px; color:rgba(244,240,232,.6); }
+
+  footer{ background:var(--forest); color:rgba(244,240,232,.72); font-size:13px; text-align:center; padding:28px 20px; line-height:1.9; }
+  footer b{ color:var(--cream-text); }
+  footer a{ color:rgba(244,240,232,.72); }
+
+  a:focus-visible, summary:focus-visible, .btn:focus-visible{ outline:2.5px solid var(--orange); outline-offset:3px; }
+  @media (max-width:820px){
+    .nav{ flex-wrap:wrap; gap:14px; padding:12px 20px; }
+    .nav__menu{ order:3; width:100%; gap:16px; }
+    .case-box dl{ grid-template-columns:1fr; gap:4px 0; }
+    .case-box dt{ margin-top:10px; }
+    .cta{ padding:34px 22px; }
+  }
+  @media (prefers-reduced-motion:reduce){ *{ transition:none!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav__logo" href="/"><img src="/assets/logo-horizontal-dark.svg" alt="엔투엔보험중개"></a>
+    <div class="nav__menu">
+      <a href="/products/">상품</a>
+      <a href="/insights/">인사이트</a>
+      <a href="/about.html">회사소개</a>
+    </div>
+    <div class="nav__right">
+      <a class="nav__cta" href="/consult.html">상담 신청</a>
+    </div>
+  </nav>
+
+  <div class="trustbar">
+    금융감독원 등록 보험중개사 <b>제2026-012201호</b><span class="dot">·</span>AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상 <b>6개 보험회사</b> 검토 <span class="dot">·</span>기업보험심사역(ACIU)
+  </div>
+
+  <article>
+    <div class="wrap">
+      <header class="article-head">
+        <div class="crumb"><a href="/insights/">Insights</a> · 배상책임 케이스</div>
+        <h1>해외 발주처의 광고 제작 계약, 영업배상책임 하나로는 왜 부족한가</h1>
+        <p class="dek">글로벌 브랜드의 캠페인을 수주한 국내 영상 프로덕션이 마주하는 보험 조항은
+          한 장의 증권으로 충족되지 않습니다. 현장 위험·제작물 위험·데이터 위험이 서로 다른 증권에 나뉘어 있고,
+          그 경계에서 담보 공백이 생깁니다. 실제 검토사례(익명)로 3층 담보 구조와 계약 부대조건을 정리합니다.</p>
+        <div class="byline">
+          <span>✍️ 작성 <span class="who">성한욱</span> — 기업보험심사역(ACIU) · 보험중개사 등록 제2026-012201호</span>
+          <span>· 📋 보험회사 약관·안내자료 기반</span>
+          <span>· 최종수정 2026-08-13</span>
+        </div>
+      </header>
+
+      <div class="article-body">
+        <p class="lead-para">해외 발주처와의 제작 계약서에는 거의 예외 없이 보험(Insurance) 조항이 붙습니다.
+          그런데 이 조항을 받아 든 프로덕션이 가장 먼저 하는 일은 대개
+          <b>"우리 영업배상책임보험 증권 있으니 그거 보내면 되겠지"</b>입니다.
+          문제는 계약서가 요구하는 것이 <b>증권의 존재</b>가 아니라 <b>특정한 담보 구조와 부대조건</b>이라는 점입니다.</p>
+
+        <div class="case-box">
+          <p class="tag">검토 사례 (익명)</p>
+          <dl>
+            <dt>계약자</dt><dd>국내 영상 프로덕션 (광고 제작·에이전시 업무)</dd>
+            <dt>발주처</dt><dd>해외 소재 글로벌 온라인 플랫폼 본사</dd>
+            <dt>업무</dt><dd>브랜드 캠페인 광고 영상 다편 제작 및 에이전시 업무</dd>
+            <dt>현장</dt><dd>국내 호텔 2개소·세트장 / 촬영 2일</dd>
+            <dt>계약 요구</dt><dd>발주처 추가피보험자 지정 · 우선비분담 · 대위권 포기 · 영문 보험가입증명서</dd>
+            <dt>쟁점</dt><dd>단일 증권으로는 메워지지 않는 담보 공백 / 배상청구기준 소급담보일 / 담보 중복 정리</dd>
+          </dl>
+        </div>
+
+        <h2>영업배상책임(CGL)이 담보하지 <em>않는</em> 것</h2>
+        <p>영업배상책임보험은 <b>시설과 업무 수행 과정에서 제3자에게 발생한 신체상해·재물손해</b>를 담보하는 증권입니다.
+          촬영 현장에서 조명이 넘어져 행인이 다치거나 장비가 호텔 로비를 파손한 경우가 전형입니다.</p>
+        <p>그런데 광고 제작사의 손해배상 위험은 대부분 <b>현장이 아니라 화면 안에서</b> 발생합니다.
+          그리고 그 영역은 대부분의 영업배상책임 증권에서 <b>전문직업배상 면책 조항</b>과
+          <b>데이터·사이버 면책 조항</b>으로 명시적으로 빠져 있습니다.</p>
+
+        <table class="cmp">
+          <thead>
+            <tr><th>위험 국면</th><th>영업배상책임 단독</th><th>필요한 설계</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>촬영 현장 제3자 상해·재물손해</td><td class="need">담보</td><td class="need">시설소유관리자·도급업자 기본 담보</td></tr>
+            <tr><td>제작 스태프의 업무상 재해</td><td class="miss">근로자 상해는 기본 면책</td><td class="need">사용자배상책임 특약 별도 부가</td></tr>
+            <tr><td>임차한 촬영장소·장비 손해</td><td class="miss">수탁물·임차물 관련 면책 소지</td><td class="need">임차자배상·수탁물 조건 개별 확인</td></tr>
+            <tr><td>저작권·상표·타이틀 침해</td><td class="miss">전문직업배상 면책으로 제외</td><td class="need">미디어 전문직업배상 (Producer's Liability)</td></tr>
+            <tr><td>초상권·명예훼손·프라이버시</td><td class="miss">제작물 관련 청구는 제한적</td><td class="need">미디어 전문직업배상</td></tr>
+            <tr><td>미허가 음원·소재 사용</td><td class="miss">미담보</td><td class="need">미디어 전문직업배상 + 클리어런스 증빙</td></tr>
+            <tr><td>개인정보 유출·네트워크 사고</td><td class="miss">데이터·사이버 면책으로 제외</td><td class="need">사이버 배상책임</td></tr>
+          </tbody>
+        </table>
+
+        <p class="pull">영업배상책임은 <b>촬영장에서 벌어진 일</b>을 담보하고,
+          미디어 전문직업배상은 <b>화면에 실린 것</b>을 담보합니다. 둘은 서로를 대체하지 않습니다.</p>
+
+        <h2>3층으로 나누어 설계한다</h2>
+        <p>이 사례에서는 계약서가 요구한 담보를 아래 세 개 층으로 분해한 뒤,
+          각 층의 경계에서 빠지는 부분이 없는지를 역으로 점검하는 방식으로 설계했습니다.</p>
+
+        <div class="layers">
+          <div class="layer">
+            <span class="lbl">Layer 1 · 현장</span>
+            <h3>영업배상책임 (CGL) — 사람과 물건</h3>
+            <p>촬영 장소·기간·업무 내용을 증권에 특정해 기재합니다. 제작 스태프에 대한 사용자배상책임은
+              기본 담보가 아니므로 별도 특약으로 부가해야 하며, 임차한 촬영장소와 장비에 대한
+              수탁물·임차물 취급이 어떻게 처리되는지는 증권별로 반드시 개별 확인이 필요합니다.</p>
+          </div>
+          <div class="layer">
+            <span class="lbl">Layer 2 · 제작물</span>
+            <h3>미디어 전문직업배상 — 화면에 실린 것</h3>
+            <p>저작권·상표·타이틀 침해, 초상권·프라이버시 침해, 명예훼손, 미허가 소재 사용 등
+              <b>제작물 자체에서 비롯되는 청구</b>를 담보합니다. 담보 대상 제작물(Insured Production)을
+              증권에 특정하는 방식이 일반적이며, <b>배상청구기준(claims-made)</b>이라는 점이 설계의 핵심 변수가 됩니다.</p>
+          </div>
+          <div class="layer">
+            <span class="lbl">Layer 3 · 데이터</span>
+            <h3>사이버 배상책임 — 정보와 시스템</h3>
+            <p>제작 과정에서 취급하는 출연자·스태프 개인정보, 발주처로부터 받은 미공개 자료,
+              편집 원본 데이터가 대상입니다. 영업배상책임에서 데이터·사이버가 면책으로 빠져 있는 만큼,
+              이 층을 비워 두면 계약상 요구를 형식적으로만 충족하게 됩니다.</p>
+          </div>
+        </div>
+
+        <h3>층이 겹치는 지점 — 미디어 담보의 중복 정리</h3>
+        <p>실무에서 자주 놓치는 부분입니다. 사이버 증권에도 <b>미디어 배상책임(Media Liability)</b> 담보가
+          옵션으로 들어 있는 경우가 있습니다. 별도의 미디어 전문직업배상을 함께 가입하면서 이 옵션을 그대로 두면,
+          같은 위험에 두 개의 증권이 걸치면서 <b>사고 시 어느 증권이 우선하는지, 자기부담금은 어느 쪽 기준인지</b>를 두고
+          다툼이 생길 수 있습니다.</p>
+        <p>이 사례에서는 미디어 위험을 전문직업배상 증권 하나로 모으고, 사이버 증권의 미디어 담보는
+          설정하지 않는 방식으로 정리했습니다. 담보를 늘리는 것보다 <b>중복과 공백의 경계를 명확히 긋는 것</b>이
+          청구 단계에서 훨씬 실질적인 차이를 만듭니다.</p>
+
+        <h2>계약서가 요구하는 것은 증권이 아니라 '부대조건'입니다</h2>
+        <p>해외 발주처의 보험 조항은 한도액만 요구하지 않습니다. 아래 조건들이 증권에 실제로 배서되어 있지 않으면,
+          한도를 충족해도 계약 위반이 됩니다.</p>
+
+        <table class="cmp">
+          <thead>
+            <tr><th>부대조건</th><th>의미</th><th>없으면</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>추가피보험자<br>(Additional Insured)</td><td>발주처를 피보험자로 추가 지정</td><td class="miss">발주처가 함께 피소돼도 이 증권으로 방어 불가</td></tr>
+            <tr><td>우선비분담<br>(Primary &amp; Non-contributory)</td><td>발주처 자체 보험보다 이 증권이 먼저 대응</td><td class="miss">발주처 보험과 분담 다툼 발생</td></tr>
+            <tr><td>대위권 포기<br>(Waiver of Subrogation)</td><td>보험사가 발주처에 구상하지 않음</td><td class="miss">보험금 지급 후 발주처에 구상 → 계약 분쟁</td></tr>
+            <tr><td>영문 보험가입증명서<br>(COI)</td><td>발주처 제출용 영문 증명서</td><td class="miss">국문 증권만으로는 계약 이행 입증 곤란</td></tr>
+            <tr><td>해지·변경 사전통지</td><td>증권 해지 시 일정 기간 전 서면통지</td><td class="miss">계약 요구 미충족</td></tr>
+          </tbody>
+        </table>
+
+        <p>이 부대조건들은 <b>청약 단계에서 미리 요청해 배서로 반영</b>해야 합니다.
+          증권이 발행된 뒤에 추가하려면 배서 절차와 인수심사를 다시 거쳐야 하고,
+          그 사이 촬영이 진행되면 계약상 요구를 충족하지 못한 상태로 현장이 돌아갑니다.</p>
+
+        <h2>실무에서 가장 자주 놓치는 세 가지</h2>
+
+        <h3>① 소급담보일이 프리프로덕션보다 늦으면 기획 단계가 빈다</h3>
+        <p>미디어 전문직업배상은 배상청구기준 증권입니다. <b>소급담보일 이전에 수행한 업무</b>에서 비롯된 청구는
+          보험기간 중에 제기되더라도 담보되지 않습니다.</p>
+        <p>광고 제작에서 저작권·초상권 문제는 촬영 당일이 아니라 <b>기획·시안·캐스팅·소재 선정 단계</b>에서 만들어집니다.
+          촬영 개시일을 소급담보일로 잡으면 정작 위험이 발생한 구간이 통째로 빠집니다.
+          소급담보일은 <b>프리프로덕션 착수일 이전</b>으로 설정되어야 합니다.</p>
+
+        <h3>② 촬영은 이틀, 청구는 온에어 이후에 온다</h3>
+        <p>제작 기간이 짧다고 해서 위험 노출 기간이 짧은 것이 아닙니다.
+          저작권·초상권 청구는 대개 <b>광고가 실제로 노출되기 시작한 뒤</b> 제기됩니다.
+          배상청구기준 증권은 <b>청구가 제기된 시점에 증권이 살아 있어야</b> 담보되므로,
+          캠페인 노출 기간 동안 소급담보일을 승계하며 계속 부보를 유지해야 합니다.</p>
+        <p>제작 완료와 동시에 증권을 종료하면, 정작 청구가 들어오는 시점에 담보가 없는 상태가 됩니다.
+          다만 갱신 여부는 매년 보험회사의 인수심사에 따르므로, 계속 부보를 사전에 확약할 수는 없습니다.</p>
+
+        <h3>③ 클리어런스 증빙을 제출하면 빠지는 면책이 있다</h3>
+        <p>미디어 전문직업배상에는 <b>타이틀 서치</b>나 <b>미허가 음원 사용</b>에 관한 면책 조항이
+          조건부로 붙는 경우가 있습니다. 그런데 이 조항들은 상당수가
+          <b>"클리어런스 증빙을 제출하면 삭제 가능"</b>이라는 단서를 달고 있습니다.</p>
+        <p>즉 타이틀 서치 결과와 음원 라이선스 계약서를 정리해 제출하는 것만으로
+          담보 범위가 실질적으로 넓어질 수 있습니다. 이 단서를 읽지 않고 증권을 그대로 받아 두면,
+          가장 청구가 잦은 영역이 면책으로 남은 채 캠페인이 집행됩니다.
+          <b>서류 작업 하나가 담보 범위를 바꾸는</b> 드문 지점입니다.</p>
+
+        <h2>수주 전에 확인할 체크리스트</h2>
+        <ul class="check">
+          <li>계약서 보험 조항의 <b>요구 종목이 몇 개인지</b> 먼저 센다 (한 종목으로 해석하지 않는다)</li>
+          <li>요구 한도가 <b>1사고당인지 연간 총액인지</b> 문언으로 확인</li>
+          <li><b>추가피보험자·우선비분담·대위권 포기</b> 요구 여부와 대상 법인명 확정</li>
+          <li>미디어 담보의 <b>소급담보일이 프리프로덕션 착수일 이전</b>인지</li>
+          <li>담보 대상 <b>제작물이 증권에 특정</b>되어 있는지 (편수·캠페인명 포함)</li>
+          <li>사용자배상책임(스태프)·임차 촬영장소 취급이 <b>별도 특약으로</b> 반영됐는지</li>
+          <li>사이버와 미디어 담보의 <b>중복 구간이 정리</b>됐는지</li>
+          <li><b>영문 보험가입증명서</b> 발급 가능 여부와 소요 기간</li>
+          <li>캠페인 <b>노출 기간 동안의 계속 부보</b> 계획</li>
+        </ul>
+
+        <div class="disc">
+          본 글은 익명 검토사례를 바탕으로 보험 설계 구조를 일반화해 정리한 것입니다.
+          담보 범위·면책 조항·특약 명칭과 적용 방식은 보험회사와 약관에 따라 다르며,
+          보험료·보상한도·자기부담금·특약 적용 여부 등 모든 인수조건은
+          <b>보험회사의 인수심사 후 확정</b>됩니다. 특정한 인수 결과나 보상을 보장하지 않습니다.
+          저작권·계약 해석에 관한 법률자문은 제공하지 않습니다.
+        </div>
+
+        <h2>왜 브로커를 거치는가</h2>
+        <p>이 사례의 어려움은 어느 한 종목이 특별히 까다로웠다는 데 있지 않습니다.
+          <b>세 개의 증권을 서로 다른 심사 라인에서 동시에 진행하면서, 그 사이의 경계를 맞추는 일</b>이 본질이었습니다.
+          담보 대상 제작물 표기, 소급담보일, 추가피보험자 법인명, 미디어 담보의 중복 정리가
+          세 증권에서 일관되게 맞물려야 발주처 제출 단계에서 반려되지 않습니다.</p>
+        <p>보험중개사는 보험업법 제89조에 따라 <b>계약자 측을 대리</b>합니다.
+          계약서의 보험 조항을 담보 요건으로 번역하고, 복수의 보험회사에 동일 조건으로 인수심사를 의뢰하며,
+          부대조건 배서와 영문 증명서 발급까지 한 흐름으로 관리하는 것이 그 역할입니다.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>영업배상책임보험 하나만 들면 안 되나요?</summary>
+          <p>계약서가 한 종목만 요구한다면 가능하지만, 광고·영상 제작 계약은 통상 현장 위험·제작물 위험·데이터 위험을 함께 요구합니다. 영업배상책임 증권에는 전문직업배상 면책과 데이터·사이버 면책이 들어 있어, 제작물과 개인정보 관련 청구는 그 증권으로 담보되지 않는 것이 일반적입니다.</p>
+        </details>
+        <details>
+          <summary>배상청구기준(claims-made)이 무슨 뜻인가요?</summary>
+          <p>업무를 수행한 시점이 아니라 <b>손해배상청구가 제기된 시점</b>을 기준으로 담보하는 방식입니다. 소급담보일 이후에 수행한 업무에 대해, 보험기간 중에 제기된 청구를 담보합니다. 따라서 소급담보일 설정과 계속 부보 유지가 담보 유무를 좌우합니다.</p>
+        </details>
+        <details>
+          <summary>추가피보험자로 발주처를 넣으면 우리 한도가 줄어드나요?</summary>
+          <p>일반적으로 추가피보험자는 별도 한도가 아니라 <b>동일 증권 한도를 공유</b>합니다. 발주처가 함께 피소된 사건에서 한도를 나누어 쓰게 되므로, 계약 요구 한도만 맞추기보다 실제 노출 규모를 함께 검토하는 것이 안전합니다.</p>
+        </details>
+        <details>
+          <summary>촬영이 끝나면 보험을 해지해도 되나요?</summary>
+          <p>미디어 담보는 배상청구기준이므로, 해지하면 그 이후 제기되는 청구는 담보되지 않습니다. 저작권·초상권 청구는 광고 노출이 시작된 뒤에 오는 경우가 많아, 노출 기간 동안 소급담보일을 승계하며 유지하는 것이 원칙입니다. 다만 갱신 인수 여부는 보험회사 심사에 따릅니다.</p>
+        </details>
+        <details>
+          <summary>영문 보험가입증명서(COI)는 바로 발급되나요?</summary>
+          <p>증권 발행과 보험료 납입이 완료된 뒤 발급되는 것이 일반적입니다. 촬영 일정이 임박한 경우 청약·납입·증명서 발급까지의 리드타임을 역산해 일정을 잡아야 하며, 발주처가 요구하는 기재 항목(피보험자 표기·한도·부대조건)을 사전에 맞춰 두면 반려를 줄일 수 있습니다.</p>
+        </details>
+      </div>
+
+      <div class="related">
+        <h2>관련 상품</h2>
+        <ul>
+          <li><a href="/products/liability-eo.html">전문직업인 배상책임보험 (E&amp;O / PI)</a><span>미디어·컨설팅·기술 용역 등 전문업무 수행상 과실로 인한 손해배상책임</span></li>
+          <li><a href="/products/liability-cgl.html">영업배상책임보험 (CGL)</a><span>시설·업무 수행 과정의 제3자 신체상해·재물손해</span></li>
+          <li><a href="/products/specialty-cyber-sme.html">사이버 배상책임보험</a><span>개인정보 유출·네트워크 보안 사고 및 사고대응 비용</span></li>
+        </ul>
+      </div>
+
+      <div class="cta">
+        <h2>계약서 보험 조항, 수주 단계에서 검토하세요</h2>
+        <p>요구 종목 분해 · 부대조건 배서 · 소급담보일 설계 · 영문 증명서 발급까지 한 흐름으로 관리합니다.</p>
+        <a class="btn" href="/consult.html">배상책임 설계 상담 →</a>
+        <span class="sub">독립 보험중개사 · 계약자 측 대리 (보험업법 제89조) · AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상 검토</span>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <b>엔투엔보험중개(N2N Insurance Brokerage)</b> · 대표 성한욱 (기업보험심사역 ACIU)<br>
+    금융감독원 등록 보험중개사 제2026-012201호 · 사업자등록번호 611-23-02374<br>
+    서울특별시 서초구 방배로30길 41 · T. 010-5755-6465 · <a href="mailto:sales@n2nib.com">sales@n2nib.com</a><br>
+    본 글은 보험회사 약관·안내자료를 기준으로 작성된 정보이며, 실제 인수·보상 결과는 개별 계약 조건에 따릅니다.
+  </footer>
+
+</body>
+</html>
