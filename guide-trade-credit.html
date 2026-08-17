@@ -286,336 +286,362 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </ul><button class="menu-toggle" aria-label="메뉴"><span></span><span></span><span></span></button></div></nav>
 
 <nav class="breadcrumb" aria-label="경로"><div class="container"><ol>
-  <li><a href="./">홈</a></li><li>편집 기준 (Editorial Standards)</li>
+  <li><a href="./">홈</a></li><li><a href="guides">가이드</a></li><li>신용보험</li>
 </ol></div></nav>
 
 <main>
-<!-- N2N:GUIDE:TRADE-CREDIT:START v1 2026-08-17 -->
-<article id="tcg">
-<style>
-#tcg{--g:#0B2818;--o:#C56A2C;--cr:#F4F0E8;--r:#B23A2E;--ln:#dcd8cd;--mut:#4a5f52;
-  color:var(--g);max-width:820px;margin:0 auto;padding:28px 20px 64px;line-height:1.72;
-  font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Malgun Gothic","맑은 고딕",sans-serif;}
-#tcg *{box-sizing:border-box}
-#tcg .bc{font-size:13px;color:var(--mut);margin-bottom:24px}
-#tcg .bc a{color:var(--mut);text-decoration:none}
-#tcg .bc a:hover{text-decoration:underline}
-#tcg .kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--o);font-weight:700;margin-bottom:10px}
-#tcg h1{font-size:34px;line-height:1.28;font-weight:700;margin:0 0 14px;letter-spacing:-.01em}
-#tcg .lede{font-size:18px;line-height:1.7;color:#2b4234;margin:0 0 20px}
-#tcg .meta{font-size:13px;color:var(--mut);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:12px 0;margin-bottom:8px}
-#tcg h2{font-size:25px;line-height:1.36;font-weight:700;margin:52px 0 8px;letter-spacing:-.01em}
-#tcg h3{font-size:17px;font-weight:700;margin:26px 0 6px}
-#tcg p{margin:0 0 14px;font-size:16.5px}
-#tcg .sub{color:var(--mut);font-size:15px;margin:0 0 20px}
-#tcg strong{font-weight:700}
-#tcg .toc{background:var(--cr);border-radius:8px;padding:20px 24px;margin:32px 0 8px}
-#tcg .toc h3{margin:0 0 10px;font-size:14px;letter-spacing:.04em;color:var(--o)}
-#tcg .toc ol{margin:0;padding-left:20px;font-size:15px}
-#tcg .toc li{margin-bottom:5px}
-#tcg .toc a{color:var(--g);text-decoration:none}
-#tcg .toc a:hover{text-decoration:underline}
-#tcg .chk{border:1px solid var(--ln);border-radius:8px;overflow:hidden;margin:20px 0}
-#tcg .chk .row{display:flex;gap:14px;padding:16px 18px;border-bottom:1px solid var(--ln)}
-#tcg .chk .row:last-child{border-bottom:none}
-#tcg .chk .q{font-weight:700;font-size:15.5px;margin:0 0 4px}
-#tcg .chk .a{font-size:14.5px;color:var(--mut);margin:0}
-#tcg .chk .no{flex:0 0 26px;font-size:13px;font-weight:700;color:var(--o);padding-top:2px}
-#tcg .steps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:20px 0}
-#tcg .steps>div{border:1px solid var(--ln);border-top:3px solid var(--g);border-radius:6px;padding:14px 16px;background:#fff}
-#tcg .steps h4{margin:0 0 6px;font-size:15px}
-#tcg .steps p{margin:0;font-size:14px;color:#33503f}
-#tcg .callout{background:#fff;border:1px solid var(--ln);border-left:3px solid var(--o);border-radius:6px;padding:16px 20px;margin:22px 0}
-#tcg .callout p{margin:0;font-size:15.5px}
-#tcg .warn{border-left-color:var(--r)}
-#tcg .dark{background:var(--g);color:var(--cr);border:none;border-radius:8px;padding:22px 24px;margin:26px 0}
-#tcg .dark h3{color:var(--cr);margin:0 0 10px}
-#tcg .dark p{color:#e2ddd0;font-size:15.5px}
-#tcg .dark .src{font-size:13px;color:#a9bdaf;margin:0}
-#tcg .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}
-#tcg table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:600px;background:#fff}
-#tcg th,#tcg td{padding:11px 13px;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}
-#tcg thead th{background:var(--g);color:var(--cr);font-weight:600;border-bottom:none}
-#tcg tbody th{background:var(--cr);font-weight:600;width:140px;color:var(--g)}
-#tcg .tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
-#tcg .tags span{background:var(--cr);border-radius:999px;padding:7px 15px;font-size:14px;font-weight:600}
-#tcg ol.pit{list-style:none;counter-reset:p;padding:0;margin:20px 0 0}
-#tcg ol.pit li{counter-increment:p;position:relative;padding:0 0 18px 44px;border-bottom:1px solid var(--ln);margin-bottom:18px}
-#tcg ol.pit li:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
-#tcg ol.pit li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:2px;font-size:14px;font-weight:700;color:var(--o)}
-#tcg ol.pit li p{margin:0;font-size:15.5px;color:#33503f}
-#tcg .faq{border-top:1px solid var(--ln);margin-top:20px}
-#tcg .faq details{border-bottom:1px solid var(--ln)}
-#tcg .faq summary{cursor:pointer;list-style:none;padding:16px 34px 16px 0;font-weight:700;font-size:16px;position:relative}
-#tcg .faq summary::-webkit-details-marker{display:none}
-#tcg .faq summary::after{content:"+";position:absolute;right:6px;top:14px;font-size:20px;color:var(--o);font-weight:400}
-#tcg .faq details[open] summary::after{content:"–"}
-#tcg .faq details>div{padding:0 0 18px;font-size:15.5px;color:#33503f}
-#tcg .faq details>div p:last-child{margin-bottom:0}
-#tcg .rel{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:20px 0}
-#tcg .rel a{display:block;border:1px solid var(--ln);border-radius:6px;padding:16px 18px;text-decoration:none;color:var(--g);background:#fff}
-#tcg .rel a:hover{border-color:var(--o)}
-#tcg .rel strong{display:block;font-size:15.5px;margin-bottom:4px}
-#tcg .rel em{font-style:normal;font-size:14px;color:var(--mut)}
-#tcg .cta{margin-top:52px;background:var(--cr);border-radius:8px;padding:28px 24px;text-align:center}
-#tcg .cta h3{margin:0 0 8px;font-size:19px}
-#tcg .cta p{font-size:15.5px;margin:0 0 16px;color:#2b4234}
-#tcg .cta a{display:inline-block;background:var(--o);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 30px;border-radius:6px}
-#tcg .cta a:hover{background:#a8551f}
-#tcg .disc{margin-top:32px;font-size:13px;color:#5d6f63;border-top:1px solid var(--ln);padding-top:18px;line-height:1.7}
-@media (max-width:640px){#tcg h1{font-size:27px}#tcg h2{font-size:21px}#tcg .lede{font-size:16.5px}#tcg{padding:20px 16px 48px}}
-</style>
+<!-- N2N:GUIDE:TRADE-CREDIT:START v2 2026-08-17 -->
 
-<nav class="bc"><a href="/">홈</a> / <a href="/guides">가이드</a> / 신용보험</nav>
+  <section style="background:linear-gradient(120deg,#0B2818,#15391f 70%,#0e2c1c);color:#EBE7D8;">
+    <div class="container" style="max-width:880px;padding-top:52px;padding-bottom:46px;">
+      <span style="display:inline-block;font-size:.74rem;font-weight:800;letter-spacing:.14em;color:#E9A368;background:rgba(197,106,44,.16);padding:5px 12px;border-radius:6px;">GUIDE · 신용 / 매출채권</span>
+      <h1 style="color:#fff;font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:800;letter-spacing:-.02em;margin:16px 0 12px;line-height:1.28;">신용보험이란?<br>외상 매출 미수금에 대비하는 5가지</h1>
+      <p style="font-size:1.02rem;color:#bccabe;line-height:1.7;max-width:660px;margin:0;">
+        물건은 나갔는데 대금이 안 들어옵니다. 거래처가 부도났거나, 부도는 아닌데 계속 미뤄집니다. 가입만 해두면 되는 보험이 아니라, 사내 여신 프로세스와 맞물려야 작동하는 보험입니다.
+      </p>
+      <div style="margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:.83rem;color:#8fa394;line-height:1.8;">
+        작성 <strong style="color:#cdd6cf;font-weight:700;">성한욱</strong> · 기업보험심사역(ACIU) · 보험중개사 등록 제2026-012201호<br>
+        검토 본 글은 상법(보험편) 및 매출채권 신용보험 약관·보험회사 안내자료를 기준으로 작성되었습니다. &nbsp;|&nbsp; 최종수정 2026-08-17
+      </div>
+    </div>
+  </section>
 
-<div class="kicker">기업보험 가이드 · 신용 / 매출채권</div>
-<h1>신용보험 완전 가이드 — 외상으로 판 돈, 못 받으면 누가 책임지나</h1>
-<p class="lede">물건은 나갔는데 대금이 안 들어옵니다. 거래처가 부도났거나, 부도는 아닌데 계속 미뤄집니다. 신용보험(매출채권 신용보험)은 이 손해를 보장하는 보험입니다. 다만 가입만 해두면 되는 보험이 아니라, 사내 여신 프로세스와 맞물려 돌아가야 작동합니다. 이 글은 우리 회사가 가입 대상인지, 무엇이 보장되고 무엇이 안 되는지, 어떤 순서로 검토하면 되는지를 정리한 것입니다.</p>
-<p class="meta">작성 · 성한욱 (기업보험심사역 ACIU) &nbsp;|&nbsp; 최종수정 2026-08-17 &nbsp;|&nbsp; 읽는 데 약 9분</p>
+  <div class="container" style="max-width:880px;padding-top:38px;padding-bottom:58px;color:#2b3a30;line-height:1.72;">
 
-<div class="toc">
-  <h3>이 글의 순서</h3>
-  <ol>
-    <li><a href="#s1">우리 회사가 가입 대상인가 — 5문항 자가진단</a></li>
-    <li><a href="#s2">어떻게 작동하는가</a></li>
-    <li><a href="#s3">누가 증권을 발행하고 누가 한도를 정하는가</a></li>
-    <li><a href="#s4">거래처를 다 넣어야 하나 — 가입 단위 설계</a></li>
-    <li><a href="#s5">무엇이 보장되고 무엇이 안 되는가</a></li>
-    <li><a href="#s6">얼마를 받는가 — 부분보상과 총보상한도</a></li>
-    <li><a href="#s7">보상 말고 따라오는 세 가지 효과</a></li>
-    <li><a href="#s8">민간 신용보험과 공적 제도의 차이</a></li>
-    <li><a href="#s9">이미 하고 있는 방법과 무엇이 다른가</a></li>
-    <li><a href="#s10">미수 문제가 자주 생기는 업종</a></li>
-    <li><a href="#s11">준비 서류와 일정</a></li>
-    <li><a href="#s12">자주 묻는 질문</a></li>
-  </ol>
-</div>
+    <div style="border-left:4px solid #C56A2C;background:#FAF6EC;border-radius:0 10px 10px 0;padding:18px 22px;">
+      <p style="margin:0 0 10px;font-size:.78rem;font-weight:800;letter-spacing:.08em;color:#A8581F;">핵심 요약</p>
+      <ul style="margin:0;padding-left:20px;display:grid;gap:8px;font-size:.97rem;color:#33403a;">
+        <li>신용보험은 외상으로 공급한 <strong>매출채권</strong>의 미회수 손해를 담보합니다. 대여금 등 금융채권은 대상이 아닙니다.</li>
+        <li>사고 유형은 두 가지입니다. 거래처의 <strong>지급불능</strong>(부도·파산·회생)과 결제기일이 지나도 회수되지 않는 <strong>이행지체</strong>.</li>
+        <li>보험회사로부터 <strong>신용한도를 승인받은 거래처</strong>에 대해, 한도 범위 내 공급분만 보장됩니다.</li>
+        <li>일반적으로 <strong>결제기간 180일 이내</strong>의 B2B 단기 신용거래를 담보합니다.</li>
+        <li>손해 전액이 아니라 약정 보상비율만큼 지급하는 <strong>부분보상</strong>이며, 연간 <strong>총보상한도</strong>가 별도로 존재합니다.</li>
+      </ul>
+    </div>
 
-<h2 id="s1">1. 우리 회사가 가입 대상인가 — 5문항 자가진단</h2>
-<p class="sub">아래 다섯 가지가 신용보험 인수 가능 여부를 가르는 1차 관문입니다. 순서대로 확인해 보십시오.</p>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">01</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">우리 회사가 가입 대상인가 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Self-check</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">아래 다섯 가지가 인수 가능 여부를 가르는 1차 관문입니다. 순서대로 확인해 보십시오.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:20%"><col style="width:36%"><col style="width:44%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">확인 항목</th><th style="text-align:left;padding:10px 12px;font-weight:700;">기준</th><th style="text-align:left;padding:10px 12px;font-weight:700;">왜 중요한가</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">거래 상대</td><td style="padding:10px 12px;color:#41504a;">기업 간 거래(B2B)</td><td style="padding:10px 12px;color:#41504a;">개인 소비자에 대한 외상 판매나 소액 다건의 소매 채권은 대상이 아닙니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">결제조건</td><td style="padding:10px 12px;color:#41504a;">결제기간(Credit Term) 180일 이내</td><td style="padding:10px 12px;color:#41504a;">장기 할부나 프로젝트성 장기 미수는 표준 담보 범위를 벗어납니다. 우리 표준 결제조건이 몇 일인지가 첫 확인 사항입니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">채권 성격</td><td style="padding:10px 12px;color:#41504a;">물품·용역 공급에서 발생한 매출채권</td><td style="padding:10px 12px;color:#41504a;">거래처에 빌려준 대여금 같은 금융채권, 투자 성격의 채권은 담보하지 않습니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">외상 비중</td><td style="padding:10px 12px;color:#41504a;">선수금·L/C 외의 외상 매출이 의미 있는 규모</td><td style="padding:10px 12px;color:#41504a;">사후송금(O/A) 수출이 늘고 있거나 내수 외상 비중이 높다면 검토 실익이 큽니다.</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">거래처 자료</td><td style="padding:10px 12px;color:#41504a;">거래처 목록 정리 가능</td><td style="padding:10px 12px;color:#41504a;">상호·사업자번호·결제조건·최근 거래 규모가 정리돼야 견적 자체가 진행됩니다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;background:#F2EFE4;border-radius:9px;padding:13px 16px;font-size:.9rem;color:#4a564d;">다섯 항목을 통과했다고 인수가 확정되는 것은 아닙니다. 실제 인수 여부와 조건은 우리 회사의 재무 상태, 업종, 그리고 <strong style="color:#0B2818;">거래처 각각의 신용도</strong>를 심사한 뒤 보험회사가 결정합니다.</div>
 
-<div class="chk">
-  <div class="row"><div class="no">01</div><div>
-    <p class="q">거래 상대가 기업입니까?</p>
-    <p class="a">신용보험은 기업 간 거래(B2B)를 전제로 합니다. 개인 소비자에 대한 외상 판매나 소액 다건의 소매 채권은 대상이 아닙니다.</p>
-  </div></div>
-  <div class="row"><div class="no">02</div><div>
-    <p class="q">결제조건이 단기입니까?</p>
-    <p class="a">일반적으로 <strong>결제기간(Credit Term) 180일 이내</strong>의 단기 신용거래를 담보합니다. 장기 할부나 프로젝트성 장기 미수는 별도 구조로 검토해야 합니다. 우리 회사 표준 결제조건이 몇 일인지가 첫 확인 사항입니다.</p>
-  </div></div>
-  <div class="row"><div class="no">03</div><div>
-    <p class="q">받을 돈의 성격이 매출채권입니까?</p>
-    <p class="a">물품이나 용역을 공급하고 발생한 미수채권만 대상입니다. 거래처에 빌려준 대여금 같은 금융채권, 투자 성격의 채권은 담보하지 않습니다.</p>
-  </div></div>
-  <div class="row"><div class="no">04</div><div>
-    <p class="q">외상 매출의 비중이 의미 있는 수준입니까?</p>
-    <p class="a">선수금이나 신용장(L/C) 결제 비중이 대부분이라면 실익이 크지 않습니다. 반대로 사후송금(O/A) 수출이 늘고 있거나 내수 외상 비중이 높다면 검토 실익이 큽니다.</p>
-  </div></div>
-  <div class="row"><div class="no">05</div><div>
-    <p class="q">거래처 목록을 정리할 수 있습니까?</p>
-    <p class="a">신용보험은 구매자별 신용한도 심사로 시작합니다. 거래처명, 사업자번호, 결제조건, 최근 거래 규모가 정리돼 있어야 견적 자체가 진행됩니다.</p>
-  </div></div>
-</div>
+  </section>
 
-<div class="callout"><p>다섯 문항을 통과했다고 인수가 확정되는 것은 아닙니다. 실제 인수 여부와 조건은 우리 회사의 재무 상태, 업종, 그리고 <strong>거래처 각각의 신용도</strong>를 심사한 뒤 보험회사가 결정합니다.</p></div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">02</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">어떻게 작동하는가 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">How it works</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">사고가 난 뒤가 아니라, 거래를 트기 전부터 작동하는 구조입니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:16%"><col style="width:30%"><col style="width:54%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">단계</th><th style="text-align:left;padding:10px 12px;font-weight:700;">내용</th><th style="text-align:left;padding:10px 12px;font-weight:700;">실무 포인트</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">① 한도 승인</td><td style="padding:10px 12px;color:#41504a;">구매자별 신용한도 부여</td><td style="padding:10px 12px;color:#41504a;">거래처 목록을 제출하면 보험회사가 각 구매자의 재무·비재무 정보를 심사해 한도를 정합니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">② 한도 내 공급</td><td style="padding:10px 12px;color:#41504a;">승인 범위 안에서 외상 공급</td><td style="padding:10px 12px;color:#41504a;">한도를 못 받은 거래처와 한도 초과분은 보장 대상이 아닙니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">③ 사고 발생</td><td style="padding:10px 12px;color:#41504a;">지급불능 또는 이행지체</td><td style="padding:10px 12px;color:#41504a;">부도·파산·회생 개시, 또는 결제기일이 지나도 회수되지 않는 상태입니다.</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">④ 보상·회수</td><td style="padding:10px 12px;color:#41504a;">보험금 지급 후 대위 회수</td><td style="padding:10px 12px;color:#41504a;">연체 통지와 약정 회수기간 경과 후 지급되며, 이후 보험회사가 채권을 대위해 회수합니다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin:14px 0 0;">보험기간 중에도 보험회사는 각 거래처의 신용도를 계속 모니터링하며, 위험 신호가 나타나면 <strong>신용한도를 감액하거나 취소</strong>합니다. 그 통보를 받은 시점 이후의 공급분은 보장 범위를 벗어납니다.</p>
+    <div style="margin-top:14px;border-left:4px solid #B23A2E;background:#FBF2F0;border-radius:0 9px 9px 0;padding:13px 16px;font-size:.92rem;color:#4a3a37;"><strong style="color:#B23A2E;">신용보험 도입은 보험 계약이 아니라 프로세스 변경입니다.</strong> 한도 변경 알림이 영업·물류의 출하 승인 흐름에 연결되어야 합니다. 재무팀이 한도 취소 통보를 받았는데 영업팀은 모른 채 출하가 이어지면, 그 구간의 채권은 보험으로 회수되지 않습니다.</div>
 
-<h2 id="s2">2. 어떻게 작동하는가</h2>
-<p class="sub">사고가 난 뒤가 아니라, 거래를 트기 전부터 작동하는 구조입니다</p>
+  </section>
 
-<div class="steps">
-  <div><h4>① 구매자별 한도 승인</h4><p>거래처 목록을 제출하면 보험회사가 각 구매자를 심사해 신용한도를 부여합니다.</p></div>
-  <div><h4>② 한도 내 외상 공급</h4><p>승인된 한도 안에서 공급합니다. 한도를 못 받은 거래처와 초과분은 보장 밖입니다.</p></div>
-  <div><h4>③ 지급불능 또는 이행지체</h4><p>부도·파산·회생 개시(지급불능), 또는 결제기일이 지나도 회수되지 않는 상태(이행지체)가 사고입니다.</p></div>
-  <div><h4>④ 보상 후 대위 회수</h4><p>연체 통지와 약정 회수기간 경과 후 보험금이 지급되고, 이후 보험회사가 채권을 대위해 회수합니다.</p></div>
-</div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">03</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">누가 증권을 발행하고 누가 한도를 정하는가 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Structure</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">신용보험은 증권을 발행하는 회사와 실제로 위험을 인수하고 신용한도를 판정하는 회사가 다른 경우가 있습니다. 국내 매출채권의 경우 <strong>SGI서울보증이 원수보험회사로 증권을 발행하고, Coface가 수재사(재보험자)로 위험을 인수하는 구조</strong>가 운영되고 있습니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:26%"><col style="width:37%"><col style="width:37%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">구분</th><th style="text-align:left;padding:10px 12px;font-weight:700;">내수 매출채권</th><th style="text-align:left;padding:10px 12px;font-weight:700;">수출 매출채권</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">증권 발행</td><td style="padding:10px 12px;color:#41504a;">국내 원수보험회사</td><td style="padding:10px 12px;color:#41504a;">인수 채널에 따라 상이</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">구매자 신용한도</td><td style="padding:10px 12px;color:#41504a;">글로벌 신용보험사가 심사 · 기업별 한도 결정</td><td style="padding:10px 12px;color:#41504a;">좌동. 바이어 소재국 현지 조직이 직접 심사하는 채널이 있습니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">보험조건 산출</td><td style="padding:10px 12px;color:#41504a;">원수보험회사</td><td style="padding:10px 12px;color:#41504a;">글로벌 신용보험사</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">납입·청구 상대</td><td style="padding:10px 12px;color:#41504a;">증권을 발행한 보험회사</td><td style="padding:10px 12px;color:#41504a;">증권을 발행한 보험회사</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin:14px 0 0;">계약자 입장에서 실무적으로 중요한 지점은 이것입니다. <strong>보험료를 비교할 때 요율만 보면 안 됩니다.</strong> 거래처에 얼마의 한도가 나오는지는 심사 주체가 어떤 기업 정보를 쥐고 있느냐로 갈립니다. 같은 거래처인데 어디서는 한도가 나오고 어디서는 안 나오는 일이 실제로 생깁니다.</p>
+    <div style="margin-top:14px;background:#F2EFE4;border-radius:9px;padding:13px 16px;font-size:.9rem;color:#4a564d;"><strong style="color:#0B2818;">글로벌 프로그램</strong> &nbsp;해외 판매법인을 두고 있다면 국내 본사 증권과 각국 현지법인 증권을 하나의 프로그램으로 묶어 조건을 통일하고, 증권은 각 국가에서 개별 발행하는 방식을 검토할 수 있습니다. 그룹 전체 매출을 기준으로 조건을 협의하므로 법인별로 따로 가입하는 것과 구조가 다릅니다.</div>
 
-<p>여기서 자주 놓치는 부분이 있습니다. 보험기간 중에도 보험회사는 각 거래처의 신용도를 계속 모니터링하며, 위험 신호가 나타나면 <strong>신용한도를 감액하거나 취소</strong>합니다. 그 통보를 받은 시점 이후의 공급분은 보장 범위를 벗어납니다. 재무팀이 통보를 받았는데 영업팀은 모른 채 출하가 이어지면, 그 구간의 채권은 보험으로 회수되지 않습니다.</p>
+  </section>
 
-<div class="callout warn"><p><strong>신용보험 도입은 보험 계약이 아니라 프로세스 변경입니다.</strong> 한도 변경 알림이 영업·물류의 출하 승인 흐름에 연결되어야 합니다. 이 연결이 없으면 보험료만 내고 보장은 못 받는 구간이 생깁니다.</p></div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">04</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">거래처를 다 넣어야 하나 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Scope design</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">보험회사는 위험이 큰 거래처만 골라 넣는 역선택을 막기 위해 <strong>포괄 가입을 원칙</strong>으로 합니다. 다만 실무에서는 부보 범위를 나누는 설계가 가능합니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:22%"><col style="width:40%"><col style="width:38%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">설계 단위</th><th style="text-align:left;padding:10px 12px;font-weight:700;">내용</th><th style="text-align:left;padding:10px 12px;font-weight:700;">적합한 상황</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">전체 매출</td><td style="padding:10px 12px;color:#41504a;">회사의 외상 매출 전체를 포괄 가입</td><td style="padding:10px 12px;color:#41504a;">여신관리 체계를 전사적으로 세우려는 경우</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">사업부 단위</td><td style="padding:10px 12px;color:#41504a;">특정 사업부문의 매출만 분리</td><td style="padding:10px 12px;color:#41504a;">사업부별 거래처 성격과 위험도가 크게 다른 경우</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">내수 / 수출</td><td style="padding:10px 12px;color:#41504a;">내수와 수출을 나누어 별도 설계</td><td style="padding:10px 12px;color:#41504a;">수출 비중이 급증했거나 신규 시장에 진입하는 경우</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">특정 거래처 단독</td><td style="padding:10px 12px;color:#41504a;">매출 비중이 큰 특정 구매자만 인수</td><td style="padding:10px 12px;color:#41504a;">한 거래처에 매출이 집중돼 그 한 곳이 곧 회사 위험인 경우</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin:14px 0 0;">어디까지 나눌 수 있는지는 보험회사와 업종에 따라 다르며, 분리 범위가 좁아질수록 인수 심사는 까다로워지는 경향이 있습니다. 우선 전체 그림을 놓고 협의한 뒤 범위를 좁혀가는 순서가 현실적입니다.</p>
 
-<h2 id="s3">3. 누가 증권을 발행하고 누가 한도를 정하는가</h2>
-<p>신용보험은 증권을 발행하는 회사와 실제로 위험을 인수하고 신용한도를 판정하는 회사가 다른 경우가 있습니다. 국내 매출채권의 경우 <strong>SGI서울보증이 원수보험회사로 증권을 발행하고, Coface가 수재사(재보험자)로 위험을 인수하는 구조</strong>가 운영되고 있습니다.</p>
+  </section>
 
-<div class="tw">
-  <table>
-    <thead><tr><th>구분</th><th>내수 매출채권</th><th>수출 매출채권</th></tr></thead>
-    <tbody>
-      <tr><th>증권 발행</th><td>국내 원수보험회사</td><td>인수 채널에 따라 상이</td></tr>
-      <tr><th>구매자 신용한도</th><td colspan="2">글로벌 신용보험사가 심사 · 기업별 한도 결정</td></tr>
-      <tr><th>보험조건 산출</th><td>원수보험회사</td><td>글로벌 신용보험사</td></tr>
-      <tr><th>보험료 납입·보험금 청구</th><td colspan="2">증권을 발행한 보험회사</td></tr>
-    </tbody>
-  </table>
-</div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">05</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">무엇이 보장되고 무엇이 안 되는가 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Coverage & exclusions</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">신용보험 분쟁은 대부분 담보 위험 자체가 아니라 아래 다섯 가지 운영 지점에서 발생합니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:24%"><col style="width:76%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">면책이 갈리는 지점</th><th style="text-align:left;padding:10px 12px;font-weight:700;">내용</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">연체 후 추가 공급</td><td style="padding:10px 12px;color:#41504a;">결제기일이 지났는데 결제되지 않은 상태를 연체로 보고, 그 이후 공급한 물품은 통상 보상하지 않습니다. 어음으로 받은 경우 어음 부도 이후 공급분도 같은 취급입니다. 현장에서 “일단 보내고 나중에 받자”고 판단하는 순간이 그대로 면책 구간이 됩니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">대금청구기한 초과</td><td style="padding:10px 12px;color:#41504a;">증권에는 물품 공급일로부터 며칠 안에 대금을 청구해야 하는지가 명시됩니다. 세금계산서를 월말에 몰아서 발행하는 관행이 있다면 가입 전에 맞춰봐야 합니다. 기한을 넘긴 청구는 사전 서면동의가 없는 한 제외되는 것이 일반적입니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">보험기간 전 출하</td><td style="padding:10px 12px;color:#41504a;">보장 대상은 보험기간 중 공급한 물품입니다. 개시 시점에 이미 연체 중인 채권은 처음부터 대상이 아니며, 첫 가입이나 보험회사 변경 시점에는 직전 기간 출하분의 승계 여부를 확인해야 합니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">품질 하자 분쟁</td><td style="padding:10px 12px;color:#41504a;">공급한 물품에 하자가 있어 구매자가 결제를 거절하고 다투는 경우는 신용위험이 아니라 상사분쟁으로 봅니다. 돈이 없어서 못 주는 것과 줄 이유가 없다고 주장하는 것은 전혀 다른 사안입니다.</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">손해방지 의무 불이행</td><td style="padding:10px 12px;color:#41504a;">사고가 예상되거나 발생한 뒤에도 물품 회수, 독촉, 채권 보전 같은 통상적인 조치를 하지 않으면 그로 인해 확대된 손해는 제외될 수 있습니다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px;background:#0B2818;color:#EBE7D8;border-radius:11px;padding:18px 22px;">
+      <p style="margin:0 0 8px;font-weight:800;color:#fff;font-size:.97rem;">현장에서 본 패턴</p>
+      <p style="margin:0 0 8px;font-size:.93rem;color:#c8d2c9;line-height:1.72;">수년간 거래해온 중견 유통 거래처가 갑작스럽게 회생절차에 들어간 사례입니다. 해당 거래처는 신용한도를 정상적으로 부여받은 상태였고 부도 자체는 담보 위험에 해당했습니다. 다만 결제기일이 지난 뒤에도 기존 발주 물량이 계속 출하되고 있었고, <strong style="color:#fff;">연체 발생 이후 공급된 물량</strong>은 별도 판단 영역이었습니다. 일부 건은 증권에 정해진 대금청구기한을 넘겨 세금계산서가 발행돼 있기도 했습니다.</p>
+      <p style="margin:0;font-size:.83rem;color:#8fa394;">보장 여부는 개별 약관과 인수조건에 따라 달라집니다. <em>(업계 일반 사례)</em></p>
+    </div>
 
-<p>계약자 입장에서 실무적으로 중요한 지점은 이것입니다. <strong>보험료를 비교할 때 요율만 보면 안 됩니다.</strong> 거래처에 얼마의 한도가 나오는지는 심사 주체가 어떤 기업 정보를 쥐고 있느냐로 갈립니다. 해외 바이어의 경우 그 나라 현지 조직이 직접 심사하는 채널과 국내에서 심사하는 채널의 결과가 다르게 나올 수 있습니다. 같은 거래처인데 어디서는 한도가 나오고 어디서는 안 나오는 일이 실제로 생깁니다.</p>
+  </section>
 
-<div class="callout"><p>해외 판매법인을 두고 있다면 <strong>글로벌 프로그램</strong>을 검토할 수 있습니다. 국내 본사 증권과 각국 현지법인 증권을 하나의 프로그램으로 묶어 조건을 통일하고, 증권은 각 국가에서 개별 발행하는 방식입니다. 그룹 전체 매출을 기준으로 조건을 협의하므로 법인별로 따로 가입하는 것과 구조가 달라집니다.</p></div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">06</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">얼마를 받는가 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Indemnity</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">신용보험은 손해 전액이 아니라 약정된 <strong>보상비율</strong>만큼 지급하는 부분보상 구조입니다. 자기부담분을 남겨 계약자가 여신관리에 계속 관여하도록 설계된 것입니다.</p>
+    <p style="margin:12px 0 0;">여기에 더해 연간 <strong>총보상한도</strong>가 별도로 존재합니다. 연쇄부도처럼 사고가 겹치는 해에는 개별 거래처 한도가 남아 있어도 총한도에서 막힐 수 있습니다. 보상비율과 총보상한도를 어떻게 설정하느냐가 보험료와 직결되는 핵심 설계 변수이며, 이 두 값을 빼놓고 요율만 비교하는 것은 의미가 없습니다.</p>
+    <div style="margin-top:14px;background:#F2EFE4;border-radius:9px;padding:13px 16px;font-size:.9rem;color:#4a564d;"><strong style="color:#0B2818;">보험료 정산</strong> &nbsp;보험가입금액은 계약 시점의 예상 매출액이나 신용한도 합계로 잡고, 보험기간 종료 후 실제 발생액을 기준으로 정산하는 구조가 일반적입니다. 최초 납입액이 확정 보험료가 아니며, 매출이 예상보다 늘면 추가 납입이, 줄면 환급이 발생합니다.</div>
 
-<h2 id="s4">4. 거래처를 다 넣어야 하나 — 가입 단위 설계</h2>
-<p>보험회사는 위험이 큰 거래처만 골라 넣는 역선택을 막기 위해 <strong>포괄 가입을 원칙</strong>으로 합니다. 다만 실무에서는 부보 범위를 나누는 설계가 가능합니다.</p>
+  </section>
 
-<div class="tw">
-  <table>
-    <thead><tr><th>설계 단위</th><th>내용</th><th>적합한 상황</th></tr></thead>
-    <tbody>
-      <tr><th>전체 매출</th><td>회사의 외상 매출 전체를 대상으로 포괄 가입</td><td>여신관리 체계를 전사적으로 세우려는 경우</td></tr>
-      <tr><th>사업부 단위</th><td>특정 사업부문의 매출만 분리해 가입</td><td>사업부별 거래처 성격과 위험도가 크게 다른 경우</td></tr>
-      <tr><th>내수 / 수출 구분</th><td>내수와 수출을 나누어 별도 설계</td><td>수출 비중이 급증했거나 신규 시장에 진입하는 경우</td></tr>
-      <tr><th>특정 거래처 단독</th><td>매출 비중이 큰 특정 구매자만 단독 인수</td><td>한 거래처에 매출이 집중돼 그 한 곳이 곧 회사 위험인 경우</td></tr>
-    </tbody>
-  </table>
-</div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">07</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">보상 말고 따라오는 세 가지 효과 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Side effects</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">실제로 도입을 결정하는 이유는 보상 자체가 아닌 경우가 많습니다.</p>
+    <ul style="margin:12px 0 0;padding-left:20px;display:grid;gap:7px;">
+      <li><strong>영업 한도 확대</strong> — 거래처에 담보나 보증을 더 요구하기 어려운 관계일 때 신용보험이 담보를 대체합니다. 기존에 확보한 담보에 승인 한도만큼의 안전장치가 더해지므로, 같은 위험 수준에서 더 큰 규모의 외상 거래를 감당할 수 있게 됩니다.</li>
+      <li><strong>재무제표 반영</strong> — 매출채권이 부보되어 있다는 사실을 재무제표 주석에 공시할 수 있습니다. 대손충당금 산정과 금융기관 여신 협의에서 다뤄지는 방식이 달라질 수 있어, 자금조달이나 채권 유동화를 검토 중이라면 재무팀과 함께 볼 사안입니다.</li>
+      <li><strong>거래처 모니터링</strong> — 보험회사가 부보된 거래처의 신용도를 관찰하고 이상 징후가 있으면 한도를 조정하며 통보합니다. 별도 신용정보 서비스를 구독해 담당자가 수동으로 확인하던 업무가 보험 구조 안으로 들어옵니다.</li>
+    </ul>
 
-<p>어디까지 나눌 수 있는지는 보험회사와 업종에 따라 다르며, 분리 범위가 좁아질수록 인수 심사는 까다로워지는 경향이 있습니다. 우선 전체 그림을 놓고 협의한 뒤 범위를 좁혀가는 순서가 현실적입니다.</p>
+  </section>
 
-<h2 id="s5">5. 무엇이 보장되고 무엇이 안 되는가</h2>
-<p class="sub">신용보험 분쟁은 대부분 담보 위험이 아니라 아래 다섯 가지에서 발생합니다</p>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">08</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">민간 신용보험과 공적 제도의 차이 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Landscape</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">우열 비교가 아니라, 우리 거래 구조에 어느 쪽이 맞는지 판단하기 위한 구조 차이입니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:16%"><col style="width:32%"><col style="width:26%"><col style="width:26%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">구분</th><th style="text-align:left;padding:10px 12px;font-weight:700;">민간 신용보험</th><th style="text-align:left;padding:10px 12px;font-weight:700;">공적 무역보험</th><th style="text-align:left;padding:10px 12px;font-weight:700;">공적 매출채권보험</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">운영 주체</td><td style="padding:10px 12px;color:#41504a;">글로벌 신용보험사 (Atradius · Chubb · Coface 등, 알파벳순)</td><td style="padding:10px 12px;color:#41504a;">한국무역보험공사(K-SURE)</td><td style="padding:10px 12px;color:#41504a;">신용보증기금</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">주요 대상</td><td style="padding:10px 12px;color:#41504a;">내수·수출 구분 없이 B2B 외상거래 기업</td><td style="padding:10px 12px;color:#41504a;">국내 수출기업</td><td style="padding:10px 12px;color:#41504a;">국내 중소기업 중심</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">담보 거래</td><td style="padding:10px 12px;color:#41504a;">내수·수출 모두</td><td style="padding:10px 12px;color:#41504a;">수출채권 중심 (신용장 거래 포함)</td><td style="padding:10px 12px;color:#41504a;">내수 거래 중심</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">해외 바이어 심사</td><td style="padding:10px 12px;color:#41504a;">바이어 소재국 현지 조직이 직접 심사</td><td style="padding:10px 12px;color:#41504a;">국내에서 심사</td><td style="padding:10px 12px;color:#41504a;">해당 없음</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">부보한도</td><td style="padding:10px 12px;color:#41504a;">거래처별 승인 한도 · 상한 기준은 인수조건에 따름</td><td style="padding:10px 12px;color:#41504a;">정책 기준에 따름</td><td style="padding:10px 12px;color:#41504a;">기관이 정한 상한 존재</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">회수</td><td style="padding:10px 12px;color:#41504a;">보험회사 네트워크를 통한 대위 회수</td><td style="padding:10px 12px;color:#41504a;">공사 절차에 따름</td><td style="padding:10px 12px;color:#41504a;">기관 절차에 따름</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;background:#F2EFE4;border-radius:9px;padding:13px 16px;font-size:.9rem;color:#4a564d;">각 기관의 인수기준·요율 체계·부보한도는 정책과 상품 개정에 따라 바뀝니다. 최신 조건은 각 기관 공식 안내로 확인하시고, 실제 어느 채널이 우리 거래에 열려 있는지는 거래처 구성과 업종을 놓고 검토해야 확정됩니다. <strong style="color:#0B2818;">한 곳에서 한도가 안 나왔다고 해서 다른 채널도 같은 결과가 나오는 것은 아닙니다.</strong></div>
 
-<ol class="pit">
-  <li><h3>연체가 시작된 뒤의 추가 공급</h3><p>결제기일이 지났는데 결제되지 않은 상태를 연체로 보고, 그 이후 공급한 물품은 통상 보상하지 않습니다. 어음으로 받은 경우에도 어음 부도 이후 공급분은 같은 취급입니다. 현장에서 "일단 보내고 나중에 받자"고 판단하는 순간이 그대로 면책 구간이 됩니다.</p></li>
-  <li><h3>대금청구기한을 넘긴 청구</h3><p>증권에는 물품 공급일로부터 며칠 안에 대금을 청구해야 하는지가 명시됩니다. 세금계산서를 월말에 몰아서 발행하는 관행이 있다면 이 기한과 어긋나지 않는지 가입 전에 맞춰봐야 합니다. 기한을 넘긴 청구는 사전 서면동의가 없는 한 대상에서 제외되는 것이 일반적입니다.</p></li>
-  <li><h3>보험기간 전에 나간 물량</h3><p>보장 대상은 보험기간 중에 공급한 물품입니다. 개시 시점에 이미 연체 중인 채권은 처음부터 대상이 아니며, 첫 가입이나 보험회사 변경 시점에는 직전 기간 출하분의 승계 여부를 반드시 확인해야 합니다.</p></li>
-  <li><h3>품질 하자로 인한 미결제</h3><p>공급한 물품에 하자가 있어 구매자가 결제를 거절하고 다투는 경우는 신용위험이 아니라 상사분쟁으로 봅니다. 거래처가 돈이 없어서 못 주는 것과 줄 이유가 없다고 주장하는 것은 전혀 다른 사안입니다.</p></li>
-  <li><h3>손해방지 의무 불이행</h3><p>사고가 예상되거나 발생한 뒤에도 물품 회수, 독촉, 채권 보전 같은 통상적인 조치를 하지 않으면 그로 인해 확대된 손해는 보상에서 제외될 수 있습니다.</p></li>
-</ol>
+  </section>
 
-<div class="dark">
-  <h3>현장에서 본 패턴</h3>
-  <p>수년간 거래해온 중견 유통 거래처가 갑작스럽게 회생절차에 들어간 사례입니다. 해당 거래처는 신용한도를 정상적으로 부여받은 상태였고 부도 자체는 담보 위험에 해당했습니다. 다만 결제기일이 지난 뒤에도 기존 발주 물량이 계속 출하되고 있었고, <strong>연체 발생 이후 공급된 물량</strong>은 별도 판단 영역이었습니다. 일부 건은 증권에 정해진 대금청구기한을 넘겨 세금계산서가 발행돼 있기도 했습니다.</p>
-  <p class="src">보장 여부는 개별 약관과 인수조건에 따라 달라집니다. <em>(업계 일반 사례)</em></p>
-</div>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">09</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">이미 하고 있는 방법과 무엇이 다른가 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">vs. current practice</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">미수 위험을 아는 회사는 이미 무언가는 하고 있습니다. 신용보험은 그것들을 대체하는 것이 아니라 그 위에 얹히는 층입니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:20%"><col style="width:40%"><col style="width:40%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">지금 하고 있는 것</th><th style="text-align:left;padding:10px 12px;font-weight:700;">남는 문제</th><th style="text-align:left;padding:10px 12px;font-weight:700;">신용보험이 더하는 것</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">사내 여신한도 내규</td><td style="padding:10px 12px;color:#41504a;">한도 근거가 담당자의 경험과 과거 거래 이력에 머뭅니다. 거래처의 최신 재무 악화나 다른 공급처에서 이미 발생한 연체는 보이지 않습니다.</td><td style="padding:10px 12px;color:#41504a;">외부 심사에 기반한 한도가 부여되고 기간 중 변동이 통보됩니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">담보·보증 요구</td><td style="padding:10px 12px;color:#41504a;">거래처의 담보 여력을 소모하고 협상 관계에 부담을 줍니다. 오래된 거래처일수록 새로 요구하기 어렵습니다.</td><td style="padding:10px 12px;color:#41504a;">거래처에 아무것도 요구하지 않고 공급자 쪽에서 채권을 보강합니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">팩토링·채권 매각</td><td style="padding:10px 12px;color:#41504a;">자금 회수 시점을 앞당기는 수단이며, 상환청구권이 있는 구조라면 거래처가 결제하지 않았을 때 위험이 되돌아옵니다.</td><td style="padding:10px 12px;color:#41504a;">목적이 다릅니다. 팩토링은 유동성, 신용보험은 손실 방지입니다. 부보된 채권은 유동화·여신 협의에서 다르게 다뤄지는 경우가 있어 병행 검토 대상입니다.</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">신용정보 구독</td><td style="padding:10px 12px;color:#41504a;">정보는 얻지만 판단과 손실은 그대로 회사가 집니다. 조회와 조회 사이의 공백에서 사고가 납니다.</td><td style="padding:10px 12px;color:#41504a;">모니터링이 보험 구조 안으로 들어오고, 판단이 틀렸을 때의 손실 일부를 보험회사가 부담합니다.</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">대손충당금 적립</td><td style="padding:10px 12px;color:#41504a;">회계상 손실을 인식하는 절차일 뿐 현금이 돌아오지는 않습니다.</td><td style="padding:10px 12px;color:#41504a;">실제 현금 보상이 이루어지고, 부보 사실을 주석에 공시할 수 있습니다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;background:#F2EFE4;border-radius:9px;padding:13px 16px;font-size:.9rem;color:#4a564d;"><strong style="color:#0B2818;">흔한 오해</strong> &nbsp;신용보험이 여신관리를 대신해 준다는 생각입니다. 오히려 반대입니다. 부분보상 구조와 한도 관리 의무 때문에, 도입한 회사는 도입 전보다 여신관리를 더 촘촘하게 하게 됩니다. 보험은 관리를 없애는 장치가 아니라 관리의 기준선을 외부에서 받아오는 장치입니다.</div>
 
-<h2 id="s6">6. 얼마를 받는가 — 부분보상과 총보상한도</h2>
-<p>신용보험은 손해 전액이 아니라 약정된 <strong>보상비율</strong>만큼 지급하는 부분보상 구조입니다. 자기부담분을 남겨 계약자가 여신관리에 계속 관여하도록 설계된 것입니다.</p>
-<p>여기에 더해 연간 <strong>총보상한도</strong>가 별도로 존재합니다. 연쇄부도처럼 사고가 겹치는 해에는 개별 거래처 한도가 남아 있어도 총한도에서 막힐 수 있습니다. 보상비율과 총보상한도를 어떻게 설정하느냐가 보험료와 직결되는 핵심 설계 변수이며, 이 두 값을 빼놓고 요율만 비교하는 것은 의미가 없습니다.</p>
-<p>또한 보험가입금액은 계약 시점의 예상 매출액이나 신용한도 합계로 잡고, 보험기간 종료 후 실제 발생액을 기준으로 <strong>정산</strong>하는 구조가 일반적입니다. 최초 납입액이 확정 보험료가 아니라는 뜻이며, 매출이 예상보다 늘면 추가 납입이, 줄면 환급이 발생합니다.</p>
+  </section>
 
-<h2 id="s7">7. 보상 말고 따라오는 세 가지 효과</h2>
-<p class="sub">실제로 도입을 결정하는 이유는 보상 자체가 아닌 경우가 많습니다</p>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">10</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">미수 문제가 자주 생기는 업종 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Industries</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">아래 업종은 거래 구조상 외상 비중이 높거나 전방 산업의 경기 변동에 노출되어, 매출채권 관리 문의가 잦은 영역입니다.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">화학 · 화학도매</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">전기 · 전자장비</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">제약 · 제약유통</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">물류유통 · 도매</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">IT서비스 · 클라우드</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">화장품 · 뷰티</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">원사 · 직물</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">의료기기</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">일반기계장비</span>
+      <span style="background:#F2EFE4;border-radius:999px;padding:7px 15px;font-size:.9rem;font-weight:700;color:#0B2818;">철강 · 금속</span>
+    </div>
+    <p style="margin:14px 0 0;">업종이 목록에 없다고 검토 대상이 아닌 것은 아닙니다. 판단 기준은 업종 자체가 아니라 <strong>외상 매출의 비중과 거래처 집중도</strong>입니다. 매출의 상당 부분이 소수 거래처에 몰려 있다면, 업종과 무관하게 그 집중도 자체가 위험입니다.</p>
 
-<h3>영업 한도를 늘릴 수 있습니다</h3>
-<p>거래처에 담보나 보증을 더 요구하기 어려운 관계일 때, 신용보험은 담보를 대체하는 역할을 합니다. 기존에 확보한 담보에 승인 한도만큼의 안전장치가 더해지므로, 같은 위험 수준에서 더 큰 규모의 외상 거래를 감당할 수 있게 됩니다. 신규 거래처나 신시장 진입 시 "얼마까지 줘도 되는가"의 판단 기준이 생긴다는 점도 실무상 큰 차이를 만듭니다.</p>
+  </section>
 
-<h3>재무제표에 반영됩니다</h3>
-<p>매출채권이 부보되어 있다는 사실을 재무제표 주석에 공시할 수 있습니다. 대손충당금 산정과 금융기관 여신 협의에서 다뤄지는 방식이 달라질 수 있으므로, 자금조달이나 채권 유동화를 검토 중이라면 재무팀과 함께 볼 사안입니다.</p>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">11</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">준비 서류와 일정 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">Preparation</span></h2>
+    </div>
+    <p style="margin:14px 0 0;">신용보험은 재물보험처럼 며칠 만에 끝나지 않습니다. 구매자별로 신용한도를 심사하는 과정이 들어가기 때문입니다. 거래처 수와 해외 바이어 포함 여부에 따라 다르지만 <strong>통상 2주 내외</strong>가 소요되며, 정보 확보가 어려운 국가가 포함되면 더 걸립니다.</p>
+    <div style="overflow-x:auto;margin-top:14px;">
+      <table style="width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px;table-layout:fixed;">
+        <colgroup><col style="width:20%"><col style="width:80%"></colgroup>
+        <thead><tr style="background:#0B2818;color:#fff;"><th style="text-align:left;padding:10px 12px;font-weight:700;">단계</th><th style="text-align:left;padding:10px 12px;font-weight:700;">준비할 것</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">사전 협의</td><td style="padding:10px 12px;color:#41504a;">연간 외상 매출 규모, 표준 결제조건, 내수·수출 비중, 과거 대손 발생 이력</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">한도 신청</td><td style="padding:10px 12px;color:#41504a;">거래처 목록 — 상호 · 사업자번호(해외는 법인 식별정보) · 결제조건 · 최근 거래 규모 · 희망 한도</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">인수 심사</td><td style="padding:10px 12px;color:#41504a;">최근 결산 재무제표, 사업자등록증, 필요 시 매출채권 연령분석표</td></tr>
+          <tr style="border-bottom:1px solid #E6E1D2;"><td style="padding:10px 12px;font-weight:700;color:#0B2818;">조건 확정</td><td style="padding:10px 12px;color:#41504a;">보상비율 · 총보상한도 · 대금청구기한 · 연체통지기한 등 운영 조건 확인</td></tr>
+          <tr style=""><td style="padding:10px 12px;font-weight:700;color:#0B2818;">계약 체결</td><td style="padding:10px 12px;color:#41504a;">증권 수령 후 사내 여신 프로세스에 한도 알림 연동</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;background:#F2EFE4;border-radius:9px;padding:13px 16px;font-size:.9rem;color:#4a564d;">거래처 목록의 정확도가 심사 기간과 승인 한도를 동시에 좌우합니다. 상호만 적힌 목록과 사업자번호·결제조건까지 정리된 목록은 결과가 다릅니다. 첫 검토 전에 이 자료부터 만들어두시길 권합니다.</div>
 
-<h3>거래처 모니터링이 딸려옵니다</h3>
-<p>보험회사는 부보된 거래처의 신용도를 계속 관찰하고 이상 징후가 있으면 한도를 조정하며 통보합니다. 별도 신용정보 서비스를 구독해 담당자가 수동으로 확인하던 업무가 보험 구조 안으로 들어오는 셈입니다. 채권 회수 인력과 담보 관리에 들어가던 시간과 비용이 줄어드는 효과도 함께 나타납니다.</p>
+  </section>
 
-<h2 id="s8">8. 민간 신용보험과 공적 제도의 차이</h2>
-<p class="sub">우열 비교가 아니라, 우리 거래 구조에 어느 쪽이 맞는지 판단하기 위한 구조 차이입니다</p>
+  <section style="margin-top:36px;">
+    <div style="display:flex;gap:14px;align-items:baseline;">
+      <span style="flex:0 0 auto;font-size:.95rem;font-weight:800;color:#fff;background:#0B2818;width:34px;height:34px;border-radius:8px;display:grid;place-items:center;">12</span>
+      <h2 style="font-size:1.32rem;font-weight:800;color:#0B2818;margin:0;letter-spacing:-.01em;">자주 묻는 질문 <span style="font-size:.84rem;font-weight:600;color:#8a968d;">FAQ</span></h2>
+    </div>
+      <div style="display:grid;gap:10px;margin-top:14px;">
+        <div style="background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;">
+          <p style="margin:0 0 5px;font-weight:800;color:#0B2818;font-size:.97rem;">거래처가 부도나면 무조건 보상되나요?</p>
+          <p style="margin:0;font-size:.93rem;color:#41504a;">신용한도를 승인받은 거래처에 대해, 승인 한도 범위 내에서 보험기간 중 공급한 채권만 보장됩니다. 한도를 신청하지 않았거나 심사에서 한도가 나오지 않은 거래처, 한도를 초과한 금액은 대상이 아닙니다.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;">
+          <p style="margin:0 0 5px;font-weight:800;color:#0B2818;font-size:.97rem;">부도가 아니라 그냥 안 주는 경우도 보장되나요?</p>
+          <p style="margin:0;font-size:.93rem;color:#41504a;">대부분의 신용보험은 두 가지 사고 유형을 함께 담보합니다. 부도·파산·회생절차 개시 같은 지급불능과, 법적 도산 사유는 없으나 결제기일이 지나도 회수되지 않는 이행지체입니다. 이행지체는 연체 통지와 증권에 정해진 회수기간 경과를 거쳐야 청구 시점이 도래합니다.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;">
+          <p style="margin:0 0 5px;font-weight:800;color:#0B2818;font-size:.97rem;">결제조건이 180일을 넘으면 아예 안 되나요?</p>
+          <p style="margin:0;font-size:.93rem;color:#41504a;">표준적인 단기 신용보험의 담보 범위를 벗어납니다. 다만 거래 구조에 따라 별도 검토가 가능한 경우가 있으므로, 장기 결제조건이 일부 섞여 있다면 그 부분을 분리해 설계하는 방향으로 협의합니다.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;">
+          <p style="margin:0 0 5px;font-weight:800;color:#0B2818;font-size:.97rem;">보험료는 어떻게 산정되나요?</p>
+          <p style="margin:0;font-size:.93rem;color:#41504a;">부보 대상 매출액 또는 신용한도액 합계, 업종, 거래처 구성과 신용도, 결제조건, 과거 대손 이력, 설정한 보상비율과 총보상한도를 종합해 산출됩니다. 인수 가능 여부와 최종 보험료는 보험회사의 인수심사 후 확정됩니다.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;">
+          <p style="margin:0 0 5px;font-weight:800;color:#0B2818;font-size:.97rem;">거래처가 우리가 보험에 든 것을 알게 되나요?</p>
+          <p style="margin:0;font-size:.93rem;color:#41504a;">신용보험은 공급자가 자기 채권을 지키기 위해 직접 가입하는 보험이므로, 가입 과정에서 거래처의 동의나 서류 제출이 필요하지 않고 별도로 통지하는 절차도 없습니다. 다만 사고가 발생해 보험금이 지급된 뒤에는 보험회사가 채권자의 지위를 대위해 회수에 나서게 되므로, 그 단계에서는 보험 관계가 드러납니다.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;">
+          <p style="margin:0 0 5px;font-weight:800;color:#0B2818;font-size:.97rem;">한 곳에서 한도가 안 나왔는데 다른 데서는 가능한가요?</p>
+          <p style="margin:0;font-size:.93rem;color:#41504a;">심사 주체가 보유한 기업 정보와 인수 기준이 다르기 때문에 결과가 달라질 수 있습니다. 특히 해외 바이어의 경우 그 나라 현지 조직이 직접 심사하는 채널과 국내에서 심사하는 채널의 결과가 갈리는 경우가 있습니다. 한 채널의 결과만으로 결론을 내리지 않는 것이 좋습니다.</p>
+        </div>
+      </div>
 
-<div class="tw">
-  <table>
-    <thead><tr><th>구분</th><th>민간 신용보험</th><th>공적 무역보험</th><th>공적 매출채권보험</th></tr></thead>
-    <tbody>
-      <tr><th>운영 주체</th><td>글로벌 신용보험사 (Atradius · Chubb · Coface 등, 알파벳순)</td><td>한국무역보험공사(K-SURE)</td><td>신용보증기금</td></tr>
-      <tr><th>주요 대상</th><td>내수·수출 구분 없이 B2B 외상거래 기업</td><td>국내 수출기업</td><td>국내 중소기업 중심</td></tr>
-      <tr><th>담보 거래</th><td>내수·수출 모두</td><td>수출채권 중심 (신용장 거래 포함)</td><td>내수 거래 중심</td></tr>
-      <tr><th>해외 바이어 심사</th><td>바이어 소재국 현지 조직이 직접 심사</td><td>국내에서 심사</td><td>해당 없음</td></tr>
-      <tr><th>부보한도</th><td>거래처별 승인 한도 · 별도 상한 기준은 인수조건에 따름</td><td>정책 기준에 따름</td><td>기관이 정한 상한 존재</td></tr>
-      <tr><th>회수</th><td>보험회사 네트워크를 통한 대위 회수</td><td>공사 절차에 따름</td><td>기관 절차에 따름</td></tr>
-    </tbody>
-  </table>
-</div>
+  </section>
 
-<div class="callout"><p>각 기관의 인수기준·요율 체계·부보한도는 정책과 상품 개정에 따라 바뀝니다. 최신 조건은 각 기관 공식 안내로 확인하시고, 실제 어느 채널이 우리 거래에 열려 있는지는 거래처 구성과 업종을 놓고 검토해야 확정됩니다. 한 곳에서 한도가 안 나왔다고 해서 다른 채널도 같은 결과가 나오는 것은 아닙니다.</p></div>
+    <section style="margin-top:38px;">
+      <h2 style="font-size:1.3rem;font-weight:800;color:#0B2818;margin:0 0 14px;">관련 상품 가이드</h2>
+      <div style="display:grid;gap:10px;">
+        <a href="products/property-trade-credit" style="display:block;background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;text-decoration:none;">
+          <span style="font-weight:800;color:#0B2818;font-size:.98rem;">신용보험(Trade Credit) →</span>
+          <p style="margin:4px 0 0;font-size:.9rem;color:#5a665d;">매출채권의 거래처 부도·미지급 위험을 담보하는 상품 상세 페이지.</p>
+        </a>
+        <a href="products/marine-export-credit" style="display:block;background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;text-decoration:none;">
+          <span style="font-weight:800;color:#0B2818;font-size:.98rem;">수출신용보험 →</span>
+          <p style="margin:4px 0 0;font-size:.9rem;color:#5a665d;">수출 거래의 대금 미회수 위험에 특화된 형태. 해외 바이어 비중이 높다면 함께 검토합니다.</p>
+        </a>
+        <a href="products/property-residual-value" style="display:block;background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;text-decoration:none;">
+          <span style="font-weight:800;color:#0B2818;font-size:.98rem;">잔존가액 보상보험 →</span>
+          <p style="margin:4px 0 0;font-size:.9rem;color:#5a665d;">물리적 손해가 아닌 금융·가치 위험을 다룬다는 점에서 신용 라인과 맞닿아 있습니다.</p>
+        </a>
+        <a href="consult" style="display:block;background:#fff;border:1px solid #E6E1D2;border-radius:11px;padding:15px 18px;text-decoration:none;">
+          <span style="font-weight:800;color:#0B2818;font-size:.98rem;">상담 신청 →</span>
+          <p style="margin:4px 0 0;font-size:.9rem;color:#5a665d;">거래처 목록과 결제조건만 있으면 검토 가능 여부부터 확인해 드립니다.</p>
+        </a>
+      </div>
+    </section>
 
-<h2 id="s9">9. 이미 하고 있는 방법과 무엇이 다른가</h2>
-<p class="sub">미수 위험을 아는 회사는 이미 무언가는 하고 있습니다. 신용보험은 그것들을 대체하는 것이 아니라 그 위에 얹히는 층입니다</p>
+    <section style="margin-top:34px;border-top:1px solid #E6E1D2;padding-top:18px;">
+      <p style="margin:0 0 8px;font-weight:800;color:#0B2818;font-size:.95rem;">참고 자료</p>
+      <ul style="margin:0;padding-left:20px;display:grid;gap:5px;font-size:.88rem;color:#5a665d;">
+        <li>매출채권 신용보험 약관</li>
+        <li>상법 제4편 보험</li>
+        <li>보험업법 제98조 (특별이익 제공 금지)</li>
+        <li>한국무역보험공사 · 신용보증기금 공식 안내자료</li>
+        <li>보험회사 안내자료 — AIG · Chubb · DB손해보험 · KB손해보험 · 메리츠화재 · 현대해상 (가나다 순)</li>
+      </ul>
+    </section>
 
-<div class="tw">
-  <table>
-    <thead><tr><th>지금 하고 있는 것</th><th>남는 문제</th><th>신용보험이 더하는 것</th></tr></thead>
-    <tbody>
-      <tr>
-        <th>사내 여신한도 내규</th>
-        <td>한도를 정하는 근거가 담당자의 경험과 과거 거래 이력에 머뭅니다. 거래처의 최신 재무 악화나 다른 공급처에서 이미 발생한 연체는 보이지 않습니다.</td>
-        <td>외부 심사에 기반한 한도가 부여되고, 기간 중 변동이 통보됩니다. 내규의 판단 근거가 하나 늘어납니다.</td>
-      </tr>
-      <tr>
-        <th>담보·보증 요구</th>
-        <td>거래처의 담보 여력을 소모하고 협상 관계에 부담을 줍니다. 오래된 거래처일수록 새로 요구하기 어렵습니다.</td>
-        <td>거래처에 아무것도 요구하지 않고 공급자 쪽에서 채권을 보강합니다. 관계를 건드리지 않는다는 점이 실질적 차이입니다.</td>
-      </tr>
-      <tr>
-        <th>팩토링·매출채권 매각</th>
-        <td>자금 회수 시점을 앞당기는 수단이며, 상환청구권이 있는 구조라면 거래처가 결제하지 않았을 때 위험이 되돌아옵니다.</td>
-        <td>목적이 다릅니다. 팩토링은 유동성, 신용보험은 손실 방지입니다. 부보된 채권은 유동화나 여신 협의에서 다르게 다뤄지는 경우가 있어 병행 검토 대상이 됩니다.</td>
-      </tr>
-      <tr>
-        <th>신용정보 서비스 구독</th>
-        <td>정보는 얻지만 판단과 손실은 그대로 회사가 집니다. 담당자가 주기적으로 조회해야 하고, 조회 사이의 공백에서 사고가 납니다.</td>
-        <td>모니터링이 보험 구조 안으로 들어오고, 판단이 틀렸을 때의 손실 일부를 보험회사가 부담합니다.</td>
-      </tr>
-      <tr>
-        <th>대손충당금 적립</th>
-        <td>회계상 손실을 인식하는 절차일 뿐, 현금이 돌아오지는 않습니다.</td>
-        <td>실제 현금 보상이 이루어집니다. 부보 사실을 재무제표 주석에 공시할 수 있어 충당금 산정과 여신 협의에서 함께 검토됩니다.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <section style="margin-top:30px;background:#FAF6EC;border:1px solid #E6E1D2;border-radius:12px;padding:20px 22px;">
+      <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+        <img src="assets/hanwook-portrait.jpg" alt="성한욱 보험중개사" width="80" height="80" loading="lazy" style="width:80px;height:80px;border-radius:50%;object-fit:cover;display:block;border:2px solid var(--n2n-border,#E5E0D5);flex:0 0 auto;">
+        <div style="font-size:.9rem;color:#4a564d;line-height:1.8;min-width:240px;flex:1;">
+          <p style="margin:0 0 3px;"><strong style="color:#0B2818;">✍ 작성</strong> 성한욱 — 기업보험심사역(ACIU) · 보험중개사 등록 제2026-012201호</p>
+          <p style="margin:0 0 3px;"><strong style="color:#0B2818;">📋 검토</strong> 본 글은 상법(보험편) 및 매출채권 신용보험 약관·보험회사 안내자료를 기반으로 작성</p>
+          <p style="margin:0;"><strong style="color:#0B2818;">🗓 최종수정</strong> 2026-08-17 &nbsp;·&nbsp; 다음 정기 검토 2026-11-17</p>
+        </div>
+      </div>
+      <div style="margin-top:16px;border-top:1px solid #E6E1D2;padding-top:14px;font-size:.88rem;color:#5a665d;line-height:1.78;">
+        <p style="margin:0 0 6px;font-weight:800;color:#0B2818;">🏛 독립 보험중개사 운영</p>
+        <p style="margin:0;">n2nib.com은 「엔투엔보험중개」(보험업법 제89조 등록 보험중개사 · 금융감독원 등록 제2026-012201호 · 사업자등록번호 611-23-02374)가 운영합니다. 본 글의 약관·담보·면책 정보는 보험회사의 정식 상품설명서 및 공적 기관 안내자료에서 발췌·요약한 것이며, 정확한 보장 범위와 보험료는 보험회사의 인수심사 후 확정됩니다.</p>
+      </div>
+    </section>
 
-<div class="callout"><p><strong>가장 흔한 오해는 신용보험이 여신관리를 대신해 준다는 생각입니다.</strong> 오히려 반대입니다. 부분보상 구조와 한도 관리 의무 때문에, 신용보험을 도입한 회사는 도입 전보다 여신관리를 더 촘촘하게 하게 됩니다. 보험은 관리를 없애는 장치가 아니라 관리의 기준선을 외부에서 받아오는 장치입니다.</p></div>
+    <p style="margin-top:26px;font-size:.82rem;color:#8a968d;border-top:1px solid #E6E1D2;padding-top:16px;">
+      본 가이드는 신용보험의 일반적인 약관 구조와 실무 관행을 정리한 것으로, 특정 보험상품의 청약을 권유하는 자료가 아닙니다. 실제 담보 범위·면책·보상비율·한도는 보험회사별 약관과 개별 인수조건에 따라 달라집니다. 공적 제도의 인수기준과 부보한도는 정책 변경에 따라 달라질 수 있으므로 각 기관 공식 안내를 함께 확인하시기 바랍니다.
+    </p>
 
-<p>검토 순서로는, 이미 하고 있는 것들을 먼저 정리해 보시길 권합니다. 표준 결제조건이 몇 일인지, 거래처별 한도를 누가 어떤 근거로 정하는지, 최근 3년 대손이 얼마나 났는지. 이 세 가지가 정리되면 신용보험이 실익이 있는지 대체로 판단이 섭니다. 그리고 이 자료는 그대로 인수 심사 자료가 됩니다.</p>
+  </div>
 
-<h2 id="s10">10. 미수 문제가 자주 생기는 업종</h2>
-<p class="sub">아래 업종은 거래 구조상 외상 비중이 높거나 전방 산업의 경기 변동에 노출되어, 매출채권 관리 문의가 잦은 영역입니다</p>
-
-<div class="tags">
-  <span>화학 · 화학도매</span><span>전기 · 전자장비</span><span>제약 · 제약유통</span>
-  <span>물류유통 · 도매</span><span>IT서비스 · 클라우드</span><span>화장품 · 뷰티</span>
-  <span>원사 · 직물</span><span>의료기기</span><span>일반기계장비</span><span>철강 · 금속</span>
-</div>
-
-<p>업종이 목록에 없다고 검토 대상이 아닌 것은 아닙니다. 판단 기준은 업종 자체가 아니라 <strong>외상 매출의 비중과 거래처 집중도</strong>입니다. 매출의 상당 부분이 소수 거래처에 몰려 있다면, 업종과 무관하게 그 집중도 자체가 위험입니다.</p>
-
-<h2 id="s11">11. 준비 서류와 일정</h2>
-<p>신용보험은 재물보험처럼 며칠 만에 끝나지 않습니다. 구매자별로 신용한도를 심사하는 과정이 들어가기 때문입니다. 거래처 수와 해외 바이어 포함 여부에 따라 다르지만 <strong>통상 2주 내외</strong>가 소요되며, 해외 거래처가 많거나 정보 확보가 어려운 국가가 포함되면 더 걸립니다.</p>
-
-<div class="tw">
-  <table>
-    <thead><tr><th>단계</th><th>준비할 것</th></tr></thead>
-    <tbody>
-      <tr><th>사전 협의</th><td>연간 외상 매출 규모, 표준 결제조건, 내수·수출 비중, 과거 대손 발생 이력</td></tr>
-      <tr><th>한도 신청</th><td>거래처 목록 (상호 · 사업자번호 또는 해외법인 식별정보 · 결제조건 · 최근 거래 규모 · 희망 한도)</td></tr>
-      <tr><th>인수 심사</th><td>최근 결산 재무제표, 사업자등록증, 필요 시 매출채권 연령분석표</td></tr>
-      <tr><th>조건 확정</th><td>보상비율 · 총보상한도 · 대금청구기한 · 연체통지기한 등 운영 조건 확인</td></tr>
-      <tr><th>계약 체결</th><td>증권 수령 후 사내 여신 프로세스에 한도 알림 연동</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="callout"><p>거래처 목록의 정확도가 심사 기간과 승인 한도를 동시에 좌우합니다. 상호만 적힌 목록과 사업자번호·결제조건까지 정리된 목록은 결과가 다릅니다. 첫 검토 전에 이 자료부터 만들어두시길 권합니다.</p></div>
-
-<h2 id="s12">12. 자주 묻는 질문</h2>
-<div class="faq">
-  <details><summary>거래처가 부도나면 무조건 보상되나요?</summary><div><p>신용한도를 승인받은 거래처에 대해, 승인 한도 범위 내에서 보험기간 중 공급한 채권만 보장됩니다. 한도를 신청하지 않았거나 심사에서 한도가 나오지 않은 거래처, 한도를 초과한 금액은 대상이 아닙니다.</p></div></details>
-  <details><summary>부도가 아니라 그냥 안 주는 경우도 보장되나요?</summary><div><p>대부분의 신용보험은 두 가지 사고 유형을 함께 담보합니다. 부도·파산·회생절차 개시 같은 <strong>지급불능</strong>과, 법적 도산 사유는 없으나 결제기일이 지나도 회수되지 않는 <strong>이행지체</strong>입니다. 이행지체는 연체 통지와 증권에 정해진 회수기간 경과를 거쳐야 청구 시점이 도래합니다.</p></div></details>
-  <details><summary>결제조건이 180일을 넘으면 아예 안 되나요?</summary><div><p>표준적인 단기 신용보험의 담보 범위를 벗어납니다. 다만 거래 구조에 따라 별도 검토가 가능한 경우가 있으므로, 장기 결제조건이 일부 섞여 있다면 그 부분을 분리해 설계하는 방향으로 협의합니다.</p></div></details>
-  <details><summary>보험료는 어떻게 산정되나요?</summary><div><p>부보 대상 매출액 또는 신용한도액 합계, 업종, 거래처 구성과 신용도, 결제조건, 과거 대손 이력, 설정한 보상비율과 총보상한도를 종합해 산출됩니다. 인수 가능 여부와 최종 보험료는 보험회사의 인수심사 후 확정됩니다.</p></div></details>
-  <details><summary>거래처가 우리가 보험에 든 것을 알게 되나요?</summary><div><p>신용보험은 공급자가 자기 채권을 지키기 위해 직접 가입하는 보험이므로, 가입 과정에서 거래처의 동의나 서류 제출이 필요하지 않습니다. 거래처에 별도로 통지하는 절차도 없습니다. 다만 사고가 발생해 보험금이 지급된 뒤에는 보험회사가 채권자의 지위를 대위해 회수에 나서게 되므로, 그 단계에서는 보험 관계가 드러납니다.</p></div></details>
-  <details><summary>한 곳에서 한도가 안 나왔는데 다른 데서는 가능한가요?</summary><div><p>심사 주체가 보유한 기업 정보와 인수 기준이 다르기 때문에 결과가 달라질 수 있습니다. 특히 해외 바이어의 경우 그 나라 현지 조직이 직접 심사하는 채널과 국내에서 심사하는 채널의 결과가 갈리는 경우가 있습니다. 한 채널의 결과만으로 결론을 내리지 않는 것이 좋습니다.</p></div></details>
-</div>
-
-<h2>함께 보면 좋은 자료</h2>
-<div class="rel">
-  <a href="/products/property-trade-credit"><strong>신용보험(Trade Credit) 상품 안내 →</strong><em>담보 범위와 가입 절차를 상품 단위로 정리</em></a>
-  <a href="/products/marine-export-credit"><strong>수출신용보험 →</strong><em>수출 거래의 대금 미회수 위험에 특화된 형태</em></a>
-  <a href="/consult"><strong>상담 신청 →</strong><em>거래처 목록 기준 검토 가능 여부 확인</em></a>
-</div>
-
-<div class="cta">
-  <h3>거래처 목록만 있으면 검토가 시작됩니다</h3>
-  <p>어느 채널에서 어느 정도의 신용한도가 나올 수 있는지, 우리 결제조건이 인수 요건에 맞는지부터 확인해 드립니다.</p>
-  <a href="/consult">신용보험 상담 신청 →</a>
-</div>
-
-<p class="disc">본 가이드는 신용보험의 일반적인 약관 구조와 실무 관행을 정리한 것으로, 특정 보험상품의 청약을 권유하는 자료가 아닙니다. 실제 담보 범위·면책·보상비율·한도·요율은 보험회사별 약관과 개별 인수조건에 따라 달라지며, 인수 가능 여부와 보험료는 보험회사의 인수심사 후 확정됩니다. 공적 제도의 인수기준과 부보한도는 정책 변경에 따라 달라질 수 있으므로 각 기관 공식 안내를 함께 확인하시기 바랍니다.<br><br>작성 · 성한욱 (기업보험심사역 ACIU) · 엔투엔보험중개 · 금융감독원 등록 보험중개사 제2026-012201호 · 최종수정 2026-08-17</p>
-</article>
 <!-- N2N:GUIDE:TRADE-CREDIT:END -->
 
 </main>
