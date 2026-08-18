@@ -16,3 +16,6 @@ _backup_*
 *_bak_*.xml
 _backup_urlfix_*/
 _backup_insights_*/
+
+# 배포 스크립트 백업 · 임시 압축파일 (2026-08-18)
+*.zip
