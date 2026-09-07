@@ -209,6 +209,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 }
 </script>
+<style id="n2n-home-v2">
+/* === 홈 진입 동선·보상사례 확장 v2 (2026-09-07) ===
+   되돌리기: 이 style#n2n-home-v2 블록 + 본문 HOME-V2 주석 구간 + script#n2n-case-tabs 를
+   함께 삭제하면 이전 구성으로 복원됩니다. */
+.entry-block{margin:2.2rem 0 0;}
+.entry-block h2{font-size:1.4rem;margin:0 0 .35rem;color:var(--forest);text-align:center;}
+.entry-lead{text-align:center;color:var(--ink-2);font-size:.92rem;margin:0 0 1.1rem;line-height:1.7;}
+.entry-sub{display:block;text-align:center;font-size:.74rem;font-weight:700;letter-spacing:.16em;
+  color:var(--accent);text-transform:uppercase;margin:2rem 0 .85rem;}
+/* 업종 타일 — 마지막 줄이 남아도 가운데 정렬되도록 flex 사용 */
+.quick-tiles--ind{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;}
+.quick-tiles--ind .quick-tile{flex:0 1 calc(20% - .8rem);min-width:158px;}
+.quick-tiles--ind .qt-icon{letter-spacing:-.06em;}
+.quick-tile .qt-sub b{color:var(--accent);font-weight:700;}
+@media(max-width:1040px){.quick-tiles--ind .quick-tile{flex-basis:calc(33.333% - .7rem);}}
+@media(max-width:620px){
+  .quick-tiles--ind{gap:.7rem;}
+  .quick-tiles--ind .quick-tile{flex-basis:calc(50% - .35rem);min-width:0;padding:1.05rem .55rem;}
+  .quick-tiles--ind .qt-icon{font-size:1.5rem;margin-bottom:.35rem;}
+  .quick-tiles--ind .qt-label{font-size:.86rem;}
+  .quick-tiles--ind .qt-sub{font-size:.7rem;line-height:1.45;}
+}
+/* 상황별 진입 */
+.sit-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;}
+@media(max-width:860px){.sit-tiles{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:520px){.sit-tiles{grid-template-columns:1fr;}}
+.sit-tile{display:flex;align-items:flex-start;gap:.7rem;padding:.95rem 1.05rem;background:#fff;
+  border:1px solid var(--border);border-radius:4px;text-decoration:none;
+  transition:border-color .2s,box-shadow .2s;}
+.sit-tile:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(11,40,24,.08);}
+.sit-tile .st-ic{font-size:1.05rem;line-height:1.5;flex:0 0 auto;}
+.sit-tile .st-tx{display:flex;flex-direction:column;gap:3px;}
+.sit-tile .st-q{font-size:.9rem;font-weight:600;color:var(--forest);line-height:1.5;}
+.sit-tile .st-a{font-size:.78rem;color:var(--ink-2);line-height:1.5;}
+/* 최근 상담이 많은 분야 */
+.hot-lines{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;}
+.hot-lines a{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .95rem;background:#fff;
+  border:1px solid var(--border);border-radius:999px;font-size:.85rem;color:var(--forest);
+  text-decoration:none;transition:border-color .2s,background .2s;}
+.hot-lines a:hover{border-color:var(--accent);background:#fff8f3;}
+.hot-lines .hl-t{font-size:.7rem;font-weight:700;color:var(--accent);letter-spacing:.04em;}
+/* 보상 사례 필터 탭 */
+.case-tabs{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin:1.1rem 0 .1rem;}
+.case-tab{padding:.42rem 1rem;font-family:inherit;font-size:.85rem;font-weight:600;color:var(--ink-2);
+  background:#fff;border:1px solid var(--border);border-radius:999px;cursor:pointer;transition:all .18s;}
+.case-tab:hover{border-color:var(--accent);color:var(--forest);}
+.case-tab[aria-selected="true"]{background:var(--forest);border-color:var(--forest);color:#fff;}
+.case-mini{display:flex;flex-direction:column;}
+.case-mini[hidden]{display:none !important;}
+.case-mini .case-broker{margin:.15rem 0 .6rem;padding:.55rem .7rem;background:#fff8f3;border-radius:3px;
+  font-size:.79rem;color:var(--ink-2);line-height:1.6;}
+.case-mini .case-broker b{display:block;margin-bottom:3px;font-size:.69rem;font-weight:700;
+  letter-spacing:.07em;color:var(--accent);}
+.case-mini .case-src{display:block;margin-top:auto;padding-top:.5rem;font-size:.72rem;color:var(--muted);}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -504,81 +559,265 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- (trust-stats 밴드는 옵션 A 히어로 레일로 통합되어 제거됨 · 2026-06-14) -->
 
 
-<!-- ====== QUICK ENTRY — 6 진입 동선 ====== -->
+<!--N2N:HOME-V2:START-->
+<!-- ====== QUICK ENTRY — 업종 10 + 상황별 6 (2026-09-07 확장) ====== -->
 <section class="section">
   <div class="container">
-    <div class="quick-entry">
+    <div class="quick-entry entry-block">
       <h2>업종·상황별 빠른 진입</h2>
-      <div class="quick-tiles">
+      <p class="entry-lead">
+        업종을 고르면 해당 분야에서 통상 함께 검토하는 담보 구성을,<br>
+        상황을 고르면 지금 필요한 다음 단계를 바로 안내합니다.
+      </p>
+
+      <span class="entry-sub">업종별 · 13개 분야</span>
+      <div class="quick-tiles quick-tiles--ind">
         <a class="quick-tile" href="industries#construction">
           <span class="qt-icon">🏗</span>
           <span class="qt-label">건설·시공</span>
-          <span class="qt-sub">CAR · 근재 · 중장비</span>
+          <span class="qt-sub">CAR · 근재 · 중장비 · 중대사고</span>
         </a>
         <a class="quick-tile" href="industries#manufacturing">
           <span class="qt-icon">🏭</span>
           <span class="qt-label">제조·플랜트</span>
-          <span class="qt-sub">PL · 화재 · 패키지 · BI</span>
+          <span class="qt-sub">PL · 화재 · 기계 · 리콜</span>
         </a>
         <a class="quick-tile" href="industries#logistics">
-          <span class="qt-icon">📦</span>
+          <span class="qt-icon">🚢🚚</span>
           <span class="qt-label">물류·운송</span>
-          <span class="qt-sub">적하 · 적재물 · 물류종합</span>
+          <span class="qt-sub">적하 · 내륙운송 · 적재물 · 물류종합</span>
         </a>
         <a class="quick-tile" href="industries#welfare">
           <span class="qt-icon">🏥</span>
           <span class="qt-label">요양·복지</span>
-          <span class="qt-sub">시설책임 · 승강기 · 근재</span>
+          <span class="qt-sub">시설책임 · 근재 · 환경</span>
+        </a>
+        <a class="quick-tile" href="industries#medical">
+          <span class="qt-icon">🩺</span>
+          <span class="qt-label">의료·헬스케어</span>
+          <span class="qt-sub">의사배상 · 의료기기 · 개인정보</span>
         </a>
         <a class="quick-tile" href="industries#sports-edu">
-          <span class="qt-icon">🏟</span>
-          <span class="qt-label">체육·학원</span>
-          <span class="qt-sub">시설법 · 학원법 · 놀이시설</span>
+          <span class="qt-icon">🎪</span>
+          <span class="qt-label">행사·체육·학원</span>
+          <span class="qt-sub"><b>행사·이벤트</b> · 시설법 · 학원법</span>
         </a>
-        <a class="quick-tile" href="duty" style="background:linear-gradient(180deg,#fff8f3 0%,#fff 100%);">
-          <span class="qt-icon">⚖</span>
-          <span class="qt-label">법정 의무보험</span>
-          <span class="qt-sub">의무 15종 한 번에</span>
+        <a class="quick-tile" href="industries#art-exhibition">
+          <span class="qt-icon">🖼</span>
+          <span class="qt-label">아트·갤러리·전시</span>
+          <span class="qt-sub">예술품 · 보석 · 전시 주최자</span>
+        </a>
+        <a class="quick-tile" href="industries#retail">
+          <span class="qt-icon">🛒</span>
+          <span class="qt-label">유통·소매·F&amp;B</span>
+          <span class="qt-sub">CGL · PL · 도난 · 현금</span>
+        </a>
+        <a class="quick-tile" href="industries#it-platform">
+          <span class="qt-icon">🌐</span>
+          <span class="qt-label">IT·플랫폼</span>
+          <span class="qt-sub">사이버 · 개인정보 · D&amp;O</span>
+        </a>
+        <a class="quick-tile" href="industries#datacenter">
+          <span class="qt-icon">🖥</span>
+          <span class="qt-label">데이터센터·클라우드</span>
+          <span class="qt-sub">SLA 크레딧 · 사이버 · 재물</span>
+        </a>
+        <a class="quick-tile" href="industries#professional">
+          <span class="qt-icon">💼</span>
+          <span class="qt-label">전문직·전문인</span>
+          <span class="qt-sub">E&amp;O · PI · D&amp;O · 법률비용</span>
+        </a>
+        <a class="quick-tile" href="industries#newgen">
+          <span class="qt-icon">🤖</span>
+          <span class="qt-label">신산업·모빌리티</span>
+          <span class="qt-sub">드론 · 로봇 · 충전시설</span>
+        </a>
+        <a class="quick-tile" href="industries#real-estate">
+          <span class="qt-icon">🏢</span>
+          <span class="qt-label">임대·자산·부동산</span>
+          <span class="qt-sub">화재 · CGL · 권리보험</span>
+        </a>
+      </div>
+
+      <span class="entry-sub">상황별 · 지금 필요한 것</span>
+      <div class="sit-tiles">
+        <a class="sit-tile" href="duty">
+          <span class="st-ic">⚖</span>
+          <span class="st-tx"><span class="st-q">법으로 가입이 강제되는 보험인지 확인하고 싶다</span><span class="st-a">법정 의무보험 15종 대상·시기 한 번에</span></span>
+        </a>
+        <a class="sit-tile" href="risk-checklist">
+          <span class="st-ic">🧭</span>
+          <span class="st-tx"><span class="st-q">무엇부터 봐야 할지 모르겠다</span><span class="st-a">5분 위험 자가진단 → 우선순위 담보 제시</span></span>
+        </a>
+        <a class="sit-tile" href="consult">
+          <span class="st-ic">📄</span>
+          <span class="st-tx"><span class="st-q">발주처·입찰에서 보험 가입 증명을 요구받았다</span><span class="st-a">요구 조건을 검토해 필요한 담보만 회신</span></span>
+        </a>
+        <a class="sit-tile" href="guides">
+          <span class="st-ic">📚</span>
+          <span class="st-tx"><span class="st-q">담보·약관 용어부터 이해하고 싶다</span><span class="st-a">보험 가이드 18편 — 구조·면책·한도 해설</span></span>
+        </a>
+        <a class="sit-tile" href="https://cargoinsu.com" target="_blank" rel="noopener">
+          <span class="st-ic">🚢</span>
+          <span class="st-tx"><span class="st-q">수출입 화물 견적이 지금 필요하다</span><span class="st-a">cargoinsu.com 24시간 온라인 자동견적 ↗</span></span>
+        </a>
+        <a class="sit-tile" href="search">
+          <span class="st-ic">🔎</span>
+          <span class="st-tx"><span class="st-q">찾는 상품명을 이미 알고 있다</span><span class="st-a">기업보험 111종 전체 검색</span></span>
         </a>
       </div>
     </div>
 
+    <!-- 최근 상담이 많은 분야 -->
+    <div class="entry-block" style="margin-top:2.8rem;">
+      <span class="entry-sub" style="margin-top:0;">최근 상담이 많은 분야</span>
+      <div class="hot-lines">
+        <a href="products/marine-cargo"><span class="hl-t">해상</span>적하보험 포괄계약(Open Policy)</a>
+        <a href="products/liability-pl"><span class="hl-t">배상</span>생산물배상(PL) — 신규 설비·기계</a>
+        <a href="products/liability-eo"><span class="hl-t">배상</span>전문직업배상(E&amp;O·PI) — 설계·용역</a>
+        <a href="products/specialty-art"><span class="hl-t">특종</span>예술품 종합(Fine Art) — 전시·보관</a>
+        <a href="products/specialty-jewellers-block"><span class="hl-t">특종</span>보석·고급재화(Jewellers Block)</a>
+        <a href="products/wc-domestic"><span class="hl-t">근재</span>국내근로자 재해보장 — 설치공사</a>
+        <a href="products/specialty-event"><span class="hl-t">특종</span>행사·전시 주최자 배상</a>
+        <a href="guide-datacenter-sla"><span class="hl-t">가이드</span>데이터센터 SLA 크레딧 리스크</a>
+      </div>
+      <p style="text-align:center;margin-top:1rem;font-size:.8rem;color:var(--muted);line-height:1.7;">
+        ※ 최근 문의·검토가 많았던 담보 라인을 안내하는 것이며, 개별 계약의 인수 여부와 조건은
+        보험회사 인수심사 후 확정됩니다.
+      </p>
+    </div>
+
+    <!-- 주요 보상 사례 (분야 필터) -->
     <div class="case-preview">
-      <h2 style="font-size:1.3rem;color:var(--forest);text-align:center;margin-bottom:.4rem;">주요 보상 사례</h2>
-      <p style="text-align:center;color:var(--ink-2);font-size:.92rem;">동일 위험에 대한 보험사의 실제 보상 사례를 확인하고, 우리 사업과의 유사도를 점검해 보세요.</p>
+      <h2 style="font-size:1.4rem;color:var(--forest);text-align:center;margin:0 0 .4rem;">주요 위험 시나리오와 보장 구조</h2>
+      <p style="text-align:center;color:var(--ink-2);font-size:.92rem;margin:0;line-height:1.7;">
+        같은 사고라도 약관·특약·고지 내용에 따라 결과가 달라집니다.<br>
+        업계에서 반복되는 위험 유형과, 그 지점에서 보험중개사가 무엇을 하는지 정리했습니다.
+      </p>
+      <div class="case-tabs" role="tablist" aria-label="보상 사례 분야 필터">
+        <button class="case-tab" type="button" role="tab" data-cat="all" aria-selected="true">전체</button>
+        <button class="case-tab" type="button" role="tab" data-cat="marine" aria-selected="false">해상·물류</button>
+        <button class="case-tab" type="button" role="tab" data-cat="liability" aria-selected="false">배상</button>
+        <button class="case-tab" type="button" role="tab" data-cat="wc" aria-selected="false">근재</button>
+        <button class="case-tab" type="button" role="tab" data-cat="property" aria-selected="false">재물·기술</button>
+        <button class="case-tab" type="button" role="tab" data-cat="specialty" aria-selected="false">특종</button>
+      </div>
       <div class="case-preview-grid">
-        <div class="case-mini">
-          <span class="case-mini-tag">제조 · 근재</span>
-          <h4>공장 기계에 손이 끼어 부상</h4>
-          <p>제조공장 작업자 손가락 절단 사고 — 산재 외 사용자 배상으로 산재 초과분을 보장.</p>
-          <a href="products/wc-domestic">국내근로자 재해보장 →</a>
+        <div class="case-mini" data-cat="marine">
+          <span class="case-mini-tag">해상 · 적하</span>
+          <h4>갑판적재(On-Deck) 화물이 악천후로 유실</h4>
+          <p>컨테이너를 갑판에 적재한 상태로 항해 중 악천후로 화물이 유실 — 담보조건(ICC(A) 등)과 갑판적재 고지 여부에 따라 보상 범위가 달라집니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>갑판적재는 중요한 고지사항입니다. 청약 전 적재 방식을 확인해 고지하고, 약관상 담보 범위와 대조해 공백이 남지 않도록 구성합니다.</div>
+          <a href="products/marine-cargo">적하보험(수출입) →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
         </div>
-        <div class="case-mini">
-          <span class="case-mini-tag">건설 · CAR</span>
-          <h4>폭우로 공사현장 무너짐 / 싱크홀</h4>
-          <p>건설공사 진행 중 자연재해·지반침하로 발생한 손해를 CAR 보험으로 보장.</p>
-          <a href="products/engineering-car">건설공사보험(CAR) →</a>
+        <div class="case-mini" data-cat="marine">
+          <span class="case-mini-tag">물류 · 적재물</span>
+          <h4>운송 중 화물 파손 — 화주의 배상 청구</h4>
+          <p>운송인이 수탁한 화물이 운송 중 파손되어 화주가 배상을 청구 — 적재물배상책임에서 다루는 대표 위험입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>화물자동차 운수사업법상 의무가입 한도와 실제 운송 화물 가액의 차이를 점검하고, 초과 위험은 물류종합 등으로 보완할지 함께 검토합니다.</div>
+          <a href="products/liability-cargo">적재물 배상책임 →</a>
+          <span class="case-src"><em>(보험 교과서 표준 시나리오)</em></span>
         </div>
-        <div class="case-mini">
-          <span class="case-mini-tag">F&B · PL</span>
-          <h4>스파게티 이물질로 고객 부상</h4>
-          <p>식당 음식의 이물질로 고객이 부상 — 영업 PL 배상책임으로 보상.</p>
+        <div class="case-mini" data-cat="liability">
+          <span class="case-mini-tag">제조 · PL</span>
+          <h4>인증 절차가 진행 중인 설비를 납품</h4>
+          <p>제품 인증 취득 이전 단계에서 설비를 납품한 뒤 사고가 발생 — 고지 내용과 담보 시점에 따라 결과가 갈립니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>인증 취득 예정이라는 사실을 고지사항으로 확정해 기재하고, 시험가동(FAT) 단계에서 발생한 사고의 담보 여부를 사전에 확인합니다.</div>
           <a href="products/liability-pl">생산물(PL) 배상책임 →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
         </div>
-        <div class="case-mini">
+        <div class="case-mini" data-cat="liability">
+          <span class="case-mini-tag">전문직 · E&amp;O</span>
+          <h4>설계·용역 산출물의 오류로 발주처가 손해</h4>
+          <p>납품한 설계·용역 결과물의 오류로 발주처에 손해가 발생해 배상을 청구 — 전문직업배상(E&amp;O·PI)에서 다루는 위험입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>청구기준(Claims-made) 구조에서는 소급담보일이 핵심입니다. 사업 개시일까지 소급을 요청하고, 이미 인지한 건은 개별 제외로 분리해 나머지 담보를 지킵니다.</div>
+          <a href="products/liability-eo">전문직(E&amp;O) 배상책임 →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="liability">
+          <span class="case-mini-tag">보관 · 수탁</span>
+          <h4>고객에게서 맡은 물품이 보관 중 손상</h4>
+          <p>수리·보관·전시를 위해 맡아 둔 타인의 물품이 손상 — 영업배상(CGL)만으로는 보상되지 않는 대표적인 공백 구간입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>보관·관리·통제(CCC) 면책 때문에 CGL에서는 담보되지 않습니다. 수탁물배상 특약을 별도로 검토하고, 보관물의 성격(생물 등)별 인수 가능 여부를 먼저 확인합니다.</div>
+          <a href="products/liability-cgl">영업·시설(CGL) 배상책임 →</a>
+          <span class="case-src"><em>(보험 교과서 표준 시나리오)</em></span>
+        </div>
+        <div class="case-mini" data-cat="liability">
           <span class="case-mini-tag">요양시설 · 책임</span>
           <h4>입소자 낙상 — 고관절 골절</h4>
-          <p>요양보호사 배변 처리 중 입소자 낙상 → 시설 측 위자료·치료비 배상.</p>
+          <p>요양보호사 배변 처리 중 입소자가 낙상 → 시설 측 위자료·치료비 배상 문제로 이어집니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>시설 배상, 입소자 수탁물, 종사자 근재는 각각 다른 담보입니다. 청구 시 담보 사이에 공백이 생기지 않도록 경계를 정리해 설계합니다.</div>
           <a href="products/liability-welfare-facility">사회복지시설 배상 →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="liability">
+          <span class="case-mini-tag">IT · 사이버</span>
+          <h4>랜섬웨어로 업무 중단·개인정보 유출 통지</h4>
+          <p>시스템이 랜섬웨어에 감염되어 업무가 중단되고, 개인정보 유출에 따른 통지·신용조회 비용이 발생하는 상황입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>사고대응비용과 업무중단 담보는 회사별로 대기시간(waiting period)·자기부담금 조건이 다릅니다. 조건을 항목별로 대조해 비교표로 제시합니다.</div>
+          <a href="products/liability-cyber">사이버 배상책임 →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="wc">
+          <span class="case-mini-tag">제조 · 근재</span>
+          <h4>공장 기계에 손이 끼어 부상</h4>
+          <p>제조공장 작업자 손가락 절단 사고 — 산재 외 사용자 배상으로 산재 초과분을 보장하는 구간입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>산재보험이 먼저 적용되고 근재보험은 그 초과분을 다룹니다. 실제 인원·직종 구성에 맞춰 한도를 설정해야 초과분이 남지 않습니다.</div>
+          <a href="products/wc-domestic">국내근로자 재해보장 →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="wc">
+          <span class="case-mini-tag">설치공사 · 근재</span>
+          <h4>옥외 설비 설치 현장에서 작업자 추락</h4>
+          <p>태양광·통신 등 옥외 설비 설치 작업 중 추락 사고 — 원청·하청 구조에 따라 책임 주체가 달라집니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>안전보건경영시스템(ISO 45001 등) 인증 보유 사실을 알릴 의무 상세에 기재하면, 인수 조건 협의 시 근거 자료로 활용할 수 있습니다.</div>
+          <a href="products/wc-domestic">국내근로자 재해보장 →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="property">
+          <span class="case-mini-tag">건설 · CAR</span>
+          <h4>폭우로 공사현장 무너짐 / 싱크홀</h4>
+          <p>건설공사 진행 중 자연재해·지반침하로 발생한 손해를 건설공사보험(CAR)에서 다룹니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>주위재산 손해와 설계결함 담보는 기본 담보에 포함되지 않는 경우가 있습니다. 발주처 요구 조건과 약관을 대조해 특약 추가 여부를 판단합니다.</div>
+          <a href="products/engineering-car">건설공사보험(CAR) →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="property">
+          <span class="case-mini-tag">제조 · 재물/BI</span>
+          <h4>화재로 생산라인이 멈춰 매출이 중단</h4>
+          <p>화재로 설비가 손상되어 복구까지 생산이 정지 — 재산손해와 별개로 영업 중단에 따른 손실이 발생합니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>재물 담보만으로는 중단 손실이 보상되지 않습니다. 실제 복구 소요기간을 기준으로 기업휴지(BI)의 보상기간을 맞춰야 보장 공백이 생기지 않습니다.</div>
+          <a href="products/property-business-interruption">기업휴지(BI) 보험 →</a>
+          <span class="case-src"><em>(보험 교과서 표준 시나리오)</em></span>
+        </div>
+        <div class="case-mini" data-cat="specialty">
+          <span class="case-mini-tag">전시 · 예술품</span>
+          <h4>전시 운송·설치 과정에서 작품이 손상</h4>
+          <p>작품을 전시장으로 옮기고 설치·철거하는 과정에서 손상이 발생 — 예술품 종합(Fine Art)에서 다루는 위험입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>운송·보관·전시·반환까지 담보가 끊기지 않는지 구간별로 확인합니다. 전시 기간과 운송 구간을 하나의 증권으로 이어 설계하는 것이 핵심입니다.</div>
+          <a href="products/specialty-art">예술품 종합 (Fine Art) →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
+        </div>
+        <div class="case-mini" data-cat="specialty">
+          <span class="case-mini-tag">보석 · 위탁전시</span>
+          <h4>위탁 진열 중이던 보석이 없어짐</h4>
+          <p>매장·전시장에 위탁 진열한 보석이 사라졌으나 침입·강취의 흔적이 확인되지 않는 상황입니다.</p>
+          <div class="case-broker"><b>중개사 개입 포인트</b>원인불명 분실(Mysterious Disappearance)은 표준 약관의 면책 사유입니다. 청약 단계에서 이를 명확히 안내하고, 담보 가능 조건을 별도로 협의합니다.</div>
+          <a href="products/specialty-jewellers-block">보석·고급재화 (Jewellers Block) →</a>
+          <span class="case-src"><em>(업계 일반 사례)</em></span>
         </div>
       </div>
-      <p style="text-align:center;margin-top:1rem;font-size:.82rem;color:var(--ink-2);">
-        ※ 위 사례는 업계 보상 사례를 일반화한 예시이며, 실제 보장 결과는 약관과 청약 조건에 따라 달라질 수 있습니다.
-        더 많은 사례는 각 상품 상세페이지에서 확인하실 수 있습니다.
+      <p style="text-align:center;margin-top:1.2rem;font-size:.82rem;color:var(--ink-2);line-height:1.75;">
+        ※ 위 내용은 업계에서 반복되는 위험 유형과 약관상 보상 가능성을 일반화한 설명이며,
+        특정 계약의 보상 여부·범위를 보장하지 않습니다.<br>
+        실제 보장 결과는 약관과 청약 조건, 보험회사 인수심사 결과에 따라 달라집니다.
+        더 많은 내용은 각 상품 상세페이지에서 확인하실 수 있습니다.
       </p>
     </div>
   </div>
 </section>
+<!--N2N:HOME-V2:END-->
 
 <!-- ====== WHY BROKER (홈 인트로 — 5자문영역 압축본) ====== -->
 <section class="why-broker" id="why" style="border-top:1px solid var(--rule);">
@@ -720,6 +959,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <button class="rq-totop" aria-label="맨위로"><strong>↑</strong><span>TOP</span></button>
 </aside>
 
+<script id="n2n-case-tabs">
+(function(){
+  var tabs = document.querySelectorAll('.case-tab');
+  var cards = document.querySelectorAll('.case-preview-grid .case-mini');
+  if(!tabs.length || !cards.length) return;
+  function apply(cat){
+    for(var i=0;i<cards.length;i++){
+      cards[i].hidden = !(cat==='all' || cards[i].getAttribute('data-cat')===cat);
+    }
+  }
+  for(var i=0;i<tabs.length;i++){
+    tabs[i].addEventListener('click', function(){
+      for(var j=0;j<tabs.length;j++){ tabs[j].setAttribute('aria-selected','false'); }
+      this.setAttribute('aria-selected','true');
+      apply(this.getAttribute('data-cat'));
+    });
+  }
+})();
+</script>
 <script src="assets/script.js"></script>
 <script src="assets/products-index.js"></script>
 <script src="assets/search.js"></script>
