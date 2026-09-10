@@ -260,12 +260,24 @@
         en: { href: '/en/index.html', label: 'EN', aria: 'View in English' },
         ja: { href: '/ja/index.html', label: 'JA', aria: '日本語で見る' }
       };
+      /* 대응 언어판이 있으면 그 페이지로 이동. 근거는 해당 페이지가 이미 선언한
+         <link rel="alternate" hreflang="xx"> — 대응본이 없는 페이지엔 태그가 없으므로
+         자동으로 해당 언어 홈으로 폴백된다(하드코딩 목록 불필요, 404 위험 없음). */
+      function langTarget(code, homeHref) {
+        var el = document.querySelector('link[rel="alternate"][hreflang="' + code + '"]');
+        var href = el && el.getAttribute('href');
+        if (!href) return homeHref;
+        var probe = document.createElement('a');
+        probe.href = href;
+        if (probe.pathname === location.pathname) return homeHref; /* 자기 자신이면 홈 */
+        return href;
+      }
       ['ko', 'en', 'ja'].forEach(function (code, i) {
         if (code === LANG) return;
         var cfg = LANGS[code];
         var langSw = document.createElement('a');
         langSw.className = 'gnb-lang-switch';
-        langSw.href = cfg.href;
+        langSw.href = langTarget(code, cfg.href);
         langSw.setAttribute('hreflang', code);
         langSw.setAttribute('lang', code);
         langSw.setAttribute('aria-label', cfg.aria);

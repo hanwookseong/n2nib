@@ -19,3 +19,6 @@ _backup_insights_*/
 
 # 배포 스크립트 백업 · 임시 압축파일 (2026-08-18)
 *.zip
+
+# Claude 데스크톱이 저장소 폴더에 저장하는 산출물 (배포 대상 아님)
+Claude outputs/
