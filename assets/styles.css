@@ -5182,29 +5182,34 @@ html body .right-quick {
 /* ============================================ */
 
 
-/* ?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═
-   FIX (2026-05-12): iOS Safari product ?�이지 가�?overflow + 모바??메뉴 ?��?
-   ?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�
-   ?��? ?�인: Editorial 모듈 ?�합 ??추�????�스??            (?? "AIG·Chubb·DB?�해보험·KB?�해보험·메리츠화??�현?�?�상")
-            iOS Safari가 가?�뎃??·) + ?�문 ?�속??분할 ????            ??grid ?�식 ?�비 ?�림 ??page 가�?overflow
-            ??fixed mobile menu가 viewport ?�??page width ?�라�?   기존 fix(line 3916-3919) overflow-x: hidden??iOS?�서 fixed ?�식??   ?�용 ???�는 케?�스 보강
-   ?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═ */
+/* ════════════════════════════════════════════════════════════
+   FIX (2026-05-12): iOS Safari product 페이지 가로 overflow + 모바일 메뉴 위치 이탈
+   ────────────────────────────────────────────────────────────
+   근본 원인: Editorial 모듈 통합 후 추가된 텍스트
+              (예: "AIG·Chubb·DB손해보험·KB손해보험·메리츠화재·현대해상")
+   ① iOS Safari가 가운뎃점(·) + 영문 연속어를 분할하지 못함
+      → grid 자식 너비 늘림 → page 가로 overflow
+   ② fixed mobile menu가 viewport 대신 page width를 따라감
 
-/* (1) overflow-x: clip ??iOS Safari 16+ ?�환 (hidden보다 ?�정, sticky 보존) */
+   기존 fix(line 3916-3919)의 overflow-x: hidden이 iOS에서 fixed 자식에
+   적용되지 않는 케이스를 보강
+   ════════════════════════════════════════════════════════════ */
+
+/* (1) overflow-x: clip — iOS Safari 16+ 호환 (hidden보다 안정, sticky 보존) */
 @supports (overflow-x: clip) {
   html, body {
     overflow-x: clip !important;
   }
 }
 
-/* (2) .pd-content / .pd-layout grid ?�식 min-width 강제 ??콘텐�??�비 ?�림 차단 */
+/* (2) .pd-content / .pd-layout grid 자식 min-width 강제 → 콘텐츠 너비 늘림 차단 */
 .pd-layout > .pd-content,
 .pd-content > *,
 .pd-content > .pd-tabs-content > * {
   min-width: 0 !important;
 }
 
-/* (3) product ?�이지 grid??1fr ??minmax(0, 1fr) ?�전??*/
+/* (3) product 페이지 grid의 1fr → minmax(0, 1fr) 안전화 */
 .pd-tabs {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
@@ -5226,8 +5231,10 @@ html body .right-quick {
   }
 }
 
-/* (4) Editorial 모듈 ?�스????가?�뎃???�속 ?�문 분할 ?�전�?   "AIG·Chubb·DB?�해보험·KB?�해보험·메리츠화??�현?�?�상" ??   word-break: keep-all = ?��? ?�어 ?�위 ?��?
-   overflow-wrap: anywhere = ?�문 ?�속??컨테?�너 ?�으�?강제 분할 */
+/* (4) Editorial 모듈 텍스트의 가운뎃점·연속 영문 분할 안전망
+   "AIG·Chubb·DB손해보험·KB손해보험·메리츠화재·현대해상" 대응
+   word-break: keep-all    = 한글은 어절 단위 유지
+   overflow-wrap: anywhere = 영문 연속어는 컨테이너를 넘으면 강제 분할 */
 .ed-author__operation,
 .ed-author__operation p,
 .ed-author__byline p,
@@ -5243,7 +5250,7 @@ html body .right-quick {
   hyphens: auto;
 }
 
-/* (5) Editorial 모듈 grid/flex ?�식 min-width ?�전�?*/
+/* (5) Editorial 모듈 grid/flex 자식 min-width 안전망 */
 .ed-signal__item,
 .ed-related__card,
 .ed-faq__item,
@@ -5255,8 +5262,8 @@ html body .right-quick {
   min-width: 0 !important;
 }
 
-/* (6) 모바??메뉴 viewport ?�확 매칭 ??page width ?�향 차단
-   iOS Safari??fixed + page overflow 버그 ?�회 */
+/* (6) 모바일 메뉴 viewport 정확 매칭 → page width 영향 차단
+   iOS Safari의 fixed + page overflow 버그 우회 */
 @media (max-width: 780px) {
   .gnb > ul {
     width: 100vw !important;
@@ -5264,11 +5271,11 @@ html body .right-quick {
     left: 0 !important;
     right: 0 !important;
     box-sizing: border-box !important;
-    /* iOS Safari fixed positioning ?�정??*/
+    /* iOS Safari fixed positioning 안정화 */
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
   }
-  /* 모바??메뉴 li??min-width 0 보장 */
+  /* 모바일 메뉴 li의 min-width 0 보장 */
   .gnb > ul > li {
     min-width: 0 !important;
     max-width: 100% !important;
@@ -5276,7 +5283,7 @@ html body .right-quick {
   }
 }
 
-/* (7) sticky header??viewport ?�확 매칭 (?�전�? */
+/* (7) sticky header의 viewport 정확 매칭 (안전망) */
 @media (max-width: 780px) {
   .mobile-sticky-header {
     width: 100vw !important;
@@ -5290,13 +5297,13 @@ html body .right-quick {
 
 
 
-/* ?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═
-   ed-didyouknow ??Did you know? 강조 모듈
-   ?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�?�
-   ?��? ?�용 + ?��? 비교 + 보너??+ ?�무 결론 ?�턴
-   ?�재보험 ??깊이 ?�는 콘텐�??�이지???�용
-   ?�합?? 2026-05-12 · v1.0
-   ?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═?�═ */
+/* ════════════════════════════════════════════════════════════
+   ed-didyouknow — Did you know? 강조 모듈
+   ────────────────────────────────────────────────────────────
+   인용 + 비교 + 보너스 + 실무 결론 패턴
+   깊이 있는 콘텐츠 페이지에 사용
+   통합일: 2026-05-12 · v1.0
+   ════════════════════════════════════════════════════════════ */
 
 .ed-didyouknow {
   background: linear-gradient(135deg, #FBF7EE 0%, #F4F0E8 100%);
@@ -5444,7 +5451,7 @@ html body .right-quick {
   line-height: 1.65;
 }
 .ed-didyouknow__bonus ul li::before {
-  content: '??;
+  content: '✓';
   position: absolute;
   left: 4px;
   color: #C56A2C;
@@ -5567,7 +5574,7 @@ html body .right-quick {
 /* n2nib-qa-mobile-metaitem-wrap */
 @media (max-width:600px){.site-footer .footer-meta .meta-item{white-space:normal;}}
 
-/* n2nib-en-footer-logo : EN ??? footer ?? ??? (content:url ?????) */
+/* n2nib-en-footer-logo : EN 전용 footer 로고 (content:url 방식) — 아래 [v1.1]에서 폐지 */
 /* [v1.1] EN 전용 로고 폐지 — 가로형은 한글판으로 통합 */
 
 
@@ -5688,3 +5695,25 @@ html[lang="en"] .hero .btn-primary{ background:#C56A2C !important; color:#fff !i
   }
 }
 /* ================ END N2N-MSH-LOGO-FIX-20260724 ================ */
+
+/* ==== N2N-LANG-SWITCH-GROUP (2026-09-10) — 3언어(KO/EN/JA) 전환 칩 2개 가로 배치. 되돌리려면 이 블록 삭제 ==== */
+@media (min-width:781px){
+  html body .gnb-lang-group{
+    position:absolute !important; top:-30px !important;
+    right:max(1.5rem, calc((100% - 1280px)/2 + 1.5rem)) !important;
+    z-index:60 !important; display:inline-flex !important; gap:6px !important; align-items:center !important;
+  }
+  html body .gnb-lang-group .gnb-lang-switch{
+    position:static !important; top:auto !important; right:auto !important; left:auto !important; margin:0 !important;
+  }
+}
+@media (max-width:780px){
+  html body .gnb-lang-group{
+    position:absolute !important; top:-36px !important; right:8px !important; left:auto !important;
+    z-index:60 !important; display:inline-flex !important; gap:6px !important; align-items:center !important;
+  }
+  html body .gnb-lang-group .gnb-lang-switch{
+    position:static !important; top:auto !important; right:auto !important; left:auto !important; margin:0 !important;
+  }
+}
+/* ==== END N2N-LANG-SWITCH-GROUP ==== */
