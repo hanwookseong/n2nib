@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:image" content="https://n2nib.com/assets/og-image-ja.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -45,6 +45,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"InsuranceAgency","@id":"https://n2nib.com/#organization","name":"N2N\u4fdd\u967a\u4ef2\u7acb\u4eba","alternateName":["N2N Insurance Brokerage","\uc5d4\ud22c\uc5d4\ubcf4\ud5d8\uc911\uac1c"],"url":"https://n2nib.com/","logo":"https://n2nib.com/apple-touch-icon.png","image":"https://n2nib.com/apple-touch-icon.png","description":"\u97d3\u56fd\u306e\u91d1\u878d\u76e3\u7763\u9662\uff08FSS\uff09\u767b\u9332\u4fdd\u967a\u4ef2\u7acb\u4eba\u3002AM Best A\u4ee5\u4e0a\u306e6\u793e\u3092\u6bd4\u8f03\u3057\u3001\u4f01\u696d\u5411\u3051\u640d\u5bb3\u4fdd\u967a110\u7a2e\u76ee\u4ee5\u4e0a\u3092\u53d6\u308a\u6271\u3044\u307e\u3059\u3002","telephone":"+82-10-5755-6465","email":"sales@n2nib.com","address":{"@type":"PostalAddress","streetAddress":"41 Bangbae-ro 30-gil","addressLocality":"Seocho-gu, Seoul","addressCountry":"KR"},"areaServed":["KR","JP"],"priceRange":"$$","sameAs":["https://cargoinsu.com"],"identifier":"Business Registration No. 611-23-02374 / FSS Registered Insurance Broker No. 2026-012201","founder":{"@type":"Person","name":"Hanwook Seong","jobTitle":"Licensed Non-Life Insurance Broker, ACIU"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"N2N\u4fdd\u967a\u4ef2\u7acb\u4eba","url":"https://n2nib.com/ja/","inLanguage":"ja","publisher":{"@id":"https://n2nib.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://n2nib.com/ja/search?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap">
+<style id="n2n-ja-hero">
+/* ====== JA HOME HERO — KO ホーム（hero-a + n2n-hero-cream）と同一構成 ======
+   和文書体のみ日本語向けに差し替え:
+     見出し = Noto Serif JP（KO の Nanum Myeongjo に対応する明朝）
+     本文   = 欧文先行 + Noto Sans JP（東京海上HD・損保ジャパン・三井住友海上と同じ順序）
+   戻す場合はこの <style id="n2n-ja-hero"> ブロックのみ削除 ====== */
+.hero-a{ text-align:left; }
+.hero-a .hero-grid{ display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:48px; align-items:center; }
+/* grid item の min-width:auto による和文（AM Best A++～A 等）のはみ出しを防ぐ */
+.hero-a .hero-main,.hero-a .hero-rail{ min-width:0; }
+.hero-a .hero-main>*{ max-width:100%; }
+.hero-a .hero-eyebrow{ margin-bottom:22px; }
+.hero-a h1{
+  text-align:left; margin:0 0 18px; max-width:none;
+  letter-spacing:0; line-height:1.5;
+}
+.hero-a .lede{ text-align:left; margin:0; max-width:44em; }
+.hero-a .hero-usp{ text-align:left; margin-left:0; margin-right:0; }
+.hero-a .hero-actions{ justify-content:flex-start; }
+.hero-rail{ border-left:1px solid rgba(244,240,232,.18); padding-left:26px; display:flex; flex-direction:column; gap:20px; }
+.hero-rail .hr-item{ display:flex; flex-direction:column; gap:4px; }
+.hero-rail .hr-n{ font-size:2rem; font-weight:700; color:#fff; line-height:1.15; letter-spacing:0; }
+.hero-rail .hr-n i{ font-size:.95rem; font-weight:700; font-style:normal; margin-left:2px; }
+.hero-rail .hr-l{ font-size:.76rem; color:rgba(244,240,232,.62); line-height:1.6; }
+
+/* --- クリーム基調（cargoinsu / KO ホームと同一トークン） --- */
+.hero.hero-a{ background:#FAF8F3 !important; border-bottom:1px solid #E8E1D2; }
+.hero.hero-a::before{ display:none; }
+.hero.hero-a .hero-eyebrow{
+  background:transparent; color:#8B5A2B;
+  padding:0; border-radius:0; letter-spacing:.16em;
+  font-weight:600;
+}
+.hero.hero-a h1{
+  font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho','YuMincho','MS PMincho',serif;
+  font-weight:700;
+  color:#0B2818;
+}
+.hero.hero-a h1 em{ color:#C56A2C !important; font-weight:700; }
+.hero.hero-a .lede{ color:#4a4a42; }
+.hero.hero-a .lede strong{ color:#0B2818 !important; }
+.hero.hero-a .hero-usp{
+  display:inline-block; color:#6b6256;
+  background:#fff; border:1px solid #E5DECF;
+  border-radius:2px; padding:8px 18px;
+}
+.hero.hero-a .hero-rail{ border-left:1px solid #E8E1D2; }
+.hero.hero-a .hero-rail .hr-n,
+.hero.hero-a .hero-rail .hr-n i{ color:#0B2818; }
+.hero.hero-a .hero-rail .hr-l{ color:#6b6256; }
+.hero.hero-a .btn-primary{ background:#C56A2C; color:#fff; }
+.hero.hero-a .btn-primary:hover{ background:#b35e25; }
+
+@media (max-width:880px){
+  .hero-a .hero-grid{ grid-template-columns:1fr; gap:30px; }
+  .hero-rail{ border-left:0 !important; border-top:1px solid #E8E1D2; padding-left:0; padding-top:22px; flex-direction:row; flex-wrap:wrap; gap:22px 28px; }
+  .hero-rail .hr-item{ flex:1 1 40%; }
+  .hero-a .hero-eyebrow{ display:block; width:-moz-fit-content; width:fit-content; margin-left:auto; margin-right:auto; text-align:center; }
+  .hero-a .hero-actions{ justify-content:center; }
+  .hero-a .hero-actions .btn{ justify-content:center; }
+}
+@media (max-width:720px){
+  .hero-a .hero-actions{ display:flex !important; flex-direction:column !important; gap:12px; }
+  .hero-a .hero-actions .btn{ width:100% !important; box-sizing:border-box !important; text-align:center !important; }
+}
+@media (max-width:520px){
+  .hero-a h1{ font-size:1.65rem; }
+  .hero-rail .hr-n{ font-size:1.6rem; }
+}
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM56Z7ZG"
@@ -135,45 +206,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <li style="flex:0 0 auto;"><a class="consult-btn" href="/ja/consult">無料リスク診断 →</a></li>
 </ul><button class="menu-toggle" aria-label="メニュー"><span></span><span></span><span></span></button></div></nav>
 
-<section class="hero">
+<section class="hero hero-a">
   <div class="container">
-    <span class="hero-eyebrow">韓国 金融監督院 登録保険仲立人 第2026-012201号 · 日本語対応</span>
-    <h1>韓国の企業保険を、<br><em style="color:var(--accent);font-weight:600;">6社比較</em>で設計する保険仲立人。</h1>
-    <p class="lede">
-      AIG · Chubb（A++）· DB損害保険（A+）· 現代海上 · KB損害保険 · メリッツ火災（A）—
-      保険仲立人が<strong style="color:#fff;">独立した立場</strong>で6社の約款を比較し、御社に<strong style="color:#fff;">最適な補償</strong>をワンストップで設計します。
-      企業向け損害保険<strong style="color:#fff;">110種目以上</strong>を一つの窓口で。
-      韓国に進出された<strong style="color:#fff;">日系企業様には、代表が日本語で直接対応</strong>いたします。
-    </p>
-    <p class="hero-usp">
-      ACIU（企業保険引受審査士）· 6社約款比較 · 平均1営業日でご回答
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="/ja/consult">無料でリスク診断を依頼する</a>
-      <a class="btn btn-primary" href="/ja/japan-desk">韓国進出日系企業様へ</a>
-    </div>
-  </div>
-</section>
-
-<section class="trust-stats" style="padding:40px 0;border-top:1px solid rgba(11,40,24,.08);border-bottom:1px solid rgba(11,40,24,.08);background:rgba(244,240,232,.55)">
-  <div class="container">
-    <div class="trust-stats-grid">
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">6</div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;line-height:1.55;">提携引受保険会社<br>（AM Best A以上）</div>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <span class="hero-eyebrow">韓国 金融監督院 登録保険仲立人 第2026-012201号 · 日本語対応</span>
+        <h1>韓国の企業保険を、<br><em style="color:var(--accent);font-weight:700;">6社比較</em>で設計する保険仲立人。</h1>
+        <p class="lede">
+          AIG · Chubb（A++）· DB損害保険（A+）· 現代海上 · KB損害保険 · メリッツ火災（A）—
+          保険仲立人が<strong style="color:#fff;">独立した立場</strong>で6社の約款を比較し、御社に<strong style="color:#fff;">最適な補償</strong>をワンストップで設計します。
+          企業向け損害保険<strong style="color:#fff;">110種目以上</strong>を一つの窓口で。
+          韓国に進出された<strong style="color:#fff;">日系企業様には、代表が日本語で直接対応</strong>いたします。
+        </p>
+        <p class="hero-usp">
+          ACIU（企業保険引受審査士）· AM Best A++～A 6社約款比較 · 平均1営業日でご回答
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/ja/consult">無料でリスク診断を依頼する</a>
+          <a class="btn btn-primary" href="/ja/japan-desk">韓国進出日系企業様へ</a>
+        </div>
       </div>
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">110<span style="font-size:1.4rem;font-weight:700;">+</span></div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;line-height:1.55;">企業向け損害保険の取扱種目<br>（海上・賠償・勤災・財物ほか6分野）</div>
-      </div>
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">JP</div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;line-height:1.55;">代表が日本語で直接対応<br>（通訳を介さないご相談）</div>
-      </div>
-      <div style="background:#fff;padding:28px 20px;border-radius:8px;border:1px solid rgba(11,40,24,.08);text-align:center;">
-        <div style="font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.02em;">1<span style="font-size:1.1rem;font-weight:600;margin-left:2px;">営業日</span></div>
-        <div style="font-size:0.78rem;color:var(--ink-2);margin-top:10px;line-height:1.55;">平均ご回答日数<br>（ACIU有資格者が対応）</div>
-      </div>
+      <aside class="hero-rail" aria-label="主要指標">
+        <div class="hr-item"><span class="hr-n">6</span><span class="hr-l">提携引受保険会社<br>（AM Best A格以上）</span></div>
+        <div class="hr-item"><span class="hr-n">110<i>種目+</i></span><span class="hr-l">企業向け損害保険の取扱<br>（6分野）</span></div>
+        <div class="hr-item"><span class="hr-n">JP</span><span class="hr-l">代表が日本語で直接対応<br>（通訳を介しません）</span></div>
+        <div class="hr-item"><span class="hr-n">1<i>営業日</i></span><span class="hr-l">平均ご回答日数<br>（ACIU有資格者が対応）</span></div>
+      </aside>
     </div>
   </div>
 </section>
