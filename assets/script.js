@@ -12,7 +12,7 @@
   // ★ LINE 공식계정 URL을 아래 한 줄에만 넣으면 JA의 LINE 버튼이 활성화된다.
   //   예) 'https://line.me/R/ti/p/@000abcd'  또는  'https://lin.ee/xxxxxxx'
   //   비워 두면 JA 페이지에서는 채팅 버튼 자체를 출력하지 않는다(끊긴 링크 방지).
-  var N2N_LINE_URL = '';
+  var N2N_LINE_URL = 'https://lin.ee/90vMOrj';
   var N2N_KAKAO_URL = 'https://pf.kakao.com/_xlxkxdTX/chat';
 
   /* chatChannel(short) -> {href,label,bg,fg,cls} 또는 null */
