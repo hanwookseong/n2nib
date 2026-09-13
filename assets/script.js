@@ -7,24 +7,33 @@
   function L(ko, en, ja) { return LANG === 'en' ? en : (LANG === 'ja' ? (ja === undefined ? en : ja) : ko); }
   var BASE = LANG === 'en' ? '/en/' : (LANG === 'ja' ? '/ja/' : '/');
 
-  // ───── 상담 채널 — KO/EN: 카카오톡 · JA: LINE ─────
-  // 일본 이용자는 카카오톡을 사용하지 않으므로 JA 로케일만 LINE으로 대체한다.
-  // ★ LINE 공식계정 URL을 아래 한 줄에만 넣으면 JA의 LINE 버튼이 활성화된다.
-  //   예) 'https://line.me/R/ti/p/@000abcd'  또는  'https://lin.ee/xxxxxxx'
-  //   비워 두면 JA 페이지에서는 채팅 버튼 자체를 출력하지 않는다(끊긴 링크 방지).
-  var N2N_LINE_URL = 'https://lin.ee/90vMOrj';
-  var N2N_KAKAO_URL = 'https://pf.kakao.com/_xlxkxdTX/chat';
+  // ───── 상담 채널 ─────
+  //   KO : 카카오톡
+  //   EN : 카카오톡 + WhatsApp
+  //   JA : 카카오톡 + LINE
+  // URL을 비우면 해당 버튼을 출력하지 않는다(끊긴 링크 방지).
+  var N2N_KAKAO_URL    = 'https://pf.kakao.com/_xlxkxdTX/chat';
+  var N2N_LINE_URL     = 'https://lin.ee/90vMOrj';
+  var N2N_WHATSAPP_URL = 'https://wa.me/821057556465';   // ★ 이 번호로 WhatsApp 가입되어 있어야 동작
 
-  /* chatChannel(short) -> {href,label,bg,fg,cls} 또는 null */
-  function chatChannel(short) {
-    if (LANG === 'ja') {
-      if (!N2N_LINE_URL) return null;
-      return { href: N2N_LINE_URL, label: short ? 'LINE' : 'LINEでご相談',
-               bg: '#06C755', fg: '#ffffff', cls: 'fcc-line' };
+  /* chatChannels(short) -> [{href,label,bg,fg,cls}, ...] (빈 배열 가능) */
+  function chatChannels(short) {
+    var list = [];
+    if (N2N_KAKAO_URL) {
+      list.push({ href: N2N_KAKAO_URL,
+                  label: short ? L('카톡상담', 'KakaoTalk', 'カカオトーク')
+                               : L('카카오톡 1:1 상담', 'KakaoTalk 1:1', 'カカオトーク 1:1'),
+                  bg: '#FEE500', fg: '#3C1E1E', cls: 'fcc-kakao' });
     }
-    return { href: N2N_KAKAO_URL,
-             label: short ? L('카톡상담', 'KakaoTalk') : L('카카오톡 1:1 상담', 'KakaoTalk 1:1'),
-             bg: '#FEE500', fg: '#3C1E1E', cls: 'fcc-kakao' };
+    if (LANG === 'ja' && N2N_LINE_URL) {
+      list.push({ href: N2N_LINE_URL, label: short ? 'LINE' : 'LINEでご相談',
+                  bg: '#06C755', fg: '#ffffff', cls: 'fcc-line' });
+    }
+    if (LANG === 'en' && N2N_WHATSAPP_URL) {
+      list.push({ href: N2N_WHATSAPP_URL, label: short ? 'WhatsApp' : 'WhatsApp chat',
+                  bg: '#25D366', fg: '#ffffff', cls: 'fcc-whatsapp' });
+    }
+    return list;
   }
 
   // ---- Mobile GNB toggle ----
@@ -250,10 +259,10 @@
     var li = document.createElement('li');
     li.className = 'mmf-cta';
     li.style.cssText = 'list-style:none;padding:14px 20px 18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(244,240,232,0.18);margin-top:8px';
-    var ch = chatChannel(false);
+    var chs = chatChannels(false);
     li.innerHTML =
       '<a href="tel:+82-10-5755-6465" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:transparent;border:1px solid rgba(244,240,232,0.6);border-radius:6px;color:#F4F0E8;text-decoration:none;font-weight:700">☎ ' + L('전화상담','Call','お電話') + ' +82-10-5755-6465</a>' +
-      (ch ? '<a href="' + ch.href + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:' + ch.bg + ';color:' + ch.fg + ';border-radius:6px;text-decoration:none;font-weight:700">💬 ' + ch.label + '</a>' : '');
+      chs.map(function(c){ return '<a href="' + c.href + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:' + c.bg + ';color:' + c.fg + ';border-radius:6px;text-decoration:none;font-weight:700">💬 ' + c.label + '</a>'; }).join('');
     gnbList.appendChild(li);
   }
   injectMobileMenuFooterCTAs();
@@ -327,7 +336,7 @@
     var section = document.createElement('section');
     section.className = 'footer-cta-cluster';
     section.setAttribute('aria-label', L('빠른 상담 안내','Quick consultation','お問い合わせ'));
-    var fcc = chatChannel(true);
+    var fccs = chatChannels(true);
     section.innerHTML =
       '<div class="fcc-inner">' +
         '<h3>' + L('전문 보험중개사가 직접 상담합니다','A licensed insurance broker advises you directly','登録保険仲立人が直接ご相談を承ります') + '</h3>' +
@@ -335,7 +344,7 @@
         '<div class="fcc-buttons">' +
           '<a class="fcc-primary" href="' + consultHref + '">' + L('✎ 상담신청','✎ Request consultation','✎ ご相談・お見積り') + '</a>' +
           '<a class="fcc-phone" href="tel:+82-10-5755-6465">☎ +82-10-5755-6465</a>' +
-          (fcc ? '<a class="' + fcc.cls + '" href="' + fcc.href + '" target="_blank" rel="noopener" style="background:' + fcc.bg + ';color:' + fcc.fg + ' !important">💬 ' + fcc.label + '</a>' : '') +
+          fccs.map(function(c){ return '<a class="' + c.cls + '" href="' + c.href + '" target="_blank" rel="noopener" style="background:' + c.bg + ';color:' + c.fg + ' !important">💬 ' + c.label + '</a>'; }).join('') +
         '</div>' +
       '</div>';
     footer.parentNode.insertBefore(section, footer);
@@ -356,7 +365,7 @@
     bar.setAttribute('aria-label', '빠른 연락');
     bar.innerHTML =
       '<a href="tel:010-5755-6465" aria-label="전화상담"><span class="ico">☎</span><span>전화</span></a>' +
-      (function(c){ return c ? '<a class="cta-' + (LANG === 'ja' ? 'line' : 'kakao') + '" href="' + c.href + '" target="_blank" rel="noopener"><span class="ico">💬</span><span>' + c.label + '</span></a>' : ''; })(chatChannel(true)) +
+      chatChannels(true).map(function(c){ return '<a class="' + c.cls.replace('fcc-','cta-') + '" href="' + c.href + '" target="_blank" rel="noopener"><span class="ico">💬</span><span>' + c.label + '</span></a>'; }).join('') +
       '<a class="cta-primary" href="' + consultHref + '" aria-label="상담신청"><span class="ico">✎</span><span>상담신청</span></a>';
     document.body.appendChild(bar);
     document.body.classList.add('has-mobile-cta');
@@ -464,6 +473,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href*="line.me"], a[href*="lin.ee"]').forEach(function(el){
     el.addEventListener('click', function(){
       window.dataLayer.push({event:'line_click'});
+    });
+  });
+  // 3-2. WhatsApp 클릭 (영문판)
+  document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(function(el){
+    el.addEventListener('click', function(){
+      window.dataLayer.push({event:'whatsapp_click'});
     });
   });
   // 4. 폼 제출 (consult/quote)
