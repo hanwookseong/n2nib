@@ -37,6 +37,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --f-body:'IBM Plex Sans','Noto Sans JP','Noto Sans CJK JP','Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic UI','Yu Gothic',Meiryo,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   --f-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,'Noto Sans JP','Noto Sans CJK JP','Hiragino Kaku Gothic ProN','Yu Gothic UI',Meiryo,monospace;
 }
+/* ==== JA 折り返し（2026-09-13） ====
+   styles.css は全体に word-break:keep-all を適用している。韓国語は分かち書きが
+   あるため問題ないが、日本語は語間に空白が無いため文全体が1つの不可分語として
+   扱われ、flex/grid の子要素が親をはみ出す（モバイルで右側が切れる）。
+   日本語ページのみ通常の禁則処理に戻す。戻す場合はこのブロックを削除。 */
+html[lang="ja"], html[lang="ja"] *{ word-break:normal !important; line-break:strict !important; }
+html[lang="ja"] .pd-broker-body,
+html[lang="ja"] .ed-pitfall__content,
+html[lang="ja"] .ed-signal__content,
+html[lang="ja"] .ed-case__body{ min-width:0 !important; }
 .lang-switch{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:26px;padding:0 9px;border:1px solid currentColor;border-radius:7px;font-size:12px;font-weight:700;letter-spacing:.04em;text-decoration:none;line-height:1;opacity:.92}
 .lang-switch:hover{opacity:1}
 </style>

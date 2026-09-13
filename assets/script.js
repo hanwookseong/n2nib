@@ -205,14 +205,18 @@
     if (document.querySelector('.mobile-sticky-header')) return;
     var homeHref = BASE + 'index.html';
     var consultHref = BASE + 'consult.html';
-    var logoSrc = '/assets/logo-horizontal-light.svg';  /* [v1.1 §3] sticky 헤더는 흰 배경 -> -light 고정, EN 전용 로고 폐지 */
+    /* [로고적용표준 v1.3 §1·§3.1] sticky 헤더는 흰 배경 -> -light.
+       영문·일본어 페이지는 -light-en (한글 워드마크 대신 INSURANCE BROKERAGE). */
+    var logoSrc = (LANG === 'en' || LANG === 'ja')
+      ? '/assets/logo-horizontal-light-en.svg'
+      : '/assets/logo-horizontal-light.svg';
     var header = document.createElement('header');
     header.className = 'mobile-sticky-header';
     header.setAttribute('role', 'banner');
     header.innerHTML =
       '<button type="button" class="msh-menu" aria-label="' + L('메뉴 열기','Open menu','メニューを開く') + '"><span></span></button>' +
       '<a class="msh-logo" href="' + homeHref + '" aria-label="N2N Insurance Brokerage home">' +
-        '<img src="' + logoSrc + '" alt="N2N Insurance Brokerage">' +
+        '<img src="' + logoSrc + '" alt="' + L('엔투엔보험중개','N2N Insurance Brokerage','N2N保険仲立人') + '">' +
       '</a>' +
       '<a class="msh-cta" href="' + consultHref + '">' + L('상담신청','Consult','ご相談') + '</a>';
     document.body.insertBefore(header, document.body.firstChild);
