@@ -27,3 +27,12 @@ products.zip
 .DS_Store
 Thumbs.db
 *.log
+
+# 백업·내부 작업 파일 (2026-09-25: 공개 서빙 확인되어 제외)
+*.bak-*
+*.ps1
+n2nib-products-list.txt
+STATUS/
+
+# 개발 도구 (배포 제외)
+tools/

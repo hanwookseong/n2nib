@@ -1,1 +1,8 @@
 /insights/us-pharma-product-liability.html /guide-pharma-pl-us 301
+# 2026-09-25 루트 레거시 사본 → 정본 상품 페이지 (SEO 액션 B5)
+/property-fire /products/property-fire 301
+/property-fire.html /products/property-fire 301
+/liability-cgl /products/liability-cgl 301
+/liability-cgl.html /products/liability-cgl 301
+# 미발행 상품 코드 → 기존 상품 (SEO 액션 B2)
+/products/specialty-trade-credit /products/property-trade-credit 301
