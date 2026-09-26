@@ -5,7 +5,7 @@
   <link>https://n2nib.com/</link>
   <description>엔투엔보험중개(금융감독원 등록 제2026-012201호)의 기업보험 가이드, 사례, 상품 안내 최근 수정분</description>
   <language>ko</language>
-  <lastBuildDate>Sat, 26 Sep 2026 10:26:16 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 26 Sep 2026 10:28:39 +0900</lastBuildDate>
   <atom:link href="https://n2nib.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>보석·고급재화 보험 (Jewellers Block &amp; Fine Goods)</title>
@@ -246,6 +246,13 @@
     <pubDate>Sat, 19 Sep 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
+    <title>동산종합보험 | 전위험담보(All Risk) 동산 보장</title>
+    <link>https://n2nib.com/products/property-movable</link>
+    <guid isPermaLink="true">https://n2nib.com/products/property-movable</guid>
+    <description>사무·전산기기, 의료기기, 공장 내 동산, 중장비 등 이동위험이 있는 동산을 장소를 가리지 않고 보장하는 전위험담보(All Risk) 종합보험. 약관·면책 비교를 보험중개사가 무료 상담. AM Best A급 파트너 보험회사 비교 견적.</description>
+    <pubDate>Sat, 19 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
     <title>기관기계 종합보험 | 기술보험</title>
     <link>https://n2nib.com/products/property-machinery-comprehensive</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-machinery-comprehensive</guid>
@@ -348,13 +355,6 @@
     <link>https://n2nib.com/products/marine-hull</link>
     <guid isPermaLink="true">https://n2nib.com/products/marine-hull</guid>
     <description>선박(선체·기관·장비)의 해상·항만 물적 손해 및 충돌배상책임 담보. ITC-Hulls·21세기 선박보험·Builder's Risk·Submarine Cable.</description>
-    <pubDate>Sat, 19 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>수출신용보험 (Trade Credit)</title>
-    <link>https://n2nib.com/products/marine-export-credit</link>
-    <guid isPermaLink="true">https://n2nib.com/products/marine-export-credit</guid>
-    <description>수출업체의 해외 바이어 대금 미지급(신용·정치위험) 담보. 국내는 SGI서울보증이 원수보험회사로 증권을 발행하고 글로벌 신용보험사가 재보험으로 인수하는 구조. 내수·수출 단일 증권 통합 관리 가능.</description>
     <pubDate>Sat, 19 Sep 2026 09:00:00 +0900</pubDate>
   </item>
 </channel>
