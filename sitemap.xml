@@ -698,7 +698,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-tenant-fire</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1581,7 +1581,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/insights/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1975,5 +1975,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-movable"/>
     <lastmod>2026-09-19</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-tenant-fire-spread</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
