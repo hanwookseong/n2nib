@@ -180,7 +180,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-eo"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/liability-eo"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-eo"/>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -722,7 +722,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-pharmacist</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1581,7 +1581,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/insights/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1989,6 +1989,16 @@
   <url>
     <loc>https://n2nib.com/insights/case-overseas-wc-europe</loc>
     <lastmod>2026-09-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-design-eo-barcode</loc>
+    <lastmod>2026-09-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-pharmacy-relocation</loc>
+    <lastmod>2026-09-30</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

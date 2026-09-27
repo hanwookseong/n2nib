@@ -5,8 +5,36 @@
   <link>https://n2nib.com/</link>
   <description>엔투엔보험중개(금융감독원 등록 제2026-012201호)의 기업보험 가이드, 사례, 상품 안내 최근 수정분</description>
   <language>ko</language>
-  <lastBuildDate>Sun, 27 Sep 2026 19:31:11 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 27 Sep 2026 19:31:15 +0900</lastBuildDate>
   <atom:link href="https://n2nib.com/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>약사·약국 배상책임보험</title>
+    <link>https://n2nib.com/products/liability-pharmacist</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-pharmacist</guid>
+    <description>약사·약국의 조제 오류·복약지도 누락·약국 시설 사고 종합 담보. 약사회 단체할인 검토.</description>
+    <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>E&amp;O보험(전문직업배상) 뜻·업종별 가입</title>
+    <link>https://n2nib.com/products/liability-eo</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-eo</guid>
+    <description>E&amp;O보험(전문직업배상책임)은 변호사·회계사·건축사·엔지니어·IT 컨설턴트 등 전문직이 업무상 과실·오류·누락으로 고객에게 입힌 재산상 손해와 방어비용을 보장합니다. 배상청구기준·소급담보일 설계가 핵심입니다.</description>
+    <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>약국 이전 보험 — 사용허가 조건부터 맞추기</title>
+    <link>https://n2nib.com/insights/case-pharmacy-relocation</link>
+    <guid isPermaLink="true">https://n2nib.com/insights/case-pharmacy-relocation</guid>
+    <description>공공 소유 점포로 약국을 옮길 때는 사용허가 조건과 공고문이 요구하는 보험부터 맞춰야 합니다. 건물 화재보험·화재배상책임·영업배상은 허가조건 충족용이고, 조제 과오는 약사배상으로 따로 다룹니다. 증권 제출 기한과 준비 서류를 정리했습니다.</description>
+    <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>디자인 E&amp;O 바코드 오류 — 기존 사고는 제외</title>
+    <link>https://n2nib.com/insights/case-design-eo-barcode</link>
+    <guid isPermaLink="true">https://n2nib.com/insights/case-design-eo-barcode</guid>
+    <description>패키지 디자인 바코드 오류처럼 이미 알려진 사고가 있어도 디자인회사 E&amp;O 인수 검토는 가능하지만, 그 사고는 알려진 사고 면책으로 담보에서 빠집니다. 배상청구기준·소급일, 계약상 가중책임, 재인쇄·재포장 비용의 성격을 가입 전에 확인해야 합니다.</description>
+    <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>해외근재보험 — 해외파견 근로자 재해보장</title>
     <link>https://n2nib.com/products/wc-overseas</link>
@@ -327,34 +355,6 @@
     <link>https://n2nib.com/products/liability-cyber</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-cyber</guid>
     <description>해킹·랜섬웨어·DDoS 등 사이버 사고로 인한 제3자 손해배상 및 위기대응비용을 포괄 보장.</description>
-    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>계약이행책임보험 — 계약상 배상책임</title>
-    <link>https://n2nib.com/products/liability-contractual</link>
-    <guid isPermaLink="true">https://n2nib.com/products/liability-contractual</guid>
-    <description>계약상 가중된 배상의무·Indemnity 조항 이행 담보. 대형 B2B·EPC·IT 아웃소싱 필수.</description>
-    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>도장보증배상책임보험 — 도장 하자 보증</title>
-    <link>https://n2nib.com/products/liability-coating-guarantee</link>
-    <guid isPermaLink="true">https://n2nib.com/products/liability-coating-guarantee</guid>
-    <description>도장(페인팅) 작업의 품질 결함·박리·변색으로 인한 배상책임 및 재시공 보증 담보.</description>
-    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>임상시험 배상책임보험 — 피험자 보상</title>
-    <link>https://n2nib.com/products/liability-clinical-trials</link>
-    <guid isPermaLink="true">https://n2nib.com/products/liability-clinical-trials</guid>
-    <description>임상시험 스폰서·CRO·IRB가 가입하는 무과실 보상(No-Fault) 임상시험 배상책임보험. 식약처·ICH-GCP 가이드라인 기준.</description>
-    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>조립보험(EAR) 뜻·보상범위</title>
-    <link>https://n2nib.com/products/engineering-ear</link>
-    <guid isPermaLink="true">https://n2nib.com/products/engineering-ear</guid>
-    <description>기계·플랜트 설비의 반입·조립·시운전 과정의 재물손해와 배상책임을 담보하는 조립 올리스크 보험.</description>
     <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
   </item>
 </channel>
