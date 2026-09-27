@@ -245,7 +245,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-pl"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/liability-pl"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-pl"/>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -422,7 +422,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-fire"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/property-fire"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-fire"/>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -538,7 +538,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-legal-expense</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -1581,7 +1581,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/insights/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2009,6 +2009,21 @@
   <url>
     <loc>https://n2nib.com/insights/case-drone-survey</loc>
     <lastmod>2026-10-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-underground-mall-fire</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-legal-expense-hr</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-cooking-robot-pl</loc>
+    <lastmod>2026-10-02</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
