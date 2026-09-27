@@ -5,7 +5,7 @@
   <link>https://n2nib.com/</link>
   <description>엔투엔보험중개(금융감독원 등록 제2026-012201호)의 기업보험 가이드, 사례, 상품 안내 최근 수정분</description>
   <language>ko</language>
-  <lastBuildDate>Sun, 27 Sep 2026 19:50:57 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 27 Sep 2026 20:03:49 +0900</lastBuildDate>
   <atom:link href="https://n2nib.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>일반화재보험 — 공장·상가 화재·폭발 보장</title>
@@ -113,10 +113,24 @@
     <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
+    <title>근재보험 가입 — 보험사 비교 견적</title>
+    <link>https://n2nib.com/products/wc-domestic</link>
+    <guid isPermaLink="true">https://n2nib.com/products/wc-domestic</guid>
+    <description>국내근로자 근재보험 가입 안내 — 연간 계약과 공사별 계약, 하도급·파견 근로자 확장 특약, 견적에 필요한 정보(업종·근로자 수·임금 규모·공사금액)를 정리했습니다. 보험료는 보험회사 인수심사 후 확정됩니다.</description>
+    <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
     <title>행사보험 — 축제·공연·전시 배상책임 가입</title>
     <link>https://n2nib.com/products/specialty-event</link>
     <guid isPermaLink="true">https://n2nib.com/products/specialty-event</guid>
     <description>축제·공연·전시·기업행사 중 관람객·참가자 사고에 대한 주최자 배상책임과 행사 취소·연기 손해를 보장하는 행사보험. 행사 일자·장소·예상 인원·행사 종류를 알려주시면 보험회사별 조건을 확인해 드립니다.</description>
+    <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>적재물배상책임보험 가입 — 보험사 비교 견적</title>
+    <link>https://n2nib.com/products/liability-cargo</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-cargo</guid>
+    <description>적재물배상책임보험 가입 안내 — 운송사업자는 영업용 화물차 단위, 운송주선사업자는 사업자 단위로 가입합니다. 차량·품목·한도를 알려주시면 보험회사별 조건을 비교해 견적을 요청해 드립니다. 보험료는 인수심사 후 확정됩니다.</description>
     <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
@@ -341,20 +355,6 @@
     <link>https://n2nib.com/products/liability-serious-accident</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-serious-accident</guid>
     <description>중대재해처벌법 시행에 대응하는 경영책임자 배상책임·방어비용·위기관리비용을 종합 보장.</description>
-    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>완성공사·제품가동 배상책임보험</title>
-    <link>https://n2nib.com/products/liability-products-completed-ops</link>
-    <guid isPermaLink="true">https://n2nib.com/products/liability-products-completed-ops</guid>
-    <description>완공·납품 후 제품·공사 가동 중 발생한 제3자 배상책임. CGL 확장형.</description>
-    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
-  </item>
-  <item>
-    <title>제품보증배상책임보험 — 제품 하자 보증</title>
-    <link>https://n2nib.com/products/liability-product-guarantee</link>
-    <guid isPermaLink="true">https://n2nib.com/products/liability-product-guarantee</guid>
-    <description>제품 결함으로 인한 수리·교체·재작업 비용 담보. PL(생산물배상)과 상호보완.</description>
     <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
   </item>
 </channel>
