@@ -515,7 +515,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/specialty-event</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -597,7 +597,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/wc-overseas"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/wc-overseas"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/wc-overseas"/>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -1581,7 +1581,7 @@
   </url>
   <url>
     <loc>https://n2nib.com/insights/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1979,6 +1979,16 @@
   <url>
     <loc>https://n2nib.com/insights/case-tenant-fire-spread</loc>
     <lastmod>2026-09-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-event-play-facility</loc>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/insights/case-overseas-wc-europe</loc>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
