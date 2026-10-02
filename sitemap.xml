@@ -100,30 +100,9 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-clinical-trials"/>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-coating-guarantee</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-construction-equipment</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-contractual</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-contractual"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-contractual"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-contractual"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-contractual</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-contractual"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-contractual"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-contractual"/>
   </url>
   <url>
     <loc>https://n2nib.com/products/liability-cyber</loc>
@@ -205,16 +184,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-freight-forwarders"/>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-fusion-pl</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-life-sciences</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-medical-device</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
@@ -225,17 +194,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-no-fault</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-outdoor-ad</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-outdoor-robot</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -254,33 +213,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-product-guarantee</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-product-guarantee"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-product-guarantee"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-product-guarantee"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-product-guarantee</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-product-guarantee"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-product-guarantee"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-product-guarantee"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-products-completed-ops</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-recall</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-sandbox</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -299,28 +232,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/liability-vasp</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-vasp"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-vasp"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-vasp"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-vasp</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-vasp"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-vasp"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-vasp"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-welfare-facility</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-wildlife</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -330,19 +242,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-cargo"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/marine-cargo"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-cargo"/>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/marine-export-credit</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/marine-hull</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-hull"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-hull"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-hull"/>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -363,11 +262,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/marine-ransom</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/marine-transit</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-transit"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-transit"/>
@@ -382,16 +276,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-all-risks"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/property-all-risks"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-all-risks"/>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/property-aquaculture</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/property-chattel-title</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -460,11 +344,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/property-residual-value</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/property-storm-flood-sme</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
@@ -493,23 +372,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/specialty-contingency</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/specialty-crime</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-crime"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-crime"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-crime"/>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-cyber-sme</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-cyber-sme"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-cyber-sme"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-cyber-sme"/>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -532,35 +398,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/specialty-kr</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/specialty-legal-expense</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-money-securities</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-money-securities"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-money-securities"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-money-securities"/>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-over-redemption</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-pet</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-sports-prize</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -569,16 +407,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-theft"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-theft"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-theft"/>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-weather</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/specialty-wni</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -612,42 +440,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/property-medical-clinic</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/property-chubb-master</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/property-hotel-hospitality</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-hotel-hospitality"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-hotel-hospitality"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-hotel-hospitality"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/property-hotel-hospitality</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-hotel-hospitality"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-hotel-hospitality"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-hotel-hospitality"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/property-school</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/property-golf-course</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -679,19 +472,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://n2nib.com/products/property-trade-credit</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://n2nib.com/products/liability-daycare</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/liability-elderly-welfare</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -744,12 +525,6 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/wc-daily-worker</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://n2nib.com/products/marine-aviation</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -842,14 +617,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-logistics"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-logistics"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-logistics"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/marine-hull</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-hull"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-hull"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-hull"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/marine-pi</loc>
@@ -947,28 +714,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-crime"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/specialty-cyber-sme</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-cyber-sme"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-cyber-sme"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-cyber-sme"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/specialty-jewellers-block</loc>
     <lastmod>2026-09-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-jewellers-block"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-jewellers-block"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-jewellers-block"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/specialty-money-securities</loc>
-    <lastmod>2026-06-04</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-money-securities"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-money-securities"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-money-securities"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/specialty-theft</loc>
@@ -1020,14 +771,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-lawyer-lpl"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/liability-life-sciences</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-life-sciences"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-life-sciences"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-life-sciences"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/property-business-interruption</loc>
     <lastmod>2026-06-21</lastmod>
     <priority>0.8</priority>
@@ -1070,14 +813,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-corporate"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/property-trade-credit</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-trade-credit"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-trade-credit"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-trade-credit"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/specialty-cosmetic-pl</loc>
     <lastmod>2026-06-21</lastmod>
     <priority>0.8</priority>
@@ -1094,14 +829,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-food-pl"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/specialty-contingency</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-contingency"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-contingency"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-contingency"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/specialty-event</loc>
     <lastmod>2026-06-21</lastmod>
     <priority>0.8</priority>
@@ -1116,38 +843,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-legal-expense"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-legal-expense"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-legal-expense"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/specialty-weather</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-weather"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-weather"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-weather"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/marine-aviation</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-aviation"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-aviation"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-aviation"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/marine-export-credit</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-export-credit"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-export-credit"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-export-credit"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/marine-ransom</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/marine-ransom"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-ransom"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-ransom"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/wc-daily-worker</loc>
@@ -1180,14 +875,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-products-completed-ops"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-products-completed-ops"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-products-completed-ops"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-recall</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-recall"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-recall"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-recall"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/liability-privacy</loc>
@@ -1231,14 +918,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-cargo"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/liability-coating-guarantee</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-coating-guarantee"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-coating-guarantee"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-coating-guarantee"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/liability-construction-equipment</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
@@ -1271,44 +950,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-ev-charger"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/liability-fusion-pl</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-fusion-pl"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-fusion-pl"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-fusion-pl"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-no-fault</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-no-fault"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-no-fault"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-no-fault"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/liability-outdoor-ad</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-outdoor-ad"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-outdoor-ad"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-outdoor-ad"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-outdoor-robot</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-outdoor-robot"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-outdoor-robot"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-outdoor-robot"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-sandbox</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-sandbox"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-sandbox"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-sandbox"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/liability-welfare-facility</loc>
@@ -1319,14 +966,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-welfare-facility"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/liability-wildlife</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-wildlife"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-wildlife"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-wildlife"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/marine-cargo</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
@@ -1334,22 +973,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/marine-cargo"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://n2nib.com/ja/products/marine-cargo"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/marine-cargo"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/property-aquaculture</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-aquaculture"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-aquaculture"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-aquaculture"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/property-chattel-title</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-chattel-title"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-chattel-title"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-chattel-title"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/property-glass</loc>
@@ -1382,14 +1005,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-onekb"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-onekb"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-onekb"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/property-residual-value</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-residual-value"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-residual-value"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-residual-value"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/property-storm-flood-sme</loc>
@@ -1432,60 +1047,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-holeinone"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/specialty-kr</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-kr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-kr"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-kr"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/specialty-over-redemption</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-over-redemption"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-over-redemption"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-over-redemption"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/specialty-pet</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-pet"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-pet"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-pet"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/specialty-sports-prize</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-sports-prize"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-sports-prize"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-sports-prize"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/specialty-wni</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/specialty-wni"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/specialty-wni"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/specialty-wni"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/property-residential-fire</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-residential-fire"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-residential-fire"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-residential-fire"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/property-medical-clinic</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-medical-clinic"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-medical-clinic"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-medical-clinic"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/property-chubb-master</loc>
@@ -1496,36 +1063,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-chubb-master"/>
   </url>
   <url>
-    <loc>https://n2nib.com/en/products/property-school</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-school"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-school"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-school"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/property-golf-course</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/property-golf-course"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/property-golf-course"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/property-golf-course"/>
-  </url>
-  <url>
     <loc>https://n2nib.com/en/products/liability-daycare</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-daycare"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-daycare"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-daycare"/>
-  </url>
-  <url>
-    <loc>https://n2nib.com/en/products/liability-elderly-welfare</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/products/liability-elderly-welfare"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/products/liability-elderly-welfare"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/liability-elderly-welfare"/>
   </url>
   <url>
     <loc>https://n2nib.com/en/products/liability-tenant-fire</loc>

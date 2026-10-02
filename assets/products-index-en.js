@@ -139,30 +139,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "liability-contractual",
-      "url": "products/liability-contractual.html",
-      "title": "Contractual Liability Insurance",
-      "category": "liability",
-      "category_label": "Liability",
-      "en_code": "LIABILITY · CONTRACTUAL LIABILITY",
-      "insurer": "",
-      "lead": "Cover for heightened indemnity obligations and losses from non-performance written into a contract — specifically the contractual liability that standard liability policies exclude. Hedges indemnity-clause risk in EPC, I",
-      "meta_desc": "Contractual liability insurance covering heightened indemnity obligations and SLA-breach losses written into B2B contracts — supplementing the 'liability assumed under contract' exclusion in CGL/PL. I",
-      "keywords": [
-        "CONTRACTUAL LIABILITY",
-        "Conditions &amp; process",
-        "Contractual Liability Insurance",
-        "Key features",
-        "LIABILITY",
-        "Liability",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "liability-cyber",
       "url": "products/liability-cyber.html",
       "title": "Cyber Liability Insurance",
@@ -347,32 +323,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "liability-life-sciences",
-      "url": "products/liability-life-sciences.html",
-      "title": "Life Sciences Liability Insurance",
-      "category": "liability",
-      "category_label": "Liability",
-      "en_code": "LIABILITY · LIFE SCIENCES",
-      "insurer": "",
-      "lead": "Combined products and clinical-trial liability for pharmaceutical, biotech and medical-device companies — covering bodily injury and financial loss arising from products and human trials.",
-      "meta_desc": "Life sciences liability insurance combining product liability for drugs and devices with clinical-trial (subject-injury) liability for pharma, biotech and medical-device companies. Worldwide territory",
-      "keywords": [
-        "Conditions &amp; process",
-        "Get a comparison quote for E&amp;O",
-        "Key features",
-        "LIABILITY",
-        "LIFE SCIENCES",
-        "Liability",
-        "Life Sciences Liability Insurance",
-        "Main endorsements",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "liability-medical",
       "url": "products/liability-medical.html",
       "title": "Medical & Hospital Liability Insurance",
@@ -481,30 +431,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "liability-product-guarantee",
-      "url": "products/liability-product-guarantee.html",
-      "title": "Product Guarantee Legal Liability Insurance",
-      "category": "liability",
-      "category_label": "Liability",
-      "en_code": "LIABILITY · PRODUCT GUARANTEE LL",
-      "insurer": "",
-      "lead": "Cover for the cost of repairing, replacing or reworking a defective product under the manufacturer's warranty. Where product liability (PL) indemnifies injured third parties, product guarantee focuses on repair / replace",
-      "meta_desc": "Product guarantee legal liability insurance covering the cost of repairing, replacing or refunding defective products under a manufacturer's warranty — distinct from PL, which indemnifies injured thir",
-      "keywords": [
-        "Conditions &amp; process",
-        "Key features",
-        "LIABILITY",
-        "Liability",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "PRODUCT GUARANTEE LL",
-        "Product Guarantee Legal Liability Insurance",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "liability-products-completed-ops",
       "url": "products/liability-products-completed-ops.html",
       "title": "Products & Completed Operations Liability",
@@ -526,32 +452,6 @@ window.PRODUCTS_INDEX_EN = {
         "Overview",
         "Products & Completed Operations Liability",
         "Products &Amp; Completed Operations",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "liability-recall",
-      "url": "products/liability-recall.html",
-      "title": "Product Recall Insurance",
-      "category": "liability",
-      "category_label": "Liability",
-      "en_code": "LIABILITY · PRODUCT RECALL",
-      "insurer": "",
-      "lead": "Covers the direct costs of recalling a product — retrieval, notification, disposal, replacement and restoration — when a defect, contamination or malicious tampering threatens consumer safety.",
-      "meta_desc": "Product recall insurance covering recall costs — retrieval, customer notification, disposal, replacement and restoration — from defect, contamination or malicious tampering. Complements product liabil",
-      "keywords": [
-        "Conditions &amp; process",
-        "Get a comparison quote for E&amp;O",
-        "Key features",
-        "LIABILITY",
-        "Liability",
-        "Main endorsements",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "PRODUCT RECALL",
-        "Product Recall Insurance",
         "What we need to quote",
         "Who needs it"
       ]
@@ -609,113 +509,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "liability-vasp",
-      "url": "products/liability-vasp.html",
-      "title": "VASP Liability Insurance (Virtual Asset Service Providers)",
-      "category": "liability",
-      "category_label": "Liability",
-      "en_code": "LIABILITY · VASP LIABILITY · COMPULSORY",
-      "insurer": "",
-      "lead": "Compulsory liability cover for crypto exchanges, custody businesses and wallet operators that are reported VASPs under Korea's Specific Financial Information Act — indemnifying user losses caused by hacking, system failu",
-      "meta_desc": "Compulsory liability cover for reported VASPs — crypto exchanges, custody and wallet operators — under Korea's Specific Financial Information Act and the Virtual Asset User Protection Act. Covers hack",
-      "keywords": [
-        "COMPULSORY",
-        "Conditions &amp; process",
-        "Cyber Liability Insurance",
-        "Illustrative premium examples",
-        "Key endorsements",
-        "LIABILITY",
-        "Legal basis",
-        "Liability",
-        "Main losses covered",
-        "Overview",
-        "Points to note",
-        "Privacy / Data Breach Liability",
-        "Statutory reserve / insurance standard",
-        "Technology Liability",
-        "VASP LIABILITY",
-        "VASP Liability Insurance (Virtual Asset Service Providers)",
-        "What we need to quote"
-      ]
-    },
-    {
-      "slug": "marine-aviation",
-      "url": "products/marine-aviation.html",
-      "title": "Aviation Insurance",
-      "category": "marine",
-      "category_label": "Marine",
-      "en_code": "MARINE · AVIATION",
-      "insurer": "",
-      "lead": "Comprehensive cover for aircraft hull, passengers, third-party liability, cargo and hangars — for commercial airlines, business aircraft, helicopters, UAM and aviation manufacturers.",
-      "meta_desc": "Aviation insurance covering aircraft hull, passenger and third-party liability, cargo and hangarkeepers, for airlines, corporate aircraft, helicopters, UAM and aviation manufacturers. Compare AM Best ",
-      "keywords": [
-        "AVIATION",
-        "Aviation Insurance",
-        "Conditions &amp; process",
-        "Key features",
-        "MARINE",
-        "Main endorsements",
-        "Main losses covered",
-        "Marine",
-        "Other notes",
-        "Overview",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "marine-export-credit",
-      "url": "products/marine-export-credit.html",
-      "title": "Export Credit Insurance",
-      "category": "marine",
-      "category_label": "Marine",
-      "en_code": "MARINE · EXPORT CREDIT",
-      "insurer": "",
-      "lead": "Protects exporters against loss of export receivables from overseas buyer non-payment — commercial (insolvency, default) and political risk — through private trade-credit capacity alongside K-SURE.",
-      "meta_desc": "Export credit insurance covering exporters against non-payment of export receivables from overseas buyer insolvency, protracted default and political risk. Private capacity complementing K-SURE. Arran",
-      "keywords": [
-        "Conditions &amp; process",
-        "EXPORT CREDIT",
-        "Export Credit Insurance",
-        "Key features",
-        "MARINE",
-        "Main endorsements",
-        "Main losses covered",
-        "Marine",
-        "Other notes",
-        "Overview",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "marine-hull",
-      "url": "products/marine-hull.html",
-      "title": "Hull &amp; Machinery Insurance",
-      "category": "marine",
-      "category_label": "Marine",
-      "en_code": "MARINE · HULL &amp; MACHINERY",
-      "insurer": "",
-      "lead": "Marine insurance covering physical loss to a vessel's hull, machinery and equipment at sea and in port, together with collision liability — extendable to Builder's Risk and Submarine Cable.",
-      "meta_desc": "Hull & Machinery (H&M) covers physical loss to a vessel's hull, machinery and equipment plus collision liability, on ITC-Hulls / IVC-Hulls clauses. Builder's Risk and Submarine Cable extensions. Indep",
-      "keywords": [
-        "Applicable clauses",
-        "Conditions &amp; process",
-        "Cooling-off / duty of disclosure",
-        "Hull &Amp; Machinery",
-        "Hull &amp; Machinery Insurance",
-        "MARINE",
-        "Main endorsements",
-        "Main losses covered",
-        "Marine",
-        "Other notes",
-        "Overview",
-        "Things to note",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "marine-logistics",
       "url": "products/marine-logistics.html",
       "title": "Logistics Comprehensive Insurance",
@@ -765,31 +558,6 @@ window.PRODUCTS_INDEX_EN = {
         "P&Amp;I Insurance",
         "P&amp;I (Protection &amp; Indemnity)",
         "Things to note",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "marine-ransom",
-      "url": "products/marine-ransom.html",
-      "title": "Marine Ransom & Extortion Insurance",
-      "category": "marine",
-      "category_label": "Marine",
-      "en_code": "MARINE · RANSOM &amp; EXTORTION",
-      "insurer": "",
-      "lead": "Covers ransom, negotiation and rescue costs when a vessel is hijacked or detained by pirates or terrorists — essential for transit through high-risk waters.",
-      "meta_desc": "Marine ransom and extortion (K&R) insurance covering ransom payments, response/negotiation and crew rescue when a vessel is seized by pirates or terrorists. For high-risk waters — Red Sea, Gulf of Ade",
-      "keywords": [
-        "Conditions &amp; process",
-        "Key features",
-        "MARINE",
-        "Main endorsements",
-        "Main losses covered",
-        "Marine",
-        "Marine Ransom & Extortion Insurance",
-        "Other notes",
-        "Overview",
-        "Ransom &Amp; Extortion",
         "What we need to quote",
         "Who needs it"
       ]
@@ -973,30 +741,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "property-hotel-hospitality",
-      "url": "products/property-hotel-hospitality.html",
-      "title": "Hotel &amp; Hospitality Package Insurance",
-      "category": "property",
-      "category_label": "Property",
-      "en_code": "PROPERTY · HOTEL &amp; HOSPITALITY PACKAGE",
-      "insurer": "",
-      "lead": "A single package covering the buildings, contents, plant, business interruption, guest accidents, F&amp;B, pools and banquet facilities of hotels, resorts, condos, guesthouses, pensions and motels. Can combine compulsory",
-      "meta_desc": "Hotel & hospitality package insurance combining building, contents, plant, business interruption, guest-accident, F&B, pool and banquet exposures for hotels, resorts, condos, guesthouses and motels in",
-      "keywords": [
-        "Conditions &amp; process",
-        "Hotel &Amp; Hospitality Package",
-        "Hotel &amp; Hospitality Package Insurance",
-        "Key features",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "PROPERTY",
-        "Property",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "property-machinery-breakdown",
       "url": "products/property-machinery-breakdown.html",
       "title": "Machinery Breakdown Insurance (MB)",
@@ -1073,31 +817,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "property-trade-credit",
-      "url": "products/property-trade-credit.html",
-      "title": "Trade Credit Insurance",
-      "category": "property",
-      "category_label": "Property",
-      "en_code": "PROPERTY · TRADE CREDIT",
-      "insurer": "",
-      "lead": "Protects domestic and export receivables against buyer insolvency, court-managed restructuring and protracted default — with buyer credit assessment, receivables monitoring and indemnity on default.",
-      "meta_desc": "Trade credit insurance covering non-payment of domestic and export receivables from buyer insolvency, legal restructuring and protracted default, with buyer credit assessment and receivables managemen",
-      "keywords": [
-        "Conditions &amp; process",
-        "Key features",
-        "Main endorsements",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "PROPERTY",
-        "Property",
-        "TRADE CREDIT",
-        "Trade Credit Insurance",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "specialty-art",
       "url": "products/specialty-art.html",
       "title": "Fine Art Insurance",
@@ -1122,33 +841,6 @@ window.PRODUCTS_INDEX_EN = {
         "Specialty",
         "Specialty lines",
         "Things to note",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "specialty-contingency",
-      "url": "products/specialty-contingency.html",
-      "title": "Contingency & Prize Insurance",
-      "category": "specialty",
-      "category_label": "Specialty",
-      "en_code": "SPECIALTY · CONTINGENCY / PRIZE",
-      "insurer": "",
-      "lead": "Transfers the risk of a large prize or promotional payout — hole-in-one, lucky-draw, over-redemption — to a fixed premium so marketing budgets stay predictable.",
-      "meta_desc": "Contingency and prize insurance transferring promotional payout risk — prize indemnity, hole-in-one, over-redemption — to a fixed premium for predictable marketing budgets. Arranged via a licensed bro",
-      "keywords": [
-        "CONTINGENCY",
-        "Conditions &amp; process",
-        "Contingency & Prize Insurance",
-        "Key features",
-        "Main endorsements",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "PRIZE",
-        "SPECIALTY",
-        "Specialty",
-        "Specialty lines",
         "What we need to quote",
         "Who needs it"
       ]
@@ -1198,32 +890,6 @@ window.PRODUCTS_INDEX_EN = {
         "Main endorsements",
         "Main losses covered",
         "Other notes",
-        "Overview",
-        "SPECIALTY",
-        "Specialty",
-        "Specialty lines",
-        "Things to note",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "specialty-cyber-sme",
-      "url": "products/specialty-cyber-sme.html",
-      "title": "Cyber Insurance for SMEs",
-      "category": "specialty",
-      "category_label": "Specialty",
-      "en_code": "SPECIALTY · CYBER FOR SME",
-      "insurer": "",
-      "lead": "A simplified, reasonably priced cyber policy for SMEs — hacking, ransomware, data breach and BEC. A smaller-scale version of comprehensive corporate cyber cover.",
-      "meta_desc": "A simplified cyber policy for small and mid-size companies covering hacking, ransomware, personal-data breach and Business Email Compromise (BEC). ISMS certification not required.",
-      "keywords": [
-        "CYBER FOR SME",
-        "Conditions &amp; process",
-        "Cooling-off / duty of disclosure",
-        "Cyber Insurance for SMEs",
-        "Main endorsements",
-        "Main losses covered",
         "Overview",
         "SPECIALTY",
         "Specialty",
@@ -1340,32 +1006,6 @@ window.PRODUCTS_INDEX_EN = {
       ]
     },
     {
-      "slug": "specialty-money-securities",
-      "url": "products/specialty-money-securities.html",
-      "title": "Money &amp; Securities Insurance",
-      "category": "specialty",
-      "category_label": "Specialty",
-      "en_code": "SPECIALTY · MONEY &amp; SECURITIES",
-      "insurer": "",
-      "lead": "Covers cash, cheques and securities held on the premises or in transit against robbery, theft, fire and conveyance accidents.",
-      "meta_desc": "Money & Securities insurance covers cash, cheques and securities — on the premises or in transit — against robbery, theft, fire and conveyance accidents. For financial institutions, large retail and p",
-      "keywords": [
-        "Conditions &amp; process",
-        "Cooling-off / duty of disclosure",
-        "Main endorsements",
-        "Main losses covered",
-        "Money &Amp; Securities",
-        "Money &amp; Securities Insurance",
-        "Overview",
-        "SPECIALTY",
-        "Specialty",
-        "Specialty lines",
-        "Things to note",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
       "slug": "specialty-theft",
       "url": "products/specialty-theft.html",
       "title": "Theft Insurance",
@@ -1390,32 +1030,6 @@ window.PRODUCTS_INDEX_EN = {
         "THEFT",
         "Theft Insurance",
         "Things to note",
-        "What we need to quote",
-        "Who needs it"
-      ]
-    },
-    {
-      "slug": "specialty-weather",
-      "url": "products/specialty-weather.html",
-      "title": "Parametric Weather Insurance",
-      "category": "specialty",
-      "category_label": "Specialty",
-      "en_code": "SPECIALTY · PARAMETRIC WEATHER",
-      "insurer": "",
-      "lead": "Pays out automatically when a defined weather condition — rainfall, snowfall, temperature or wind — crosses an agreed trigger, with no loss-adjustment, based on objective index data.",
-      "meta_desc": "Parametric weather insurance paying a pre-agreed amount when an objective weather index (rainfall, snow, temperature, wind) breaches the contract trigger — fast, transparent settlement without loss ad",
-      "keywords": [
-        "Conditions &amp; process",
-        "Key features",
-        "Main endorsements",
-        "Main losses covered",
-        "Other notes",
-        "Overview",
-        "PARAMETRIC WEATHER",
-        "Parametric Weather Insurance",
-        "SPECIALTY",
-        "Specialty",
-        "Specialty lines",
         "What we need to quote",
         "Who needs it"
       ]
