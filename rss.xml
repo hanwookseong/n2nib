@@ -5,245 +5,357 @@
   <link>https://n2nib.com/</link>
   <description>엔투엔보험중개(금융감독원 등록 제2026-012201호)의 기업보험 가이드, 사례, 상품 안내 최근 수정분</description>
   <language>ko</language>
-  <lastBuildDate>Sun, 27 Sep 2026 20:15:31 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 03 Oct 2026 09:30:00 +0900</lastBuildDate>
   <atom:link href="https://n2nib.com/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>완성토목공사물보험(CECR) — 준공 토목구조물 재물손해 담보</title>
+    <link>https://n2nib.com/products/engineering-completed-works</link>
+    <guid isPermaLink="true">https://n2nib.com/products/engineering-completed-works</guid>
+    <description>완성토목공사물보험은 준공·인도된 토목구조물이 약관에 열거된 원인으로 입은 물질적 손해를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>전자기기보험(EEI) — 서버·의료·계측 전자기기 담보범위</title>
+    <link>https://n2nib.com/products/engineering-electronic-equipment</link>
+    <guid isPermaLink="true">https://n2nib.com/products/engineering-electronic-equipment</guid>
+    <description>전자기기보험은 사업장 구내의 전자기기가 예기치 못한 돌발적인 사고로 입은 재물손해를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>야영장사고배상책임보험 (의무) — 가입대상·법정한도·보상범위</title>
+    <link>https://n2nib.com/products/liability-campsite</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-campsite</guid>
+    <description>야영장사고배상책임보험은 야영장 시설·운영 중 사고로 이용자 등 타인에게 입힌 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>건설엔지니어링·엔지니어링 손해배상책임보험(설계·감리) — 의무가입·보상범위</title>
+    <link>https://n2nib.com/products/liability-construction-engineering</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-construction-engineering</guid>
+    <description>건설엔지니어링·엔지니어링 손해배상책임보험은 설계·감리 등 용역 과실로 발주자·제3자에게 입힌 재산상 손해의 배상책임을 보상합니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>재난배상책임보험 (의무) — 가입대상·보상범위</title>
+    <link>https://n2nib.com/products/liability-disaster</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-disaster</guid>
+    <description>재난배상책임보험은 재난취약시설의 화재·붕괴·폭발로 타인이 입은 신체·재산 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>전자금융거래배상책임보험 — 금융회사·전자금융업자 책임이행</title>
+    <link>https://n2nib.com/products/liability-electronic-finance</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-electronic-finance</guid>
+    <description>전자금융거래배상책임보험은 전자금융사고로 이용자에게 생긴 손해에 대한 금융회사·전자금융업자의 배상책임을 보상합니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>낚시업자 배상책임보험 (의무) — 낚시터업·낚시어선업 보상범위</title>
+    <link>https://n2nib.com/products/liability-fishing-business</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-fishing-business</guid>
+    <description>낚시업자 배상책임보험은 낚시터·낚시어선 사고로 이용자나 승객이 입은 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>기계식주차장 사고배상책임보험 (의무) — 가입대상·보상한도</title>
+    <link>https://n2nib.com/products/liability-mechanical-parking</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-mechanical-parking</guid>
+    <description>기계식주차장 사고배상책임보험은 기계식주차장 운영·보수 중 사고로 타인에게 입힌 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>철도운송업자배상책임보험 — 철도 수탁화물 운송인 배상책임</title>
+    <link>https://n2nib.com/products/liability-railway-carrier</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-railway-carrier</guid>
+    <description>철도운송업자배상책임보험은 운송인이 철도사고로 수탁화물에 입힌 손해의 법률상 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>자동차성능·상태점검 책임보험 (의무) — 보증범위·보상내용</title>
+    <link>https://n2nib.com/products/liability-vehicle-inspection</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-vehicle-inspection</guid>
+    <description>자동차성능·상태점검 책임보험은 성능점검기록부와 실제 차량 상태가 달라 점검자가 지는 보증책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>청소년수련시설·청소년활동 배상책임보험 (의무) — 수련시설·활동·복지시설 구분</title>
+    <link>https://n2nib.com/products/liability-youth-facility</link>
+    <guid isPermaLink="true">https://n2nib.com/products/liability-youth-facility</guid>
+    <description>청소년수련시설·청소년활동 배상책임보험은 수련시설·청소년활동 중 사고로 생긴 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>아파트종합보험 — 공동주택 화재·시설배상 통합 담보</title>
+    <link>https://n2nib.com/products/property-apartment</link>
+    <guid isPermaLink="true">https://n2nib.com/products/property-apartment</guid>
+    <description>아파트종합보험은 아파트 건물·가재의 화재 손해와 단지 시설 관리주체의 배상책임을 함께 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>승마장종합보험 — 체육시설업 의무보험·이용자 배상책임·말(馬) 손해 구분</title>
+    <link>https://n2nib.com/products/property-riding-club</link>
+    <guid isPermaLink="true">https://n2nib.com/products/property-riding-club</guid>
+    <description>승마장종합보험의 배상책임조항은 승마장 시설·업무 중 사고로 피해자에게 지는 법률상 배상책임을 보상합니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>소상공인·중소사업장 종합보험(DB New프로미비즈) — 재물·배상 통합</title>
+    <link>https://n2nib.com/products/property-sme-package</link>
+    <guid isPermaLink="true">https://n2nib.com/products/property-sme-package</guid>
+    <description>New프로미비즈종합보험은 점포·사업장의 재물손해와 영업 중 배상책임손해를 한 증권으로 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>테러보험(재물 테러·사보타주·정치적 폭력) — 담보범위·화재보험 면책과의 관계</title>
+    <link>https://n2nib.com/products/property-terrorism</link>
+    <guid isPermaLink="true">https://n2nib.com/products/property-terrorism</guid>
+    <description>테러보험은 테러행위 등 정치적 폭력으로 건물·내용물에 생긴 물리적 손해를 보상하는 재물보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>고장수리비용보험(가전·자동차) — 제조사 보증 종료 후 연장보증 프로그램</title>
+    <link>https://n2nib.com/products/specialty-repair-cost</link>
+    <guid isPermaLink="true">https://n2nib.com/products/specialty-repair-cost</guid>
+    <description>고장수리비용보험은 제조사 보증기간이 끝난 가전제품·자동차의 고장 수리비를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>해외근재보험 — 해외파견 근로자 재해보장</title>
     <link>https://n2nib.com/products/wc-overseas</link>
     <guid isPermaLink="true">https://n2nib.com/products/wc-overseas</guid>
-    <description>해외파견·주재원의 업무상 재해에 대해 국내 산재보험이 미적용되는 부분을 보장하는 해외 근재보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>해외근로자 재해보장 책임보험은 해외 근무 근로자의 업무상 재해로 사업주가 지는 재해보상·배상 책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>근재보험 가입 — 보험사 비교 견적</title>
     <link>https://n2nib.com/products/wc-domestic</link>
     <guid isPermaLink="true">https://n2nib.com/products/wc-domestic</guid>
-    <description>국내근로자 근재보험 가입 안내 — 연간 계약과 공사별 계약, 하도급·파견 근로자 확장 특약, 견적에 필요한 정보(업종·근로자 수·임금 규모·공사금액)를 정리했습니다. 보험료는 보험회사 인수심사 후 확정됩니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>국내근로자 재해보장 책임보험은 근로자의 업무상 재해로 사업주가 산재보험 보상을 넘는 배상책임을 질 때 이를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>법률비용보상보험 (Legal Expense Insurance)</title>
     <link>https://n2nib.com/products/specialty-legal-expense</link>
     <guid isPermaLink="true">https://n2nib.com/products/specialty-legal-expense</guid>
-    <description>민·형사 분쟁 발생 시 변호사 비용·소송비용·중재 비용 담보.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>법률비용보상보험은 기업·개인이 민·형사 분쟁에 휘말려 부담하는 변호사 선임료·소송비용 등 법률비용을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>보석·귀금속보험 — Jewellers Block</title>
     <link>https://n2nib.com/products/specialty-jewellers-block</link>
     <guid isPermaLink="true">https://n2nib.com/products/specialty-jewellers-block</guid>
-    <description>보석·시계·귀금속·럭셔리 사업자의 재고·전시·운송 손해를 All-Risks로 담보하는 Jewellers Block 보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>보석·고급재화 보험은 보석상·시계 매장 등의 재고가 도난·강도·파손 등으로 입은 손해를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>행사보험 — 축제·공연·전시 배상책임 가입</title>
     <link>https://n2nib.com/products/specialty-event</link>
     <guid isPermaLink="true">https://n2nib.com/products/specialty-event</guid>
-    <description>축제·공연·전시·기업행사 중 관람객·참가자 사고에 대한 주최자 배상책임과 행사 취소·연기 손해를 보장하는 행사보험. 행사 일자·장소·예상 인원·행사 종류를 알려주시면 보험회사별 조건을 확인해 드립니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>행사보험은 공연·전시·축제 등 행사 중 관람객·참가자 사고로 주최자가 부담하는 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>범죄보험(Crime) — 직원 횡령·사기</title>
     <link>https://n2nib.com/products/specialty-crime</link>
     <guid isPermaLink="true">https://n2nib.com/products/specialty-crime</guid>
-    <description>임직원·제3자의 횡령·절도·사기·위조·사이버금융범죄로 인한 기업의 금전 손실을 담보하는 Crime 보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>범죄보험은 임직원의 횡령·배임이나 외부인의 사기·위조로 기업이 입은 금전·재산 손실을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>사찰 화재보험 — 사찰종합보험</title>
     <link>https://n2nib.com/products/property-temple</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-temple</guid>
-    <description>DB손해보험 사찰종합보험 — 국내 최초 사찰 전용 패키지. 목조 전통건축의 화재·풍수재·도난·배상·상해 위험을 단일 증권으로 통합.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>사찰종합보험은 사찰의 화재손해·배상책임손해·도난손해를 하나의 증권으로 보상하는 사찰 전용 패키지 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>패키지보험 뜻 — 기업 재산·배상 통합</title>
     <link>https://n2nib.com/products/property-package</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-package</guid>
-    <description>재물·배상·휴지손해 등 기업에 필요한 담보를 한 증권에 묶은 패키지(Combined) 상품.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>패키지보험은 기업의 재산·기계·기업휴지·배상책임 담보를 부문별로 선택해 하나의 증권으로 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>동산종합보험 뜻·가입대상</title>
     <link>https://n2nib.com/products/property-movable</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-movable</guid>
-    <description>사무·전산기기, 의료기기, 공장 내 동산, 중장비 등 이동위험이 있는 동산을 장소를 가리지 않고 보장하는 전위험담보(All Risk) 종합보험. 약관·면책 비교를 보험중개사가 무료 상담. AM Best A급 파트너 보험회사 비교 견적.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>동산종합보험은 사업장이 보유한 동산이 우연한 사고로 입은 손해를 약관 면책 사유에 해당하지 않으면 보상하는 전위험담보 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>기관기계 종합보험 — 기관·설비 사고</title>
     <link>https://n2nib.com/products/property-machinery-comprehensive</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-machinery-comprehensive</guid>
-    <description>발전소·공장 기계설비의 사고 손해와 기업휴지 손해를 통합 담보하는 기관기계 종합보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>기관기계종합보험은 발전소·공장·플랜트 설비의 급격한 사고로 인한 재물손해와 그로 인한 기업휴지 손해를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>가축재해보험 — 가축·축사·말 보장</title>
     <link>https://n2nib.com/products/property-livestock</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-livestock</guid>
-    <description>소·돼지·닭·말 등 가축 폐사·질병·재해 담보. 축산 정책성 보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>가축재해보험은 소·돼지·가금·말 등 가축의 폐사·긴급도축 손해와 축사의 화재·자연재해 손해를 보상하는 정책성 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>일반화재보험 — 공장·상가 화재·폭발 보장</title>
     <link>https://n2nib.com/products/property-fire</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-fire</guid>
-    <description>화재·폭발·벼락으로 인한 건물·시설·재고 손해를 보장하는 기본 화재보험. 특수건물 의무가입 대상 점검과 약관 비교를 보험중개사가 무료 상담. AM Best A급 파트너 보험회사 6사 비교 견적.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>일반화재보험은 건물·시설·재고 등에 화재(벼락 포함)로 생긴 직접손해·소방손해·피난손해를 보상하는 재물보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>엑설런트종합보험(DB) — 기업 패키지</title>
     <link>https://n2nib.com/products/property-excellent</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-excellent</guid>
-    <description>DB손해보험 엑설런트종합보험 — 화재 + 기계손해 + 배상책임을 단일 증권에 통합한 중소·중견 기업 종합보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>엑설런트종합보험은 사업장의 화재·기업휴지·배상책임·기계 손해를 하나의 증권으로 보상하는 DB손해보험의 종합형 기업보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>기업재산보험 — 건물·동산·재고 포괄</title>
     <link>https://n2nib.com/products/property-corporate</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-corporate</guid>
-    <description>중견·대형 기업의 부동산·동산·집기·재고를 한 약관에 포괄 담보하는 종합 재산보험. 기업휴지(BI)·기계설비(MB) 특약 연계 설계 가능. 보험중개사가 AM Best A급 파트너 보험회사 약관을 비교해 무료 상담합니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>기업재산종합보험은 기업이 보유한 건물·기계설비·재고 등 재산의 사고 손해를 하나의 증권으로 보상하는 종합 재물보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>제조업 패키지보험(Chubb Master)</title>
     <link>https://n2nib.com/products/property-chubb-master</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-chubb-master</guid>
-    <description>Chubb의 제조업 종합보험. 재산·기계고장·BI·내륙운송·범죄·배상까지 글로벌 영문약관으로 모듈 결합.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>Chubb Master Package는 기업의 재산·휴지·기계·운송·범죄·배상 위험을 단일 증권으로 묶어 보상하는 Chubb의 통합 패키지보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>재산종합보험(All Risks) 뜻·보장</title>
     <link>https://n2nib.com/products/property-all-risks</link>
     <guid isPermaLink="true">https://n2nib.com/products/property-all-risks</guid>
-    <description>재산상의 모든 우발적 사고를 포괄 담보하는 재산종합보험. 대규모 사업장·고가 설비 필수.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>재산종합보험은 기업이 보험증권에 기재된 구내의 재산에 급격하고 우연한 사고로 입은 물적 손해를 포괄 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>국내운송보험 — 육상·연안 화물 운송</title>
     <link>https://n2nib.com/products/marine-transit</link>
     <guid isPermaLink="true">https://n2nib.com/products/marine-transit</guid>
-    <description>국내 육상·연안 운송 중 발생하는 화물 멸실·훼손을 보장하는 운송보험. 단건 또는 연간 포괄계약 설계 가능. AM Best A급 파트너 보험회사 약관 비교와 무료 상담을 보험중개사가 지원합니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>운송보험(국내)은 화물을 국내 육상(호수·하천 포함)으로 운송하는 도중 생긴 멸실·훼손 손해를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>선주배상책임보험(P&amp;I) 뜻·보장</title>
     <link>https://n2nib.com/products/marine-pi</link>
     <guid isPermaLink="true">https://n2nib.com/products/marine-pi</guid>
-    <description>선주상호보험(P&amp;I) — 선원 사상·유류오염·화물·충돌배상·승객 손해 등 선주의 인적·법적 책임을 포괄 담보. 선체보험(Hull)과 별도 가입. AM Best A급 파트너 보험회사 약관 비교와 무료 상담.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>선주배상책임보험은 선박 운항 중 사고로 선주가 승선 여객 등 타인에게 진 법률상 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>물류종합보험 — 물류업 통합 담보</title>
     <link>https://n2nib.com/products/marine-logistics</link>
     <guid isPermaLink="true">https://n2nib.com/products/marine-logistics</guid>
-    <description>3PL·포워더·창고업자·운송사의 운송·보관·포장·통관·배송·시설·근재·사이버 전 영역을 단일 증권으로 담보.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>물류종합보험은 물류기업이 운송·보관 중 화물 등에 대해 지는 배상책임을 중심으로 사업 위험을 묶어 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>적하보험 뜻·가입방법 — 수출입 화물</title>
     <link>https://n2nib.com/products/marine-cargo</link>
     <guid isPermaLink="true">https://n2nib.com/products/marine-cargo</guid>
-    <description>수출입 화물의 해상·항공·복합운송 중 발생하는 멸실·훼손 손해를 보장하는 적하보험. ICC(A)/(B)/(C) 담보 설계, cargoinsu.com 24시간 온라인 가입.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>적하보험은 수출입 화물이 해상·항공·육상 운송 중 멸실·훼손되는 손해를 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>임차인 화재배상책임보험 — 건물주·이웃 배상</title>
     <link>https://n2nib.com/products/liability-tenant-fire</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-tenant-fire</guid>
-    <description>임차한 점포·사무실·공장에서 낸 화재로 건물주(임대인)와 인접 호실·인접 건물에 지는 손해배상책임을 보장합니다. 건물주의 화재보험은 건물주 자기 재산을, 이 보험은 임차인이 남에게 지는 책임을 담보합니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>임차인 화재배상책임보험은 임차인이 화재 등 사고로 임차 건물이나 이웃 재산에 입힌 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>첨단기술 배상책임보험 — 기술 E&amp;O·PL</title>
     <link>https://n2nib.com/products/liability-technology</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-technology</guid>
-    <description>IT·SaaS·AI·반도체 등 첨단기술 사업자의 PL + Professional Indemnity + Cyber + Media 결합 통합 책임 패키지.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>첨단기술 배상책임보험(Chubb PremierTech)은 기술 사업자의 제품 결함·서비스 과실·사이버 사고로 생긴 배상책임을 함께 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>중대재해 배상책임보험 — 기업중대사고</title>
     <link>https://n2nib.com/products/liability-serious-accident</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-serious-accident</guid>
-    <description>중대재해처벌법 시행에 대응하는 경영책임자 배상책임·방어비용·위기관리비용을 종합 보장.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>기업중대사고 배상책임보험은 중대재해 피해자·유족의 손해배상청구로 사업주·경영책임자·법인이 지는 민사 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>완성공사·제품가동 배상책임보험</title>
     <link>https://n2nib.com/products/liability-products-completed-ops</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-products-completed-ops</guid>
-    <description>완공·납품 후 제품·공사 가동 중 발생한 제3자 배상책임. CGL 확장형.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>완성공사·제품가동배상책임보험은 인도한 생산물이나 완성한 작업으로 제3자에게 생긴 배상책임을 보상하는 영문 약관 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>개인정보유출 배상책임보험 — 가입·보상</title>
     <link>https://n2nib.com/products/liability-privacy</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-privacy</guid>
-    <description>개인정보보호법상 정보주체에 대한 배상책임을 보장. 정보통신서비스 제공자 법정 가입의무 대응.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>개인정보유출 배상책임보험은 개인정보처리자가 개인정보 유출·분실·도난·위조·변조·훼손으로 정보주체에게 입힌 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>PL보험(생산물배상책임) 뜻·보상범위·가입</title>
     <link>https://n2nib.com/products/liability-pl</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-pl</guid>
-    <description>PL보험(생산물배상책임보험)은 제조·판매한 제품의 결함으로 제3자의 신체·재산에 손해를 입혔을 때의 법률상 배상책임을 보장합니다. 리콜 비용은 기본 약관에서 제외되며, 수출 제품은 영토 확장이 필요합니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>생산물배상책임보험(PL)은 제조·판매·공급한 제품의 결함으로 타인에게 신체장해나 재물손해를 입혀 지는 법률상 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>약사·약국 배상책임보험</title>
     <link>https://n2nib.com/products/liability-pharmacist</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-pharmacist</guid>
-    <description>약사·약국의 조제 오류·복약지도 누락·약국 시설 사고 종합 담보. 약사회 단체할인 검토.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>약사·약국 배상책임보험은 약사의 조제·복약지도 과실이나 약국 시설 사고로 환자·고객에게 입힌 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>의료배상책임보험 — 병원·의사 가입</title>
     <link>https://n2nib.com/products/liability-medical</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-medical</guid>
-    <description>의료행위 중 발생한 환자의 신체손해에 대한 법률상 배상책임을 보장. 의원·치과·한방·병원 규모별 설계.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>의사/병원 배상책임보험은 의료기관·의료인이 의료행위 과실로 환자에게 입힌 신체장해·사망의 배상책임과 방어비용을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>화물배상책임보험(FFL) — 포워더 가입</title>
     <link>https://n2nib.com/products/liability-freight-forwarders</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-freight-forwarders</guid>
-    <description>복합운송주선·포워더 사업자가 운송·보관·환적 중 화주에게 부담하는 화물 손해와 제3자 배상책임을 담보하는 FFL 보험.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>화물배상책임보험(FFL)은 포워더가 인수한 화물의 운송·보관 중 손해로 화주에게 지는 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>E&amp;O보험(전문직업배상) 뜻·업종별 가입</title>
     <link>https://n2nib.com/products/liability-eo</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-eo</guid>
-    <description>E&amp;O보험(전문직업배상책임)은 변호사·회계사·건축사·엔지니어·IT 컨설턴트 등 전문직이 업무상 과실·오류·누락으로 고객에게 입힌 재산상 손해와 방어비용을 보장합니다. 배상청구기준·소급담보일 설계가 핵심입니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>전문직업인 배상책임보험(E&amp;O)은 전문직이 업무상 과실·오류·누락으로 고객에게 입힌 재산상 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>환경오염배상책임보험 — 보상범위·가입</title>
     <link>https://n2nib.com/products/liability-environmental</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-environmental</guid>
-    <description>환경오염피해구제법상 피해배상·정화비용·복원비용을 보장. 특정 사업장은 법정 가입의무 대상.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>환경오염 배상책임보험은 시설 운영으로 생긴 환경오염피해에 대한 사업자의 법률상 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>드론보험 — 사업용 의무가입·법인 설계</title>
     <link>https://n2nib.com/products/liability-drone</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-drone</guid>
-    <description>드론(초경량비행장치)을 사업 목적으로 쓰거나 공공기관이 운용하면 항공사업법에 따라 배상책임보험 가입이 의무입니다. 촬영·방제·점검 등 법인 운용의 제3자 대인·대물 배상 설계와 특수운항 특약을 안내합니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>드론배상책임보험은 드론 운항 중 사고로 제3자에게 입힌 신체·재산 손해의 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>임원배상책임보험(D&amp;O) 뜻·보상범위</title>
     <link>https://n2nib.com/products/liability-do</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-do</guid>
-    <description>이사·감사·CEO 등 임원이 업무 수행 중 내린 의사결정에 대한 법률상 배상책임과 방어비용을 보장합니다.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>임원배상책임보험(D&amp;O)은 회사 임원이 업무 관련 행위로 손해배상청구를 받아 부담하는 법률상 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>사이버배상책임보험 — 해킹·유출 배상</title>
     <link>https://n2nib.com/products/liability-cyber</link>
     <guid isPermaLink="true">https://n2nib.com/products/liability-cyber</guid>
-    <description>해킹·랜섬웨어·DDoS 등 사이버 사고로 인한 제3자 손해배상 및 위기대응비용을 포괄 보장.</description>
-    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+    <description>사이버배상책임보험은 기업이 인터넷·네트워크 활동 관련 행위로 제3자에게 손해를 입혀 부담하는 법률상 배상책임을 보상하는 보험입니다.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
   </item>
 </channel>
 </rss>
