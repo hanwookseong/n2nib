@@ -468,6 +468,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                  placeholder="예: PL 보험 + 근재 + D&O">
           <div class="hint">상품 목록은 <a href="products" target="_blank">취급상품</a> 페이지 참고.</div>
         </div>
+        <div class="form-row" id="welfareDocs" hidden style="background:#FBF7EE;border:1px solid #E5E0D5;border-left:4px solid #A8581F;border-radius:8px;padding:14px 16px;">
+          <strong style="color:var(--brand,#0B2818);">사회복지시설·노인 주야간보호센터 견적 필수 서류</strong>
+          <ul style="margin:8px 0 10px;padding-left:20px;font-size:.9rem;line-height:1.7;">
+            <li>사업자등록증 또는 고유번호증</li>
+            <li>사회복지시설 설치신고확인증(시설설치신고필증)</li>
+            <li>장기요양기관 지정서 또는 재가장기요양기관 설치신고증명서</li>
+          </ul>
+          <p style="margin:0 0 10px;font-size:.86rem;line-height:1.7;">위 서류가 발급되기 전에는 보험회사 인수심사와 정식 견적이 진행되지 않습니다. 신설 시설은 상담을 먼저 접수해 두시면 서류 발급 후 바로 견적을 진행합니다. 서류는 접수 후 sales@n2nib.com 으로 보내 주십시오.</p>
+          <label for="welfare_docs">서류 보유 여부 <span class="req">*</span></label>
+          <select id="welfare_docs" name="welfare_docs">
+            <option value="">선택</option>
+            <option>3종 모두 보유</option>
+            <option>일부 보유 (추가전달사항에 기재)</option>
+            <option>발급 전 — 신설 예정 (개원 예정일을 추가전달사항에 기재)</option>
+          </select>
+        </div>
+        <script>
+        (function(){
+          var re=/복지|요양|주간보호|주야간|노인|데이케어/;
+          var box=document.getElementById('welfareDocs'), sel=document.getElementById('welfare_docs');
+          var prod=document.getElementById('product'), det=document.getElementById('details');
+          function chk(){
+            var q=''; try{ q=decodeURIComponent(location.search); }catch(e){ q=location.search; }
+            var on=re.test((prod&&prod.value)||'')||re.test((det&&det.value)||'')||re.test(q);
+            if(box){ box.hidden=!on; } if(sel){ sel.required=on; }
+          }
+          ['input','change'].forEach(function(ev){ if(prod) prod.addEventListener(ev,chk); if(det) det.addEventListener(ev,chk); });
+          document.addEventListener('DOMContentLoaded',chk); chk();
+        })();
+        </script>
         <div class="form-col-2">
           <div class="form-row">
             <label for="purpose">가입 목적</label>
@@ -575,6 +605,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>비교표·추천안 제공</li>
           <li>청약·가입 지원</li>
         </ol>
+      </div>
+
+      <div class="contact-side mt-16" style="border-left:4px solid #A8581F;">
+        <h3>사회복지시설 견적 필수 서류</h3>
+        <p style="font-size:.86rem;line-height:1.7;margin:0 0 8px;">노인 주야간보호센터 등 사회복지시설·장기요양기관 견적에는 아래 서류가 필요합니다.</p>
+        <ol style="font-size:.86rem;line-height:1.7;margin:0 0 8px;padding-left:18px;">
+          <li>사업자등록증 또는 고유번호증</li>
+          <li>설치신고확인증(시설설치신고필증)</li>
+          <li>장기요양기관 지정서 또는 재가장기요양기관 설치신고증명서</li>
+        </ol>
+        <p style="font-size:.82rem;line-height:1.6;margin:0;color:#56625A;">신설 시설은 서류 발급 후 인수심사·정식 견적이 진행됩니다.</p>
       </div>
 
       <div class="callout mt-16" style="background:#fff1f2;border-left-color:#dc2626;font-size:.86rem;">

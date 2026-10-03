@@ -127,6 +127,18 @@ window.PRODUCTS_INDEX = {
         "Space Only",
         "Certificate of Insurance",
         "영문 증명서"
+      ],
+      "boost": [
+        "전시",
+        "전시회",
+        "전시보험",
+        "해외전시",
+        "해외전시회",
+        "전시회보험",
+        "publicliability",
+        "퍼블릭라이어빌리티",
+        "부스",
+        "박람회"
       ]
     },
     {
@@ -588,6 +600,12 @@ window.PRODUCTS_INDEX = {
         "Public Liability",
         "Product Liability",
         "수출 PL"
+      ],
+      "boost": [
+        "전시",
+        "전시회",
+        "전시보험",
+        "해외전시회"
       ]
     },
     {
@@ -2688,6 +2706,14 @@ window.PRODUCTS_INDEX = {
         "코파스",
         "trade credit",
         "credit insurance"
+      ],
+      "boost": [
+        "신용",
+        "신용보험",
+        "매출채권",
+        "매출채권보험",
+        "수출신용",
+        "미수금"
       ]
     }
   ]

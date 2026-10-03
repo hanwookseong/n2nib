@@ -83,6 +83,10 @@
     if (leadN.indexOf(qNorm) > -1) s += 5;
     if (metaN.indexOf(qNorm) > -1) s += 4;
 
+    // 대표 검색어 가중치(boost) — 짧은 검색어가 다른 단어 속 부분일치(예: "충전시설" 속 "전시")에 밀리지 않도록
+    var boostN = (product.boost || []).map(normalize);
+    if (boostN.indexOf(qNorm) > -1) s += 200;
+
     var kwHit = false;
     for (var i = 0; i < kwN.length; i++) {
       if (kwN[i] === qNorm) { s += 18; kwHit = true; }
