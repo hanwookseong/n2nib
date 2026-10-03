@@ -5717,3 +5717,77 @@ html[lang="en"] .hero .btn-primary{ background:#C56A2C !important; color:#fff !i
   }
 }
 /* ==== END N2N-LANG-SWITCH-GROUP ==== */
+
+/* ==== N2N-MOBILE-LANG-HEADER (2026-10-03) — 모바일 언어 전환을 trust-bar 위 겹침에서 sticky 헤더 안으로 이동 (cargoinsu 방식). 되돌리려면 이 블록 삭제 ==== */
+.mobile-sticky-header .msh-lang-group{ display:none; }
+@media (max-width:780px){
+  html body .gnb-lang-group{ display:none !important; }
+  .trust-bar{ padding-right:12px !important; }
+  .mobile-sticky-header .msh-lang-group{
+    display:inline-flex !important; gap:5px; align-items:center; flex:0 0 auto; margin-left:auto;
+  }
+  .mobile-sticky-header .msh-lang{
+    display:inline-flex; align-items:center; justify-content:center;
+    min-width:32px; height:30px; padding:0 7px;
+    border:1px solid #0B2818; border-radius:6px; background:#fff;
+    color:#0B2818 !important; font-size:12px; font-weight:800; letter-spacing:.04em;
+    text-decoration:none !important; line-height:1;
+  }
+  .mobile-sticky-header .msh-lang:active{ background:#0B2818; color:#fff !important; }
+  .mobile-sticky-header .msh-cta{ flex:0 0 auto; }
+  .mobile-sticky-header .msh-logo{ flex:0 1 auto !important; min-width:0 !important; }
+  .mobile-sticky-header .msh-logo img{ height:40px !important; max-width:100%; }
+}
+@media (max-width:420px){
+  .mobile-sticky-header{ gap:6px !important; padding:0 10px !important; }
+  .mobile-sticky-header .msh-logo img{ height:34px !important; }
+  .mobile-sticky-header .msh-cta{ padding:9px 12px !important; font-size:.84rem !important; }
+}
+@media (max-width:360px){
+  .mobile-sticky-header .msh-logo img{ height:28px !important; }
+  .mobile-sticky-header .msh-lang{ min-width:28px; padding:0 5px; font-size:11px; }
+}
+/* ==== END N2N-MOBILE-LANG-HEADER ==== */
+
+/* ==== N2N-CONTRAST-2026-10-03 — 딥포레스트·크림 배경 대비 보정 (WCAG AA). 되돌리려면 이 블록 삭제 ==== */
+/* 1) 크림·흰 배경 위 강조색: #D97757(2.7~3.1:1) → #A8581F(흰 5.2:1 / 크림 4.5:1). 버튼 흰 글씨도 5.2:1 */
+html:root{ --accent:#A8581F !important; }
+/* 2) 딥포레스트 위 강조 텍스트는 밝은 테라코타 #F2A66E(7.9:1) */
+html body .trust-bar,
+html body .site-footer,
+html body .footer-cta-cluster,
+html body .broker-definition,
+html body .firm-card,
+html body .mc-banner,
+html body section[style*="linear-gradient(120deg,#0B2818"]{ --accent:#F2A66E; }
+/* 버튼 배경은 어디서든 진한 테라코타 + 흰 글씨 고정 */
+html body .fcc-primary,
+html body .consult-btn,
+html body .msh-cta,
+html body .btn-primary,
+html body .deposit-protect,
+html body .d2-duty,
+html body a[style*="background:#C56A2C"],
+html body a[style*="background: #C56A2C"]{ background-color:#A8581F !important; color:#fff !important; }
+html body .footer-cta-cluster .fcc-primary{ background:#A8581F !important; }
+html body .pd-feature-list .pd-num{ color:#F2A66E !important; }
+html[lang] body .hero .btn-primary{ background:#A8581F !important; color:#fff !important; }
+html:root{ --n2n-orange:#A8581F !important; }
+html body .ce-eyebrow, html body .ce-label, html body .ed-related__card__num, html body .ed-related__card__cta, html body .ed-case__label{ color:#A8581F !important; }
+html body .oc-disc, html body [style*="color:#6b7a70"], html body [style*="color:#7a8377"], html body [style*="color:#6a7a70"]{ color:#56625A !important; }
+/* 3) 딥포레스트 위 보조 텍스트 밝기 */
+.trust-bar{ color:#F4F0E8 !important; }
+.site-footer .footer-bottom, .site-footer .footer-bottom a{ color:rgba(244,240,232,.78) !important; }
+.site-footer a, .site-footer .footer-list a{ color:rgba(244,240,232,.88) !important; }
+.site-footer dt{ color:rgba(244,240,232,.78) !important; }
+[style*="color:#8fa394"]{ color:#B7C6BA !important; }
+[style*="color:#bccabe"]{ color:#D4DED6 !important; }
+/* 4) 크림 배경 위 옅은 회녹색 라벨 #8a968d(2.7:1) → #5F6B62(4.9:1) */
+[style*="color:#8a968d"]{ color:#5F6B62 !important; }
+section[style*="#0B2818"] [style*="color:#8a968d"]{ color:#B7C6BA !important; }
+/* 5) 모바일 trust-bar 3줄 → 2줄: 가운데 AM Best 항목은 헤더 아래 히어로에서 반복되므로 숨김 */
+@media (max-width:560px){
+  .trust-bar > span:nth-child(3), .trust-bar > span:nth-child(4){ display:none !important; }
+  .trust-bar{ line-height:1.45; }
+}
+/* ==== END N2N-CONTRAST-2026-10-03 ==== */

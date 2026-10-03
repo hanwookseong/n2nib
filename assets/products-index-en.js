@@ -1,7 +1,7 @@
 /* Auto-generated EN product index — file:// compatible */
 window.PRODUCTS_INDEX_EN = {
   "generated_at": "2026-06-24",
-  "total": 61,
+  "total": 45,
   "products": [
     {
       "slug": "engineering-car",

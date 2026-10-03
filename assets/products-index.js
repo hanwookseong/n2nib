@@ -1,7 +1,7 @@
 /* Auto-generated from products-index.json — file:// 호환을 위한 JS 변환 */
 window.PRODUCTS_INDEX = {
   "generated_at": "2026-05-02",
-  "total": 110,
+  "total": 82,
   "products": [
     {
       "slug": "engineering-car",

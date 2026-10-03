@@ -210,15 +210,37 @@
   // 모바일 상단 sticky 헤더 자동 주입 (모든 페이지, 모바일 전용)
   // 햄버거(기존 GNB 토글로 위임) + 로고 + 상담신청 CTA
   // =====================================================
+  /* 언어 전환 공통 — 현재 언어를 제외한 나머지 2개 (ko / en / ja).
+     대응 언어판이 있으면 <link rel="alternate" hreflang> 대상으로, 없으면 해당 언어 홈으로. */
+  var N2N_LANGS = {
+    ko: { href: '/index.html',    label: 'KO', aria: '한국어로 보기' },
+    en: { href: '/en/index.html', label: 'EN', aria: 'View in English' },
+    ja: { href: '/ja/index.html', label: 'JA', aria: '日本語で見る' }
+  };
+  function n2nLangTarget(code) {
+    var homeHref = N2N_LANGS[code].href;
+    var el = document.querySelector('link[rel="alternate"][hreflang="' + code + '"]');
+    var href = el && el.getAttribute('href');
+    if (!href) return homeHref;
+    var probe = document.createElement('a');
+    probe.href = href;
+    if (probe.pathname === location.pathname) return homeHref;
+    return href;
+  }
+  function n2nLangLinks(cls) {
+    return ['ko', 'en', 'ja'].filter(function (c) { return c !== LANG; }).map(function (code) {
+      var cfg = N2N_LANGS[code];
+      return '<a class="' + cls + '" href="' + n2nLangTarget(code) + '" hreflang="' + code + '" lang="' + code + '" aria-label="' + cfg.aria + '">' + cfg.label + '</a>';
+    }).join('');
+  }
+
   function injectMobileStickyHeader() {
     if (document.querySelector('.mobile-sticky-header')) return;
     var homeHref = BASE + 'index.html';
     var consultHref = BASE + 'consult.html';
     /* [로고적용표준 v1.3 §1·§3.1] sticky 헤더는 흰 배경 -> -light.
        영문·일본어 페이지는 -light-en (한글 워드마크 대신 INSURANCE BROKERAGE). */
-    var logoSrc = (LANG === 'en' || LANG === 'ja')
-      ? '/assets/logo-horizontal-light-en.svg'
-      : '/assets/logo-horizontal-light.svg';
+    var logoSrc = '/assets/logo-horizontal-light.svg';  /* 2026-10-03: EN·JA도 국문 조합 로고로 통일 (cargoinsu와 동일) */
     var header = document.createElement('header');
     header.className = 'mobile-sticky-header';
     header.setAttribute('role', 'banner');
@@ -227,6 +249,7 @@
       '<a class="msh-logo" href="' + homeHref + '" aria-label="N2N Insurance Brokerage home">' +
         '<img src="' + logoSrc + '" alt="' + L('엔투엔보험중개','N2N Insurance Brokerage','N2N保険仲立人') + '">' +
       '</a>' +
+      '<span class="msh-lang-group">' + n2nLangLinks('msh-lang') + '</span>' +
       '<a class="msh-cta" href="' + consultHref + '">' + L('상담신청','Consult','ご相談') + '</a>';
     document.body.insertBefore(header, document.body.firstChild);
     // 햄버거 클릭 → GNB 메뉴 직접 토글 (document outside-click 핸들러 우회)
@@ -276,7 +299,7 @@
     if (!gnb) return;
     if (gnb.querySelector('.gnb-logo')) return;
     var homeHref = BASE + 'index.html';
-    var logoSrc = (LANG === 'en' || LANG === 'ja') ? '/assets/logo-horizontal-dark-en.svg' : '/assets/logo-horizontal-dark.svg';
+    var logoSrc = '/assets/logo-horizontal-dark.svg';  /* 2026-10-03: EN·JA도 국문 조합 로고 */
     var logoAnchor = document.createElement('a');
     logoAnchor.className = 'gnb-logo';
     logoAnchor.href = homeHref;
