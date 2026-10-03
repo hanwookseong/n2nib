@@ -1,7 +1,7 @@
 /* Auto-generated from products-index.json — file:// 호환을 위한 JS 변환 */
 window.PRODUCTS_INDEX = {
   "generated_at": "2026-05-02",
-  "total": 84,
+  "total": 85,
   "products": [
     {
       "slug": "engineering-car",
@@ -77,6 +77,55 @@ window.PRODUCTS_INDEX = {
         "예금자보호 안내",
         "이 상품의 주요 특징",
         "이용안내"
+      ]
+    },
+    {
+      "slug": "overseas-exhibition",
+      "url": "products/liability-cgl.html#exhibition",
+      "title": "해외전시 보험 — 영업배상책임보험(CGL)으로 담보",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "OVERSEAS EXHIBITION PUBLIC LIABILITY",
+      "insurer": "",
+      "lead": "해외전시 주최측이 요구하는 배상책임(PL·Public Liability)은 영업배상책임보험(CGL)으로 담보합니다. 행사 국가 담보지역, 설치~철거 기간, 요구 한도·통화, 추가피보험자, 영문 부보증명서를 맞춰 설계하며 조건·보험료는 보험회사 인수심사 후 확정됩니다.",
+      "meta_desc": "해외전시 보험 — 해외전시 배상책임(Public Liability)은 영업배상책임보험(CGL)으로 담보.",
+      "keywords": [
+        "해외전시",
+        "해외전시 보험",
+        "해외전시보험",
+        "해외전시 배상책임",
+        "해외전시회",
+        "해외 전시회",
+        "전시회 보험",
+        "전시보험",
+        "박람회",
+        "해외박람회",
+        "부스",
+        "Public Liability",
+        "퍼블릭 라이어빌리티",
+        "영업배상",
+        "영업배상책임보험",
+        "CGL",
+        "Certificate of Insurance",
+        "영문 증명서",
+        "Shell Scheme",
+        "Space Only"
+      ],
+      "boost": [
+        "해외전시",
+        "해외전시보험",
+        "해외전시회",
+        "해외전시회보험",
+        "해외전시배상책임",
+        "전시",
+        "전시회",
+        "전시보험",
+        "전시회보험",
+        "박람회",
+        "해외박람회",
+        "부스",
+        "publicliability",
+        "퍼블릭라이어빌리티"
       ]
     },
     {
