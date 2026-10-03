@@ -1096,26 +1096,26 @@
   </url>
   <url>
     <loc>https://n2nib.com/products/pet-facility-liability</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products/pet-facility-escape</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products/pet-facility-injury</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>  <url>
     <loc>https://n2nib.com/products/pet-facility-registration</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://n2nib.com/products/pet-facility-large-dog</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
   </url>  <url>
     <loc>https://n2nib.com/guide-pharma-pl-us</loc>
@@ -1130,43 +1130,43 @@
   </url>
   <url>
     <loc>https://n2nib.com/insights/case-clinical-phase1</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://n2nib.com/insights/case-dental-malpractice</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://n2nib.com/insights/case-event-organizer</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://n2nib.com/insights/case-outdoor-ad</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://n2nib.com/insights/media-production-liability</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://n2nib.com/insights/overseas-contract-pi-eo</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://n2nib.com/insights/us-msa-required-insurance</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1708,5 +1708,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://n2nib.com/products/engineering-completed-works"/>
     <lastmod>2026-10-03</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/editorial-standards</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.4</priority>
   </url>
 </urlset>

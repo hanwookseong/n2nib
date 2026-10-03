@@ -12,12 +12,12 @@
   // 페이지 위치별 상대경로 처리
   function indexUrl() {
     var p = window.location.pathname;
-    if (p.indexOf('/products/') > -1) return '../assets/products-index.json';
+    if (/\/(products|insights)\//.test(p)) return '../assets/products-index.json';
     return 'assets/products-index.json';
   }
   function urlPrefix() {
     var p = window.location.pathname;
-    if (p.indexOf('/products/') > -1) return '../';
+    if (/\/(products|insights)\//.test(p)) return '../';
     return '';
   }
 
@@ -59,7 +59,23 @@
    *   - 요약/설명 매치: +5
    *   - 멀티 토큰: 모든 토큰이 어딘가에 있어야 함
    */
+  // 대표 검색어(boost) 비교용 — 공백·하이픈만 제거 (P&I 와 PI, D&O 를 구분하기 위해 & 는 유지)
+  var GENERIC = ['배상책임', '배상', '책임', '보험료', '가입', '견적', '종합', '전문'];
+  function light(s) {
+    return (s || '').toLowerCase().replace(/[\s\-_·]/g, '');
+  }
+  // "드론보험"처럼 끝에 '보험·보험료·가입·견적'을 붙인 검색어는 앞부분("드론")으로도 한 번 더 채점
   function score(product, query) {
+    var a = scoreOne(product, query);
+    var q = (query || '').trim();
+    var core = q.replace(/\s*(보험료|보험|가입|견적)$/, '').trim();
+    if (core && core !== q && normalize(core).length >= 2) {
+      a = Math.max(a, scoreOne(product, core) * 0.9);
+    }
+    return a;
+  }
+
+  function scoreOne(product, query) {
     if (!query) return 0;
     var qNorm = normalize(query);
     var qTokens = tokenize(query);
@@ -77,22 +93,32 @@
     // 단일 쿼리 매칭
     if (titleN === qNorm) s += 100;
     else if (titleN.indexOf(qNorm) > -1) s += 50;
-    if (enN.indexOf(qNorm) > -1) s += 25;
+    if (qNorm.length >= 3 && enN.indexOf(qNorm) > -1) s += 25;
     if (insN.indexOf(qNorm) > -1) s += 12;
     if (catN.indexOf(qNorm) > -1) s += 8;
     if (leadN.indexOf(qNorm) > -1) s += 5;
     if (metaN.indexOf(qNorm) > -1) s += 4;
 
     // 대표 검색어 가중치(boost) — 짧은 검색어가 다른 단어 속 부분일치(예: "충전시설" 속 "전시")에 밀리지 않도록
-    var boostN = (product.boost || []).map(normalize);
-    if (boostN.indexOf(qNorm) > -1) s += 200;
+    var boostL = (product.boost || []).map(light);
+    if (boostL.indexOf(light(query)) > -1) s += 200;
+    // 여러 단어 검색(예: "요양원 배상책임")에서 한 단어가 대표 검색어와 일치하면 가산
+    else if (qTokens.length > 1) {
+      var boostCore = boostL.map(function (b) { return b.replace(/보험$/, ''); });
+      qTokens.forEach(function (tk) {
+        var tl = light(tk).replace(/보험$/, '');
+        if (tl.length >= 2 && GENERIC.indexOf(tl) < 0 && boostCore.indexOf(tl) > -1) s += 60;
+      });
+    }
 
     var kwHit = false;
     for (var i = 0; i < kwN.length; i++) {
       if (kwN[i] === qNorm) { s += 18; kwHit = true; }
-      else if (kwN[i].indexOf(qNorm) > -1 || qNorm.indexOf(kwN[i]) > -1) {
+      else if (kwN[i].indexOf(qNorm) > -1) {
         if (kwN[i].length > 1) { s += 10; kwHit = true; }
       }
+      // 키워드가 검색어 속에 들어 있는 경우(예: 검색어 "의사배상책임" 속 "배상책임")는 약하게만 반영
+      else if (kwN[i].length >= 3 && qNorm.indexOf(kwN[i]) > -1) { s += 3; kwHit = true; }
     }
 
     // 멀티 토큰 — 모든 토큰이 어딘가에 매치돼야 추가 점수
@@ -110,6 +136,8 @@
       }
     }
 
+    // 가이드 글은 같은 점수대의 상품 페이지보다 한 칸 아래에 보이도록
+    if (product.category === 'guide') s = s * 0.8;
     return s;
   }
 
