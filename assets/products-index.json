@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-02",
-  "total": 82,
+  "total": 83,
   "products": [
     {
       "slug": "engineering-car",
@@ -2637,6 +2637,39 @@
         "CIVIL ENGINEERING COMPLETED RISKS",
         "기술보험",
         "엔투엔보험중개"
+      ]
+    },
+    {
+      "slug": "credit-insurance",
+      "url": "credit-insurance.html",
+      "title": "매출채권 신용보험 (내수·수출)",
+      "category": "specialty",
+      "category_label": "특종보험",
+      "en_code": "TRADE CREDIT INSURANCE",
+      "insurer": "SGI서울보증 (재보험 Coface)",
+      "lead": "외상으로 공급한 물품·용역 대금을 거래처의 지급불능이나 장기 연체로 받지 못할 때 이를 보상하는 보험. 내수·수출 매출채권을 한 증권으로 통합 관리할 수 있습니다.",
+      "meta_desc": "매출채권 신용보험은 외상으로 공급한 물품·용역 대금을 거래처의 지급불능이나 장기 연체로 받지 못할 때 이를 보상하는 보험입니다.",
+      "keywords": [
+        "신용보험",
+        "매출채권",
+        "매출채권보험",
+        "매출채권 신용보험",
+        "수출신용보험",
+        "내수 신용보험",
+        "외상매출",
+        "미수금",
+        "대손",
+        "부도",
+        "거래처 부도",
+        "이행지체",
+        "신용한도",
+        "무역보험",
+        "단기수출보험",
+        "SGI서울보증",
+        "Coface",
+        "코파스",
+        "trade credit",
+        "credit insurance"
       ]
     }
   ]
