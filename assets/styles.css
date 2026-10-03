@@ -5791,3 +5791,10 @@ section[style*="#0B2818"] [style*="color:#8a968d"]{ color:#B7C6BA !important; }
   .trust-bar{ line-height:1.45; }
 }
 /* ==== END N2N-CONTRAST-2026-10-03 ==== */
+
+/* ==== N2N-CONTRAST-INSIGHTS-2026-10-03 — 현장 케이스 페이지 대비 보정 ==== */
+html body .ins-kicker, html body .ins-tag{ color:#8A4517 !important; }
+html body .ins-rel a, html body .ins-card .n, html body .ins-card .go{ color:#A8581F !important; }
+html body .ins-byline, html body .ins-rel .rl, html body .ins-crumb, html body .ins-crumb a, html body .ins-disclaimer em{ color:#56625A !important; }
+html body .ins-btn--p{ background:#A8581F !important; border-color:#A8581F !important; color:#fff !important; }
+/* ==== END N2N-CONTRAST-INSIGHTS ==== */
