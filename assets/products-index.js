@@ -3580,6 +3580,24 @@ window.PRODUCTS_INDEX = {
       "keywords": []
     },
     {
+      "slug": "guide-bailee-liability",
+      "url": "guide-bailee-liability.html",
+      "title": "수탁물배상책임 특약 — 맡아 둔 고객 물건은 왜 영업배상(CGL)에서 빠지나",
+      "category": "guide",
+      "category_label": "가이드",
+      "en_code": "",
+      "insurer": "",
+      "lead": "수탁물배상책임은 고객에게서 맡아 보관·수리·가공하는 타인의 물건이 손상·멸실되어 소유자에게 법률상 배상책임을 질 때 보상하는 담보입니다. CCC 면책, 업종별 담는 곳, 한도·계약서 점검을 정리했습니다.",
+      "meta_desc": "수탁물배상책임은 고객에게서 맡아 보관·수리·가공하는 타인의 물건이 손상·멸실되어 소유자에게 법률상 배상책임을 질 때 보상하는 담보입니다. CCC 면책, 업종별 담는 곳, 한도·계약서 점검을 정리했습니다.",
+      "keywords": [
+        "수탁물배상책임",
+        "수탁물",
+        "CCC 면책",
+        "보호관리재물",
+        "창고업자"
+      ]
+    },
+    {
       "slug": "guide-cgl",
       "url": "guide-cgl.html",
       "title": "영업배상책임보험(CGL)이란? 사업주가 알아야 할 5가지",
