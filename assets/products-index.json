@@ -3668,6 +3668,24 @@
       "keywords": []
     },
     {
+      "slug": "guide-retroactive-date",
+      "url": "guide-retroactive-date.html",
+      "title": "전문인배상책임보험 소급담보일 — 보험사 변경·고지 사고·보고기간 연장(ERP)",
+      "category": "guide",
+      "category_label": "가이드",
+      "en_code": "",
+      "insurer": "",
+      "lead": "전문인배상책임보험 소급담보일은 청구기준 보험에서 담보 대상이 되는 업무의 시작 기준일입니다. 신규 가입·보험사 변경 때 소급일이 밀리는 문제, 이미 알고 있는 사고의 처리, 보고기간 연장(ERP)을 정리했습니다.",
+      "meta_desc": "전문인배상책임보험 소급담보일은 청구기준 보험에서 담보 대상이 되는 업무의 시작 기준일입니다. 신규 가입·보험사 변경 때 소급일이 밀리는 문제, 이미 알고 있는 사고의 처리, 보고기간 연장(ERP)을 정리했습니다.",
+      "keywords": [
+        "소급담보일",
+        "Retroactive Date",
+        "전문인배상책임보험",
+        "ERP",
+        "보고기간 연장"
+      ]
+    },
+    {
       "slug": "guide-eo",
       "url": "guide-eo.html",
       "title": "전문직업인 배상책임보험(E&O)이란? 알아야 할 5가지",
