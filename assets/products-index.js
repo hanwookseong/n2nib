@@ -3753,6 +3753,24 @@ window.PRODUCTS_INDEX = {
       "keywords": []
     },
     {
+      "slug": "guide-car-surrounding-property",
+      "url": "guide-car-surrounding-property.html",
+      "title": "건설공사보험(CAR) 주위재산 — 인접 제3자 재산과 무엇이 다른가",
+      "category": "guide",
+      "category_label": "가이드",
+      "en_code": "",
+      "insurer": "",
+      "lead": "건설공사보험(CAR)의 주위재산은 공사목적물이 아닌 기존 재산 가운데 피보험자가 소유하거나 보호·관리하는 재산으로 주위재산 특별약관으로 담보합니다. 인접 제3자 재산은 배상책임 담보에서 다루며 진동·지지대 원인은 별도 특약이 필요합니다.",
+      "meta_desc": "건설공사보험(CAR)의 주위재산은 공사목적물이 아닌 기존 재산 가운데 피보험자가 소유하거나 보호·관리하는 재산으로 주위재산 특별약관으로 담보합니다. 인접 제3자 재산은 배상책임 담보에서 다루며 진동·지지대 원인은 별도 특약이 필요합니다.",
+      "keywords": [
+        "건설공사보험",
+        "CAR",
+        "주위재산",
+        "주위재산 특별약관",
+        "진동 지지대"
+      ]
+    },
+    {
       "slug": "guide-machinery",
       "url": "guide-machinery.html",
       "title": "기계보험(MB)이란? 기계 고장에 대비하는 5가지",
