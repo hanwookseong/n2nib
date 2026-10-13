@@ -55,20 +55,23 @@
   }
 
   // ---- Active GNB highlight (match depth1) ----
-  const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  document.querySelectorAll('.gnb > ul > li').forEach(li => {
-    const link = li.querySelector('a');
-    if (!link) return;
-    const href = (link.getAttribute('href') || '').toLowerCase();
-    if (href === path) li.classList.add('active');
-    // also activate if any depth2 child matches
-    li.querySelectorAll('.depth2 a').forEach(a2 => {
-      const h2 = (a2.getAttribute('href') || '').toLowerCase();
-      if (h2 === path || (path.startsWith('products') && h2.startsWith('products'))) {
-        li.classList.add('active');
-      }
+  // 2026-10-14: products 페이지에서 상품 메뉴 전체가 active 되던 문제 수정 —
+  //             products#xxx 형태 링크는 현재 해시와 일치하는 하나만 표시
+  function markActiveGnb() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase().replace(/\.html$/, '');
+    const hash = location.hash.toLowerCase();
+    document.querySelectorAll('.gnb > ul > li').forEach(li => {
+      const link = li.querySelector('a');
+      if (!link) return;
+      const href = (link.getAttribute('href') || '').toLowerCase();
+      const [hPathRaw, hHash] = href.split('#');
+      const hPath = (hPathRaw.split('/').pop() || '').replace(/\.html$/, '');
+      const on = hHash ? (hPath === path && '#' + hHash === hash) : (hPath !== '' && hPath === path);
+      li.classList.toggle('active', on);
     });
-  });
+  }
+  markActiveGnb();
+  window.addEventListener('hashchange', markActiveGnb);
 
   // ---- Right-quick To-Top ----
   const toTop = document.querySelector('.rq-totop');

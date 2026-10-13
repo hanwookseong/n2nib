@@ -4316,6 +4316,8 @@ html body .right-quick {
     overscroll-behavior: contain !important;        /* body 스크롤 차단 */
     background: var(--ivory, #F4F0E8) !important;   /* 흰색 → 아이보리 (Policygenius 패턴: 카드 배경 대비) */
     flex-direction: column !important;
+    flex-wrap: nowrap !important;                   /* 2026-10-14: 980px 구간 wrap 상속 → 하단 항목이 우측 2열(화면 밖)로 밀리던 문제 */
+    bottom: 0 !important;                           /* 2026-10-14: 메뉴 높이를 화면 끝까지 — 하단 틈으로 페이지 필터바가 비치던 문제 */
     padding: 16px 12px 80px !important;             /* 하단 80px 패딩으로 마지막 카드까지 스크롤 가능 */
     margin: 0 !important;
     z-index: 9000 !important;
@@ -4325,6 +4327,7 @@ html body .right-quick {
   .gnb > ul.open {
     display: flex !important;
   }
+  .gnb > ul > li { flex-shrink: 0 !important; }  /* 2026-10-14: nowrap 시 카드 찌그러짐 방지 */
   /* depth2 메가메뉴는 모바일에서 숨김 (데스크톱 호버 전용) */
   .gnb .depth2,
   .gnb > ul > li .depth2 {
@@ -4366,6 +4369,18 @@ html body .right-quick {
     min-width: 0 !important;
     border-radius: 0 !important;
     text-align: left !important;
+  }
+  /* ★ 2026-10-14 active/hover 상태 글자색 고정 — 라인 3802 다크 드로어 룰(color: ivory)이
+     선택자 우선순위로 카드 글자를 아이보리로 덮어써 상품 메뉴가 안 보이던 문제 수정 */
+  .gnb > ul > li > a:hover,
+  .gnb > ul > li.active > a,
+  .gnb > ul > li.active > a[href*="products"] {
+    background: transparent !important;
+    color: var(--ink, #0B2818) !important;
+  }
+  .gnb > ul > li.active {
+    border-color: var(--accent) !important;
+    box-shadow: inset 3px 0 0 var(--accent), 0 1px 2px rgba(11, 40, 24, 0.04) !important;
   }
   /* 좌측 카테고리 아이콘 (이모지) */
   .gnb > ul > li > a::before {
