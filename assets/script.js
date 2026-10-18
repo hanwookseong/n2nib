@@ -520,3 +520,66 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+/* N2N-MOBILE-GNB-ACCORDION-20261018
+   Mobile (<=780px) GNB: tap a.dd-parent (EN/JA) toggles li.is-open.
+   KO top items are real links (products#...), not affected. */
+(function () {
+  var MQ = window.matchMedia('(max-width: 780px)');
+
+  function initAria() {
+    var list = document.querySelectorAll('.gnb a.dd-parent');
+    for (var i = 0; i < list.length; i++) {
+      var a = list[i];
+      if (!a.hasAttribute('href')) {
+        a.setAttribute('role', 'button');
+        a.setAttribute('tabindex', '0');
+      }
+      a.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function toggle(a) {
+    var li = a.parentElement;
+    var willOpen = !li.classList.contains('is-open');
+    var opened = li.parentElement.querySelectorAll(':scope > li.is-open');
+    for (var i = 0; i < opened.length; i++) {
+      if (opened[i] !== li) {
+        opened[i].classList.remove('is-open');
+        var oa = opened[i].querySelector(':scope > a.dd-parent');
+        if (oa) oa.setAttribute('aria-expanded', 'false');
+      }
+    }
+    li.classList.toggle('is-open', willOpen);
+    a.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!MQ.matches) return;
+    var a = e.target.closest && e.target.closest('.gnb a.dd-parent');
+    if (!a) return;
+    e.preventDefault();
+    toggle(a);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (!MQ.matches) return;
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var a = e.target.closest && e.target.closest('.gnb a.dd-parent');
+    if (!a) return;
+    e.preventDefault();
+    toggle(a);
+  });
+
+  var onChange = function () {
+    if (MQ.matches) return;
+    var opened = document.querySelectorAll('.gnb li.is-open');
+    for (var i = 0; i < opened.length; i++) opened[i].classList.remove('is-open');
+  };
+  if (MQ.addEventListener) MQ.addEventListener('change', onChange);
+  else if (MQ.addListener) MQ.addListener(onChange);
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initAria);
+  else initAria();
+  window.addEventListener('load', initAria);
+})();
