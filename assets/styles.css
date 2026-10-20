@@ -5821,3 +5821,17 @@ html body .ins-btn--p{ background:#A8581F !important; border-color:#A8581F !impo
     transform: translateY(-50%) rotate(135deg) !important;
   }
 }
+
+/* N2N-MOBILE-GNB-KO-20261020
+   Mobile drawer is light (ivory), but mega sub-menu text still used the old
+   dark-drawer colors (white 65-92%) -> unreadable when opened. Dark text here. */
+@media (max-width: 780px) {
+  .gnb > ul > li.is-open > .depth2 { background: rgba(11, 40, 24, 0.045) !important; border-radius: 0 0 10px 10px; }
+  .gnb > ul > li.is-open .depth2--mega .mega-h { color: var(--accent, #A8581F) !important; border-color: rgba(11, 40, 24, 0.10) !important; }
+  .gnb > ul > li.is-open .depth2--mega .mega-col { border-bottom-color: rgba(11, 40, 24, 0.08) !important; }
+  .gnb > ul > li.is-open .depth2--mega .mega-list li a,
+  .gnb > ul > li.is-open .depth2--mega .mega-list li a:hover { color: var(--ink, #0B2818) !important; background: transparent !important; }
+  .gnb > ul > li.is-open .depth2--mega .mega-list--ext li a { color: var(--accent, #A8581F) !important; }
+  .gnb > ul > li.is-open .depth2--mega .mega-footer-link { color: var(--accent, #A8581F) !important; font-weight: 700 !important; border-color: rgba(11, 40, 24, 0.10) !important; }
+  .gnb > ul > li.is-open .depth2:not(.depth2--mega) li a { color: var(--ink, #0B2818) !important; }
+}

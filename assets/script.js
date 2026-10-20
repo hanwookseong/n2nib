@@ -583,3 +583,55 @@ document.addEventListener('DOMContentLoaded', function() {
   else initAria();
   window.addEventListener('load', initAria);
 })();
+
+/* N2N-MOBILE-GNB-KO-20261020
+   Mobile (<=780px) GNB: KO top items are real links (products#...) that also
+   carry a .depth2 sub-menu. On mobile, tapping them used to only change the URL
+   hash (on /products nothing visible happened) and the sub-menu never opened.
+   Now: tap toggles li.is-open like EN/JA. The sub-menu keeps its own
+   "... view all" link (.mega-footer-link), so the category page stays reachable.
+   EN/JA a.dd-parent is handled by N2N-MOBILE-GNB-ACCORDION-20261018 (skipped here). */
+(function () {
+  var MQ = window.matchMedia('(max-width: 780px)');
+
+  function topLinkWithSub(el) {
+    var a = el && el.closest ? el.closest('.gnb > ul > li > a') : null;
+    if (!a || a.classList.contains('dd-parent')) return null;
+    var li = a.parentElement;
+    if (!li || !li.querySelector(':scope > .depth2')) return null;
+    return a;
+  }
+
+  function initAria() {
+    var list = document.querySelectorAll('.gnb > ul > li > a');
+    for (var i = 0; i < list.length; i++) {
+      var a = list[i];
+      if (a.classList.contains('dd-parent')) continue;
+      if (!a.parentElement.querySelector(':scope > .depth2')) continue;
+      a.setAttribute('aria-expanded', a.parentElement.classList.contains('is-open') ? 'true' : 'false');
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!MQ.matches) return;
+    var a = topLinkWithSub(e.target);
+    if (!a) return;
+    e.preventDefault();
+    var li = a.parentElement;
+    var willOpen = !li.classList.contains('is-open');
+    var opened = li.parentElement.querySelectorAll(':scope > li.is-open');
+    for (var i = 0; i < opened.length; i++) {
+      if (opened[i] !== li) {
+        opened[i].classList.remove('is-open');
+        var oa = opened[i].querySelector(':scope > a');
+        if (oa) oa.setAttribute('aria-expanded', 'false');
+      }
+    }
+    li.classList.toggle('is-open', willOpen);
+    a.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  });
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initAria);
+  else initAria();
+  window.addEventListener('load', initAria);
+})();
