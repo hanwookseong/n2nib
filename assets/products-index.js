@@ -1,7 +1,7 @@
 /* Auto-generated from products-index.json — file:// 호환을 위한 JS 변환 */
 window.PRODUCTS_INDEX = {
   "generated_at": "2026-05-02",
-  "total": 110,
+  "total": 112,
   "products": [
     {
       "slug": "engineering-car",
@@ -221,6 +221,36 @@ window.PRODUCTS_INDEX = {
         "시설배상책임",
         "시설배상책임보험",
         "영업배상책임"
+      ]
+    },
+    {
+      "slug": "liability-security-guard",
+      "url": "products/liability-security-guard.html",
+      "title": "경비업자 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "SECURITY GUARD LIABILITY",
+      "insurer": "DB손해보험",
+      "lead": "경비업법에 따라 허가받은 시설경비·기계경비·수송경비 업체가 경비업무를 수행하다 일어난 사고로 경비대상 시설이나 제3자에게 입힌 손해의 법률상 배상책임을 담보하는 영업배상책임보험 업종 특화 상품.",
+      "meta_desc": "경비업자 배상책임보험은 경비업법에 따라 허가받은 경비업체가 경비업무 수행 중 사고로 경비대상 시설이나 제3자에게 입힌 신체·재물 손해의 법률상 배상책임을 보상하는 보험입니다.",
+      "keywords": [
+        "경비업자 배상책임보험",
+        "배상보험",
+        "SECURITY GUARD LIABILITY",
+        "시설경비(인력경비) 업체",
+        "기계경비 업체",
+        "수송경비 업체",
+        "한도 방식",
+        "특약",
+        "자기부담금",
+        "엔투엔보험중개"
+      ],
+      "boost": [
+        "경비업자배상",
+        "경비업체보험",
+        "경비용역배상책임",
+        "시설경비",
+        "기계경비"
       ]
     },
     {
@@ -1309,6 +1339,36 @@ window.PRODUCTS_INDEX = {
       ],
       "boost": [
         "하이기업종합"
+      ]
+    },
+    {
+      "slug": "property-university",
+      "url": "products/property-university.html",
+      "title": "대학종합보험",
+      "category": "property",
+      "category_label": "화재/재물",
+      "en_code": "UNIVERSITY PACKAGE",
+      "insurer": "DB손해보험",
+      "lead": "대학 시설과 학사 활동에서 생기는 제3자 배상책임과 신입생 OT·학교생활·업무 중 학생·교직원 상해를 한 계약으로 묶어 설계하는 대학 전용 종합보험.",
+      "meta_desc": "대학종합보험은 대학 시설·업무와 관련한 배상책임과 학생·교직원의 상해 위험을 한 계약으로 담보하는 대학 대상 종합보험입니다.",
+      "keywords": [
+        "대학종합보험",
+        "화재/재물",
+        "UNIVERSITY PACKAGE",
+        "대학교·대학원",
+        "신입생 OT·학내 행사 운영 대학",
+        "교직원 업무 중 상해 대비",
+        "배상책임 한도",
+        "상해 가입금액",
+        "위험 평가",
+        "엔투엔보험중개"
+      ],
+      "boost": [
+        "대학종합보험",
+        "대학교보험",
+        "신입생OT보험",
+        "학교배상책임",
+        "대학상해보험"
       ]
     },
     {
