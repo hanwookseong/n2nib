@@ -139,3 +139,15 @@
 /products/specialty-pet.html /products#specialty 301
 /en/products/specialty-pet /en/products#specialty 301
 /en/products/specialty-pet.html /en/products#specialty 301
+
+# 반려동물 위탁시설 페이지 폐지 (2026-10-29) — 수탁물배상 가이드로 연결
+/products/pet-facility-liability /guide-bailee-liability 301
+/products/pet-facility-liability.html /guide-bailee-liability 301
+/products/pet-facility-injury /guide-bailee-liability 301
+/products/pet-facility-injury.html /guide-bailee-liability 301
+/products/pet-facility-escape /guide-bailee-liability 301
+/products/pet-facility-escape.html /guide-bailee-liability 301
+/products/pet-facility-large-dog /guide-bailee-liability 301
+/products/pet-facility-large-dog.html /guide-bailee-liability 301
+/products/pet-facility-registration /guide-bailee-liability 301
+/products/pet-facility-registration.html /guide-bailee-liability 301
