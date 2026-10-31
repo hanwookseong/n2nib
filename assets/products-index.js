@@ -3549,6 +3549,25 @@ window.PRODUCTS_INDEX = {
       "keywords": []
     },
     {
+      "slug": "guide-cyber-it-map",
+      "url": "guide-cyber-it-map.html",
+      "title": "사이버·정보통신 보험 한눈에 보기 — 종류별 담보위험과 가입 대상",
+      "category": "guide",
+      "category_label": "가이드",
+      "en_code": "",
+      "insurer": "",
+      "lead": "사이버배상책임·첨단기술(Tech E&O)·개인정보유출 배상·전자금융거래 배상·전자기기·범죄보험 6개 종목을 사고 원인별 지도로 정리하고, 종목별 담보위험과 업종별 가입 대상을 보험중개사가 비교했습니다.",
+      "meta_desc": "사이버배상책임·첨단기술(Tech E&O)·개인정보유출 배상·전자금융거래 배상·전자기기·범죄보험 6개 종목을 사고 원인별 지도로 정리하고, 종목별 담보위험과 업종별 가입 대상을 보험중개사가 비교했습니다.",
+      "keywords": [
+        "사이버보험 종류",
+        "Tech E&O",
+        "정보통신 보험",
+        "IT 기업 보험",
+        "개인정보유출 배상",
+        "전자금융거래 배상"
+      ]
+    },
+    {
       "slug": "guide-cyber",
       "url": "guide-cyber.html",
       "title": "사이버배상책임보험이란? 기업이 알아야 할 5가지",
