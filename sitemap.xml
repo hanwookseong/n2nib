@@ -1184,6 +1184,94 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://n2nib.com/guide-datacenter-car</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-car"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-car"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/guide-datacenter-car</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-car"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-car"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/guide-datacenter-ear</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-ear"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-ear"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/guide-datacenter-ear</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-ear"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-ear"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/guide-datacenter-cgl</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-cgl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-cgl"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/guide-datacenter-cgl</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-cgl"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-cgl"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/guide-datacenter-pi</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-pi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-pi"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/guide-datacenter-pi</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-pi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-pi"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/guide-datacenter-par</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-par"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-par"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/guide-datacenter-par</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-par"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-par"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://n2nib.com/en/guide-datacenter-sla</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://n2nib.com/guide-datacenter-sla"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://n2nib.com/en/guide-datacenter-sla"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://n2nib.com/guide-cyber-it-map</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
