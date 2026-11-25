@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-02",
-  "total": 112,
+  "total": 120,
   "products": [
     {
       "slug": "engineering-car",
@@ -3791,6 +3791,150 @@
       "lead": "근재보험은 산재보험 보상을 넘어서는 사업주의 민사 손해배상책임(위자료·일실이익 등)을 담보하는 민영 손해보험입니다. 산재보험과의 차이와 근로 형태별 가입 대상을 보험중개사가 정리했습니다.",
       "meta_desc": "근재보험은 산재보험 보상을 넘어서는 사업주의 민사 손해배상책임(위자료·일실이익 등)을 담보하는 민영 손해보험입니다. 산재보험과의 차이와 근로 형태별 가입 대상을 보험중개사가 정리했습니다.",
       "keywords": []
+    },
+    {
+      "slug": "liability-postpartum-care",
+      "url": "products/liability-postpartum-care.html",
+      "title": "산후조리업자 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "POSTPARTUM CARE CENTER LIABILITY",
+      "insurer": "",
+      "lead": "산후조리원의 시설·업무 수행 중 사고와 제공한 음식물로 생긴 사고로 임산부·영유아 등 타인에게 입힌 신체·재물 손해의 배상책임을 담보.",
+      "meta_desc": "산후조리업자 배상책임보험은 산후조리원의 시설·업무 수행 중 사고와 제공한 음식물로 생긴 사고로 임산부·영유아 등 타인에게 입힌 신체·재물 손해의 배상책임을 담보합니다.",
+      "keywords": [
+        "산후조리업자 배상책임보험",
+        "POSTPARTUM CARE CENTER LIABILITY"
+      ],
+      "boost": [
+        "산후조리업자 배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-childcare-service",
+      "url": "products/liability-childcare-service.html",
+      "title": "아이돌봄사고 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "CHILDCARE SERVICE LIABILITY",
+      "insurer": "",
+      "lead": "「아이돌봄 지원법」상 아이돌봄서비스 제공 과정의 우연한 사고로 아이 또는 아이돌봄사·육아도우미의 생명·신체에 손해를 입혀 부담하는 배상책임을 담보.",
+      "meta_desc": "아이돌봄사고 배상책임보험은 아이돌봄서비스 제공 과정에서 생긴 우연한 사고로 아이 또는 아이돌봄사·육아도우미의 생명·신체에 손해를 입혀 부담하는 배상책임을 담보합니다.",
+      "keywords": [
+        "아이돌봄사고 배상책임보험",
+        "CHILDCARE SERVICE LIABILITY"
+      ],
+      "boost": [
+        "아이돌봄사고 배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-teacher",
+      "url": "products/liability-teacher.html",
+      "title": "교원배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "TEACHER LIABILITY",
+      "insurer": "",
+      "lead": "유치원·초중등학교·대학 교원·직원·교수가 학교업무 수행 중 사고로 손해배상청구를 받았을 때의 배상금과 소송·변호사비용을 담보.",
+      "meta_desc": "교원배상책임보험은 유치원·초중등학교·대학 교원이 학교업무 수행 중 생긴 우연한 사고로 학생 등 피해자에게 손해배상청구를 받았을 때의 배상금과 소송비용을 담보하는 보험입니다.",
+      "keywords": [
+        "교원배상책임보험",
+        "TEACHER LIABILITY"
+      ],
+      "boost": [
+        "교원배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-electrical-contractor",
+      "url": "products/liability-electrical-contractor.html",
+      "title": "전기공사업자 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "ELECTRICAL CONTRACTOR LIABILITY",
+      "insurer": "",
+      "lead": "전기공사 업무 수행 중 전기공사 목적물 또는 제3자에게 손해를 입혀 부담하는 배상책임을 담보. 목적물 손해를 포함하는 구조가 특징.",
+      "meta_desc": "전기공사업자 배상책임보험은 전기공사 업무 수행으로 전기공사 목적물 또는 제3자에게 재산상 손해를 입혀 부담하는 법률상 배상책임을 담보하는 보험입니다.",
+      "keywords": [
+        "전기공사업자 배상책임보험",
+        "ELECTRICAL CONTRACTOR LIABILITY"
+      ],
+      "boost": [
+        "전기공사업자 배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-fire-protection-contractor",
+      "url": "products/liability-fire-protection-contractor.html",
+      "title": "소방시설공사업 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "FIRE PROTECTION CONTRACTOR LIABILITY",
+      "insurer": "",
+      "lead": "소방시설공사 업무 수행 중 용역목적물 또는 제3자에게 손해를 입혀 부담하는 배상책임을 담보. 소방용 물질의 급격한 누출 오염도 약관 단서로 보상.",
+      "meta_desc": "소방시설공사업 배상책임보험은 소방시설공사 업무 수행으로 용역목적물 또는 제3자에게 입힌 재산상 손해의 법률상 배상책임을 담보하는 보험입니다.",
+      "keywords": [
+        "소방시설공사업 배상책임보험",
+        "FIRE PROTECTION CONTRACTOR LIABILITY"
+      ],
+      "boost": [
+        "소방시설공사업 배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-fire-protection-management",
+      "url": "products/liability-fire-protection-management.html",
+      "title": "소방시설관리업 전문인 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "FIRE PROTECTION MANAGEMENT PI",
+      "insurer": "",
+      "lead": "소방시설 점검·관리 업무 수행의 직접적인 결과로 용역목적물 또는 제3자에게 입힌 손해에 대해 보험기간 중 최초로 제기된 손해배상청구를 담보하는 전문인 배상책임보험.",
+      "meta_desc": "소방시설관리업 전문인 배상책임보험은 소방안전관리업무 수행의 직접적인 결과로 용역목적물 또는 제3자에게 입힌 재산상 손해에 대해 보험기간 중 제기된 손해배상청구를 담보합니다.",
+      "keywords": [
+        "소방시설관리업 전문인 배상책임보험",
+        "FIRE PROTECTION MANAGEMENT PI"
+      ],
+      "boost": [
+        "소방시설관리업 전문인 배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-virtual-asset",
+      "url": "products/liability-virtual-asset.html",
+      "title": "가상자산사업자 배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "VIRTUAL ASSET SERVICE PROVIDER LIABILITY",
+      "insurer": "",
+      "lead": "가상자산의 매매·교환·이전·보관·관리 관련 해킹·전산장애 등의 사고로 가상자산 이용자에게 부담하는 배상책임을 담보.",
+      "meta_desc": "가상자산사업자 배상책임보험은 가상자산의 매매·교환·이전·보관 관련 해킹·전산장애 등의 사고로 가상자산 이용자에게 부담하는 법률상 배상책임을 담보하는 보험입니다.",
+      "keywords": [
+        "가상자산사업자 배상책임보험",
+        "VIRTUAL ASSET SERVICE PROVIDER LIABILITY"
+      ],
+      "boost": [
+        "가상자산사업자 배상책임보험"
+      ]
+    },
+    {
+      "slug": "liability-autonomous-vehicle",
+      "url": "products/liability-autonomous-vehicle.html",
+      "title": "자율주행 사고배상책임보험",
+      "category": "liability",
+      "category_label": "배상보험",
+      "en_code": "AUTONOMOUS VEHICLE LIABILITY",
+      "insurer": "",
+      "lead": "자율주행자동차 운행 중 시설·업무, 생산물(자율주행 시스템), 네트워크 활동, 사이버공격으로 생긴 사고의 배상책임을 담보. 실증사업자·시스템 개발사 대상.",
+      "meta_desc": "자율주행 사고배상책임보험은 자율주행자동차 운행 중 시설·업무, 생산물(자율주행 시스템), 네트워크 활동, 사이버공격으로 생긴 사고의 배상책임을 담보하는 보험입니다.",
+      "keywords": [
+        "자율주행 사고배상책임보험",
+        "AUTONOMOUS VEHICLE LIABILITY"
+      ],
+      "boost": [
+        "자율주행 사고배상책임보험"
+      ]
     }
   ]
 }

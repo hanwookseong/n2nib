@@ -1,7 +1,7 @@
 /* Auto-generated EN product index — file:// compatible */
 window.PRODUCTS_INDEX_EN = {
   "generated_at": "2026-06-24",
-  "total": 79,
+  "total": 87,
   "products": [
     {
       "slug": "engineering-car",
@@ -2339,6 +2339,118 @@ window.PRODUCTS_INDEX_EN = {
         "K-SURE",
         "SGI Seoul Guarantee",
         "Coface"
+      ]
+    },
+    {
+      "slug": "liability-postpartum-care",
+      "url": "products/liability-postpartum-care.html",
+      "title": "Postpartum Care Center Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · POSTPARTUM CARE CENTER",
+      "insurer": "",
+      "lead": "Covers liability of postpartum care centres for injury or damage arising from premises and operations and from food served.",
+      "meta_desc": "Postpartum care center liability insurance covers liability for bodily injury or property damage arising from the premises and operations of a postpartum care center and from food it provides.",
+      "keywords": [
+        "Postpartum Care Center Liability Insurance"
+      ]
+    },
+    {
+      "slug": "liability-childcare-service",
+      "url": "products/liability-childcare-service.html",
+      "title": "Childcare Service Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · CHILDCARE SERVICE",
+      "insurer": "",
+      "lead": "Covers legal liability for injury to the child or to childcare workers arising from an accident while providing home childcare services under the Childcare Support Act.",
+      "meta_desc": "Childcare service liability insurance covers liability for bodily injury to a child, or to a childcare worker, arising from an accident while providing childcare services under Korea's Childcare Support Act.",
+      "keywords": [
+        "Childcare Service Liability Insurance"
+      ]
+    },
+    {
+      "slug": "liability-teacher",
+      "url": "products/liability-teacher.html",
+      "title": "Teacher Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · TEACHER LIABILITY",
+      "insurer": "",
+      "lead": "Covers teachers, staff and professors named on the policy for legal liability and defence costs when a claim is made against them for an accident in the course of school duties.",
+      "meta_desc": "Teacher liability insurance covers kindergarten, school and university teachers against claims for bodily injury or property damage arising from an accident in the course of school duties.",
+      "keywords": [
+        "Teacher Liability Insurance"
+      ]
+    },
+    {
+      "slug": "liability-electrical-contractor",
+      "url": "products/liability-electrical-contractor.html",
+      "title": "Electrical Contractor Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · ELECTRICAL CONTRACTOR",
+      "insurer": "",
+      "lead": "Covers liability for damage to the electrical contract works or to third parties in the course of electrical works — including damage to the works themselves.",
+      "meta_desc": "Electrical contractor liability insurance covers liability for damage caused to the contract works or to third parties in the course of electrical works.",
+      "keywords": [
+        "Electrical Contractor Liability Insurance"
+      ]
+    },
+    {
+      "slug": "liability-fire-protection-contractor",
+      "url": "products/liability-fire-protection-contractor.html",
+      "title": "Fire Protection Contractor Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · FIRE PROTECTION CONTRACTOR",
+      "insurer": "",
+      "lead": "Covers liability for damage to the contract works or to third parties in the course of fire-protection installation works.",
+      "meta_desc": "Fire protection contractor liability insurance covers liability for property damage caused to the contract works or to third parties in the course of fire-protection installation works.",
+      "keywords": [
+        "Fire Protection Contractor Liability Insurance"
+      ]
+    },
+    {
+      "slug": "liability-fire-protection-management",
+      "url": "products/liability-fire-protection-management.html",
+      "title": "Fire Protection Management Professional Liability",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · FIRE PROTECTION MANAGEMENT PI",
+      "insurer": "",
+      "lead": "Claims-made professional liability for fire-protection management firms — property damage resulting directly from inspection and management services.",
+      "meta_desc": "Fire protection management professional liability covers claims first made during the policy period for property damage resulting directly from fire-safety inspection and management services.",
+      "keywords": [
+        "Fire Protection Management Professional Liability"
+      ]
+    },
+    {
+      "slug": "liability-virtual-asset",
+      "url": "products/liability-virtual-asset.html",
+      "title": "Virtual Asset Service Provider (VASP) Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · VASP",
+      "insurer": "",
+      "lead": "Covers a virtual asset service provider's liability to users for hacking, system failures and similar incidents in trading, transfer and custody of virtual assets.",
+      "meta_desc": "VASP liability insurance covers a virtual asset service provider's liability to users for hacking, system failures and similar incidents relating to trading, exchange, transfer or custody of virtual assets.",
+      "keywords": [
+        "Virtual Asset Service Provider (VASP) Liability Insurance"
+      ]
+    },
+    {
+      "slug": "liability-autonomous-vehicle",
+      "url": "products/liability-autonomous-vehicle.html",
+      "title": "Autonomous Vehicle Liability Insurance",
+      "category": "liability",
+      "category_label": "Liability",
+      "en_code": "LIABILITY · AUTONOMOUS VEHICLE",
+      "insurer": "",
+      "lead": "Covers liability for accidents during autonomous-vehicle operation arising from premises and operations, products (vehicles and systems), network activities and cyber attacks. For pilot operators and system developers.",
+      "meta_desc": "Autonomous vehicle liability insurance covers liability for accidents during the operation of autonomous vehicles arising from premises and operations, products, network activities or cyber attacks.",
+      "keywords": [
+        "Autonomous Vehicle Liability Insurance"
       ]
     }
   ]
