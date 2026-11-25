@@ -201,7 +201,7 @@
     final.style.cssText = 'margin:24px 0;padding:20px;background:linear-gradient(135deg,#0B2818,#1a4a35);color:#F4F0E8;border-radius:8px;text-align:center';
     final.innerHTML =
       '<h3 style="margin:0 0 8px;color:#F4F0E8">이 상품으로 견적받기</h3>' +
-      '<p style="margin:0 0 16px;opacity:.85;font-size:.9rem">엔투엔보험중개의 ACIU 기업보험심사역이 AM Best A++~A 등급 6개 보험회사 약관을 비교 분석합니다.</p>' +
+      '<p style="margin:0 0 16px;opacity:.85;font-size:.9rem">엔투엔보험중개의 ACIU 기업보험심사역이 AM Best A++~A 등급 7개 보험회사 약관을 비교 분석합니다.</p>' +
       '<a href="../consult.html?product=' + encoded + '" style="display:inline-block;padding:10px 24px;background:#F4F0E8;color:#0B2818;text-decoration:none;border-radius:6px;font-weight:700">무료 상담신청 →</a>' +
       '<a href="tel:010-5755-6465" style="display:inline-block;margin-left:8px;padding:10px 24px;background:transparent;color:#F4F0E8;text-decoration:none;border-radius:6px;font-weight:700;border:1px solid rgba(244,240,232,.4)">☎ 010-5755-6465</a>';
     existing.parentNode.insertBefore(final, existing.nextSibling);
@@ -366,7 +366,7 @@
     section.innerHTML =
       '<div class="fcc-inner">' +
         '<h3>' + L('전문 보험중개사가 직접 상담합니다','A licensed insurance broker advises you directly','登録保険仲立人が直接ご相談を承ります') + '</h3>' +
-        '<p class="fcc-sub">' + L('ACIU 기업보험심사역 · AM Best A++~A 등급 6개 보험회사 약관 비교<br>평균 1영업일 회신','ACIU underwriter · compares the terms of 6 AM Best A++–A rated insurers<br>avg. 1 business-day reply','ACIU（企業保険引受審査士）· AM Best A++～A格付けの6社の約款を比較<br>平均1営業日でご回答') + '</p>' +
+        '<p class="fcc-sub">' + L('ACIU 기업보험심사역 · AM Best A++~A 등급 7개 보험회사 약관 비교<br>평균 1영업일 회신','ACIU underwriter · compares the terms of 7 AM Best A++–A rated insurers<br>avg. 1 business-day reply','ACIU（企業保険引受審査士）· AM Best A++～A格付けの7社の約款を比較<br>平均1営業日でご回答') + '</p>' +
         '<div class="fcc-buttons">' +
           '<a class="fcc-primary" href="' + consultHref + '">' + L('✎ 상담신청','✎ Request consultation','✎ ご相談・お見積り') + '</a>' +
           '<a class="fcc-phone" href="tel:+82-10-5755-6465">☎ +82-10-5755-6465</a>' +
